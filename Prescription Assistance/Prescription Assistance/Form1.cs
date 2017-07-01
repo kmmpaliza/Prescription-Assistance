@@ -40,7 +40,6 @@ namespace Prescription_Assistance
                 
             if (Convert.ToBoolean(cd.viewDoctorDetails().Tables[0].Rows.Count > 0))
             {
-                MessageBox.Show(cd.viewDoctorDetails().Tables[0].Rows[0]["Doctor_ID"].ToString());
                 Doctor_Dashboard dd = new Doctor_Dashboard();
                 dd.Show();
                 this.Hide();
@@ -53,7 +52,9 @@ namespace Prescription_Assistance
 
                 if (Convert.ToBoolean(cn.viewNurseDetails().Tables[0].Rows.Count > 0))
                 {
-                    MessageBox.Show(cn.viewNurseDetails().Tables[0].Rows[0]["Nurse_ID"].ToString());                    
+                    Nurse_Dashboard nd = new Nurse_Dashboard();
+                    nd.Show();
+                    this.Hide();                  
                 }
 
                 else
@@ -63,12 +64,13 @@ namespace Prescription_Assistance
 
                     if (Convert.ToBoolean(cr.viewBedDetails().Tables[0].Rows.Count > 0) && password.Equals("12345"))
                     {
-                        MessageBox.Show(cr.viewBedDetails().Tables[0].Rows[0]["Bed_ID"].ToString());
+                        Patient_Dashboard pd = new Patient_Dashboard();
+                        pd.Show();
+                        this.Hide();
                     }
 
                     else 
-                    {
-                        
+                    {                        
                         label2.Visible = true; 
                         textBox1.Clear();
                         textBox2.Clear();

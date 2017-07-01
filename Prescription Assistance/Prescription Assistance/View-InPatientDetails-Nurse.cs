@@ -10,7 +10,7 @@ using ClassLibrary;
 
 namespace Prescription_Assistance
 {
-    public partial class View_InPatientDetails : UserControl
+    public partial class View_InPatientDetails_Nurse : UserControl
     {
         string id;
         Class_Patient cp = new Class_Patient();
@@ -20,13 +20,13 @@ namespace Prescription_Assistance
         DataSet ds2 = new DataSet();
         DataSet ds3 = new DataSet();
 
-        public View_InPatientDetails(string id)
+        public View_InPatientDetails_Nurse(string id)
         {
             InitializeComponent();
             this.id = id;
         }
 
-        private void View_InPatientDetails_Load(object sender, EventArgs e)
+        private void View_InPatientDetails_Nurse_Load(object sender, EventArgs e)
         {
             cp.Patient_id = id;
             cm.Patient_id = id;
@@ -62,10 +62,8 @@ namespace Prescription_Assistance
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Doctor_Dashboard parent = (Doctor_Dashboard)this.ParentForm;
-            parent.changetoUpdatePatientAsDoctor(id);
-            
+            Nurse_Dashboard parent = (Nurse_Dashboard)this.ParentForm;
+            parent.changetoUpdatePatientAsNurse(id);
         }
-
     }
 }

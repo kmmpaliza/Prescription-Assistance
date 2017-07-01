@@ -18,6 +18,7 @@ namespace Prescription_Assistance
         public _2ndFloorPrivateRoom()
         {
             InitializeComponent();
+            
         }
 
         private void _2ndFloorPrivateRoom_Load(object sender, EventArgs e)
@@ -107,22 +108,18 @@ namespace Prescription_Assistance
 
         private void button11_Click(object sender, EventArgs e)
         {
-            //cr.Bed_id = "201";
-            //ds = cr.viewBedandPatient();
-            //MessageBox.Show("Bed: 201\nRoom Type: " + ds.Tables[0].Rows[0]["Room"].ToString() + "\nStatus: " + ds.Tables[0].Rows[0]["Status"].ToString() + "\nPatient: " +
-                    //ds.Tables[0].Rows[0][3].ToString() + "");
-            var a = new Alert_Medicine();
-            panel5.Controls.Add(a);
+            cr.Bed_id = "201";
+            ds = cr.viewBedandPatient();
+            MessageBox.Show("Bed: 201\nRoom Type: " + ds.Tables[0].Rows[0]["Room"].ToString() + "\nStatus: " + ds.Tables[0].Rows[0]["Status"].ToString() + "\nPatient: " +
+                    ds.Tables[0].Rows[0][3].ToString() + "");
         }
 
         private void button12_Click(object sender, EventArgs e)
         {
-            //cr.Bed_id = "202";
-            //ds = cr.viewBedandPatient();
-            //MessageBox.Show("Bed: 202\nRoom Type: " + ds.Tables[0].Rows[0]["Room"].ToString() + "\nStatus: " + ds.Tables[0].Rows[0]["Status"].ToString() + "\nPatient: " +
-                    //ds.Tables[0].Rows[0][3].ToString() + "");
-            Alert_Medicine a = new Alert_Medicine();
-            panel5.Controls.Add(a);
+            cr.Bed_id = "202";
+            ds = cr.viewBedandPatient();
+            MessageBox.Show("Bed: 202\nRoom Type: " + ds.Tables[0].Rows[0]["Room"].ToString() + "\nStatus: " + ds.Tables[0].Rows[0]["Status"].ToString() + "\nPatient: " +
+                    ds.Tables[0].Rows[0][3].ToString() + "");
         }
 
         private void button13_Click(object sender, EventArgs e)

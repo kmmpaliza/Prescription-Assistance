@@ -9,16 +9,14 @@ using System.Windows.Forms;
 
 namespace Prescription_Assistance
 {
-    public partial class Doctor_Dashboard : Form
+    public partial class Nurse_Dashboard : Form
     {
-        
-
-        public Doctor_Dashboard()
+        public Nurse_Dashboard()
         {
             InitializeComponent();
         }
 
-        private void Doctor_Dashboard_Load(object sender, EventArgs e)
+        private void Nurse_Dashboard_Load(object sender, EventArgs e)
         {
             //this.TopMost = true;
             //this.FormBorderStyle = Fo rmBorderStyle.None;
@@ -29,45 +27,10 @@ namespace Prescription_Assistance
             pnlFrame.Controls.Add(abc);
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            Form1 f = new Form1();
-            f.Show();
-            this.Close();
-        }
-
-        private void button3_Click(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e)
         {
             pnlFrame.Controls.Clear();
-            var viewInPatient = new View_InPatient();
-            pnlFrame.Controls.Add(viewInPatient);
-        }
-
-        public void changetoViewPatient()
-        {
-            pnlFrame.Controls.Clear();
-            var viewInPatient = new View_InPatient();
-            pnlFrame.Controls.Add(viewInPatient);
-        }
-
-        public void changetoInsert()
-        {
-            pnlFrame.Controls.Clear();
-            var insertPatient = new Insert_InPatient();
-            pnlFrame.Controls.Add(insertPatient);
-        }
-
-        public void changetoViewPatientDetails(string id)
-        {
-            pnlFrame.Controls.Clear();
-            var viewinPatientDetails = new View_InPatientDetails(id);
-            pnlFrame.Controls.Add(viewinPatientDetails);
-        }
-
-        public void changetoUpdatePatientAsDoctor(string id) //pansamantala
-        {
-            pnlFrame.Controls.Clear();
-            var abc = new Update_InPatientDetailsDoctor(id);
+            var abc = new Room_Layout();
             pnlFrame.Controls.Add(abc);
         }
 
@@ -117,12 +80,32 @@ namespace Prescription_Assistance
             pnlFrame.Controls.Add(abc);
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void button3_Click(object sender, EventArgs e)
         {
             pnlFrame.Controls.Clear();
-            var abc = new Room_Layout();
+            var viewInPatient = new View_InPatient_Nurse();
+            pnlFrame.Controls.Add(viewInPatient);
+        }
+
+        public void changetoViewPatientDetails(string id)
+        {
+            pnlFrame.Controls.Clear();
+            var viewinPatientDetails = new View_InPatientDetails(id);
+            pnlFrame.Controls.Add(viewinPatientDetails);
+        }
+
+        public void changetoUpdatePatientAsNurse(string id)
+        {
+            pnlFrame.Controls.Clear();
+            var abc = new Update_InPatientDetailsNurse(id);
             pnlFrame.Controls.Add(abc);
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Form1 f = new Form1();
+            f.Show();
+            this.Close();
+        }
     }
 }

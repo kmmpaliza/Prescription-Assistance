@@ -146,6 +146,7 @@
             this.panel19 = new System.Windows.Forms.Panel();
             this.label49 = new System.Windows.Forms.Label();
             this.pictureBox49 = new System.Windows.Forms.PictureBox();
+            this.ePanel = new Prescription_Assistance.ExtendedPanel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             this.panel4.SuspendLayout();
@@ -252,6 +253,7 @@
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(48)))), ((int)(((byte)(46)))));
+            this.panel4.Controls.Add(this.ePanel);
             this.panel4.Controls.Add(this.label28);
             this.panel4.Controls.Add(this.pictureBox28);
             this.panel4.Controls.Add(this.label29);
@@ -1529,6 +1531,17 @@
             this.pictureBox49.TabIndex = 21;
             this.pictureBox49.TabStop = false;
             // 
+            // ePanel
+            // 
+            this.ePanel.BackColor = System.Drawing.Color.White;
+            this.ePanel.ForeColor = System.Drawing.Color.Transparent;
+            this.ePanel.Location = new System.Drawing.Point(0, 0);
+            this.ePanel.Name = "ePanel";
+            this.ePanel.Opacity = 50;
+            this.ePanel.Size = new System.Drawing.Size(515, 327);
+            this.ePanel.TabIndex = 31;
+            this.ePanel.Text = "extendedPanel1";
+            // 
             // Room_Layout
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1766,5 +1779,6 @@
         private System.Windows.Forms.Panel panel19;
         private System.Windows.Forms.Label label49;
         private System.Windows.Forms.PictureBox pictureBox49;
+        private ExtendedPanel ePanel;
     }
 }

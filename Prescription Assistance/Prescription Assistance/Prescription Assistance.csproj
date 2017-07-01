@@ -1,0 +1,360 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CA13806C-00DD-471E-8F54-73EBE0C3F050}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Prescription_Assistance</RootNamespace>
+    <AssemblyName>Prescription Assistance</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="2ndFloor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="2ndFloor.Designer.cs">
+      <DependentUpon>2ndFloor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="3rdFloor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="3rdFloor.Designer.cs">
+      <DependentUpon>3rdFloor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="4thFloor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="4thFloor.Designer.cs">
+      <DependentUpon>4thFloor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="5thFloor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="5thFloor.Designer.cs">
+      <DependentUpon>5thFloor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Alert-Medicine.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Alert-Medicine.Designer.cs">
+      <DependentUpon>Alert-Medicine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Database1DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Database1DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Database1DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Database1DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Doctor-Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Doctor-Dashboard.Designer.cs">
+      <DependentUpon>Doctor-Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Insert-InPatient.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Insert-InPatient.Designer.cs">
+      <DependentUpon>Insert-InPatient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InsertPrescription.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="InsertPrescription.Designer.cs">
+      <DependentUpon>InsertPrescription.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Patient-Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Patient-Dashboard.Designer.cs">
+      <DependentUpon>Patient-Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Room-Layout.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Room-Layout.Designer.cs">
+      <DependentUpon>Room-Layout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Show-PatientinBed.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Show-PatientinBed.Designer.cs">
+      <DependentUpon>Show-PatientinBed.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Update-InPatientDetailsDoctor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Update-InPatientDetailsDoctor.Designer.cs">
+      <DependentUpon>Update-InPatientDetailsDoctor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Update-InPatientDetailsNurse.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Update-InPatientDetailsNurse.Designer.cs">
+      <DependentUpon>Update-InPatientDetailsNurse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View-InPatient.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View-InPatient.Designer.cs">
+      <DependentUpon>View-InPatient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View-InPatientDetails.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View-InPatientDetails.Designer.cs">
+      <DependentUpon>View-InPatientDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View-Rooms.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View-Rooms.Designer.cs">
+      <DependentUpon>View-Rooms.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="2ndFloor.resx">
+      <DependentUpon>2ndFloor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="3rdFloor.resx">
+      <DependentUpon>3rdFloor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="4thFloor.resx">
+      <DependentUpon>4thFloor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="5thFloor.resx">
+      <DependentUpon>5thFloor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Alert-Medicine.resx">
+      <DependentUpon>Alert-Medicine.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Doctor-Dashboard.resx">
+      <DependentUpon>Doctor-Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Insert-InPatient.resx">
+      <DependentUpon>Insert-InPatient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InsertPrescription.resx">
+      <DependentUpon>InsertPrescription.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Patient-Dashboard.resx">
+      <DependentUpon>Patient-Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Room-Layout.resx">
+      <DependentUpon>Room-Layout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Show-PatientinBed.resx">
+      <DependentUpon>Show-PatientinBed.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Update-InPatientDetailsDoctor.resx">
+      <DependentUpon>Update-InPatientDetailsDoctor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Update-InPatientDetailsNurse.resx">
+      <DependentUpon>Update-InPatientDetailsNurse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View-InPatient.resx">
+      <DependentUpon>View-InPatient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View-InPatientDetails.resx">
+      <DependentUpon>View-InPatientDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View-Rooms.resx">
+      <DependentUpon>View-Rooms.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Database1DataSet.xsc">
+      <DependentUpon>Database1DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Database1DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Database1DataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Database1DataSet.xss">
+      <DependentUpon>Database1DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Database1DataSet1.xsc">
+      <DependentUpon>Database1DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Database1DataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Database1DataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Database1DataSet1.xss">
+      <DependentUpon>Database1DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Database1.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Database1_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>Database1.mdf</DependentUpon>
+    </Content>
+    <Content Include="Images\logo.png" />
+    <None Include="Resources\maint.png" />
+    <None Include="Resources\shuttle.png" />
+    <None Include="Resources\wheelchair.png" />
+    <None Include="Resources\status.png" />
+    <None Include="Resources\medicalconsultatio1.png" />
+    <None Include="Resources\transferroom.png" />
+    <None Include="Resources\private8.png" />
+    <None Include="Resources\ward2.png" />
+    <None Include="Resources\logo2.png" />
+    <None Include="Resources\ttrrr.png" />
+    <None Include="Resources\private1.png" />
+    <None Include="Resources\privateotherside.png" />
+    <None Include="Resources\beddown.png" />
+    <None Include="Resources\privatedown.png" />
+    <None Include="Resources\privateup.png" />
+    <None Include="Resources\bedup1.png" />
+    <None Include="Resources\bedup.png" />
+    <None Include="Resources\privateroom1.png" />
+    <None Include="Resources\privateroom.png" />
+    <None Include="Resources\private.png" />
+    <None Include="Resources\otherside.png" />
+    <None Include="Resources\bedd.png" />
+    <None Include="Resources\bed2.png" />
+    <None Include="Resources\bed1.png" />
+    <None Include="Resources\bed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Sql.Server.Express.10.0">
+      <Visible>False</Visible>
+      <ProductName>SQL Server 2008 Express</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ClassLibrary\ClassLibrary.csproj">
+      <Project>{153D3C24-F7D8-4151-BFC6-75ABDF676B6B}</Project>
+      <Name>ClassLibrary</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

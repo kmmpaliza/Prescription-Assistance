@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Database1Model.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="Database1ModelStoreContainer">
+    <EntitySet Name="Patient" EntityType="Database1Model.Store.Patient" store:Type="Tables" Schema="dbo" />
+  </EntityContainer>
+  <EntityType Name="Patient">
+    <Key>
+      <PropertyRef Name="Patient_ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="Patient_ID" Type="varchar" Nullable="false" MaxLength="7" />
+    <Property Name="Last_Name" Type="varchar(max)" />
+    <Property Name="First_Name" Type="varchar(max)" />
+    <Property Name="Gender" Type="varchar" MaxLength="1" />
+    <Property Name="Age" Type="varchar" MaxLength="3" />
+    <Property Name="Birthday" Type="varchar(max)" />
+    <Property Name="Address" Type="varchar(max)" />
+    <Property Name="Contact" Type="varchar(max)" />
+    <Property Name="Room_ID" Type="varchar" MaxLength="6" />
+    <Property Name="Bed_ID" Type="varchar" MaxLength="6" />
+  </EntityType>
+</Schema>

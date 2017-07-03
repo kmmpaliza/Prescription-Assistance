@@ -15,7 +15,13 @@ namespace ClassLibrary
         private static SqlConnection conn = new SqlConnection(conString);
         #endregion
         #region Variables
-        private string bed_id, patient_id, status;
+        private string bed_id, patient_id, status, room;
+
+        public string Room
+        {
+            get { return room; }
+            set { room = value; }
+        }
 
         public string Status
         {
@@ -51,7 +57,8 @@ namespace ClassLibrary
         {
             SqlCommand cmd = new SqlCommand("select_RoomDetails", conn);
             cmd.CommandType = CommandType.StoredProcedure;
-            cmd.Parameters.Add("@Bed_ID", SqlDbType.VarChar).Value = bed_id;
+            cmd.Parameters.Add("@Bed_ID", SqlDbType.VarChar).Value 
+            = bed_id;
             SqlDataAdapter da = new SqlDataAdapter(cmd);
             ds.Clear();
             da.Fill(ds, "select_RoomDetails");
@@ -66,6 +73,20 @@ namespace ClassLibrary
             SqlDataAdapter da = new SqlDataAdapter(cmd);
             ds.Clear();
             da.Fill(ds, "select_RoomDetails");
+            return ds;
+        }
+
+        public DataSet searchRoom()
+        {
+            SqlCommand cmd = new SqlCommand("search_Room", conn);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.Add("@Bed_ID", SqlDbType.VarChar).Value = bed_id;
+            cmd.Parameters.Add("@Room", SqlDbType.VarChar).Value = room;
+            cmd.Parameters.Add("@Status", SqlDbType.VarChar).Value = status;
+            cmd.Parameters.Add("@Patient_ID", SqlDbType.VarChar).Value = patient_id;
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            ds.Clear();
+            da.Fill(ds, "search_Room");
             return ds;
         }
     }

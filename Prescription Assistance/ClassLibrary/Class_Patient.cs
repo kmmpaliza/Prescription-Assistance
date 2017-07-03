@@ -101,6 +101,24 @@ namespace ClassLibrary
             return ds;    
         }
 
+        public DataSet searchPatient()
+        {
+            SqlCommand cmd = new SqlCommand("search_Patient", conn);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.Add("@Patient_ID", SqlDbType.VarChar).Value = patient_id;
+            cmd.Parameters.Add("@First_name", SqlDbType.VarChar).Value = first_name;
+            cmd.Parameters.Add("@Last_name", SqlDbType.VarChar).Value = last_name;
+            cmd.Parameters.Add("@Gender", SqlDbType.VarChar).Value = gender;
+            cmd.Parameters.Add("@Age", SqlDbType.VarChar).Value = age;
+            cmd.Parameters.Add("@Address", SqlDbType.VarChar).Value = address;
+            cmd.Parameters.Add("@Contact", SqlDbType.VarChar).Value = contact;
+            cmd.Parameters.Add("@Birthday", SqlDbType.VarChar).Value = birthday;
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            ds.Clear();
+            da.Fill(ds, "search_Patient");
+            return ds;
+        }
+
         public string insertNewPatient()
         {
             conn.Open();

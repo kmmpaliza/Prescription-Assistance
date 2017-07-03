@@ -9,17 +9,21 @@ using System.Windows.Forms;
 
 namespace Prescription_Assistance
 {
-    public partial class Alert_Medicine : UserControl
+    public partial class Alert_Vitals : UserControl
     {
-        public Alert_Medicine()
+        public Alert_Vitals()
         {
             InitializeComponent();
-            
         }
 
-        private void Alert_Medicine_Load(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e)
         {
-            
+
+        }
+
+        private void Alert_Vitals_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

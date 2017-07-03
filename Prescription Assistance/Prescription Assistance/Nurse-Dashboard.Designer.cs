@@ -39,22 +39,25 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.SecondFloorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ThirdFloorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.FourthFloorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.FifthFloorToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.allRoomsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pnlOverlay = new System.Windows.Forms.Panel();
+            this.pnlFrame.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
-            this.contextMenuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnlFrame
             // 
             this.pnlFrame.AutoScroll = true;
+            this.pnlFrame.Controls.Add(this.pnlOverlay);
             this.pnlFrame.Location = new System.Drawing.Point(206, 66);
             this.pnlFrame.Name = "pnlFrame";
             this.pnlFrame.Size = new System.Drawing.Size(1174, 691);
@@ -169,6 +172,16 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "John Smith";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(12, 11);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(76, 37);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
             // contextMenuStrip1
             // 
             this.contextMenuStrip1.BackColor = System.Drawing.Color.Transparent;
@@ -221,15 +234,13 @@
             this.allRoomsToolStripMenuItem.Text = "All Rooms";
             this.allRoomsToolStripMenuItem.Click += new System.EventHandler(this.allRoomsToolStripMenuItem_Click);
             // 
-            // pictureBox1
+            // pnlOverlay
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(12, 11);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(76, 37);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.pnlOverlay.AutoScroll = true;
+            this.pnlOverlay.Location = new System.Drawing.Point(1, 0);
+            this.pnlOverlay.Name = "pnlOverlay";
+            this.pnlOverlay.Size = new System.Drawing.Size(1174, 691);
+            this.pnlOverlay.TabIndex = 6;
             // 
             // Nurse_Dashboard
             // 
@@ -242,11 +253,12 @@
             this.Name = "Nurse_Dashboard";
             this.Text = "Nurse_Dashboard";
             this.Load += new System.EventHandler(this.Nurse_Dashboard_Load);
+            this.pnlFrame.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.contextMenuStrip1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.contextMenuStrip1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -269,5 +281,6 @@
         private System.Windows.Forms.ToolStripMenuItem FourthFloorToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem FifthFloorToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem allRoomsToolStripMenuItem;
+        private System.Windows.Forms.Panel pnlOverlay;
     }
 }

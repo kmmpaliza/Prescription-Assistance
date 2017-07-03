@@ -26,5 +26,17 @@ namespace Prescription_Assistance
             dataGridView1.ReadOnly = true;
             dataGridView1.DataSource = ds.Tables[0];
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            cr.Bed_id = txtSearch.Text;
+            cr.Room = txtSearch.Text;
+            cr.Status = txtSearch.Text;
+            cr.Patient_id = txtSearch.Text;
+
+            ds = cr.searchRoom();
+            dataGridView1.Refresh();
+            dataGridView1.DataSource = ds.Tables["search_Room"];
+        }
     }
 }

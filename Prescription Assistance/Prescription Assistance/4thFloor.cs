@@ -24,7 +24,7 @@ namespace Prescription_Assistance
         {
             cr.Bed_id = "400-A";
             ds = cr.viewBedandPatient();
-            MessageBox.Show("Bed: " + ds.Tables[0].Rows[0][1].ToString() + "\nRoom Type: " + ds.Tables[0].Rows[0]["Room"].ToString() + "\nStatus: " + ds.Tables[0].Rows[0]["Status"].ToString() + "\nPatient: " +
+            MessageBox.Show("Bed: " + ds.Tables[0].Rows[0][0].ToString() + "\nRoom Type: " + ds.Tables[0].Rows[0]["Room"].ToString() + "\nStatus: " + ds.Tables[0].Rows[0]["Status"].ToString() + "\nPatient: " +
                     ds.Tables[0].Rows[0][3].ToString() + "");
         }
 
@@ -32,7 +32,7 @@ namespace Prescription_Assistance
         {
             cr.Bed_id = "400-B";
             ds = cr.viewBedandPatient();
-            MessageBox.Show("Bed: " + ds.Tables[0].Rows[0][1].ToString() + "\nRoom Type: " + ds.Tables[0].Rows[0]["Room"].ToString() + "\nStatus: " + ds.Tables[0].Rows[0]["Status"].ToString() + "\nPatient: " +
+            MessageBox.Show("Bed: " + ds.Tables[0].Rows[0][0].ToString() + "\nRoom Type: " + ds.Tables[0].Rows[0]["Room"].ToString() + "\nStatus: " + ds.Tables[0].Rows[0]["Status"].ToString() + "\nPatient: " +
                     ds.Tables[0].Rows[0][3].ToString() + "");
         }
 
@@ -40,7 +40,7 @@ namespace Prescription_Assistance
         {
             cr.Bed_id = "400-C";
             ds = cr.viewBedandPatient();
-            MessageBox.Show("Bed: " + ds.Tables[0].Rows[0][1].ToString() + "\nRoom Type: " + ds.Tables[0].Rows[0]["Room"].ToString() + "\nStatus: " + ds.Tables[0].Rows[0]["Status"].ToString() + "\nPatient: " +
+            MessageBox.Show("Bed: " + ds.Tables[0].Rows[0][0].ToString() + "\nRoom Type: " + ds.Tables[0].Rows[0]["Room"].ToString() + "\nStatus: " + ds.Tables[0].Rows[0]["Status"].ToString() + "\nPatient: " +
                     ds.Tables[0].Rows[0][3].ToString() + "");
         }
 
@@ -48,7 +48,7 @@ namespace Prescription_Assistance
         {
             cr.Bed_id = "400-D";
             ds = cr.viewBedandPatient();
-            MessageBox.Show("Bed: " + ds.Tables[0].Rows[0][1].ToString() + "\nRoom Type: " + ds.Tables[0].Rows[0]["Room"].ToString() + "\nStatus: " + ds.Tables[0].Rows[0]["Status"].ToString() + "\nPatient: " +
+            MessageBox.Show("Bed: " + ds.Tables[0].Rows[0][0].ToString() + "\nRoom Type: " + ds.Tables[0].Rows[0]["Room"].ToString() + "\nStatus: " + ds.Tables[0].Rows[0]["Status"].ToString() + "\nPatient: " +
                     ds.Tables[0].Rows[0][3].ToString() + "");
         }
 
@@ -56,7 +56,7 @@ namespace Prescription_Assistance
         {
             cr.Bed_id = "400-E";
             ds = cr.viewBedandPatient();
-            MessageBox.Show("Bed: " + ds.Tables[0].Rows[0][1].ToString() + "\nRoom Type: " + ds.Tables[0].Rows[0]["Room"].ToString() + "\nStatus: " + ds.Tables[0].Rows[0]["Status"].ToString() + "\nPatient: " +
+            MessageBox.Show("Bed: " + ds.Tables[0].Rows[0][0].ToString() + "\nRoom Type: " + ds.Tables[0].Rows[0]["Room"].ToString() + "\nStatus: " + ds.Tables[0].Rows[0]["Status"].ToString() + "\nPatient: " +
                     ds.Tables[0].Rows[0][3].ToString() + "");
         }
 
@@ -64,7 +64,7 @@ namespace Prescription_Assistance
         {
             cr.Bed_id = "400-F";
             ds = cr.viewBedandPatient();
-            MessageBox.Show("Bed: " + ds.Tables[0].Rows[0][1].ToString() + "\nRoom Type: " + ds.Tables[0].Rows[0]["Room"].ToString() + "\nStatus: " + ds.Tables[0].Rows[0]["Status"].ToString() + "\nPatient: " +
+            MessageBox.Show("Bed: " + ds.Tables[0].Rows[0][0].ToString() + "\nRoom Type: " + ds.Tables[0].Rows[0]["Room"].ToString() + "\nStatus: " + ds.Tables[0].Rows[0]["Status"].ToString() + "\nPatient: " +
                     ds.Tables[0].Rows[0][3].ToString() + "");
         }
 
@@ -72,7 +72,7 @@ namespace Prescription_Assistance
         {
             cr.Bed_id = "400-G";
             ds = cr.viewBedandPatient();
-            MessageBox.Show("Bed: " + ds.Tables[0].Rows[0][1].ToString() + "\nRoom Type: " + ds.Tables[0].Rows[0]["Room"].ToString() + "\nStatus: " + ds.Tables[0].Rows[0]["Status"].ToString() + "\nPatient: " +
+            MessageBox.Show("Bed: " + ds.Tables[0].Rows[0][0].ToString() + "\nRoom Type: " + ds.Tables[0].Rows[0]["Room"].ToString() + "\nStatus: " + ds.Tables[0].Rows[0]["Status"].ToString() + "\nPatient: " +
                     ds.Tables[0].Rows[0][3].ToString() + "");
         }
 
@@ -80,7 +80,7 @@ namespace Prescription_Assistance
         {
             cr.Bed_id = "400-H";
             ds = cr.viewBedandPatient();
-            MessageBox.Show("Bed: " + ds.Tables[0].Rows[0][1].ToString() + "\nRoom Type: " + ds.Tables[0].Rows[0]["Room"].ToString() + "\nStatus: " + ds.Tables[0].Rows[0]["Status"].ToString() + "\nPatient: " +
+            MessageBox.Show("Bed: " + ds.Tables[0].Rows[0][0].ToString() + "\nRoom Type: " + ds.Tables[0].Rows[0]["Room"].ToString() + "\nStatus: " + ds.Tables[0].Rows[0]["Status"].ToString() + "\nPatient: " +
                     ds.Tables[0].Rows[0][3].ToString() + "");
         }
 
@@ -88,7 +88,7 @@ namespace Prescription_Assistance
         {
             cr.Bed_id = "401";
             ds = cr.viewBedandPatient();
-            MessageBox.Show("Bed: " + ds.Tables[0].Rows[0][1].ToString() + "\nRoom Type: " + ds.Tables[0].Rows[0]["Room"].ToString() + "\nStatus: " + ds.Tables[0].Rows[0]["Status"].ToString() + "\nPatient: " +
+            MessageBox.Show("Bed: " + ds.Tables[0].Rows[0][0].ToString() + "\nRoom Type: " + ds.Tables[0].Rows[0]["Room"].ToString() + "\nStatus: " + ds.Tables[0].Rows[0]["Status"].ToString() + "\nPatient: " +
                     ds.Tables[0].Rows[0][3].ToString() + "");
         }
 
@@ -96,7 +96,7 @@ namespace Prescription_Assistance
         {
             cr.Bed_id = "402";
             ds = cr.viewBedandPatient();
-            MessageBox.Show("Bed: " + ds.Tables[0].Rows[0][1].ToString() + "\nRoom Type: " + ds.Tables[0].Rows[0]["Room"].ToString() + "\nStatus: " + ds.Tables[0].Rows[0]["Status"].ToString() + "\nPatient: " +
+            MessageBox.Show("Bed: " + ds.Tables[0].Rows[0][0].ToString() + "\nRoom Type: " + ds.Tables[0].Rows[0]["Room"].ToString() + "\nStatus: " + ds.Tables[0].Rows[0]["Status"].ToString() + "\nPatient: " +
                     ds.Tables[0].Rows[0][3].ToString() + "");
         }
 
@@ -104,7 +104,7 @@ namespace Prescription_Assistance
         {
             cr.Bed_id = "403";
             ds = cr.viewBedandPatient();
-            MessageBox.Show("Bed: " + ds.Tables[0].Rows[0][1].ToString() + "\nRoom Type: " + ds.Tables[0].Rows[0]["Room"].ToString() + "\nStatus: " + ds.Tables[0].Rows[0]["Status"].ToString() + "\nPatient: " +
+            MessageBox.Show("Bed: " + ds.Tables[0].Rows[0][0].ToString() + "\nRoom Type: " + ds.Tables[0].Rows[0]["Room"].ToString() + "\nStatus: " + ds.Tables[0].Rows[0]["Status"].ToString() + "\nPatient: " +
                     ds.Tables[0].Rows[0][3].ToString() + "");
         }
 
@@ -112,7 +112,7 @@ namespace Prescription_Assistance
         {
             cr.Bed_id = "404";
             ds = cr.viewBedandPatient();
-            MessageBox.Show("Bed: " + ds.Tables[0].Rows[0][1].ToString() + "\nRoom Type: " + ds.Tables[0].Rows[0]["Room"].ToString() + "\nStatus: " + ds.Tables[0].Rows[0]["Status"].ToString() + "\nPatient: " +
+            MessageBox.Show("Bed: " + ds.Tables[0].Rows[0][0].ToString() + "\nRoom Type: " + ds.Tables[0].Rows[0]["Room"].ToString() + "\nStatus: " + ds.Tables[0].Rows[0]["Status"].ToString() + "\nPatient: " +
                     ds.Tables[0].Rows[0][3].ToString() + "");
         }
     }

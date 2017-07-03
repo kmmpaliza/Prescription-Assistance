@@ -1538,9 +1538,10 @@
             this.ePanel.Location = new System.Drawing.Point(0, 0);
             this.ePanel.Name = "ePanel";
             this.ePanel.Opacity = 50;
-            this.ePanel.Size = new System.Drawing.Size(515, 327);
+            this.ePanel.Size = new System.Drawing.Size(1112, 592);
             this.ePanel.TabIndex = 31;
             this.ePanel.Text = "extendedPanel1";
+            this.ePanel.Click += new System.EventHandler(this.ePanel_Click);
             // 
             // Room_Layout
             // 

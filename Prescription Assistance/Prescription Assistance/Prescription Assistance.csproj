@@ -88,11 +88,23 @@
     <Compile Include="5thFloor.Designer.cs">
       <DependentUpon>5thFloor.cs</DependentUpon>
     </Compile>
+    <Compile Include="Alert-Assistance.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Alert-Assistance.Designer.cs">
+      <DependentUpon>Alert-Assistance.cs</DependentUpon>
+    </Compile>
     <Compile Include="Alert-Medicine.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Alert-Medicine.Designer.cs">
       <DependentUpon>Alert-Medicine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Alert-Vitals.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Alert-Vitals.Designer.cs">
+      <DependentUpon>Alert-Vitals.cs</DependentUpon>
     </Compile>
     <Compile Include="Database1DataSet.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -214,8 +226,14 @@
     <EmbeddedResource Include="5thFloor.resx">
       <DependentUpon>5thFloor.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Alert-Assistance.resx">
+      <DependentUpon>Alert-Assistance.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Alert-Medicine.resx">
       <DependentUpon>Alert-Medicine.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Alert-Vitals.resx">
+      <DependentUpon>Alert-Vitals.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Doctor-Dashboard.resx">
       <DependentUpon>Doctor-Dashboard.cs</DependentUpon>
@@ -317,6 +335,8 @@
       <DependentUpon>Database1.mdf</DependentUpon>
     </Content>
     <Content Include="Images\logo.png" />
+    <None Include="Resources\cancel1.png" />
+    <None Include="Resources\cancel.png" />
     <None Include="Resources\maint.png" />
     <None Include="Resources\shuttle.png" />
     <None Include="Resources\wheelchair.png" />

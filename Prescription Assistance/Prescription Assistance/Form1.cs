@@ -64,7 +64,7 @@ namespace Prescription_Assistance
 
                     if (Convert.ToBoolean(cr.viewBedDetails().Tables[0].Rows.Count > 0) && password.Equals("12345"))
                     {
-                        Patient_Dashboard pd = new Patient_Dashboard();
+                        Patient_Dashboard pd = new Patient_Dashboard(cr.Bed_id);
                         pd.Show();
                         this.Hide();
                     }

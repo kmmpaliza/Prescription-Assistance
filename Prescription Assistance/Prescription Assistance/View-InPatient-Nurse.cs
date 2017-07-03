@@ -14,6 +14,7 @@ namespace Prescription_Assistance
     {
         Class_Patient cp = new Class_Patient();
         DataSet ds = new DataSet();
+        DataSet ds2 = new DataSet();
 
         public View_InPatient_Nurse()
         {
@@ -33,8 +34,22 @@ namespace Prescription_Assistance
             if (e.ColumnIndex == 0)
             {
                 Nurse_Dashboard parent = (Nurse_Dashboard)this.ParentForm;
-                parent.changetoViewPatientDetails(dataGridView1.CurrentRow.Cells[1].Value.ToString());
+                parent.changetoUpdatePatientAsNurse(dataGridView1.CurrentRow.Cells[1].Value.ToString());
             }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            cp.Patient_id = txtSearch.Text;
+            cp.Last_name = txtSearch.Text;
+            cp.First_name = txtSearch.Text;
+            cp.Gender = txtSearch.Text;
+            cp.Age = txtSearch.Text;
+            cp.Birthday = txtSearch.Text;
+
+            ds2 = cp.searchPatient();
+            dataGridView1.Refresh();
+            dataGridView1.DataSource = ds2.Tables["search_Patient"];
         }
     }
 }

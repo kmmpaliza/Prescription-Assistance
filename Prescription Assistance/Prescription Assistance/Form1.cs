@@ -15,7 +15,6 @@ namespace Prescription_Assistance
         Class_Nurse cn = new Class_Nurse();
         Class_Doctor cd = new Class_Doctor();
         Class_Rooms cr = new Class_Rooms();
-        string password;
 
         public Form1()
         {
@@ -28,7 +27,8 @@ namespace Prescription_Assistance
         {
             //this.TopMost = true;
             
-            //this.WindowState = FormWindowState.Maximized;this.FormBorderStyle = FormBorderStyle.None;
+            this.WindowState = FormWindowState.Maximized;
+            //this.FormBorderStyle = FormBorderStyle.None;
         }
 
 
@@ -59,26 +59,20 @@ namespace Prescription_Assistance
 
                 else
                 {
-                    cr.Bed_id = textBox1.Text;
-                    password = textBox2.Text;
-
-                    if (Convert.ToBoolean(cr.viewBedDetails().Tables[0].Rows.Count > 0) && password.Equals("12345"))
-                    {
-                        Patient_Dashboard pd = new Patient_Dashboard(cr.Bed_id);
-                        pd.Show();
-                        this.Hide();
-                    }
-
-                    else 
-                    {                        
-                        label2.Visible = true; 
-                        textBox1.Clear();
-                        textBox2.Clear();
-                        textBox1.Focus();
-                    }
+                    label2.Visible = true;
+                    textBox1.Clear();
+                    textBox2.Clear();
+                    textBox1.Focus();  
                 }
             }           
 
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            Main f = new Main();
+            f.Show();
+            this.Close();
         }
     }
 }

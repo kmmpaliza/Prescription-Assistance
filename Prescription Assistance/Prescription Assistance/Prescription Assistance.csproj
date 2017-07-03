@@ -140,11 +140,23 @@
     <Compile Include="Insert-InPatient.Designer.cs">
       <DependentUpon>Insert-InPatient.cs</DependentUpon>
     </Compile>
+    <Compile Include="InsertPrescription-Nurse.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="InsertPrescription-Nurse.Designer.cs">
+      <DependentUpon>InsertPrescription-Nurse.cs</DependentUpon>
+    </Compile>
     <Compile Include="InsertPrescription.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="InsertPrescription.Designer.cs">
       <DependentUpon>InsertPrescription.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
     </Compile>
     <Compile Include="Nurse-Dashboard.cs">
       <SubType>Form</SubType>
@@ -196,18 +208,6 @@
     <Compile Include="View-InPatient.Designer.cs">
       <DependentUpon>View-InPatient.cs</DependentUpon>
     </Compile>
-    <Compile Include="View-InPatientDetails-Nurse.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="View-InPatientDetails-Nurse.Designer.cs">
-      <DependentUpon>View-InPatientDetails-Nurse.cs</DependentUpon>
-    </Compile>
-    <Compile Include="View-InPatientDetails.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="View-InPatientDetails.Designer.cs">
-      <DependentUpon>View-InPatientDetails.cs</DependentUpon>
-    </Compile>
     <Compile Include="View-Rooms.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -247,8 +247,14 @@
     <EmbeddedResource Include="Insert-InPatient.resx">
       <DependentUpon>Insert-InPatient.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="InsertPrescription-Nurse.resx">
+      <DependentUpon>InsertPrescription-Nurse.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="InsertPrescription.resx">
       <DependentUpon>InsertPrescription.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Nurse-Dashboard.resx">
       <DependentUpon>Nurse-Dashboard.cs</DependentUpon>
@@ -283,12 +289,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View-InPatient.resx">
       <DependentUpon>View-InPatient.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="View-InPatientDetails-Nurse.resx">
-      <DependentUpon>View-InPatientDetails-Nurse.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="View-InPatientDetails.resx">
-      <DependentUpon>View-InPatientDetails.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View-Rooms.resx">
       <DependentUpon>View-Rooms.cs</DependentUpon>

@@ -65,14 +65,6 @@ namespace Prescription_Assistance
             pnlOverlay.Controls.Add(insertPatient);
         }
 
-        public void changetoViewPatientDetails(string id)
-        {
-            pnlOverlay.Visible = true;
-            pnlOverlay.Controls.Clear();
-            var viewinPatientDetails = new View_InPatientDetails(id);
-            pnlOverlay.Controls.Add(viewinPatientDetails);
-        }
-
         public void changetoUpdatePatientAsDoctor(string id) //pansamantala
         {
             pnlOverlay.Visible = true;
@@ -135,6 +127,14 @@ namespace Prescription_Assistance
         private void button2_Click(object sender, EventArgs e)
         {
             pnlOverlay.Visible = false;
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            pnlOverlay.Visible = true;
+            pnlOverlay.Controls.Clear();
+            var abc = new InsertPrescription();
+            pnlOverlay.Controls.Add(abc);
         }
 
     }

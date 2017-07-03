@@ -17,10 +17,10 @@ namespace Prescription_Assistance
     {
         private System.Threading.Timer timer;
         Class_Alert ca = new Class_Alert();
-        Class_Vitals cv = new Class_Vitals();
+        //Class_Vitals cv = new Class_Vitals();
         DataSet ds = new DataSet();
 
-        #region VariablesforMedicine
+        /**#region VariablesforMedicine
         private int hours, minutes, pointX, pointY, room, medname, dose, route, form, interval, note;
 
         public int PointY
@@ -46,7 +46,7 @@ namespace Prescription_Assistance
             get { return hours; }
             set { hours = value; }
         }
-        #endregion
+        #endregion*/
 
         public Room_Layout()
         {

@@ -28,56 +28,167 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.lblName = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            this.txtHeight = new System.Windows.Forms.TextBox();
+            this.txtWeight = new System.Windows.Forms.TextBox();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.button3 = new System.Windows.Forms.Button();
+            this.dgvMedRec = new System.Windows.Forms.DataGridView();
+            this.txtSI = new System.Windows.Forms.TextBox();
+            this.label16 = new System.Windows.Forms.Label();
+            this.txtMF = new System.Windows.Forms.TextBox();
+            this.label18 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.txtMF = new System.Windows.Forms.TextBox();
+            this.txtMH = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
+            this.label36 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
-            this.txtSI = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.btnDelete = new System.Windows.Forms.Button();
-            this.btnAdd = new System.Windows.Forms.Button();
-            this.cboInterval = new System.Windows.Forms.ComboBox();
+            this.txtAddress = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.txtContact = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.cboForm = new System.Windows.Forms.ComboBox();
-            this.label14 = new System.Windows.Forms.Label();
-            this.cboRoute = new System.Windows.Forms.ComboBox();
-            this.label13 = new System.Windows.Forms.Label();
-            this.txtDosage = new System.Windows.Forms.TextBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.txtNote = new System.Windows.Forms.TextBox();
-            this.label11 = new System.Windows.Forms.Label();
-            this.txtMedName = new System.Windows.Forms.TextBox();
-            this.label12 = new System.Windows.Forms.Label();
-            this.dgvPrescription = new System.Windows.Forms.DataGridView();
-            this.btnEdit = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvPrescription)).BeginInit();
+            this.cboGender = new System.Windows.Forms.ComboBox();
+            this.txtFirst = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txtAge = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txtLast = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvMedRec)).BeginInit();
             this.SuspendLayout();
             // 
-            // lblName
+            // txtHeight
             // 
-            this.lblName.AutoSize = true;
-            this.lblName.Font = new System.Drawing.Font("Open Sans", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblName.Location = new System.Drawing.Point(141, 29);
-            this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(154, 27);
-            this.lblName.TabIndex = 7;
-            this.lblName.Text = "Baroy, Katrina";
+            this.txtHeight.Enabled = false;
+            this.txtHeight.Font = new System.Drawing.Font("Open Sans", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtHeight.Location = new System.Drawing.Point(218, 374);
+            this.txtHeight.Name = "txtHeight";
+            this.txtHeight.Size = new System.Drawing.Size(49, 27);
+            this.txtHeight.TabIndex = 111;
             // 
-            // label1
+            // txtWeight
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Open Sans", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(19, 32);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(124, 20);
-            this.label1.TabIndex = 6;
-            this.label1.Text = "In-Patient Name:";
+            this.txtWeight.Enabled = false;
+            this.txtWeight.Font = new System.Drawing.Font("Open Sans", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtWeight.Location = new System.Drawing.Point(85, 374);
+            this.txtWeight.Name = "txtWeight";
+            this.txtWeight.Size = new System.Drawing.Size(49, 27);
+            this.txtWeight.TabIndex = 110;
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("Open Sans", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.Location = new System.Drawing.Point(155, 378);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(57, 19);
+            this.label21.TabIndex = 109;
+            this.label21.Text = "Height:";
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Open Sans", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.Location = new System.Drawing.Point(19, 378);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(60, 19);
+            this.label19.TabIndex = 108;
+            this.label19.Text = "Weight:";
+            // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(184)))), ((int)(((byte)(182)))));
+            this.button3.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(184)))), ((int)(((byte)(182)))));
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.ForeColor = System.Drawing.Color.White;
+            this.button3.Location = new System.Drawing.Point(601, 389);
+            this.button3.Margin = new System.Windows.Forms.Padding(16);
+            this.button3.Name = "button3";
+            this.button3.Padding = new System.Windows.Forms.Padding(8);
+            this.button3.Size = new System.Drawing.Size(144, 50);
+            this.button3.TabIndex = 107;
+            this.button3.Text = "Edit";
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // dgvMedRec
+            // 
+            this.dgvMedRec.AllowUserToAddRows = false;
+            this.dgvMedRec.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvMedRec.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.dgvMedRec.BackgroundColor = System.Drawing.Color.Gray;
+            this.dgvMedRec.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dgvMedRec.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Open Sans", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.Padding = new System.Windows.Forms.Padding(2);
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(184)))), ((int)(((byte)(182)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvMedRec.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            this.dgvMedRec.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Open Sans", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(184)))), ((int)(((byte)(182)))));
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvMedRec.DefaultCellStyle = dataGridViewCellStyle4;
+            this.dgvMedRec.GridColor = System.Drawing.Color.White;
+            this.dgvMedRec.Location = new System.Drawing.Point(23, 268);
+            this.dgvMedRec.Name = "dgvMedRec";
+            this.dgvMedRec.Size = new System.Drawing.Size(600, 73);
+            this.dgvMedRec.TabIndex = 106;
+            // 
+            // txtSI
+            // 
+            this.txtSI.Enabled = false;
+            this.txtSI.Font = new System.Drawing.Font("Open Sans", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSI.Location = new System.Drawing.Point(639, 186);
+            this.txtSI.Multiline = true;
+            this.txtSI.Name = "txtSI";
+            this.txtSI.Size = new System.Drawing.Size(610, 100);
+            this.txtSI.TabIndex = 104;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Open Sans", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Location = new System.Drawing.Point(635, 163);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(162, 20);
+            this.label16.TabIndex = 105;
+            this.label16.Text = "Special Instructions:";
+            // 
+            // txtMF
+            // 
+            this.txtMF.Enabled = false;
+            this.txtMF.Font = new System.Drawing.Font("Open Sans", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMF.Location = new System.Drawing.Point(639, 42);
+            this.txtMF.Multiline = true;
+            this.txtMF.Name = "txtMF";
+            this.txtMF.Size = new System.Drawing.Size(610, 100);
+            this.txtMF.TabIndex = 102;
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Open Sans", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.Location = new System.Drawing.Point(635, 19);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(75, 20);
+            this.label18.TabIndex = 103;
+            this.label18.Text = "Findings:";
             // 
             // button1
             // 
@@ -86,360 +197,260 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Open Sans", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(390, 818);
+            this.button1.Location = new System.Drawing.Point(514, 403);
             this.button1.Margin = new System.Windows.Forms.Padding(16);
             this.button1.Name = "button1";
             this.button1.Padding = new System.Windows.Forms.Padding(5);
             this.button1.Size = new System.Drawing.Size(79, 36);
-            this.button1.TabIndex = 59;
+            this.button1.TabIndex = 101;
             this.button1.Text = "Cancel";
             this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // button2
             // 
             this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(184)))), ((int)(((byte)(182)))));
+            this.button2.Enabled = false;
             this.button2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(184)))), ((int)(((byte)(182)))));
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(479, 811);
+            this.button2.Location = new System.Drawing.Point(751, 389);
             this.button2.Margin = new System.Windows.Forms.Padding(16);
             this.button2.Name = "button2";
             this.button2.Padding = new System.Windows.Forms.Padding(8);
             this.button2.Size = new System.Drawing.Size(144, 50);
-            this.button2.TabIndex = 58;
+            this.button2.TabIndex = 100;
             this.button2.Text = "SAVE";
             this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.button2.Click += new System.EventHandler(this.button2_Click_1);
             // 
-            // txtMF
+            // txtMH
             // 
-            this.txtMF.Font = new System.Drawing.Font("Open Sans", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMF.Location = new System.Drawing.Point(23, 143);
-            this.txtMF.Multiline = true;
-            this.txtMF.Name = "txtMF";
-            this.txtMF.Size = new System.Drawing.Size(610, 100);
-            this.txtMF.TabIndex = 56;
+            this.txtMH.Enabled = false;
+            this.txtMH.Font = new System.Drawing.Font("Open Sans", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMH.Location = new System.Drawing.Point(639, 314);
+            this.txtMH.Multiline = true;
+            this.txtMH.Name = "txtMH";
+            this.txtMH.Size = new System.Drawing.Size(610, 50);
+            this.txtMH.TabIndex = 98;
             // 
             // label15
             // 
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Open Sans", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(19, 120);
+            this.label15.Location = new System.Drawing.Point(635, 289);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(138, 20);
-            this.label15.TabIndex = 57;
-            this.label15.Text = "Medical Findings:";
+            this.label15.Size = new System.Drawing.Size(131, 20);
+            this.label15.TabIndex = 99;
+            this.label15.Text = "Medical History:";
+            // 
+            // label36
+            // 
+            this.label36.AutoSize = true;
+            this.label36.Font = new System.Drawing.Font("Open Sans", 13F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label36.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(74)))), ((int)(((byte)(90)))));
+            this.label36.Location = new System.Drawing.Point(19, 32);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(143, 24);
+            this.label36.TabIndex = 97;
+            this.label36.Text = "Patient Details";
             // 
             // label17
             // 
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Open Sans", 13F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(74)))), ((int)(((byte)(90)))));
-            this.label17.Location = new System.Drawing.Point(19, 80);
+            this.label17.Location = new System.Drawing.Point(19, 241);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(155, 24);
-            this.label17.TabIndex = 55;
+            this.label17.TabIndex = 96;
             this.label17.Text = "Medical Records";
             // 
-            // txtSI
+            // txtAddress
             // 
-            this.txtSI.Font = new System.Drawing.Font("Open Sans", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSI.Location = new System.Drawing.Point(23, 287);
-            this.txtSI.Multiline = true;
-            this.txtSI.Name = "txtSI";
-            this.txtSI.Size = new System.Drawing.Size(610, 100);
-            this.txtSI.TabIndex = 60;
+            this.txtAddress.Enabled = false;
+            this.txtAddress.Font = new System.Drawing.Font("Open Sans", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtAddress.Location = new System.Drawing.Point(23, 178);
+            this.txtAddress.Multiline = true;
+            this.txtAddress.Name = "txtAddress";
+            this.txtAddress.Size = new System.Drawing.Size(610, 50);
+            this.txtAddress.TabIndex = 94;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Open Sans", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(19, 155);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(71, 20);
+            this.label8.TabIndex = 95;
+            this.label8.Text = "Address:";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Open Sans", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(361, 118);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(73, 20);
+            this.label7.TabIndex = 93;
+            this.label7.Text = "Contact:";
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.CalendarForeColor = System.Drawing.Color.Black;
+            this.dateTimePicker1.CalendarMonthBackground = System.Drawing.Color.White;
+            this.dateTimePicker1.CalendarTitleBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(184)))), ((int)(((byte)(182)))));
+            this.dateTimePicker1.CalendarTitleForeColor = System.Drawing.Color.Black;
+            this.dateTimePicker1.Enabled = false;
+            this.dateTimePicker1.Font = new System.Drawing.Font("Open Sans", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePicker1.Location = new System.Drawing.Point(216, 115);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(121, 27);
+            this.dateTimePicker1.TabIndex = 92;
+            this.dateTimePicker1.Value = new System.DateTime(2017, 6, 28, 0, 46, 43, 0);
+            // 
+            // txtContact
+            // 
+            this.txtContact.Enabled = false;
+            this.txtContact.Font = new System.Drawing.Font("Open Sans", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtContact.Location = new System.Drawing.Point(440, 115);
+            this.txtContact.Name = "txtContact";
+            this.txtContact.Size = new System.Drawing.Size(193, 27);
+            this.txtContact.TabIndex = 91;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Open Sans", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(131, 118);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(79, 20);
+            this.label3.TabIndex = 90;
+            this.label3.Text = "Birthday:";
+            // 
+            // cboGender
+            // 
+            this.cboGender.Enabled = false;
+            this.cboGender.Font = new System.Drawing.Font("Open Sans", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cboGender.FormattingEnabled = true;
+            this.cboGender.Items.AddRange(new object[] {
+            "M",
+            "F"});
+            this.cboGender.Location = new System.Drawing.Point(584, 73);
+            this.cboGender.Name = "cboGender";
+            this.cboGender.Size = new System.Drawing.Size(49, 28);
+            this.cboGender.TabIndex = 85;
+            // 
+            // txtFirst
+            // 
+            this.txtFirst.Enabled = false;
+            this.txtFirst.Font = new System.Drawing.Font("Open Sans", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtFirst.Location = new System.Drawing.Point(365, 74);
+            this.txtFirst.Name = "txtFirst";
+            this.txtFirst.Size = new System.Drawing.Size(130, 27);
+            this.txtFirst.TabIndex = 84;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Open Sans", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(263, 77);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(96, 20);
+            this.label6.TabIndex = 89;
+            this.label6.Text = "First Name:";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Open Sans", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(510, 77);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(68, 20);
+            this.label5.TabIndex = 88;
+            this.label5.Text = "Gender:";
+            // 
+            // txtAge
+            // 
+            this.txtAge.Enabled = false;
+            this.txtAge.Font = new System.Drawing.Font("Open Sans", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtAge.Location = new System.Drawing.Point(64, 115);
+            this.txtAge.Name = "txtAge";
+            this.txtAge.Size = new System.Drawing.Size(49, 27);
+            this.txtAge.TabIndex = 86;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Open Sans", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(19, 118);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(40, 20);
+            this.label4.TabIndex = 87;
+            this.label4.Text = "Age:";
+            // 
+            // txtLast
+            // 
+            this.txtLast.Enabled = false;
+            this.txtLast.Font = new System.Drawing.Font("Open Sans", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtLast.Location = new System.Drawing.Point(118, 74);
+            this.txtLast.Name = "txtLast";
+            this.txtLast.Size = new System.Drawing.Size(130, 27);
+            this.txtLast.TabIndex = 83;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Open Sans", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(19, 264);
+            this.label2.Location = new System.Drawing.Point(19, 77);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(162, 20);
-            this.label2.TabIndex = 61;
-            this.label2.Text = "Special Instructions:";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Open Sans", 13F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(74)))), ((int)(((byte)(90)))));
-            this.label9.Location = new System.Drawing.Point(19, 418);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(127, 24);
-            this.label9.TabIndex = 78;
-            this.label9.Text = "Prescriptions";
-            // 
-            // btnDelete
-            // 
-            this.btnDelete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(184)))), ((int)(((byte)(182)))));
-            this.btnDelete.Enabled = false;
-            this.btnDelete.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(184)))), ((int)(((byte)(182)))));
-            this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDelete.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDelete.ForeColor = System.Drawing.Color.White;
-            this.btnDelete.Location = new System.Drawing.Point(414, 581);
-            this.btnDelete.Margin = new System.Windows.Forms.Padding(16);
-            this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(119, 32);
-            this.btnDelete.TabIndex = 77;
-            this.btnDelete.Text = "Delete";
-            this.btnDelete.UseVisualStyleBackColor = false;
-            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
-            // 
-            // btnAdd
-            // 
-            this.btnAdd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(184)))), ((int)(((byte)(182)))));
-            this.btnAdd.Enabled = false;
-            this.btnAdd.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(184)))), ((int)(((byte)(182)))));
-            this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAdd.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdd.ForeColor = System.Drawing.Color.White;
-            this.btnAdd.Location = new System.Drawing.Point(112, 581);
-            this.btnAdd.Margin = new System.Windows.Forms.Padding(16);
-            this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(119, 32);
-            this.btnAdd.TabIndex = 75;
-            this.btnAdd.Text = "Add";
-            this.btnAdd.UseVisualStyleBackColor = false;
-            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
-            // 
-            // cboInterval
-            // 
-            this.cboInterval.Enabled = false;
-            this.cboInterval.Font = new System.Drawing.Font("Open Sans", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cboInterval.FormattingEnabled = true;
-            this.cboInterval.Items.AddRange(new object[] {
-            "Once a day (Day)",
-            "Once a day (Night)",
-            "Twice a day",
-            "Three times a day",
-            "Four times a day",
-            "Every 4 hours",
-            "Every 6 hours",
-            "Every 8 hours",
-            "Before meals",
-            "After meals"});
-            this.cboInterval.Location = new System.Drawing.Point(148, 539);
-            this.cboInterval.Name = "cboInterval";
-            this.cboInterval.Size = new System.Drawing.Size(221, 28);
-            this.cboInterval.TabIndex = 73;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Open Sans", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(22, 543);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(120, 20);
-            this.label3.TabIndex = 74;
-            this.label3.Text = "Dosage Interval:";
-            // 
-            // cboForm
-            // 
-            this.cboForm.Enabled = false;
-            this.cboForm.Font = new System.Drawing.Font("Open Sans", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cboForm.FormattingEnabled = true;
-            this.cboForm.Items.AddRange(new object[] {
-            "Capsule",
-            "Enteric coated",
-            "Elixir",
-            "Liquid",
-            "Sustained",
-            "Solution",
-            "Suppository",
-            "Suspension",
-            "Syrup",
-            "Tablet"});
-            this.cboForm.Location = new System.Drawing.Point(439, 501);
-            this.cboForm.Name = "cboForm";
-            this.cboForm.Size = new System.Drawing.Size(194, 28);
-            this.cboForm.TabIndex = 71;
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Open Sans", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(383, 504);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(50, 20);
-            this.label14.TabIndex = 72;
-            this.label14.Text = "Form:";
-            // 
-            // cboRoute
-            // 
-            this.cboRoute.Enabled = false;
-            this.cboRoute.Font = new System.Drawing.Font("Open Sans", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cboRoute.FormattingEnabled = true;
-            this.cboRoute.Items.AddRange(new object[] {
-            "Buccal",
-            "Intramuscular",
-            "Per orally",
-            "Per rectum",
-            "Subcutaneous",
-            "Sub-lingual",
-            "Topical",
-            "Per vaginal"});
-            this.cboRoute.Location = new System.Drawing.Point(205, 501);
-            this.cboRoute.Name = "cboRoute";
-            this.cboRoute.Size = new System.Drawing.Size(164, 28);
-            this.cboRoute.TabIndex = 69;
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Open Sans", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(22, 505);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(177, 20);
-            this.label13.TabIndex = 70;
-            this.label13.Text = "Route of Administration:";
-            // 
-            // txtDosage
-            // 
-            this.txtDosage.Enabled = false;
-            this.txtDosage.Font = new System.Drawing.Font("Open Sans", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDosage.Location = new System.Drawing.Point(453, 464);
-            this.txtDosage.Name = "txtDosage";
-            this.txtDosage.Size = new System.Drawing.Size(180, 27);
-            this.txtDosage.TabIndex = 65;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Open Sans", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(383, 464);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(64, 20);
-            this.label10.TabIndex = 68;
-            this.label10.Text = "Dosage:";
-            // 
-            // txtNote
-            // 
-            this.txtNote.Enabled = false;
-            this.txtNote.Font = new System.Drawing.Font("Open Sans", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNote.Location = new System.Drawing.Point(437, 540);
-            this.txtNote.Name = "txtNote";
-            this.txtNote.Size = new System.Drawing.Size(196, 27);
-            this.txtNote.TabIndex = 66;
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Open Sans", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(385, 542);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(46, 20);
-            this.label11.TabIndex = 67;
-            this.label11.Text = "Note:";
-            // 
-            // txtMedName
-            // 
-            this.txtMedName.Enabled = false;
-            this.txtMedName.Font = new System.Drawing.Font("Open Sans", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMedName.Location = new System.Drawing.Point(149, 464);
-            this.txtMedName.Name = "txtMedName";
-            this.txtMedName.Size = new System.Drawing.Size(220, 27);
-            this.txtMedName.TabIndex = 64;
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Open Sans", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(22, 467);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(121, 20);
-            this.label12.TabIndex = 63;
-            this.label12.Text = "Medicine Name:";
-            // 
-            // dgvPrescription
-            // 
-            this.dgvPrescription.AllowUserToAddRows = false;
-            this.dgvPrescription.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvPrescription.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
-            this.dgvPrescription.BackgroundColor = System.Drawing.Color.White;
-            this.dgvPrescription.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dgvPrescription.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Open Sans", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle9.Padding = new System.Windows.Forms.Padding(2);
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(184)))), ((int)(((byte)(182)))));
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvPrescription.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle9;
-            this.dgvPrescription.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle10.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle10.Font = new System.Drawing.Font("Open Sans", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle10.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(184)))), ((int)(((byte)(182)))));
-            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvPrescription.DefaultCellStyle = dataGridViewCellStyle10;
-            this.dgvPrescription.GridColor = System.Drawing.Color.White;
-            this.dgvPrescription.Location = new System.Drawing.Point(23, 631);
-            this.dgvPrescription.Name = "dgvPrescription";
-            this.dgvPrescription.Size = new System.Drawing.Size(600, 150);
-            this.dgvPrescription.TabIndex = 62;
-            // 
-            // btnEdit
-            // 
-            this.btnEdit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(184)))), ((int)(((byte)(182)))));
-            this.btnEdit.Enabled = false;
-            this.btnEdit.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(184)))), ((int)(((byte)(182)))));
-            this.btnEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEdit.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEdit.ForeColor = System.Drawing.Color.White;
-            this.btnEdit.Location = new System.Drawing.Point(267, 581);
-            this.btnEdit.Margin = new System.Windows.Forms.Padding(16);
-            this.btnEdit.Name = "btnEdit";
-            this.btnEdit.Size = new System.Drawing.Size(119, 32);
-            this.btnEdit.TabIndex = 76;
-            this.btnEdit.Text = "Edit";
-            this.btnEdit.UseVisualStyleBackColor = false;
-            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
+            this.label2.Size = new System.Drawing.Size(93, 20);
+            this.label2.TabIndex = 82;
+            this.label2.Text = "Last Name:";
             // 
             // Update_InPatientDetailsDoctor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Transparent;
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.btnDelete);
-            this.Controls.Add(this.btnAdd);
-            this.Controls.Add(this.cboInterval);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.cboForm);
-            this.Controls.Add(this.label14);
-            this.Controls.Add(this.cboRoute);
-            this.Controls.Add(this.label13);
-            this.Controls.Add(this.txtDosage);
-            this.Controls.Add(this.label10);
-            this.Controls.Add(this.txtNote);
-            this.Controls.Add(this.label11);
-            this.Controls.Add(this.txtMedName);
-            this.Controls.Add(this.label12);
-            this.Controls.Add(this.dgvPrescription);
-            this.Controls.Add(this.btnEdit);
+            this.Controls.Add(this.txtHeight);
+            this.Controls.Add(this.txtWeight);
+            this.Controls.Add(this.label21);
+            this.Controls.Add(this.label19);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.dgvMedRec);
             this.Controls.Add(this.txtSI);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label16);
+            this.Controls.Add(this.txtMF);
+            this.Controls.Add(this.label18);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.txtMF);
+            this.Controls.Add(this.txtMH);
             this.Controls.Add(this.label15);
+            this.Controls.Add(this.label36);
             this.Controls.Add(this.label17);
-            this.Controls.Add(this.lblName);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.txtAddress);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.txtContact);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.cboGender);
+            this.Controls.Add(this.txtFirst);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.txtAge);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.txtLast);
+            this.Controls.Add(this.label2);
             this.Name = "Update_InPatientDetailsDoctor";
             this.Padding = new System.Windows.Forms.Padding(16, 32, 16, 16);
-            this.Size = new System.Drawing.Size(1000, 1000);
+            this.Size = new System.Drawing.Size(1150, 635);
             this.Load += new System.EventHandler(this.Update_InPatientDetailsDoctor_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvPrescription)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvMedRec)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -447,31 +458,36 @@
 
         #endregion
 
-        private System.Windows.Forms.Label lblName;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox txtHeight;
+        private System.Windows.Forms.TextBox txtWeight;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.DataGridView dgvMedRec;
+        private System.Windows.Forms.TextBox txtSI;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.TextBox txtMF;
+        private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.TextBox txtMF;
+        private System.Windows.Forms.TextBox txtMH;
         private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label36;
         private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.TextBox txtSI;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Button btnDelete;
-        private System.Windows.Forms.Button btnAdd;
-        private System.Windows.Forms.ComboBox cboInterval;
+        private System.Windows.Forms.TextBox txtAddress;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.TextBox txtContact;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.ComboBox cboForm;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.ComboBox cboRoute;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.TextBox txtDosage;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox txtNote;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.TextBox txtMedName;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.DataGridView dgvPrescription;
-        private System.Windows.Forms.Button btnEdit;
+        private System.Windows.Forms.ComboBox cboGender;
+        private System.Windows.Forms.TextBox txtFirst;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox txtAge;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox txtLast;
+        private System.Windows.Forms.Label label2;
+
     }
 }

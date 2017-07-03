@@ -14,74 +14,71 @@ namespace Prescription_Assistance
     {
         Class_Alert ca = new Class_Alert();
         Room_Layout rl = new Room_Layout();
-        string bed;
 
-        public Patient_Dashboard(string bed)
+        public Patient_Dashboard()
         {
             InitializeComponent();
-            this.bed = bed;
-            ca.Bed_id = bed; 
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             ca.Assistance = "Ward";
             ca.Status = "Undone";
-            ca.insertAlert();
+            //ca.insertAlert();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             ca.Assistance = "Private";
             ca.Status = "Undone";
-            ca.insertAlert();
+            //ca.insertAlert();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
             ca.Assistance = "Room Transfer";
             ca.Status = "Undone";
-            ca.insertAlert();
+            //ca.insertAlert();
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
             ca.Assistance = "Medical Consultation";
             ca.Status = "Undone";
-            ca.insertAlert();
+            //ca.insertAlert();
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
             ca.Assistance = "Check Medical Status";
             ca.Status = "Undone";
-            ca.insertAlert();
+            //ca.insertAlert();
         }
 
         private void button6_Click(object sender, EventArgs e)
         {
             ca.Assistance = "Request for Wheelchair";
             ca.Status = "Undone";
-            ca.insertAlert();
+            //ca.insertAlert();
         }
 
         private void button7_Click(object sender, EventArgs e)
         {
             ca.Assistance = "Request for Shuttle";
             ca.Status = "Undone";
-            ca.insertAlert();
+            //ca.insertAlert();
         }
 
         private void button8_Click(object sender, EventArgs e)
         {
             ca.Assistance = "Room Maintenance";
             ca.Status = "Undone";
-            ca.insertAlert();
+            //ca.insertAlert();
         }
 
         private void button9_Click(object sender, EventArgs e)
         {
-            Form1 f = new Form1();
+            Main f = new Main();
             f.Show();
             this.Close();
         }

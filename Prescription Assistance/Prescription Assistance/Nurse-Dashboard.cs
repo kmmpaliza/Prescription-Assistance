@@ -19,7 +19,7 @@ namespace Prescription_Assistance
         private void Nurse_Dashboard_Load(object sender, EventArgs e)
         {
             //this.TopMost = true;
-            //this.FormBorderStyle = Fo rmBorderStyle.None;
+            //this.FormBorderStyle = FormBorderStyle.None;
             this.WindowState = FormWindowState.Maximized;
 
             pnlOverlay.Controls.Clear();
@@ -95,12 +95,12 @@ namespace Prescription_Assistance
             pnlOverlay.Controls.Add(viewInPatient);
         }
 
-        public void changetoViewPatientDetails(string id)
+        public void changetoViewPatient()
         {
             pnlOverlay.Visible = true;
             pnlOverlay.Controls.Clear();
-            var viewinPatientDetails = new View_InPatientDetails(id);
-            pnlOverlay.Controls.Add(viewinPatientDetails);
+            var viewInPatient = new View_InPatient_Nurse();
+            pnlOverlay.Controls.Add(viewInPatient);
         }
 
         public void changetoUpdatePatientAsNurse(string id)
@@ -116,6 +116,14 @@ namespace Prescription_Assistance
             Form1 f = new Form1();
             f.Show();
             this.Close();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            pnlOverlay.Visible = true;
+            pnlOverlay.Controls.Clear();
+            var abc = new InsertPrescription_Nurse();
+            pnlOverlay.Controls.Add(abc);
         }
     }
 }

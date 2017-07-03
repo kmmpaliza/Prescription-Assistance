@@ -154,11 +154,11 @@
             this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button9.Font = new System.Drawing.Font("Open Sans", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button9.ForeColor = System.Drawing.Color.Black;
-            this.button9.Location = new System.Drawing.Point(1255, 687);
+            this.button9.Location = new System.Drawing.Point(1149, 437);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(95, 42);
             this.button9.TabIndex = 19;
-            this.button9.Text = "LOG OUT";
+            this.button9.Text = "CLOSE";
             this.button9.UseVisualStyleBackColor = false;
             this.button9.Click += new System.EventHandler(this.button9_Click);
             // 

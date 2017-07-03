@@ -15,7 +15,38 @@ namespace ClassLibrary
         private static SqlConnection conn = new SqlConnection(conString);
         #endregion
         #region Variables
-        private string last_name, first_name, gender, age, birthday, address, contact, room_id, bed_id, patient_id;
+        private string last_name, first_name, gender, age, birthday, address, contact, patient_id,
+        weight, height, medical_history, medical_findings, special_instructions;
+
+        public string Medical_findings
+        {
+            get { return medical_findings; }
+            set { medical_findings = value; }
+        }
+
+        public string Special_instructions
+        {
+            get { return special_instructions; }
+            set { special_instructions = value; }
+        }
+
+        public string Medical_history
+        {
+            get { return medical_history; }
+            set { medical_history = value; }
+        }
+
+        public string Height
+        {
+            get { return height; }
+            set { height = value; }
+        }
+
+        public string Weight
+        {
+            get { return weight; }
+            set { weight = value; }
+        }
 
         public string Address
         {
@@ -27,18 +58,6 @@ namespace ClassLibrary
         {
             get { return patient_id; }
             set { patient_id = value; }
-        }
-
-        public string Bed_id
-        {
-            get { return bed_id; }
-            set { bed_id = value; }
-        }
-
-        public string Room_id
-        {
-            get { return room_id; }
-            set { room_id = value; }
         }
 
         public string Contact
@@ -78,7 +97,6 @@ namespace ClassLibrary
         }
 
         #endregion
-        string id;
 
         public DataSet viewAllPatients()
         {
@@ -110,16 +128,14 @@ namespace ClassLibrary
             cmd.Parameters.Add("@Last_name", SqlDbType.VarChar).Value = last_name;
             cmd.Parameters.Add("@Gender", SqlDbType.VarChar).Value = gender;
             cmd.Parameters.Add("@Age", SqlDbType.VarChar).Value = age;
-            cmd.Parameters.Add("@Address", SqlDbType.VarChar).Value = address;
             cmd.Parameters.Add("@Contact", SqlDbType.VarChar).Value = contact;
-            cmd.Parameters.Add("@Birthday", SqlDbType.VarChar).Value = birthday;
             SqlDataAdapter da = new SqlDataAdapter(cmd);
             ds.Clear();
             da.Fill(ds, "search_Patient");
             return ds;
         }
 
-        public string insertNewPatient()
+        public void insertNewPatient()
         {
             conn.Open();
             SqlCommand cmd = new SqlCommand("insert_Patient", conn);
@@ -131,19 +147,13 @@ namespace ClassLibrary
             cmd.Parameters.Add("@Address", SqlDbType.VarChar).Value = address;
             cmd.Parameters.Add("@Contact", SqlDbType.VarChar).Value = contact;
             cmd.Parameters.Add("@Birthday", SqlDbType.VarChar).Value = birthday;
-            cmd.Parameters.Add("@Room_ID", SqlDbType.VarChar).Value = room_id;
-            cmd.Parameters.Add("@Bed_ID", SqlDbType.VarChar).Value = bed_id;
-            //cmd.ExecuteNonQuery();
-
-            SqlDataReader dr = cmd.ExecuteReader();
-            while (dr.Read())
-            {
-                id = dr[0].ToString();
-                break;
-            }
+            cmd.Parameters.Add("@Weight", SqlDbType.VarChar).Value = weight;
+            cmd.Parameters.Add("@Height", SqlDbType.VarChar).Value = height;
+            cmd.Parameters.Add("@Medical_History", SqlDbType.VarChar).Value = medical_history;
+            cmd.Parameters.Add("@Medical_Findings", SqlDbType.VarChar).Value = medical_findings;
+            cmd.Parameters.Add("@Special_Instructions", SqlDbType.VarChar).Value = special_instructions;
+            cmd.ExecuteNonQuery();
             conn.Close();
-
-            return id;
         }
 
         public void updatePatient()
@@ -159,6 +169,22 @@ namespace ClassLibrary
             cmd.Parameters.Add("@Address", SqlDbType.VarChar).Value = address;
             cmd.Parameters.Add("@Contact", SqlDbType.VarChar).Value = contact;
             cmd.Parameters.Add("@Birthday", SqlDbType.VarChar).Value = birthday;
+            cmd.Parameters.Add("@Weight", SqlDbType.VarChar).Value = weight;
+            cmd.Parameters.Add("@Height", SqlDbType.VarChar).Value = height;
+            cmd.Parameters.Add("@Medical_History", SqlDbType.VarChar).Value = medical_history;
+            cmd.ExecuteNonQuery();
+            conn.Close();
+        }
+
+        public void updatePatientDoctor()
+        {
+            conn.Open();
+
+            SqlCommand cmd = new SqlCommand("update_MedRecAsDoctor", conn);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.Add("@Patient_ID", SqlDbType.VarChar).Value = patient_id;
+            cmd.Parameters.Add("@Medical_Findings", SqlDbType.VarChar).Value = medical_findings;
+            cmd.Parameters.Add("@Special_Instructions", SqlDbType.VarChar).Value = special_instructions;
             cmd.ExecuteNonQuery();
             conn.Close();
         }

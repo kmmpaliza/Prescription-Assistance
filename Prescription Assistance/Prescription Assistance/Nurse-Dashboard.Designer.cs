@@ -47,7 +47,6 @@
             this.FifthFloorToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.allRoomsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pnlOverlay = new System.Windows.Forms.Panel();
-            this.pnlFrame.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -57,7 +56,6 @@
             // pnlFrame
             // 
             this.pnlFrame.AutoScroll = true;
-            this.pnlFrame.Controls.Add(this.pnlOverlay);
             this.pnlFrame.Location = new System.Drawing.Point(206, 66);
             this.pnlFrame.Name = "pnlFrame";
             this.pnlFrame.Size = new System.Drawing.Size(1174, 691);
@@ -88,6 +86,7 @@
             this.button5.TabIndex = 3;
             this.button5.Text = "Prescriptions";
             this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button4
             // 
@@ -237,23 +236,23 @@
             // pnlOverlay
             // 
             this.pnlOverlay.AutoScroll = true;
-            this.pnlOverlay.Location = new System.Drawing.Point(1, 0);
+            this.pnlOverlay.Location = new System.Drawing.Point(207, 66);
             this.pnlOverlay.Name = "pnlOverlay";
-            this.pnlOverlay.Size = new System.Drawing.Size(1174, 691);
-            this.pnlOverlay.TabIndex = 6;
+            this.pnlOverlay.Size = new System.Drawing.Size(1171, 673);
+            this.pnlOverlay.TabIndex = 4;
             // 
             // Nurse_Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1362, 741);
+            this.Controls.Add(this.pnlOverlay);
             this.Controls.Add(this.pnlFrame);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "Nurse_Dashboard";
             this.Text = "Nurse_Dashboard";
             this.Load += new System.EventHandler(this.Nurse_Dashboard_Load);
-            this.pnlFrame.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

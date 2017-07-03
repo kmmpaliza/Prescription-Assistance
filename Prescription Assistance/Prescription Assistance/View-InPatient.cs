@@ -41,7 +41,7 @@ namespace Prescription_Assistance
             if (e.ColumnIndex == 0)
             {
                 Doctor_Dashboard parent = (Doctor_Dashboard)this.ParentForm;
-                parent.changetoViewPatientDetails(dataGridView1.CurrentRow.Cells[1].Value.ToString());
+                parent.changetoUpdatePatientAsDoctor(dataGridView1.CurrentRow.Cells[1].Value.ToString());
             }
         }
 
@@ -53,15 +53,10 @@ namespace Prescription_Assistance
             cp.Gender = txtSearch.Text;
             cp.Age = txtSearch.Text;
             cp.Birthday = txtSearch.Text;
-            cp.Address = txtSearch.Text;
-            cp.Contact = txtSearch.Text;
 
             ds2 = cp.searchPatient();
             dataGridView1.Refresh();
-            dataGridView1.DataSource = ds2.Tables["search_Patient"];
-            
+            dataGridView1.DataSource = ds2.Tables["search_Patient"];            
         }
-
-
     }
 }

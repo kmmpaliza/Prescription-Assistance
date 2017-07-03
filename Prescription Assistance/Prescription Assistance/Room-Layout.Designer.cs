@@ -33,6 +33,7 @@
             this.label9 = new System.Windows.Forms.Label();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.ePanel = new Prescription_Assistance.ExtendedPanel();
             this.label28 = new System.Windows.Forms.Label();
             this.pictureBox28 = new System.Windows.Forms.PictureBox();
             this.label29 = new System.Windows.Forms.Label();
@@ -146,7 +147,6 @@
             this.panel19 = new System.Windows.Forms.Panel();
             this.label49 = new System.Windows.Forms.Label();
             this.pictureBox49 = new System.Windows.Forms.PictureBox();
-            this.ePanel = new Prescription_Assistance.ExtendedPanel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             this.panel4.SuspendLayout();
@@ -279,6 +279,18 @@
             this.panel4.Padding = new System.Windows.Forms.Padding(8);
             this.panel4.Size = new System.Drawing.Size(360, 283);
             this.panel4.TabIndex = 18;
+            // 
+            // ePanel
+            // 
+            this.ePanel.BackColor = System.Drawing.Color.White;
+            this.ePanel.ForeColor = System.Drawing.Color.Transparent;
+            this.ePanel.Location = new System.Drawing.Point(0, 0);
+            this.ePanel.Name = "ePanel";
+            this.ePanel.Opacity = 50;
+            this.ePanel.Size = new System.Drawing.Size(1112, 592);
+            this.ePanel.TabIndex = 31;
+            this.ePanel.Text = "extendedPanel1";
+            this.ePanel.Click += new System.EventHandler(this.ePanel_Click);
             // 
             // label28
             // 
@@ -1531,18 +1543,6 @@
             this.pictureBox49.TabIndex = 21;
             this.pictureBox49.TabStop = false;
             // 
-            // ePanel
-            // 
-            this.ePanel.BackColor = System.Drawing.Color.White;
-            this.ePanel.ForeColor = System.Drawing.Color.Transparent;
-            this.ePanel.Location = new System.Drawing.Point(0, 0);
-            this.ePanel.Name = "ePanel";
-            this.ePanel.Opacity = 50;
-            this.ePanel.Size = new System.Drawing.Size(1112, 592);
-            this.ePanel.TabIndex = 31;
-            this.ePanel.Text = "extendedPanel1";
-            this.ePanel.Click += new System.EventHandler(this.ePanel_Click);
-            // 
             // Room_Layout
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1568,7 +1568,7 @@
             this.Controls.Add(this.panel4);
             this.Name = "Room_Layout";
             this.Padding = new System.Windows.Forms.Padding(16);
-            this.Size = new System.Drawing.Size(1150, 640);
+            this.Size = new System.Drawing.Size(1150, 635);
             this.Load += new System.EventHandler(this.Room_Layout_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

@@ -178,6 +178,12 @@
     <Compile Include="Room-Layout.Designer.cs">
       <DependentUpon>Room-Layout.cs</DependentUpon>
     </Compile>
+    <Compile Include="RoomType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RoomType.Designer.cs">
+      <DependentUpon>RoomType.cs</DependentUpon>
+    </Compile>
     <Compile Include="Show-PatientinBed.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -275,6 +281,9 @@
     <EmbeddedResource Include="Room-Layout.resx">
       <DependentUpon>Room-Layout.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="RoomType.resx">
+      <DependentUpon>RoomType.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Show-PatientinBed.resx">
       <DependentUpon>Show-PatientinBed.cs</DependentUpon>
     </EmbeddedResource>
@@ -334,6 +343,52 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>Database1.mdf</DependentUpon>
     </Content>
+    <None Include="Resources\logoo4.png" />
+    <None Include="Resources\room type1.jpg" />
+    <None Include="Resources\room type.jpg" />
+    <None Include="Resources\ward.png" />
+    <None Include="Resources\privateroooom2.jpg" />
+    <None Include="Resources\privateroooom1.jpg" />
+    <None Include="Resources\privateroooom.jpg" />
+    <None Include="Resources\stafffffffff.jpg" />
+    <None Include="Resources\patient1.jpg" />
+    <None Include="Resources\patient.jpg" />
+    <None Include="Resources\meal.jpg" />
+    <None Include="Resources\pharmacy.jpg" />
+    <None Include="Resources\roommaint.jpg" />
+    <None Include="Resources\shut.jpg" />
+    <None Include="Resources\wheel.jpg" />
+    <None Include="Resources\cons.jpg" />
+    <None Include="Resources\room.jpg" />
+    <None Include="Resources\medicalsta.jpg" />
+    <None Include="Resources\greenbg2.jpg" />
+    <None Include="Resources\medical.jpg" />
+    <None Include="Resources\btnTrans2.jpg" />
+    <None Include="Resources\btnTrans1.jpg" />
+    <None Include="Resources\btnTrans.jpg" />
+    <None Include="Resources\logoo3.png" />
+    <None Include="Resources\patienttt.jpg" />
+    <None Include="Resources\Stafffff.jpg" />
+    <None Include="Resources\btnStaaaff.jpg" />
+    <None Include="Resources\greenbg1.jpg" />
+    <None Include="Resources\greenbg.jpg" />
+    <None Include="Resources\backuliit1.jpg" />
+    <None Include="Resources\backuliit.jpg" />
+    <None Include="Resources\logoo2.png" />
+    <None Include="Resources\staff.jpg" />
+    <None Include="Resources\Untitled.jpg" />
+    <None Include="Resources\btnpat.png" />
+    <None Include="Resources\btnstaff3.png" />
+    <None Include="Resources\btnstaff2.png" />
+    <None Include="Resources\btnstaff1.png" />
+    <None Include="Resources\btnstaff.png" />
+    <None Include="Resources\baccck.jpg" />
+    <None Include="Resources\logoo1.png" />
+    <None Include="Resources\logoo.png" />
+    <None Include="Resources\19679704_900769266743482_1283121043_n %281%292.png" />
+    <None Include="Resources\19679704_900769266743482_1283121043_n %281%291.png" />
+    <None Include="Resources\19679704_900769266743482_1283121043_n %281%29.png" />
+    <None Include="Images\bg-banner.jpg" />
     <Content Include="Images\logo.png" />
     <None Include="Resources\cancel1.png" />
     <None Include="Resources\cancel.png" />

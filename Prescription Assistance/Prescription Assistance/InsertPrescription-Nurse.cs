@@ -28,5 +28,10 @@ namespace Prescription_Assistance
             dgvPrescription.DataSource = ds.Tables[0];
             dgvPrescription.Columns[0].Visible = false;
         }
+
+        private void dgvPrescription_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

@@ -30,8 +30,10 @@ namespace Prescription_Assistance
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Patient_Dashboard pd = new Patient_Dashboard();
-            pd.Show();
+ 
+           // Patient_Dashboard pd = new Patient_Dashboard();
+            RoomType rt = new RoomType();
+            rt.Show();
             this.Hide();
         }
     }

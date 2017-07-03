@@ -54,17 +54,17 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(184)))), ((int)(((byte)(182)))));
+            this.panel1.BackColor = System.Drawing.Color.Green;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.button9);
-            this.panel1.Location = new System.Drawing.Point(515, 19);
+            this.panel1.Location = new System.Drawing.Point(616, 35);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(230, 276);
             this.panel1.TabIndex = 13;
             // 
             // button9
             // 
-            this.button9.Font = new System.Drawing.Font("Open Sans", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button9.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button9.Image = global::Prescription_Assistance.Properties.Resources.privateotherside;
             this.button9.Location = new System.Drawing.Point(3, 48);
             this.button9.Name = "button9";
@@ -76,17 +76,17 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(184)))), ((int)(((byte)(182)))));
+            this.panel2.BackColor = System.Drawing.Color.Green;
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel2.Controls.Add(this.button10);
-            this.panel2.Location = new System.Drawing.Point(751, 19);
+            this.panel2.Location = new System.Drawing.Point(852, 35);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(230, 276);
             this.panel2.TabIndex = 15;
             // 
             // button10
             // 
-            this.button10.Font = new System.Drawing.Font("Open Sans", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button10.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button10.Image = global::Prescription_Assistance.Properties.Resources.private1;
             this.button10.Location = new System.Drawing.Point(26, 48);
             this.button10.Name = "button10";
@@ -98,17 +98,17 @@
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(184)))), ((int)(((byte)(182)))));
+            this.panel3.BackColor = System.Drawing.Color.Green;
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel3.Controls.Add(this.button11);
-            this.panel3.Location = new System.Drawing.Point(515, 305);
+            this.panel3.Location = new System.Drawing.Point(616, 321);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(230, 276);
             this.panel3.TabIndex = 15;
             // 
             // button11
             // 
-            this.button11.Font = new System.Drawing.Font("Open Sans", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button11.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button11.Image = global::Prescription_Assistance.Properties.Resources.privateotherside;
             this.button11.Location = new System.Drawing.Point(3, 95);
             this.button11.Name = "button11";
@@ -120,17 +120,17 @@
             // 
             // panel4
             // 
-            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(184)))), ((int)(((byte)(182)))));
+            this.panel4.BackColor = System.Drawing.Color.Green;
             this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel4.Controls.Add(this.button12);
-            this.panel4.Location = new System.Drawing.Point(751, 305);
+            this.panel4.Location = new System.Drawing.Point(852, 321);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(230, 276);
             this.panel4.TabIndex = 16;
             // 
             // button12
             // 
-            this.button12.Font = new System.Drawing.Font("Open Sans", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button12.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button12.Image = global::Prescription_Assistance.Properties.Resources._private;
             this.button12.Location = new System.Drawing.Point(27, 95);
             this.button12.Name = "button12";
@@ -151,7 +151,7 @@
             this.panel5.Controls.Add(this.button3);
             this.panel5.Controls.Add(this.button2);
             this.panel5.Controls.Add(this.button1);
-            this.panel5.Location = new System.Drawing.Point(19, 19);
+            this.panel5.Location = new System.Drawing.Point(70, 35);
             this.panel5.Name = "panel5";
             this.panel5.Padding = new System.Windows.Forms.Padding(8);
             this.panel5.Size = new System.Drawing.Size(477, 562);
@@ -159,7 +159,7 @@
             // 
             // button8
             // 
-            this.button8.Font = new System.Drawing.Font("Open Sans", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button8.Image = global::Prescription_Assistance.Properties.Resources.beddown;
             this.button8.Location = new System.Drawing.Point(360, 351);
             this.button8.Name = "button8";
@@ -171,7 +171,7 @@
             // 
             // button7
             // 
-            this.button7.Font = new System.Drawing.Font("Open Sans", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button7.Image = global::Prescription_Assistance.Properties.Resources.beddown;
             this.button7.Location = new System.Drawing.Point(243, 351);
             this.button7.Name = "button7";
@@ -183,7 +183,7 @@
             // 
             // button6
             // 
-            this.button6.Font = new System.Drawing.Font("Open Sans", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button6.Image = global::Prescription_Assistance.Properties.Resources.beddown;
             this.button6.Location = new System.Drawing.Point(127, 351);
             this.button6.Name = "button6";
@@ -195,7 +195,7 @@
             // 
             // button5
             // 
-            this.button5.Font = new System.Drawing.Font("Open Sans", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.Image = global::Prescription_Assistance.Properties.Resources.beddown;
             this.button5.Location = new System.Drawing.Point(11, 351);
             this.button5.Name = "button5";
@@ -207,7 +207,7 @@
             // 
             // button4
             // 
-            this.button4.Font = new System.Drawing.Font("Open Sans", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.Image = global::Prescription_Assistance.Properties.Resources.bedup1;
             this.button4.Location = new System.Drawing.Point(358, 11);
             this.button4.Name = "button4";
@@ -219,7 +219,7 @@
             // 
             // button3
             // 
-            this.button3.Font = new System.Drawing.Font("Open Sans", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.Image = global::Prescription_Assistance.Properties.Resources.bedup1;
             this.button3.Location = new System.Drawing.Point(243, 11);
             this.button3.Name = "button3";
@@ -231,7 +231,7 @@
             // 
             // button2
             // 
-            this.button2.Font = new System.Drawing.Font("Open Sans", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.Image = global::Prescription_Assistance.Properties.Resources.bedup1;
             this.button2.Location = new System.Drawing.Point(127, 11);
             this.button2.Name = "button2";
@@ -243,7 +243,7 @@
             // 
             // button1
             // 
-            this.button1.Font = new System.Drawing.Font("Open Sans", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Image = global::Prescription_Assistance.Properties.Resources.bedup1;
             this.button1.Location = new System.Drawing.Point(11, 11);
             this.button1.Name = "button1";
@@ -265,7 +265,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "_3rdFloor";
             this.Padding = new System.Windows.Forms.Padding(16);
-            this.Size = new System.Drawing.Size(1000, 600);
+            this.Size = new System.Drawing.Size(1150, 635);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel3.ResumeLayout(false);

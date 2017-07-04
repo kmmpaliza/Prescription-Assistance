@@ -28,14 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.txtHeight = new System.Windows.Forms.TextBox();
             this.txtWeight = new System.Windows.Forms.TextBox();
             this.label21 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
-            this.dgvMedRec = new System.Windows.Forms.DataGridView();
             this.txtSI = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
             this.txtMF = new System.Windows.Forms.TextBox();
@@ -45,7 +42,6 @@
             this.txtMH = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
             this.label36 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
             this.txtAddress = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -60,14 +56,13 @@
             this.label4 = new System.Windows.Forms.Label();
             this.txtLast = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvMedRec)).BeginInit();
             this.SuspendLayout();
             // 
             // txtHeight
             // 
             this.txtHeight.Enabled = false;
             this.txtHeight.Font = new System.Drawing.Font("Open Sans", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtHeight.Location = new System.Drawing.Point(218, 374);
+            this.txtHeight.Location = new System.Drawing.Point(332, 148);
             this.txtHeight.Name = "txtHeight";
             this.txtHeight.Size = new System.Drawing.Size(49, 27);
             this.txtHeight.TabIndex = 111;
@@ -76,7 +71,7 @@
             // 
             this.txtWeight.Enabled = false;
             this.txtWeight.Font = new System.Drawing.Font("Open Sans", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtWeight.Location = new System.Drawing.Point(85, 374);
+            this.txtWeight.Location = new System.Drawing.Point(199, 148);
             this.txtWeight.Name = "txtWeight";
             this.txtWeight.Size = new System.Drawing.Size(49, 27);
             this.txtWeight.TabIndex = 110;
@@ -84,27 +79,27 @@
             // label21
             // 
             this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("Open Sans", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.Location = new System.Drawing.Point(155, 378);
+            this.label21.Font = new System.Drawing.Font("Open Sans", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.Location = new System.Drawing.Point(269, 152);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(57, 19);
+            this.label21.Size = new System.Drawing.Size(63, 20);
             this.label21.TabIndex = 109;
             this.label21.Text = "Height:";
             // 
             // label19
             // 
             this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Open Sans", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(19, 378);
+            this.label19.Font = new System.Drawing.Font("Open Sans", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.Location = new System.Drawing.Point(133, 152);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(60, 19);
+            this.label19.Size = new System.Drawing.Size(67, 20);
             this.label19.TabIndex = 108;
             this.label19.Text = "Weight:";
             // 
             // button3
             // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(184)))), ((int)(((byte)(182)))));
-            this.button3.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(184)))), ((int)(((byte)(182)))));
+            this.button3.BackColor = System.Drawing.Color.Green;
+            this.button3.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.White;
@@ -117,38 +112,6 @@
             this.button3.Text = "Edit";
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // dgvMedRec
-            // 
-            this.dgvMedRec.AllowUserToAddRows = false;
-            this.dgvMedRec.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvMedRec.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
-            this.dgvMedRec.BackgroundColor = System.Drawing.Color.Gray;
-            this.dgvMedRec.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dgvMedRec.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Open Sans", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle3.Padding = new System.Windows.Forms.Padding(2);
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(184)))), ((int)(((byte)(182)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvMedRec.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
-            this.dgvMedRec.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Open Sans", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(184)))), ((int)(((byte)(182)))));
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvMedRec.DefaultCellStyle = dataGridViewCellStyle4;
-            this.dgvMedRec.GridColor = System.Drawing.Color.White;
-            this.dgvMedRec.Location = new System.Drawing.Point(23, 268);
-            this.dgvMedRec.Name = "dgvMedRec";
-            this.dgvMedRec.Size = new System.Drawing.Size(600, 73);
-            this.dgvMedRec.TabIndex = 106;
             // 
             // txtSI
             // 
@@ -192,7 +155,7 @@
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.button1.BackColor = System.Drawing.Color.DimGray;
             this.button1.FlatAppearance.BorderColor = System.Drawing.SystemColors.ActiveBorder;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Open Sans", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -209,9 +172,9 @@
             // 
             // button2
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(184)))), ((int)(((byte)(182)))));
+            this.button2.BackColor = System.Drawing.Color.Green;
             this.button2.Enabled = false;
-            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(184)))), ((int)(((byte)(182)))));
+            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.White;
@@ -249,23 +212,12 @@
             // 
             this.label36.AutoSize = true;
             this.label36.Font = new System.Drawing.Font("Open Sans", 13F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label36.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(74)))), ((int)(((byte)(90)))));
+            this.label36.ForeColor = System.Drawing.Color.DarkGreen;
             this.label36.Location = new System.Drawing.Point(19, 32);
             this.label36.Name = "label36";
             this.label36.Size = new System.Drawing.Size(143, 24);
             this.label36.TabIndex = 97;
             this.label36.Text = "Patient Details";
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Open Sans", 13F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(74)))), ((int)(((byte)(90)))));
-            this.label17.Location = new System.Drawing.Point(19, 241);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(155, 24);
-            this.label17.TabIndex = 96;
-            this.label17.Text = "Medical Records";
             // 
             // txtAddress
             // 
@@ -421,7 +373,6 @@
             this.Controls.Add(this.label21);
             this.Controls.Add(this.label19);
             this.Controls.Add(this.button3);
-            this.Controls.Add(this.dgvMedRec);
             this.Controls.Add(this.txtSI);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.txtMF);
@@ -431,7 +382,6 @@
             this.Controls.Add(this.txtMH);
             this.Controls.Add(this.label15);
             this.Controls.Add(this.label36);
-            this.Controls.Add(this.label17);
             this.Controls.Add(this.txtAddress);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
@@ -450,7 +400,6 @@
             this.Padding = new System.Windows.Forms.Padding(16, 32, 16, 16);
             this.Size = new System.Drawing.Size(1150, 635);
             this.Load += new System.EventHandler(this.Update_InPatientDetailsDoctor_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvMedRec)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -463,7 +412,6 @@
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.DataGridView dgvMedRec;
         private System.Windows.Forms.TextBox txtSI;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.TextBox txtMF;
@@ -473,7 +421,6 @@
         private System.Windows.Forms.TextBox txtMH;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label36;
-        private System.Windows.Forms.Label label17;
         private System.Windows.Forms.TextBox txtAddress;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;

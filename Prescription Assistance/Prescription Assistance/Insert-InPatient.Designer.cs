@@ -135,8 +135,8 @@
             // 
             // button2
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(184)))), ((int)(((byte)(182)))));
-            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(184)))), ((int)(((byte)(182)))));
+            this.button2.BackColor = System.Drawing.Color.Green;
+            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.White;
@@ -152,7 +152,7 @@
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.button1.BackColor = System.Drawing.Color.DimGray;
             this.button1.FlatAppearance.BorderColor = System.Drawing.SystemColors.ActiveBorder;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Open Sans", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -201,7 +201,7 @@
             // 
             this.label36.AutoSize = true;
             this.label36.Font = new System.Drawing.Font("Open Sans", 13F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label36.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(74)))), ((int)(((byte)(90)))));
+            this.label36.ForeColor = System.Drawing.Color.DarkGreen;
             this.label36.Location = new System.Drawing.Point(19, 32);
             this.label36.Name = "label36";
             this.label36.Size = new System.Drawing.Size(143, 24);
@@ -227,20 +227,20 @@
             // label21
             // 
             this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("Open Sans", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.Font = new System.Drawing.Font("Open Sans", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label21.Location = new System.Drawing.Point(265, 118);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(57, 19);
+            this.label21.Size = new System.Drawing.Size(63, 20);
             this.label21.TabIndex = 113;
             this.label21.Text = "Height:";
             // 
             // label19
             // 
             this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Open Sans", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.Font = new System.Drawing.Font("Open Sans", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label19.Location = new System.Drawing.Point(129, 118);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(60, 19);
+            this.label19.Size = new System.Drawing.Size(67, 20);
             this.label19.TabIndex = 112;
             this.label19.Text = "Weight:";
             // 
@@ -270,7 +270,7 @@
             this.Controls.Add(this.label1);
             this.Name = "Insert_InPatient";
             this.Padding = new System.Windows.Forms.Padding(16, 32, 16, 16);
-            this.Size = new System.Drawing.Size(1000, 1000);
+            this.Size = new System.Drawing.Size(1150, 635);
             this.ResumeLayout(false);
             this.PerformLayout();
 

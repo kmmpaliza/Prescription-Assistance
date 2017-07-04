@@ -20,7 +20,7 @@ namespace Prescription_Assistance
         {
             Form1 f = new Form1();
             f.Show();
-            this.Close();
+            this.Hide();
         }
 
         private void Main_Load(object sender, EventArgs e)
@@ -30,7 +30,7 @@ namespace Prescription_Assistance
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Patient_Dashboard pd = new Patient_Dashboard();
+            Room_Type pd = new Room_Type();
             pd.Show();
             this.Hide();
         }

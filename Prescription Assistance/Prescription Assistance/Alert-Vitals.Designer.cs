@@ -40,9 +40,9 @@
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(9, 42);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(99, 22);
+            this.label2.Size = new System.Drawing.Size(196, 22);
             this.label2.TabIndex = 18;
-            this.label2.Text = "Vital Check";
+            this.label2.Text = "Vital Check for PA00014";
             // 
             // label1
             // 

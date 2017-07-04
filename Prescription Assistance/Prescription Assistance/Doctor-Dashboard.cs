@@ -137,5 +137,15 @@ namespace Prescription_Assistance
             pnlOverlay.Controls.Add(abc);
         }
 
+        private void button6_Click(object sender, EventArgs e)
+        {
+            //medical records
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            //test results
+        }
+
     }
 }

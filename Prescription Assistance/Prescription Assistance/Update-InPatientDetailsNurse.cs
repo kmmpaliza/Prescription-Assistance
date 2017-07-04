@@ -44,9 +44,6 @@ namespace Prescription_Assistance
             txtMH.Text = ds.Tables[0].Rows[0][11].ToString();
             txtMF.Text = ds.Tables[0].Rows[0][12].ToString();
             txtSI.Text = ds.Tables[0].Rows[0][13].ToString();
-
-            dgvMedRec.ReadOnly = true;
-            dgvMedRec.DataSource = ds2.Tables[0];
         }
 
         private void button2_Click(object sender, EventArgs e)

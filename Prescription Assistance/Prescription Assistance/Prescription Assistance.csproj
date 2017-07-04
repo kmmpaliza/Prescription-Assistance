@@ -140,6 +140,12 @@
     <Compile Include="Insert-InPatient.Designer.cs">
       <DependentUpon>Insert-InPatient.cs</DependentUpon>
     </Compile>
+    <Compile Include="Insert-MedicalRecords.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Insert-MedicalRecords.Designer.cs">
+      <DependentUpon>Insert-MedicalRecords.cs</DependentUpon>
+    </Compile>
     <Compile Include="InsertPrescription-Nurse.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -177,6 +183,12 @@
     </Compile>
     <Compile Include="Room-Layout.Designer.cs">
       <DependentUpon>Room-Layout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Room-Type.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Room-Type.Designer.cs">
+      <DependentUpon>Room-Type.cs</DependentUpon>
     </Compile>
     <Compile Include="Show-PatientinBed.cs">
       <SubType>UserControl</SubType>
@@ -247,6 +259,9 @@
     <EmbeddedResource Include="Insert-InPatient.resx">
       <DependentUpon>Insert-InPatient.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Insert-MedicalRecords.resx">
+      <DependentUpon>Insert-MedicalRecords.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="InsertPrescription-Nurse.resx">
       <DependentUpon>InsertPrescription-Nurse.cs</DependentUpon>
     </EmbeddedResource>
@@ -274,6 +289,9 @@
     </Compile>
     <EmbeddedResource Include="Room-Layout.resx">
       <DependentUpon>Room-Layout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Room-Type.resx">
+      <DependentUpon>Room-Type.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Show-PatientinBed.resx">
       <DependentUpon>Show-PatientinBed.cs</DependentUpon>
@@ -335,6 +353,22 @@
       <DependentUpon>Database1.mdf</DependentUpon>
     </Content>
     <Content Include="Images\logo.png" />
+    <None Include="Resources\meal.jpg" />
+    <None Include="Resources\pharmacy.jpg" />
+    <None Include="Resources\medicalsta.jpg" />
+    <None Include="Resources\wheel.jpg" />
+    <None Include="Resources\roommaint.jpg" />
+    <None Include="Resources\shut.jpg" />
+    <None Include="Resources\cons.jpg" />
+    <None Include="Resources\room.jpg" />
+    <None Include="Resources\logoo3.png" />
+    <None Include="Resources\logoo4.png" />
+    <None Include="Resources\ward.png" />
+    <None Include="Resources\privateroooom2.jpg" />
+    <None Include="Resources\logoo2.png" />
+    <None Include="Resources\patient1.jpg" />
+    <None Include="Resources\stafffffffff.jpg" />
+    <None Include="Resources\greenbg1.jpg" />
     <None Include="Resources\cancel1.png" />
     <None Include="Resources\cancel.png" />
     <None Include="Resources\maint.png" />

@@ -125,5 +125,23 @@ namespace Prescription_Assistance
             var abc = new InsertPrescription_Nurse();
             pnlOverlay.Controls.Add(abc);
         }
+
+        public void changetoInsertMedicalRecords(string id, string vid)
+        {
+            pnlOverlay.Visible = true;
+            pnlOverlay.Controls.Clear();
+            var abc = new Insert_MedicalRecords(id, vid);
+            pnlOverlay.Controls.Add(abc);
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            //medical records
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            //test results
+        }
     }
 }

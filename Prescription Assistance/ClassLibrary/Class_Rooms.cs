@@ -89,5 +89,15 @@ namespace ClassLibrary
             da.Fill(ds, "search_Room");
             return ds;
         }
+
+        public DataSet viewOccupiedRooms()
+        {
+            SqlCommand cmd = new SqlCommand("select_OccupiedRooms", conn);
+            cmd.CommandType = CommandType.StoredProcedure;
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            ds.Clear();
+            da.Fill(ds, "select_OccupiedRooms");
+            return ds;
+        }
     }
 }

@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Nurse_Dashboard));
             this.pnlFrame = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.button5 = new System.Windows.Forms.Button();
@@ -47,6 +46,8 @@
             this.FifthFloorToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.allRoomsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pnlOverlay = new System.Windows.Forms.Panel();
+            this.button7 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -64,6 +65,8 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(48)))), ((int)(((byte)(46)))));
+            this.panel2.Controls.Add(this.button7);
+            this.panel2.Controls.Add(this.button6);
             this.panel2.Controls.Add(this.button5);
             this.panel2.Controls.Add(this.button4);
             this.panel2.Controls.Add(this.button3);
@@ -80,7 +83,7 @@
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button5.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.ForeColor = System.Drawing.Color.White;
-            this.button5.Location = new System.Drawing.Point(-1, 183);
+            this.button5.Location = new System.Drawing.Point(-1, 165);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(201, 55);
             this.button5.TabIndex = 3;
@@ -95,7 +98,7 @@
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button4.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(0, 61);
+            this.button4.Location = new System.Drawing.Point(-1, 55);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(201, 55);
             this.button4.TabIndex = 2;
@@ -110,7 +113,7 @@
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button3.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(0, 122);
+            this.button3.Location = new System.Drawing.Point(-1, 110);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(201, 55);
             this.button3.TabIndex = 1;
@@ -135,7 +138,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(74)))), ((int)(((byte)(90)))));
+            this.panel1.BackColor = System.Drawing.Color.Green;
             this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.pictureBox1);
@@ -173,7 +176,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Image = global::Prescription_Assistance.Properties.Resources.logoo4;
             this.pictureBox1.Location = new System.Drawing.Point(12, 11);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(76, 37);
@@ -241,17 +244,48 @@
             this.pnlOverlay.Size = new System.Drawing.Size(1171, 673);
             this.pnlOverlay.TabIndex = 4;
             // 
+            // button7
+            // 
+            this.button7.BackColor = System.Drawing.Color.Transparent;
+            this.button7.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(184)))), ((int)(((byte)(182)))));
+            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button7.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button7.ForeColor = System.Drawing.Color.White;
+            this.button7.Location = new System.Drawing.Point(-1, 275);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(201, 55);
+            this.button7.TabIndex = 7;
+            this.button7.Text = "Test Results";
+            this.button7.UseVisualStyleBackColor = false;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
+            // 
+            // button6
+            // 
+            this.button6.BackColor = System.Drawing.Color.Transparent;
+            this.button6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(184)))), ((int)(((byte)(182)))));
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button6.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button6.ForeColor = System.Drawing.Color.White;
+            this.button6.Location = new System.Drawing.Point(-1, 220);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(201, 55);
+            this.button6.TabIndex = 6;
+            this.button6.Text = "Medical Records";
+            this.button6.UseVisualStyleBackColor = false;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
+            // 
             // Nurse_Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1362, 741);
             this.Controls.Add(this.pnlOverlay);
             this.Controls.Add(this.pnlFrame);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "Nurse_Dashboard";
-            this.Text = "Nurse_Dashboard";
+            this.Text = "iCare | Nurse";
             this.Load += new System.EventHandler(this.Nurse_Dashboard_Load);
             this.panel2.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
@@ -281,5 +315,7 @@
         private System.Windows.Forms.ToolStripMenuItem FifthFloorToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem allRoomsToolStripMenuItem;
         private System.Windows.Forms.Panel pnlOverlay;
+        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button button6;
     }
 }

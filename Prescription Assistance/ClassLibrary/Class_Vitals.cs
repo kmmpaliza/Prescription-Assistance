@@ -15,7 +15,13 @@ namespace ClassLibrary
         private static SqlConnection conn = new SqlConnection(conString);
         #endregion
         #region Variables
-        private string vital_id, patient_id, status;
+        private string vital_id, patient_id, status, bed_id;
+
+        public string Bed_id
+        {
+            get { return bed_id; }
+            set { bed_id = value; }
+        }
 
         public string Patient_id
         {
@@ -36,16 +42,48 @@ namespace ClassLibrary
         }
 
         #endregion
+        string id;
 
-        public void insertVital()
+        public DataSet viewVital()
+        {
+            SqlCommand cmd = new SqlCommand("select_Vital", conn);
+            cmd.Parameters.Add("@Vital_ID", SqlDbType.VarChar).Value = vital_id;
+            cmd.CommandType = CommandType.StoredProcedure;
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            ds.Clear();
+            da.Fill(ds, "select_Vital");
+            return ds;
+        }
+
+        public string insertVital()
         {
             conn.Open();
             SqlCommand cmd = new SqlCommand("insert_Vital", conn);
             cmd.CommandType = CommandType.StoredProcedure;
             cmd.Parameters.Add("@Patient_ID", SqlDbType.VarChar).Value = patient_id;
             cmd.Parameters.Add("@Status", SqlDbType.VarChar).Value = status;
-            cmd.ExecuteNonQuery();
+            cmd.Parameters.Add("@Bed_ID", SqlDbType.VarChar).Value = bed_id;
+            //cmd.ExecuteNonQuery();
 
+            SqlDataReader dr = cmd.ExecuteReader();
+            while (dr.Read())
+            {
+                id = dr[0].ToString();
+                break;
+            }           
+            conn.Close();
+
+            return id;
+        }
+
+        public void updateVital()
+        {
+            conn.Open();
+            SqlCommand cmd = new SqlCommand("update_Vital", conn);
+            cmd.Parameters.Add("@Vital_ID", SqlDbType.VarChar).Value = vital_id;
+            cmd.Parameters.Add("@Status", SqlDbType.VarChar).Value = status;
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.ExecuteNonQuery();
             conn.Close();
         }
     }

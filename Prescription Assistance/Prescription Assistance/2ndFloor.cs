@@ -90,22 +90,6 @@ namespace Prescription_Assistance
                     ds.Tables[0].Rows[0][3].ToString() + "");
         }
 
-        private void button9_Click(object sender, EventArgs e)
-        {
-            cr.Bed_id = "200-I";
-            ds = cr.viewBedandPatient();
-            MessageBox.Show("Bed: 200-I\nRoom Type: " + ds.Tables[0].Rows[0]["Room"].ToString() + "\nStatus: " + ds.Tables[0].Rows[0]["Status"].ToString() + "\nPatient: " +
-                    ds.Tables[0].Rows[0][3].ToString() + "");
-        }
-
-        private void button10_Click(object sender, EventArgs e)
-        {
-            cr.Bed_id = "200-J";
-            ds = cr.viewBedandPatient();
-            MessageBox.Show("Bed: 200-J\nRoom Type: " + ds.Tables[0].Rows[0]["Room"].ToString() + "\nStatus: " + ds.Tables[0].Rows[0]["Status"].ToString() + "\nPatient: " +
-                    ds.Tables[0].Rows[0][3].ToString() + "");
-        }
-
         private void button11_Click(object sender, EventArgs e)
         {
             cr.Bed_id = "201";

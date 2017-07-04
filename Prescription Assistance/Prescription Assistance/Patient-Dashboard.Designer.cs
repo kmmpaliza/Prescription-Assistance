@@ -44,10 +44,10 @@
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Image = global::Prescription_Assistance.Properties.Resources.logo2;
-            this.pictureBox1.Location = new System.Drawing.Point(557, 111);
+            this.pictureBox1.Image = global::Prescription_Assistance.Properties.Resources.logoo3;
+            this.pictureBox1.Location = new System.Drawing.Point(532, 128);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(256, 103);
+            this.pictureBox1.Size = new System.Drawing.Size(299, 103);
             this.pictureBox1.TabIndex = 18;
             this.pictureBox1.TabStop = false;
             // 
@@ -55,8 +55,8 @@
             // 
             this.button8.BackColor = System.Drawing.Color.Transparent;
             this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button8.Image = global::Prescription_Assistance.Properties.Resources.maint;
-            this.button8.Location = new System.Drawing.Point(932, 437);
+            this.button8.Image = global::Prescription_Assistance.Properties.Resources.roommaint;
+            this.button8.Location = new System.Drawing.Point(269, 454);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(162, 159);
             this.button8.TabIndex = 17;
@@ -67,8 +67,8 @@
             // 
             this.button7.BackColor = System.Drawing.Color.Transparent;
             this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button7.Image = global::Prescription_Assistance.Properties.Resources.shuttle;
-            this.button7.Location = new System.Drawing.Point(709, 437);
+            this.button7.Image = global::Prescription_Assistance.Properties.Resources.shut;
+            this.button7.Location = new System.Drawing.Point(711, 454);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(162, 159);
             this.button7.TabIndex = 16;
@@ -79,8 +79,8 @@
             // 
             this.button6.BackColor = System.Drawing.Color.Transparent;
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button6.Image = global::Prescription_Assistance.Properties.Resources.wheelchair;
-            this.button6.Location = new System.Drawing.Point(493, 437);
+            this.button6.Image = global::Prescription_Assistance.Properties.Resources.wheel;
+            this.button6.Location = new System.Drawing.Point(932, 257);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(162, 159);
             this.button6.TabIndex = 15;
@@ -91,8 +91,8 @@
             // 
             this.button5.BackColor = System.Drawing.Color.Transparent;
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button5.Image = global::Prescription_Assistance.Properties.Resources.status;
-            this.button5.Location = new System.Drawing.Point(269, 437);
+            this.button5.Image = global::Prescription_Assistance.Properties.Resources.medicalsta;
+            this.button5.Location = new System.Drawing.Point(711, 257);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(162, 159);
             this.button5.TabIndex = 14;
@@ -103,8 +103,8 @@
             // 
             this.button4.BackColor = System.Drawing.Color.Transparent;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button4.Image = global::Prescription_Assistance.Properties.Resources.medicalconsultatio1;
-            this.button4.Location = new System.Drawing.Point(932, 251);
+            this.button4.Image = global::Prescription_Assistance.Properties.Resources.cons;
+            this.button4.Location = new System.Drawing.Point(490, 257);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(162, 159);
             this.button4.TabIndex = 13;
@@ -115,8 +115,8 @@
             // 
             this.button3.BackColor = System.Drawing.Color.Transparent;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button3.Image = global::Prescription_Assistance.Properties.Resources.transferroom;
-            this.button3.Location = new System.Drawing.Point(709, 251);
+            this.button3.Image = global::Prescription_Assistance.Properties.Resources.room;
+            this.button3.Location = new System.Drawing.Point(269, 257);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(162, 159);
             this.button3.TabIndex = 12;
@@ -127,8 +127,8 @@
             // 
             this.button2.BackColor = System.Drawing.Color.Transparent;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button2.Image = global::Prescription_Assistance.Properties.Resources.private8;
-            this.button2.Location = new System.Drawing.Point(493, 251);
+            this.button2.Image = global::Prescription_Assistance.Properties.Resources.meal;
+            this.button2.Location = new System.Drawing.Point(932, 454);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(162, 159);
             this.button2.TabIndex = 11;
@@ -139,8 +139,8 @@
             // 
             this.button1.BackColor = System.Drawing.Color.Transparent;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button1.Image = global::Prescription_Assistance.Properties.Resources.ward2;
-            this.button1.Location = new System.Drawing.Point(269, 251);
+            this.button1.Image = global::Prescription_Assistance.Properties.Resources.pharmacy;
+            this.button1.Location = new System.Drawing.Point(490, 454);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(162, 159);
             this.button1.TabIndex = 10;
@@ -152,13 +152,13 @@
             this.button9.BackColor = System.Drawing.Color.Transparent;
             this.button9.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button9.Font = new System.Drawing.Font("Open Sans", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button9.ForeColor = System.Drawing.Color.Black;
-            this.button9.Location = new System.Drawing.Point(1149, 437);
+            this.button9.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button9.ForeColor = System.Drawing.Color.White;
+            this.button9.Location = new System.Drawing.Point(1248, 19);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(95, 42);
             this.button9.TabIndex = 19;
-            this.button9.Text = "CLOSE";
+            this.button9.Text = "Back";
             this.button9.UseVisualStyleBackColor = false;
             this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
@@ -166,7 +166,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::Prescription_Assistance.Properties.Resources.ttrrr;
+            this.BackgroundImage = global::Prescription_Assistance.Properties.Resources.greenbg1;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1362, 741);
             this.Controls.Add(this.button9);
@@ -181,7 +181,8 @@
             this.Controls.Add(this.button1);
             this.DoubleBuffered = true;
             this.Name = "Patient_Dashboard";
-            this.Text = " ";
+            this.Padding = new System.Windows.Forms.Padding(16);
+            this.Text = " iCare | Patient";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 

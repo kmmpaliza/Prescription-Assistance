@@ -43,6 +43,18 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.labelA = new System.Windows.Forms.Label();
+            this.labelB = new System.Windows.Forms.Label();
+            this.labelC = new System.Windows.Forms.Label();
+            this.labelD = new System.Windows.Forms.Label();
+            this.labelG = new System.Windows.Forms.Label();
+            this.labelF = new System.Windows.Forms.Label();
+            this.labelE = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.labelH = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -51,9 +63,10 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(184)))), ((int)(((byte)(182)))));
+            this.panel1.BackColor = System.Drawing.Color.Green;
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.button11);
             this.panel1.Location = new System.Drawing.Point(581, 19);
             this.panel1.Name = "panel1";
@@ -64,7 +77,7 @@
             // 
             this.button11.Font = new System.Drawing.Font("Open Sans", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button11.Image = global::Prescription_Assistance.Properties.Resources._private;
-            this.button11.Location = new System.Drawing.Point(203, 22);
+            this.button11.Location = new System.Drawing.Point(203, 10);
             this.button11.Name = "button11";
             this.button11.Size = new System.Drawing.Size(196, 118);
             this.button11.TabIndex = 11;
@@ -74,8 +87,9 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(184)))), ((int)(((byte)(182)))));
+            this.panel2.BackColor = System.Drawing.Color.Green;
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.button12);
             this.panel2.Location = new System.Drawing.Point(581, 215);
             this.panel2.Name = "panel2";
@@ -96,8 +110,9 @@
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(184)))), ((int)(((byte)(182)))));
+            this.panel3.BackColor = System.Drawing.Color.Green;
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel3.Controls.Add(this.label3);
             this.panel3.Controls.Add(this.button13);
             this.panel3.Location = new System.Drawing.Point(581, 411);
             this.panel3.Name = "panel3";
@@ -119,6 +134,15 @@
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(48)))), ((int)(((byte)(46)))));
+            this.panel4.Controls.Add(this.labelH);
+            this.panel4.Controls.Add(this.labelG);
+            this.panel4.Controls.Add(this.labelF);
+            this.panel4.Controls.Add(this.labelE);
+            this.panel4.Controls.Add(this.label7);
+            this.panel4.Controls.Add(this.labelD);
+            this.panel4.Controls.Add(this.labelC);
+            this.panel4.Controls.Add(this.labelB);
+            this.panel4.Controls.Add(this.labelA);
             this.panel4.Controls.Add(this.button8);
             this.panel4.Controls.Add(this.button7);
             this.panel4.Controls.Add(this.button6);
@@ -137,7 +161,7 @@
             // 
             this.button8.Font = new System.Drawing.Font("Open Sans", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button8.Image = global::Prescription_Assistance.Properties.Resources.otherside;
-            this.button8.Location = new System.Drawing.Point(335, 461);
+            this.button8.Location = new System.Drawing.Point(335, 437);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(194, 89);
             this.button8.TabIndex = 8;
@@ -149,7 +173,7 @@
             // 
             this.button7.Font = new System.Drawing.Font("Open Sans", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button7.Image = global::Prescription_Assistance.Properties.Resources.otherside;
-            this.button7.Location = new System.Drawing.Point(335, 311);
+            this.button7.Location = new System.Drawing.Point(335, 295);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(194, 89);
             this.button7.TabIndex = 7;
@@ -161,7 +185,7 @@
             // 
             this.button6.Font = new System.Drawing.Font("Open Sans", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button6.Image = global::Prescription_Assistance.Properties.Resources.otherside;
-            this.button6.Location = new System.Drawing.Point(335, 161);
+            this.button6.Location = new System.Drawing.Point(335, 153);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(194, 89);
             this.button6.TabIndex = 6;
@@ -185,7 +209,7 @@
             // 
             this.button4.Font = new System.Drawing.Font("Open Sans", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.Image = global::Prescription_Assistance.Properties.Resources.bedd;
-            this.button4.Location = new System.Drawing.Point(11, 461);
+            this.button4.Location = new System.Drawing.Point(11, 437);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(194, 89);
             this.button4.TabIndex = 4;
@@ -197,7 +221,7 @@
             // 
             this.button3.Font = new System.Drawing.Font("Open Sans", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.Image = global::Prescription_Assistance.Properties.Resources.bedd;
-            this.button3.Location = new System.Drawing.Point(11, 311);
+            this.button3.Location = new System.Drawing.Point(11, 295);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(194, 89);
             this.button3.TabIndex = 3;
@@ -209,7 +233,7 @@
             // 
             this.button2.Font = new System.Drawing.Font("Open Sans", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.Image = global::Prescription_Assistance.Properties.Resources.bedd;
-            this.button2.Location = new System.Drawing.Point(11, 161);
+            this.button2.Location = new System.Drawing.Point(11, 153);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(194, 89);
             this.button2.TabIndex = 2;
@@ -229,6 +253,138 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
+            // labelA
+            // 
+            this.labelA.AutoSize = true;
+            this.labelA.BackColor = System.Drawing.Color.White;
+            this.labelA.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelA.Location = new System.Drawing.Point(40, 103);
+            this.labelA.Name = "labelA";
+            this.labelA.Size = new System.Drawing.Size(137, 22);
+            this.labelA.TabIndex = 9;
+            this.labelA.Text = "Solante, Charlie";
+            // 
+            // labelB
+            // 
+            this.labelB.AutoSize = true;
+            this.labelB.BackColor = System.Drawing.Color.White;
+            this.labelB.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelB.Location = new System.Drawing.Point(40, 245);
+            this.labelB.Name = "labelB";
+            this.labelB.Size = new System.Drawing.Size(137, 22);
+            this.labelB.TabIndex = 10;
+            this.labelB.Text = "Solante, Charlie";
+            // 
+            // labelC
+            // 
+            this.labelC.AutoSize = true;
+            this.labelC.BackColor = System.Drawing.Color.White;
+            this.labelC.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelC.Location = new System.Drawing.Point(40, 387);
+            this.labelC.Name = "labelC";
+            this.labelC.Size = new System.Drawing.Size(137, 22);
+            this.labelC.TabIndex = 11;
+            this.labelC.Text = "Solante, Charlie";
+            // 
+            // labelD
+            // 
+            this.labelD.AutoSize = true;
+            this.labelD.BackColor = System.Drawing.Color.White;
+            this.labelD.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelD.Location = new System.Drawing.Point(40, 531);
+            this.labelD.Name = "labelD";
+            this.labelD.Size = new System.Drawing.Size(137, 22);
+            this.labelD.TabIndex = 12;
+            this.labelD.Text = "Solante, Charlie";
+            // 
+            // labelG
+            // 
+            this.labelG.AutoSize = true;
+            this.labelG.BackColor = System.Drawing.Color.White;
+            this.labelG.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelG.Location = new System.Drawing.Point(364, 389);
+            this.labelG.Name = "labelG";
+            this.labelG.Size = new System.Drawing.Size(137, 22);
+            this.labelG.TabIndex = 16;
+            this.labelG.Text = "Solante, Charlie";
+            // 
+            // labelF
+            // 
+            this.labelF.AutoSize = true;
+            this.labelF.BackColor = System.Drawing.Color.White;
+            this.labelF.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelF.Location = new System.Drawing.Point(364, 245);
+            this.labelF.Name = "labelF";
+            this.labelF.Size = new System.Drawing.Size(137, 22);
+            this.labelF.TabIndex = 15;
+            this.labelF.Text = "Solante, Charlie";
+            // 
+            // labelE
+            // 
+            this.labelE.AutoSize = true;
+            this.labelE.BackColor = System.Drawing.Color.White;
+            this.labelE.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelE.Location = new System.Drawing.Point(364, 103);
+            this.labelE.Name = "labelE";
+            this.labelE.Size = new System.Drawing.Size(137, 22);
+            this.labelE.TabIndex = 14;
+            this.labelE.Text = "Solante, Charlie";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.White;
+            this.label7.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(367, -39);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(137, 22);
+            this.label7.TabIndex = 13;
+            this.label7.Text = "Solante, Charlie";
+            // 
+            // labelH
+            // 
+            this.labelH.AutoSize = true;
+            this.labelH.BackColor = System.Drawing.Color.White;
+            this.labelH.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelH.Location = new System.Drawing.Point(364, 529);
+            this.labelH.Name = "labelH";
+            this.labelH.Size = new System.Drawing.Size(137, 22);
+            this.labelH.TabIndex = 17;
+            this.labelH.Text = "Solante, Charlie";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.White;
+            this.label1.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(31, 58);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(137, 22);
+            this.label1.TabIndex = 18;
+            this.label1.Text = "Solante, Charlie";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.White;
+            this.label2.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(31, 81);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(137, 22);
+            this.label2.TabIndex = 19;
+            this.label2.Text = "Solante, Charlie";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.White;
+            this.label3.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(31, 74);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(137, 22);
+            this.label3.TabIndex = 20;
+            this.label3.Text = "Solante, Charlie";
+            // 
             // _2ndFloorPrivateRoom
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -243,9 +399,13 @@
             this.Size = new System.Drawing.Size(1000, 600);
             this.Load += new System.EventHandler(this._2ndFloorPrivateRoom_Load);
             this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
             this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -267,5 +427,17 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label labelD;
+        private System.Windows.Forms.Label labelC;
+        private System.Windows.Forms.Label labelB;
+        private System.Windows.Forms.Label labelA;
+        private System.Windows.Forms.Label labelH;
+        private System.Windows.Forms.Label labelG;
+        private System.Windows.Forms.Label labelF;
+        private System.Windows.Forms.Label labelE;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
     }
 }

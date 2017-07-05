@@ -68,11 +68,11 @@ namespace Prescription_Assistance
 
         }
 
-        private void button9_Click(object sender, EventArgs e)
+        private void button3_Click(object sender, EventArgs e)
         {
-            Main f = new Main();
-            f.Show();
-            this.Close();
+            Room_Type rt = new Room_Type();
+            rt.Show();
+            this.Hide();
         }
     }
 }

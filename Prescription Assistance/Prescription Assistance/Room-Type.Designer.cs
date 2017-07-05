@@ -34,6 +34,8 @@
             this.cboWard = new System.Windows.Forms.ComboBox();
             this.button3 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -75,7 +77,6 @@
             // 
             // cboPrivate
             // 
-            this.cboPrivate.Enabled = false;
             this.cboPrivate.Font = new System.Drawing.Font("Open Sans", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboPrivate.FormattingEnabled = true;
             this.cboPrivate.Items.AddRange(new object[] {
@@ -103,7 +104,6 @@
             // 
             // cboWard
             // 
-            this.cboWard.Enabled = false;
             this.cboWard.Font = new System.Drawing.Font("Open Sans", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboWard.FormattingEnabled = true;
             this.cboWard.Items.AddRange(new object[] {
@@ -147,6 +147,42 @@
             this.pictureBox1.TabIndex = 62;
             this.pictureBox1.TabStop = false;
             // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.Color.Green;
+            this.button4.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.ForeColor = System.Drawing.Color.White;
+            this.button4.Location = new System.Drawing.Point(472, 529);
+            this.button4.Margin = new System.Windows.Forms.Padding(16);
+            this.button4.Name = "button4";
+            this.button4.Padding = new System.Windows.Forms.Padding(8);
+            this.button4.Size = new System.Drawing.Size(96, 50);
+            this.button4.TabIndex = 63;
+            this.button4.Text = "OK";
+            this.button4.UseVisualStyleBackColor = false;
+            this.button4.Visible = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // button5
+            // 
+            this.button5.BackColor = System.Drawing.Color.Green;
+            this.button5.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.ForeColor = System.Drawing.Color.White;
+            this.button5.Location = new System.Drawing.Point(794, 529);
+            this.button5.Margin = new System.Windows.Forms.Padding(16);
+            this.button5.Name = "button5";
+            this.button5.Padding = new System.Windows.Forms.Padding(8);
+            this.button5.Size = new System.Drawing.Size(96, 50);
+            this.button5.TabIndex = 64;
+            this.button5.Text = "OK";
+            this.button5.UseVisualStyleBackColor = false;
+            this.button5.Visible = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
             // Room_Type
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -154,6 +190,8 @@
             this.BackgroundImage = global::Prescription_Assistance.Properties.Resources.greenbg1;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1362, 741);
+            this.Controls.Add(this.button5);
+            this.Controls.Add(this.button4);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.cboWard);
@@ -162,6 +200,7 @@
             this.Controls.Add(this.button1);
             this.Name = "Room_Type";
             this.Text = "iCare";
+            this.Load += new System.EventHandler(this.Room_Type_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
@@ -175,5 +214,7 @@
         private System.Windows.Forms.ComboBox cboWard;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button5;
     }
 }

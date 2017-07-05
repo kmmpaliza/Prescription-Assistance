@@ -28,34 +28,6 @@ namespace Prescription_Assistance
         DataSet ds4 = new DataSet();
         string bed;
 
-        /**#region VariablesforMedicine
-        private int hours, minutes, pointX, pointY, room, medname, dose, route, form, interval, note;
-
-        public int PointY
-        {
-            get { return pointY; }
-            set { pointY = value; }
-        }
-
-        public int PointX
-        {
-            get { return pointX; }
-            set { pointX = value; }
-        }
-
-        public int Minutes
-        {
-            get { return minutes; }
-            set { minutes = value; }
-        }
-
-        public int Hours
-        {
-            get { return hours; }
-            set { hours = value; }
-        }
-        #endregion*/
-
         public Room_Layout()
         {
             InitializeComponent();
@@ -112,8 +84,18 @@ namespace Prescription_Assistance
         #endregion
 
         #region Assistance Alerts
-        public void checkAssistance()
+        public void runAssistance() //check assistance every minute
         {
+            var startTimeSpan = TimeSpan.Zero;
+            var periodTimeSpan = TimeSpan.FromMinutes(1);
+
+            timer = new System.Threading.Timer((e) =>
+            {
+                checkAssistance();
+            }, null, startTimeSpan, periodTimeSpan);
+        }
+        public void checkAssistance()
+        {            
             ds = ca.viewUnfinishedAlerts();
             if (ds.Tables[0].Rows.Count > 0)
             {
@@ -282,7 +264,6 @@ namespace Prescription_Assistance
             timer = new System.Threading.Timer(x => 
             {
                 checkPrescription();
-                //showAlertforPrescription();
 
             }, null, (int)(requiredTime - DateTime.Now).TotalMilliseconds, Timeout.Infinite);
         }    

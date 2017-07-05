@@ -106,6 +106,12 @@
     <Compile Include="Alert-Vitals.Designer.cs">
       <DependentUpon>Alert-Vitals.cs</DependentUpon>
     </Compile>
+    <Compile Include="AssignRoomPatient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AssignRoomPatient.Designer.cs">
+      <DependentUpon>AssignRoomPatient.cs</DependentUpon>
+    </Compile>
     <Compile Include="Database1DataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -220,11 +226,23 @@
     <Compile Include="View-InPatient.Designer.cs">
       <DependentUpon>View-InPatient.cs</DependentUpon>
     </Compile>
+    <Compile Include="View-MedicalRecords.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View-MedicalRecords.Designer.cs">
+      <DependentUpon>View-MedicalRecords.cs</DependentUpon>
+    </Compile>
     <Compile Include="View-Rooms.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="View-Rooms.Designer.cs">
       <DependentUpon>View-Rooms.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ward-Layout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ward-Layout.Designer.cs">
+      <DependentUpon>Ward-Layout.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="2ndFloor.resx">
       <DependentUpon>2ndFloor.cs</DependentUpon>
@@ -246,6 +264,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Alert-Vitals.resx">
       <DependentUpon>Alert-Vitals.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AssignRoomPatient.resx">
+      <DependentUpon>AssignRoomPatient.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Doctor-Dashboard.resx">
       <DependentUpon>Doctor-Dashboard.cs</DependentUpon>
@@ -308,8 +329,14 @@
     <EmbeddedResource Include="View-InPatient.resx">
       <DependentUpon>View-InPatient.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="View-MedicalRecords.resx">
+      <DependentUpon>View-MedicalRecords.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View-Rooms.resx">
       <DependentUpon>View-Rooms.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ward-Layout.resx">
+      <DependentUpon>Ward-Layout.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="app.config" />
     <None Include="Database1DataSet.xsc">

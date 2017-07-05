@@ -436,7 +436,7 @@
             // 
             // panel13
             // 
-            this.panel13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(184)))), ((int)(((byte)(182)))));
+            this.panel13.BackColor = System.Drawing.Color.Green;
             this.panel13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.panel13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel13.Controls.Add(this.label36);
@@ -469,7 +469,7 @@
             // 
             // panel12
             // 
-            this.panel12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(184)))), ((int)(((byte)(182)))));
+            this.panel12.BackColor = System.Drawing.Color.Green;
             this.panel12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.panel12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel12.Controls.Add(this.label37);
@@ -695,7 +695,7 @@
             // 
             // panel14
             // 
-            this.panel14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(184)))), ((int)(((byte)(182)))));
+            this.panel14.BackColor = System.Drawing.Color.Green;
             this.panel14.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.panel14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel14.Controls.Add(this.label35);
@@ -728,7 +728,7 @@
             // 
             // panel16
             // 
-            this.panel16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(184)))), ((int)(((byte)(182)))));
+            this.panel16.BackColor = System.Drawing.Color.Green;
             this.panel16.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.panel16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel16.Controls.Add(this.label46);
@@ -761,7 +761,7 @@
             // 
             // panel18
             // 
-            this.panel18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(184)))), ((int)(((byte)(182)))));
+            this.panel18.BackColor = System.Drawing.Color.Green;
             this.panel18.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.panel18.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel18.Controls.Add(this.label48);
@@ -794,7 +794,7 @@
             // 
             // panel17
             // 
-            this.panel17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(184)))), ((int)(((byte)(182)))));
+            this.panel17.BackColor = System.Drawing.Color.Green;
             this.panel17.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.panel17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel17.Controls.Add(this.label47);
@@ -827,7 +827,7 @@
             // 
             // panel19
             // 
-            this.panel19.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(184)))), ((int)(((byte)(182)))));
+            this.panel19.BackColor = System.Drawing.Color.Green;
             this.panel19.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.panel19.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel19.Controls.Add(this.label49);
@@ -1053,7 +1053,7 @@
             // 
             // panel11
             // 
-            this.panel11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(184)))), ((int)(((byte)(182)))));
+            this.panel11.BackColor = System.Drawing.Color.Green;
             this.panel11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.panel11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel11.Controls.Add(this.label34);
@@ -1086,7 +1086,7 @@
             // 
             // panel6
             // 
-            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(184)))), ((int)(((byte)(182)))));
+            this.panel6.BackColor = System.Drawing.Color.Green;
             this.panel6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel6.Controls.Add(this.label11);
@@ -1119,7 +1119,7 @@
             // 
             // panel5
             // 
-            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(184)))), ((int)(((byte)(182)))));
+            this.panel5.BackColor = System.Drawing.Color.Green;
             this.panel5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel5.Controls.Add(this.label10);
@@ -1345,7 +1345,7 @@
             // 
             // panel7
             // 
-            this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(184)))), ((int)(((byte)(182)))));
+            this.panel7.BackColor = System.Drawing.Color.Green;
             this.panel7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.panel7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel7.Controls.Add(this.label9);
@@ -1378,7 +1378,7 @@
             // 
             // panel8
             // 
-            this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(184)))), ((int)(((byte)(182)))));
+            this.panel8.BackColor = System.Drawing.Color.Green;
             this.panel8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.panel8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel8.Controls.Add(this.label13);
@@ -1411,7 +1411,7 @@
             // 
             // panel10
             // 
-            this.panel10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(184)))), ((int)(((byte)(182)))));
+            this.panel10.BackColor = System.Drawing.Color.Green;
             this.panel10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.panel10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel10.Controls.Add(this.label25);
@@ -1444,7 +1444,7 @@
             // 
             // panel9
             // 
-            this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(184)))), ((int)(((byte)(182)))));
+            this.panel9.BackColor = System.Drawing.Color.Green;
             this.panel9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.panel9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel9.Controls.Add(this.label14);
@@ -1477,7 +1477,7 @@
             // 
             // panel20
             // 
-            this.panel20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(184)))), ((int)(((byte)(182)))));
+            this.panel20.BackColor = System.Drawing.Color.Green;
             this.panel20.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.panel20.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel20.Controls.Add(this.label12);

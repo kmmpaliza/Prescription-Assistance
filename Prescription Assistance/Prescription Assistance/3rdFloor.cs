@@ -115,5 +115,20 @@ namespace Prescription_Assistance
             MessageBox.Show("Bed: " + ds.Tables[0].Rows[0][0].ToString() + "\nRoom Type: " + ds.Tables[0].Rows[0]["Room"].ToString() + "\nStatus: " + ds.Tables[0].Rows[0]["Status"].ToString() + "\nPatient: " +
                     ds.Tables[0].Rows[0][3].ToString() + "");
         }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel4_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

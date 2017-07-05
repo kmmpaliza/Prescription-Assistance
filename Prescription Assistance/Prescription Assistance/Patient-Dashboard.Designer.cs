@@ -38,6 +38,7 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -162,6 +163,18 @@
             this.button9.UseVisualStyleBackColor = false;
             this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Open Sans Semibold", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(19, 16);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(160, 37);
+            this.label1.TabIndex = 20;
+            this.label1.Text = "In-Patients";
+            // 
             // Patient_Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -169,6 +182,7 @@
             this.BackgroundImage = global::Prescription_Assistance.Properties.Resources.greenbg1;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1362, 741);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.button9);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.button8);
@@ -183,8 +197,10 @@
             this.Name = "Patient_Dashboard";
             this.Padding = new System.Windows.Forms.Padding(16);
             this.Text = " iCare | Patient";
+            this.Load += new System.EventHandler(this.Patient_Dashboard_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -200,6 +216,7 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Label label1;
 
     }
 }

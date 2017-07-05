@@ -140,6 +140,10 @@ namespace Prescription_Assistance
         private void button6_Click(object sender, EventArgs e)
         {
             //medical records
+            pnlOverlay.Visible = true;
+            pnlOverlay.Controls.Clear();
+            var abc = new View_MedicalRecords();
+            pnlOverlay.Controls.Add(abc);
         }
 
         private void button7_Click(object sender, EventArgs e)

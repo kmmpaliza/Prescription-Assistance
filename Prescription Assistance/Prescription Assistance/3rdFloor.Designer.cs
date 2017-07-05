@@ -54,13 +54,14 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(184)))), ((int)(((byte)(182)))));
+            this.panel1.BackColor = System.Drawing.Color.Green;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.button9);
             this.panel1.Location = new System.Drawing.Point(515, 19);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(230, 276);
             this.panel1.TabIndex = 13;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // button9
             // 
@@ -76,7 +77,7 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(184)))), ((int)(((byte)(182)))));
+            this.panel2.BackColor = System.Drawing.Color.Green;
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel2.Controls.Add(this.button10);
             this.panel2.Location = new System.Drawing.Point(751, 19);
@@ -98,13 +99,14 @@
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(184)))), ((int)(((byte)(182)))));
+            this.panel3.BackColor = System.Drawing.Color.Green;
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel3.Controls.Add(this.button11);
             this.panel3.Location = new System.Drawing.Point(515, 305);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(230, 276);
             this.panel3.TabIndex = 15;
+            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
             // button11
             // 
@@ -120,13 +122,14 @@
             // 
             // panel4
             // 
-            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(184)))), ((int)(((byte)(182)))));
+            this.panel4.BackColor = System.Drawing.Color.Green;
             this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel4.Controls.Add(this.button12);
             this.panel4.Location = new System.Drawing.Point(751, 305);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(230, 276);
             this.panel4.TabIndex = 16;
+            this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
             // 
             // button12
             // 

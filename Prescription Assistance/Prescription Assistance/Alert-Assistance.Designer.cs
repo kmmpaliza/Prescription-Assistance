@@ -82,6 +82,7 @@
             this.Controls.Add(this.label1);
             this.Name = "Alert_Assistance";
             this.Size = new System.Drawing.Size(300, 75);
+            this.Tag = "assistance";
             this.Load += new System.EventHandler(this.Alert_Assistance_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -25,7 +25,10 @@ namespace Prescription_Assistance
 
         private void Main_Load(object sender, EventArgs e)
         {
+            //this.TopMost = true;
 
+            this.WindowState = FormWindowState.Maximized;
+            //this.FormBorderStyle = FormBorderStyle.None;
         }
 
         private void button2_Click(object sender, EventArgs e)

@@ -5,5 +5,6 @@ C:\Users\chaelamorin\Topic2\Prescription Assistance\ClassLibrary\obj\Debug\Class
 C:\Users\chaelamorin\Topic2\Prescription Assistance\ClassLibrary\obj\Debug\ClassLibrary.pdb
 C:\Users\Katrina\Documents\Freelance\Topic2\Prescription Assistance\ClassLibrary\bin\Debug\ClassLibrary.dll
 C:\Users\Katrina\Documents\Freelance\Topic2\Prescription Assistance\ClassLibrary\bin\Debug\ClassLibrary.pdb
+C:\Users\Katrina\Documents\Freelance\Topic2\Prescription Assistance\ClassLibrary\obj\Debug\ClassLibrary.csprojResolveAssemblyReference.cache
 C:\Users\Katrina\Documents\Freelance\Topic2\Prescription Assistance\ClassLibrary\obj\Debug\ClassLibrary.dll
 C:\Users\Katrina\Documents\Freelance\Topic2\Prescription Assistance\ClassLibrary\obj\Debug\ClassLibrary.pdb

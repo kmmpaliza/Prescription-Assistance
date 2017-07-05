@@ -29,8 +29,10 @@ namespace Prescription_Assistance
             pnlOverlay.Visible = false;
             pnlFrame.Controls.Clear();
             var abc = new Room_Layout();
-            abc.runTime();
-            abc.checkAssistance();
+            abc.runAssistance();
+            abc.runVitals();
+            abc.runTimeforPrescription();
+            abc.runPrescription();
             pnlFrame.Controls.Add(abc);
         }
 
@@ -88,7 +90,7 @@ namespace Prescription_Assistance
         {
             pnlOverlay.Visible = true;
             pnlOverlay.Controls.Clear();
-            var abc = new _2ndFloorPrivateRoom();
+            var abc = new _2ndFloorD();
             pnlOverlay.Controls.Add(abc);
         }
 
@@ -96,7 +98,7 @@ namespace Prescription_Assistance
         {
             pnlOverlay.Visible = true;
             pnlOverlay.Controls.Clear();
-            var abc = new _3rdFloor();
+            var abc = new _3rdFloorD();
             pnlOverlay.Controls.Add(abc);
         }
 
@@ -104,7 +106,7 @@ namespace Prescription_Assistance
         {
             pnlOverlay.Visible = true;
             pnlOverlay.Controls.Clear();
-            var abc = new _4thFloor();
+            var abc = new _4thFloorD();
             pnlOverlay.Controls.Add(abc);
         }
 
@@ -112,15 +114,7 @@ namespace Prescription_Assistance
         {
             pnlOverlay.Visible = true;
             pnlOverlay.Controls.Clear();
-            var abc = new _5thFloor();
-            pnlOverlay.Controls.Add(abc);
-        }
-
-        private void allRoomsToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            pnlOverlay.Visible = true;
-            pnlOverlay.Controls.Clear();
-            var abc = new View_Rooms();
+            var abc = new _5thFloorD();
             pnlOverlay.Controls.Add(abc);
         }
 
@@ -149,6 +143,10 @@ namespace Prescription_Assistance
         private void button7_Click(object sender, EventArgs e)
         {
             //test results
+            pnlOverlay.Visible = true;
+            pnlOverlay.Controls.Clear();
+            var viewInPatient = new Insert_TestResult();
+            pnlOverlay.Controls.Add(viewInPatient);
         }
 
     }

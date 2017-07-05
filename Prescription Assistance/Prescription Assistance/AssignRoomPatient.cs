@@ -16,14 +16,17 @@ namespace Prescription_Assistance
         Class_Patient cp = new Class_Patient();
         DataSet ds = new DataSet();
         DataSet ds2 = new DataSet();
+        Nurse_Dashboard n;
 
-        string bed;
+        string bed, floor;
 
-        public AssignRoomPatient(string bed)
+        public AssignRoomPatient(string bed, Nurse_Dashboard n, string floor)
         {
             InitializeComponent();
             this.bed = bed;
             cr.Bed_id = bed;
+            this.n = n;
+            this.floor = floor;
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -76,6 +79,28 @@ namespace Prescription_Assistance
             cr.updateRoom();
             label3.Text = cp.Patient_id + " | " + cp.Last_name;
             button3.Enabled = true;
+        }
+
+        private void AssignRoomPatient_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            switch (floor)
+            {
+                case "2nd Floor":
+                    n.goto2nd();
+                    break;
+                case "3rd Floor":
+                    n.goto3rd();
+                    break;
+                case "4th Floor":
+                    n.goto4th();
+                    break;
+                case "5th Floor":
+                    n.goto5th();
+                    break;
+                case "ViewRooms":
+                    n.allRooms();
+                    break;
+            }
         }
     }
 }

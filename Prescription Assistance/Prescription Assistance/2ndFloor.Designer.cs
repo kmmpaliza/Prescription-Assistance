@@ -1,6 +1,6 @@
 ﻿namespace Prescription_Assistance
 {
-    partial class _2ndFloorPrivateRoom
+    partial class _2ndFloorPrivateRoomD
     {
         /// <summary> 
         /// Required designer variable.
@@ -216,7 +216,6 @@
             this.labelG.Size = new System.Drawing.Size(137, 22);
             this.labelG.TabIndex = 16;
             this.labelG.Text = "Solante, Charlie";
-            this.labelG.Click += new System.EventHandler(this.labelG_Click);
             // 
             // labelF
             // 
@@ -229,7 +228,6 @@
             this.labelF.Size = new System.Drawing.Size(137, 22);
             this.labelF.TabIndex = 15;
             this.labelF.Text = "Solante, Charlie";
-            this.labelF.Click += new System.EventHandler(this.labelF_Click);
             // 
             // labelE
             // 
@@ -242,7 +240,6 @@
             this.labelE.Size = new System.Drawing.Size(137, 22);
             this.labelE.TabIndex = 14;
             this.labelE.Text = "Solante, Charlie";
-            this.labelE.Click += new System.EventHandler(this.labelE_Click);
             // 
             // label7
             // 
@@ -266,7 +263,6 @@
             this.labelD.Size = new System.Drawing.Size(137, 22);
             this.labelD.TabIndex = 12;
             this.labelD.Text = "Solante, Charlie";
-            this.labelD.Click += new System.EventHandler(this.labelD_Click);
             // 
             // labelC
             // 
@@ -279,7 +275,6 @@
             this.labelC.Size = new System.Drawing.Size(137, 22);
             this.labelC.TabIndex = 11;
             this.labelC.Text = "Solante, Charlie";
-            this.labelC.Click += new System.EventHandler(this.labelC_Click);
             // 
             // labelB
             // 
@@ -292,7 +287,6 @@
             this.labelB.Size = new System.Drawing.Size(137, 22);
             this.labelB.TabIndex = 10;
             this.labelB.Text = "Solante, Charlie";
-            this.labelB.Click += new System.EventHandler(this.labelB_Click);
             // 
             // labelA
             // 
@@ -305,7 +299,6 @@
             this.labelA.Size = new System.Drawing.Size(137, 22);
             this.labelA.TabIndex = 9;
             this.labelA.Text = "Solante, Charlie";
-            this.labelA.Click += new System.EventHandler(this.labelA_Click);
             // 
             // button8
             // 
@@ -403,7 +396,7 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
-            // _2ndFloorPrivateRoom
+            // _2ndFloorPrivateRoomD
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -412,9 +405,9 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel4);
-            this.Name = "_2ndFloorPrivateRoom";
+            this.Name = "_2ndFloorPrivateRoomD";
             this.Padding = new System.Windows.Forms.Padding(16);
-            this.Size = new System.Drawing.Size(1000, 600);
+            this.Size = new System.Drawing.Size(1150, 635);
             this.Load += new System.EventHandler(this._2ndFloorPrivateRoom_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

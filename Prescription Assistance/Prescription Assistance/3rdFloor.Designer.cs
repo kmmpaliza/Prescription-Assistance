@@ -29,14 +29,26 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.button9 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
             this.button10 = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.button11 = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.label4 = new System.Windows.Forms.Label();
             this.button12 = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.labelH = new System.Windows.Forms.Label();
+            this.labelG = new System.Windows.Forms.Label();
+            this.labelF = new System.Windows.Forms.Label();
+            this.labelE = new System.Windows.Forms.Label();
+            this.labelD = new System.Windows.Forms.Label();
+            this.labelC = new System.Windows.Forms.Label();
+            this.labelB = new System.Windows.Forms.Label();
+            this.labelA = new System.Windows.Forms.Label();
             this.button8 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
@@ -45,18 +57,6 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.labelC = new System.Windows.Forms.Label();
-            this.labelB = new System.Windows.Forms.Label();
-            this.labelA = new System.Windows.Forms.Label();
-            this.labelD = new System.Windows.Forms.Label();
-            this.labelH = new System.Windows.Forms.Label();
-            this.labelG = new System.Windows.Forms.Label();
-            this.labelF = new System.Windows.Forms.Label();
-            this.labelE = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -74,7 +74,19 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(230, 276);
             this.panel1.TabIndex = 13;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(38, 175);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(137, 22);
+            this.label1.TabIndex = 21;
+            this.label1.Text = "Solante, Charlie";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // button9
             // 
@@ -99,6 +111,19 @@
             this.panel2.Size = new System.Drawing.Size(230, 276);
             this.panel2.TabIndex = 15;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(59, 175);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(137, 22);
+            this.label2.TabIndex = 22;
+            this.label2.Text = "Solante, Charlie";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // button10
             // 
             this.button10.Font = new System.Drawing.Font("Open Sans", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -121,7 +146,6 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(230, 276);
             this.panel3.TabIndex = 15;
-            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
             // button11
             // 
@@ -135,6 +159,19 @@
             this.button11.UseVisualStyleBackColor = true;
             this.button11.Click += new System.EventHandler(this.button11_Click);
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(37, 192);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(137, 22);
+            this.label3.TabIndex = 23;
+            this.label3.Text = "Solante, Charlie";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.Green;
@@ -145,7 +182,19 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(230, 276);
             this.panel4.TabIndex = 16;
-            this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(57, 192);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(137, 22);
+            this.label4.TabIndex = 24;
+            this.label4.Text = "Solante, Charlie";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // button12
             // 
@@ -183,6 +232,110 @@
             this.panel5.Padding = new System.Windows.Forms.Padding(8);
             this.panel5.Size = new System.Drawing.Size(477, 562);
             this.panel5.TabIndex = 17;
+            // 
+            // labelH
+            // 
+            this.labelH.AutoSize = true;
+            this.labelH.BackColor = System.Drawing.Color.Transparent;
+            this.labelH.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelH.ForeColor = System.Drawing.Color.White;
+            this.labelH.Location = new System.Drawing.Point(343, 510);
+            this.labelH.Name = "labelH";
+            this.labelH.Size = new System.Drawing.Size(137, 22);
+            this.labelH.TabIndex = 21;
+            this.labelH.Text = "Solante, Charlie";
+            this.labelH.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // labelG
+            // 
+            this.labelG.AutoSize = true;
+            this.labelG.BackColor = System.Drawing.Color.Transparent;
+            this.labelG.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelG.ForeColor = System.Drawing.Color.White;
+            this.labelG.Location = new System.Drawing.Point(231, 510);
+            this.labelG.Name = "labelG";
+            this.labelG.Size = new System.Drawing.Size(137, 22);
+            this.labelG.TabIndex = 20;
+            this.labelG.Text = "Solante, Charlie";
+            this.labelG.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // labelF
+            // 
+            this.labelF.AutoSize = true;
+            this.labelF.BackColor = System.Drawing.Color.Transparent;
+            this.labelF.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelF.ForeColor = System.Drawing.Color.White;
+            this.labelF.Location = new System.Drawing.Point(116, 510);
+            this.labelF.Name = "labelF";
+            this.labelF.Size = new System.Drawing.Size(137, 22);
+            this.labelF.TabIndex = 19;
+            this.labelF.Text = "Solante, Charlie";
+            this.labelF.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // labelE
+            // 
+            this.labelE.AutoSize = true;
+            this.labelE.BackColor = System.Drawing.Color.Transparent;
+            this.labelE.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelE.ForeColor = System.Drawing.Color.White;
+            this.labelE.Location = new System.Drawing.Point(30, 510);
+            this.labelE.Name = "labelE";
+            this.labelE.Size = new System.Drawing.Size(76, 44);
+            this.labelE.TabIndex = 18;
+            this.labelE.Text = "Solante,\r\nCharlie";
+            this.labelE.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // labelD
+            // 
+            this.labelD.AutoSize = true;
+            this.labelD.BackColor = System.Drawing.Color.Transparent;
+            this.labelD.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelD.ForeColor = System.Drawing.Color.White;
+            this.labelD.Location = new System.Drawing.Point(345, 225);
+            this.labelD.Name = "labelD";
+            this.labelD.Size = new System.Drawing.Size(137, 22);
+            this.labelD.TabIndex = 16;
+            this.labelD.Text = "Solante, Charlie";
+            this.labelD.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // labelC
+            // 
+            this.labelC.AutoSize = true;
+            this.labelC.BackColor = System.Drawing.Color.Transparent;
+            this.labelC.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelC.ForeColor = System.Drawing.Color.White;
+            this.labelC.Location = new System.Drawing.Point(231, 225);
+            this.labelC.Name = "labelC";
+            this.labelC.Size = new System.Drawing.Size(137, 22);
+            this.labelC.TabIndex = 15;
+            this.labelC.Text = "Solante, Charlie";
+            this.labelC.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // labelB
+            // 
+            this.labelB.AutoSize = true;
+            this.labelB.BackColor = System.Drawing.Color.Transparent;
+            this.labelB.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelB.ForeColor = System.Drawing.Color.White;
+            this.labelB.Location = new System.Drawing.Point(146, 214);
+            this.labelB.Name = "labelB";
+            this.labelB.Size = new System.Drawing.Size(76, 44);
+            this.labelB.TabIndex = 14;
+            this.labelB.Text = "Solante,\r\nCharlie";
+            this.labelB.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // labelA
+            // 
+            this.labelA.AutoSize = true;
+            this.labelA.BackColor = System.Drawing.Color.Transparent;
+            this.labelA.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelA.ForeColor = System.Drawing.Color.White;
+            this.labelA.Location = new System.Drawing.Point(30, 214);
+            this.labelA.Name = "labelA";
+            this.labelA.Size = new System.Drawing.Size(76, 44);
+            this.labelA.TabIndex = 13;
+            this.labelA.Text = "Solante,\r\nCharlie";
+            this.labelA.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // button8
             // 
@@ -280,153 +433,6 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // labelC
-            // 
-            this.labelC.AutoSize = true;
-            this.labelC.BackColor = System.Drawing.Color.Transparent;
-            this.labelC.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelC.ForeColor = System.Drawing.Color.White;
-            this.labelC.Location = new System.Drawing.Point(231, 225);
-            this.labelC.Name = "labelC";
-            this.labelC.Size = new System.Drawing.Size(137, 22);
-            this.labelC.TabIndex = 15;
-            this.labelC.Text = "Solante, Charlie";
-            this.labelC.Click += new System.EventHandler(this.labelC_Click);
-            // 
-            // labelB
-            // 
-            this.labelB.AutoSize = true;
-            this.labelB.BackColor = System.Drawing.Color.Transparent;
-            this.labelB.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelB.ForeColor = System.Drawing.Color.White;
-            this.labelB.Location = new System.Drawing.Point(149, 214);
-            this.labelB.Name = "labelB";
-            this.labelB.Size = new System.Drawing.Size(76, 44);
-            this.labelB.TabIndex = 14;
-            this.labelB.Text = "Solante,\r\nCharlie";
-            this.labelB.Click += new System.EventHandler(this.labelB_Click);
-            // 
-            // labelA
-            // 
-            this.labelA.AutoSize = true;
-            this.labelA.BackColor = System.Drawing.Color.Transparent;
-            this.labelA.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelA.ForeColor = System.Drawing.Color.White;
-            this.labelA.Location = new System.Drawing.Point(30, 214);
-            this.labelA.Name = "labelA";
-            this.labelA.Size = new System.Drawing.Size(76, 44);
-            this.labelA.TabIndex = 13;
-            this.labelA.Text = "Solante,\r\nCharlie";
-            // 
-            // labelD
-            // 
-            this.labelD.AutoSize = true;
-            this.labelD.BackColor = System.Drawing.Color.Transparent;
-            this.labelD.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelD.ForeColor = System.Drawing.Color.White;
-            this.labelD.Location = new System.Drawing.Point(345, 225);
-            this.labelD.Name = "labelD";
-            this.labelD.Size = new System.Drawing.Size(137, 22);
-            this.labelD.TabIndex = 16;
-            this.labelD.Text = "Solante, Charlie";
-            this.labelD.Click += new System.EventHandler(this.labelD_Click);
-            // 
-            // labelH
-            // 
-            this.labelH.AutoSize = true;
-            this.labelH.BackColor = System.Drawing.Color.Transparent;
-            this.labelH.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelH.ForeColor = System.Drawing.Color.White;
-            this.labelH.Location = new System.Drawing.Point(343, 510);
-            this.labelH.Name = "labelH";
-            this.labelH.Size = new System.Drawing.Size(137, 22);
-            this.labelH.TabIndex = 21;
-            this.labelH.Text = "Solante, Charlie";
-            // 
-            // labelG
-            // 
-            this.labelG.AutoSize = true;
-            this.labelG.BackColor = System.Drawing.Color.Transparent;
-            this.labelG.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelG.ForeColor = System.Drawing.Color.White;
-            this.labelG.Location = new System.Drawing.Point(231, 510);
-            this.labelG.Name = "labelG";
-            this.labelG.Size = new System.Drawing.Size(137, 22);
-            this.labelG.TabIndex = 20;
-            this.labelG.Text = "Solante, Charlie";
-            // 
-            // labelF
-            // 
-            this.labelF.AutoSize = true;
-            this.labelF.BackColor = System.Drawing.Color.Transparent;
-            this.labelF.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelF.ForeColor = System.Drawing.Color.White;
-            this.labelF.Location = new System.Drawing.Point(116, 510);
-            this.labelF.Name = "labelF";
-            this.labelF.Size = new System.Drawing.Size(137, 22);
-            this.labelF.TabIndex = 19;
-            this.labelF.Text = "Solante, Charlie";
-            // 
-            // labelE
-            // 
-            this.labelE.AutoSize = true;
-            this.labelE.BackColor = System.Drawing.Color.Transparent;
-            this.labelE.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelE.ForeColor = System.Drawing.Color.White;
-            this.labelE.Location = new System.Drawing.Point(30, 510);
-            this.labelE.Name = "labelE";
-            this.labelE.Size = new System.Drawing.Size(76, 44);
-            this.labelE.TabIndex = 18;
-            this.labelE.Text = "Solante,\r\nCharlie";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(38, 175);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(137, 22);
-            this.label1.TabIndex = 21;
-            this.label1.Text = "Solante, Charlie";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(59, 175);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(137, 22);
-            this.label2.TabIndex = 22;
-            this.label2.Text = "Solante, Charlie";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(37, 192);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(137, 22);
-            this.label3.TabIndex = 23;
-            this.label3.Text = "Solante, Charlie";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(57, 192);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(137, 22);
-            this.label4.TabIndex = 24;
-            this.label4.Text = "Solante, Charlie";
-            // 
             // _3rdFloor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -439,7 +445,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "_3rdFloor";
             this.Padding = new System.Windows.Forms.Padding(16);
-            this.Size = new System.Drawing.Size(1000, 600);
+            this.Size = new System.Drawing.Size(1150, 635);
             this.Load += new System.EventHandler(this._3rdFloor_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

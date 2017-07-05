@@ -70,11 +70,23 @@
     <Compile Include="2ndFloor.Designer.cs">
       <DependentUpon>2ndFloor.cs</DependentUpon>
     </Compile>
+    <Compile Include="2ndFloorD.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="2ndFloorD.Designer.cs">
+      <DependentUpon>2ndFloorD.cs</DependentUpon>
+    </Compile>
     <Compile Include="3rdFloor.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="3rdFloor.Designer.cs">
       <DependentUpon>3rdFloor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="3rdFloorD.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="3rdFloorD.Designer.cs">
+      <DependentUpon>3rdFloorD.cs</DependentUpon>
     </Compile>
     <Compile Include="4thFloor.cs">
       <SubType>UserControl</SubType>
@@ -82,11 +94,23 @@
     <Compile Include="4thFloor.Designer.cs">
       <DependentUpon>4thFloor.cs</DependentUpon>
     </Compile>
+    <Compile Include="4thFloorD.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="4thFloorD.Designer.cs">
+      <DependentUpon>4thFloorD.cs</DependentUpon>
+    </Compile>
     <Compile Include="5thFloor.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="5thFloor.Designer.cs">
       <DependentUpon>5thFloor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="5thFloorD.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="5thFloorD.Designer.cs">
+      <DependentUpon>5thFloorD.cs</DependentUpon>
     </Compile>
     <Compile Include="Alert-Assistance.cs">
       <SubType>UserControl</SubType>
@@ -151,6 +175,12 @@
     </Compile>
     <Compile Include="Insert-MedicalRecords.Designer.cs">
       <DependentUpon>Insert-MedicalRecords.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Insert-TestResult.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Insert-TestResult.Designer.cs">
+      <DependentUpon>Insert-TestResult.cs</DependentUpon>
     </Compile>
     <Compile Include="InsertPrescription-Nurse.cs">
       <SubType>UserControl</SubType>
@@ -247,14 +277,26 @@
     <EmbeddedResource Include="2ndFloor.resx">
       <DependentUpon>2ndFloor.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="2ndFloorD.resx">
+      <DependentUpon>2ndFloorD.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="3rdFloor.resx">
       <DependentUpon>3rdFloor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="3rdFloorD.resx">
+      <DependentUpon>3rdFloorD.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="4thFloor.resx">
       <DependentUpon>4thFloor.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="4thFloorD.resx">
+      <DependentUpon>4thFloorD.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="5thFloor.resx">
       <DependentUpon>5thFloor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="5thFloorD.resx">
+      <DependentUpon>5thFloorD.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Alert-Assistance.resx">
       <DependentUpon>Alert-Assistance.cs</DependentUpon>
@@ -282,6 +324,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Insert-MedicalRecords.resx">
       <DependentUpon>Insert-MedicalRecords.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Insert-TestResult.resx">
+      <DependentUpon>Insert-TestResult.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="InsertPrescription-Nurse.resx">
       <DependentUpon>InsertPrescription-Nurse.cs</DependentUpon>

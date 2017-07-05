@@ -38,5 +38,14 @@ namespace Prescription_Assistance
             dataGridView1.Refresh();
             dataGridView1.DataSource = ds.Tables["search_Room"];
         }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.ColumnIndex == 0)
+            {
+                AssignRoomPatient ar = new AssignRoomPatient(dataGridView1.CurrentRow.Cells[1].Value.ToString(), new Nurse_Dashboard(), "ViewRooms");
+                ar.ShowDialog();
+            }
+        }
     }
 }

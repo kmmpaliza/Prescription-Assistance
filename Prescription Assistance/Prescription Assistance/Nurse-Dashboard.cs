@@ -26,8 +26,10 @@ namespace Prescription_Assistance
             pnlOverlay.Visible = false;
             pnlFrame.Controls.Clear();
             var abc = new Room_Layout();
-            abc.runTime();
-            abc.checkAssistance();
+            abc.runAssistance();
+            abc.runVitals();
+            abc.runTimeforPrescription();
+            abc.runPrescription();
             pnlFrame.Controls.Add(abc);
         }
 
@@ -49,42 +51,27 @@ namespace Prescription_Assistance
 
         private void SecondFloorToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            pnlOverlay.Visible = true;
-            pnlOverlay.Controls.Clear();
-            var abc = new _2ndFloorPrivateRoom();
-            pnlOverlay.Controls.Add(abc);
+            goto2nd();
         }
 
         private void ThirdFloorToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            pnlOverlay.Visible = true;
-            pnlOverlay.Controls.Clear();
-            var abc = new _3rdFloor();
-            pnlOverlay.Controls.Add(abc);
+            goto3rd();
         }
 
         private void FourthFloorToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            pnlOverlay.Visible = true;
-            pnlOverlay.Controls.Clear();
-            var abc = new _4thFloor();
-            pnlOverlay.Controls.Add(abc);
+            goto4th();
         }
 
         private void FifthFloorToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            pnlOverlay.Visible = true;
-            pnlOverlay.Controls.Clear();
-            var abc = new _5thFloor();
-            pnlOverlay.Controls.Add(abc);
+            goto5th();
         }
 
         private void allRoomsToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            pnlOverlay.Visible = true;
-            pnlOverlay.Controls.Clear();
-            var abc = new View_Rooms();
-            pnlOverlay.Controls.Add(abc);
+            allRooms();
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -146,6 +133,51 @@ namespace Prescription_Assistance
         private void button7_Click(object sender, EventArgs e)
         {
             //test results
+            pnlOverlay.Visible = true;
+            pnlOverlay.Controls.Clear();
+            var abc = new Insert_TestResult();
+            pnlOverlay.Controls.Add(abc);
         }
+
+        public void goto2nd()
+        {
+            pnlOverlay.Visible = true;
+            pnlOverlay.Controls.Clear();
+            var abc = new _2ndFloorPrivateRoomD(this);
+            pnlOverlay.Controls.Add(abc);
+        }
+
+        public void goto3rd()
+        {
+            pnlOverlay.Visible = true;
+            pnlOverlay.Controls.Clear();
+            var abc = new _3rdFloor(this);
+            pnlOverlay.Controls.Add(abc);
+        }
+
+        public void goto4th()
+        {
+            pnlOverlay.Visible = true;
+            pnlOverlay.Controls.Clear();
+            var abc = new _4thFloor(this);
+            pnlOverlay.Controls.Add(abc);
+        }
+
+        public void goto5th()
+        {
+            pnlOverlay.Visible = true;
+            pnlOverlay.Controls.Clear();
+            var abc = new _5thFloor(this);
+            pnlOverlay.Controls.Add(abc);
+        }
+
+        public void allRooms()
+        {
+            pnlOverlay.Visible = true;
+            pnlOverlay.Controls.Clear();
+            var abc = new View_Rooms();
+            pnlOverlay.Controls.Add(abc);
+        }
+
     }
 }

@@ -25,11 +25,26 @@ namespace Prescription_Assistance
             this.floor = floor;
         }
 
+        private void returntoWard()
+        {
+            switch (floor)
+            {
+                case "private":
+                    break;
+                case "ward":
+                    Ward_Layout w = new Ward_Layout(floor);
+                    w.Show();
+                    this.Hide();
+                    break;
+            }
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
             ca.Assistance = "Pharmacy";
             ca.Status = "Undone";
             ca.insertAlert();
+            returntoWard();
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -37,6 +52,7 @@ namespace Prescription_Assistance
             ca.Assistance = "Order Meal";
             ca.Status = "Undone";
             ca.insertAlert();
+            returntoWard();
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -44,6 +60,7 @@ namespace Prescription_Assistance
             ca.Assistance = "Room Transfer";
             ca.Status = "Undone";
             ca.insertAlert();
+            returntoWard();
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -51,6 +68,7 @@ namespace Prescription_Assistance
             ca.Assistance = "Medical Consultation";
             ca.Status = "Undone";
             ca.insertAlert();
+            returntoWard();
         }
 
         private void button5_Click(object sender, EventArgs e)
@@ -58,6 +76,7 @@ namespace Prescription_Assistance
             ca.Assistance = "Check Medical Status";
             ca.Status = "Undone";
             ca.insertAlert();
+            returntoWard();
         }
 
         private void button6_Click(object sender, EventArgs e)
@@ -65,6 +84,7 @@ namespace Prescription_Assistance
             ca.Assistance = "Request for Wheelchair";
             ca.Status = "Undone";
             ca.insertAlert();
+            returntoWard();
         }
 
         private void button7_Click(object sender, EventArgs e)
@@ -72,6 +92,7 @@ namespace Prescription_Assistance
             ca.Assistance = "Request for Shuttle";
             ca.Status = "Undone";
             ca.insertAlert();
+            returntoWard();
         }
 
         private void button8_Click(object sender, EventArgs e)
@@ -79,6 +100,7 @@ namespace Prescription_Assistance
             ca.Assistance = "Room Maintenance";
             ca.Status = "Undone";
             ca.insertAlert();
+            returntoWard();
         }
 
         private void button9_Click(object sender, EventArgs e)

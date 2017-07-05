@@ -101,14 +101,24 @@ namespace Prescription_Assistance
             {
                 for (int i = 0; i < ds.Tables[0].Rows.Count; i++)
                 {
-                    showAlertforAssistance(ds.Tables[0].Rows[i]["Alert_ID"].ToString(), ds.Tables[0].Rows[i]["Bed_ID"].ToString(), ds.Tables[0].Rows[i]["Assistance"].ToString(), 10, 10, ds.Tables[0].Rows[i]["Status"].ToString());
+                    showAlertforAssistance(ds.Tables[0].Rows[i]["Alert_ID"].ToString(), ds.Tables[0].Rows[i]["Bed_ID"].ToString(), ds.Tables[0].Rows[i]["Assistance"].ToString(), ds.Tables[0].Rows[i]["Status"].ToString());
                 }
             }
         }
-        public void showAlertforAssistance(string alertid, string bed, string assistance, int pointx, int pointy, string status)
+        public void showAlertforAssistance(string alertid, string bed, string assistance, string status)
         {
+            if (InvokeRequired)
+            {
+                Invoke((MethodInvoker)delegate
+                {
+                    showAlertforAssistance(alertid, bed, assistance, status);
+                });
+                return;
+            }
+
             Alert_Assistance a = new Alert_Assistance(alertid, bed, assistance, status);
-            a.Location = new Point(pointx, pointy);
+            int[] loc = setLocation(bed);
+            a.Location = new Point(loc[0], loc[1]);
             ePanel.Controls.Add(a);
         }
         #endregion
@@ -211,6 +221,8 @@ namespace Prescription_Assistance
                     cpa.Time = "19"; cpa.insertPAlert();
                     break;
             }
+
+            runTimeforPrescription();
         }
 
         public void runPrescription() //every hour
@@ -230,23 +242,24 @@ namespace Prescription_Assistance
             {
                 if (DateTime.Now.Hour.ToString() == ds4.Tables[0].Rows[i]["Time"].ToString())
                 {
-                    showAlertforPrescription(ds4.Tables[0].Rows[i][1].ToString());
+                    showAlertforPrescription(ds4.Tables[0].Rows[i][1].ToString(), ds4.Tables[0].Rows[i][2].ToString());
                 }
             }
         }
-        public void showAlertforPrescription(string palert_id)
+        public void showAlertforPrescription(string palert_id, string bed)
         {
             if (InvokeRequired)
             {
                 Invoke((MethodInvoker)delegate
                 {
-                    showAlertforPrescription(palert_id);
+                    showAlertforPrescription(palert_id, bed);
                 });
                 return;
             }
 
             Alert_Medicine a = new Alert_Medicine(palert_id);
-            a.Location = new Point(100, 100);
+            int[] loc = setLocation(bed);
+            a.Location = new Point(loc[0], loc[1]);
             ePanel.Controls.Add(a);
             a.BringToFront();          
         }
@@ -272,6 +285,205 @@ namespace Prescription_Assistance
         {
             Nurse_Dashboard parent = (Nurse_Dashboard)this.ParentForm;
             parent.changetoInsertMedicalRecords(id, vid);
+        }
+
+        public int[] setLocation(string bed)
+        {
+            int[] loc = new int[2];
+
+            switch (bed)
+            {
+                case "200-A":
+                    loc[0] = 110;
+                    loc[1] = 11;
+                    break;
+                case "200-B":
+                    loc[0] = 110;
+                    loc[1] = 81;
+                    break;
+                case "200-C":
+                    loc[0] = 110;
+                    loc[1] = 151;
+                    break;
+                case "200-D":
+                    loc[0] = 110;
+                    loc[1] = 221;
+                    break;
+                case "200-E":
+                    loc[0] = 313;
+                    loc[1] = 11;
+                    break;
+                case "200-F":
+                    loc[0] = 313;
+                    loc[1] = 81;
+                    break;
+                case "200-G":
+                    loc[0] = 313;
+                    loc[1] = 151;
+                    break;
+                case "200-H":
+                    loc[0] = 313;
+                    loc[1] = 221;
+                    break;
+                case "201":
+                    loc[0] = 503;
+                    loc[1] = 56;
+                    break;
+                case "202":
+                    loc[0] = 503;
+                    loc[1] = 140;
+                    break;
+                case "203":
+                    loc[0] = 503;
+                    loc[1] = 246;
+                    break;
+                case "300-A":
+                    loc[0] = 41;
+                    loc[1] = 409;
+                    break;
+                case "300-B":
+                    loc[0] = 112;
+                    loc[1] = 409;
+                    break;
+                case "300-C":
+                    loc[0] = 184;
+                    loc[1] = 409;
+                    break;
+                case "300-D":
+                    loc[0] = 262;
+                    loc[1] = 409;
+                    break;
+                case "300-E":
+                    loc[0] = 41;
+                    loc[1] = 545;
+                    break;
+                case "300-F":
+                    loc[0] = 112;
+                    loc[1] = 545;
+                    break;
+                case "300-G":
+                    loc[0] = 184;
+                    loc[1] = 545;
+                    break;
+                case "300-H":
+                    loc[0] = 262;
+                    loc[1] = 545;
+                    break;
+                case "301":
+                    loc[0] = 362;
+                    loc[1] = 432;
+                    break;
+                case "302":
+                    loc[0] = 487;
+                    loc[1] = 432;
+                    break;
+                case "303":
+                    loc[0] = 362;
+                    loc[1] = 563;
+                    break;
+                case "304":
+                    loc[0] = 487;
+                    loc[1] = 563;
+                    break;
+                case "400-A":
+                    loc[0] = 594;
+                    loc[1] = 110;
+                    break;
+                case "400-B":
+                    loc[0] = 661;
+                    loc[1] = 110;
+                    break;
+                case "400-C":
+                    loc[0] = 741;
+                    loc[1] = 110;
+                    break;
+                case "400-D":
+                    loc[0] = 802;
+                    loc[1] = 110;
+                    break;
+                case "400-E":
+                    loc[0] = 861;
+                    loc[1] = 110;
+                    break;
+                case "400-F":
+                    loc[0] = 933;
+                    loc[1] = 110;
+                    break;
+                case "400-G":
+                    loc[0] = 974;
+                    loc[1] = 125;
+                    break;
+                case "400-H":
+                    loc[0] = 1031;
+                    loc[1] = 125;
+                    break;
+                case "401":
+                    loc[0] = 606;
+                    loc[1] = 247;
+                    break;
+                case "402":
+                    loc[0] = 728;
+                    loc[1] = 253;
+                    break;
+                case "403":
+                    loc[0] = 856;
+                    loc[1] = 253;
+                    break;
+                case "404":
+                    loc[0] = 989;
+                    loc[1] = 253;
+                    break;
+                case "500-A":
+                    loc[0] = 705;
+                    loc[1] = 407;
+                    break;
+                case "500-B":
+                    loc[0] = 775;
+                    loc[1] = 407;
+                    break;
+                case "500-C":
+                    loc[0] = 845;
+                    loc[1] = 407;
+                    break;
+                case "500-D":
+                    loc[0] = 915;
+                    loc[1] = 407;
+                    break;
+                case "500-E":
+                    loc[0] = 709;
+                    loc[1] = 541;
+                    break;
+                case "500-F":
+                    loc[0] = 779;
+                    loc[1] = 541;
+                    break;
+                case "500-G":
+                    loc[0] = 849;
+                    loc[1] = 541;
+                    break;
+                case "500-H":
+                    loc[0] = 1031;
+                    loc[1] = 541;
+                    break;
+                case "501":
+                    loc[0] = 600;
+                    loc[1] = 400;
+                    break;
+                case "502":
+                    loc[0] = 600;
+                    loc[1] = 530;
+                    break;
+                case "503":
+                    loc[0] = 1010;
+                    loc[1] = 400;
+                    break;
+                case "504":
+                    loc[0] = 1010;
+                    loc[1] = 530;
+                    break;
+            }
+
+            return loc;
         }
     }
 }

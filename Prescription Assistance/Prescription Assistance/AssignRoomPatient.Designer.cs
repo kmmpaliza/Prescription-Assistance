@@ -187,7 +187,9 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "AssignRoomPatient";
             this.Padding = new System.Windows.Forms.Padding(16);
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AssignRoomPatient";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.AssignRoomPatient_FormClosing);
             this.Load += new System.EventHandler(this.AssignRoomPatient_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);

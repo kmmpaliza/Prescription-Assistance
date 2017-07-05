@@ -14,86 +14,81 @@ namespace Prescription_Assistance
     {
         Class_Rooms cr = new Class_Rooms();
         DataSet ds = new DataSet();
+        Nurse_Dashboard n;
 
-        public _3rdFloor()
+        public _3rdFloor(Nurse_Dashboard n)
         {
             InitializeComponent();
+            this.n = n;
+        }
+
+        private void showDialog(string bed)
+        {
+            AssignRoomPatient ar = new AssignRoomPatient(bed, n, "3rd Floor");
+            ar.ShowDialog();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            AssignRoomPatient ar = new AssignRoomPatient("300-A");
-            ar.ShowDialog();
+            showDialog("300-A");
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            AssignRoomPatient ar = new AssignRoomPatient("300-B");
-            ar.ShowDialog();
+            showDialog("300-B");
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            AssignRoomPatient ar = new AssignRoomPatient("300-C");
-            ar.ShowDialog();
+            showDialog("300-C");
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            AssignRoomPatient ar = new AssignRoomPatient("300-D");
-            ar.ShowDialog();
+            showDialog("300-D");
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
-            AssignRoomPatient ar = new AssignRoomPatient("300-E");
-            ar.ShowDialog();
+            showDialog("300-E");
         }
 
         private void button6_Click(object sender, EventArgs e)
         {
-            AssignRoomPatient ar = new AssignRoomPatient("300-F");
-            ar.ShowDialog();
+            showDialog("300-F");
         }
 
         private void button7_Click(object sender, EventArgs e)
         {
-            AssignRoomPatient ar = new AssignRoomPatient("300-G");
-            ar.ShowDialog();
+            showDialog("300-G");
         }
 
         private void button8_Click(object sender, EventArgs e)
         {
-            AssignRoomPatient ar = new AssignRoomPatient("300-H");
-            ar.ShowDialog();
+            showDialog("300-H");
         }
 
         private void button9_Click(object sender, EventArgs e)
         {
-            AssignRoomPatient ar = new AssignRoomPatient("301");
-            ar.ShowDialog();
+            showDialog("301");
         }
 
         private void button10_Click(object sender, EventArgs e)
         {
-            AssignRoomPatient ar = new AssignRoomPatient("302");
-            ar.ShowDialog();
+            showDialog("302");
         }
 
         private void button11_Click(object sender, EventArgs e)
         {
-            AssignRoomPatient ar = new AssignRoomPatient("303");
-            ar.ShowDialog();
+            showDialog("303");
         }
 
         private void button12_Click(object sender, EventArgs e)
         {
-            AssignRoomPatient ar = new AssignRoomPatient("304");
-            ar.ShowDialog();
+            showDialog("304");
         }
 
-
-        private void _3rdFloor_Load(object sender, EventArgs e)
+        public void refresh()
         {
             cr.Bed_id = "300-A";
             ds = cr.viewBedandPatient();
@@ -142,6 +137,11 @@ namespace Prescription_Assistance
             cr.Bed_id = "304";
             ds = cr.viewBedandPatient();
             label4.Text = ds.Tables[0].Rows[0][3].ToString();
+        }
+
+        private void _3rdFloor_Load(object sender, EventArgs e)
+        {
+            refresh();            
         }
     }
 }

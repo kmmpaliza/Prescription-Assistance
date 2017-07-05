@@ -10,18 +10,20 @@ using ClassLibrary;
 
 namespace Prescription_Assistance
 {
-    public partial class _2ndFloorPrivateRoom : UserControl
+    public partial class _2ndFloorPrivateRoomD : UserControl
     {
         Class_Rooms cr = new Class_Rooms();
         DataSet ds = new DataSet();
+        Nurse_Dashboard n;
 
-        public _2ndFloorPrivateRoom()
+        public _2ndFloorPrivateRoomD(Nurse_Dashboard n)
         {
             InitializeComponent();
+            this.n = n;
             
         }
 
-        private void _2ndFloorPrivateRoom_Load(object sender, EventArgs e)
+        public void refresh()
         {
             cr.Bed_id = "200-A";
             ds = cr.viewBedandPatient();
@@ -68,70 +70,70 @@ namespace Prescription_Assistance
             label3.Text = ds.Tables[0].Rows[0][3].ToString();
         }
 
+        public void _2ndFloorPrivateRoom_Load(object sender, EventArgs e)
+        {
+            refresh();
+        }
+
+        private void showDialog(string bed)
+        {
+            AssignRoomPatient ar = new AssignRoomPatient(bed, n, "2nd Floor");
+            ar.ShowDialog();
+        }
+
         private void button1_Click_1(object sender, EventArgs e)
         {
-            AssignRoomPatient ar = new AssignRoomPatient("200-A");
-            ar.ShowDialog();
+            showDialog("200-A");
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            AssignRoomPatient ar = new AssignRoomPatient("200-B");
-            ar.ShowDialog();
+            showDialog("200-B");
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            AssignRoomPatient ar = new AssignRoomPatient("200-C");
-            ar.ShowDialog();
+            showDialog("200-C");
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            AssignRoomPatient ar = new AssignRoomPatient("200-D");
-            ar.ShowDialog();
+            showDialog("200-D");
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
-            AssignRoomPatient ar = new AssignRoomPatient("200-E");
-            ar.ShowDialog();
+            showDialog("200-E");
         }
 
         private void button6_Click(object sender, EventArgs e)
         {
-            AssignRoomPatient ar = new AssignRoomPatient("200-F");
-            ar.ShowDialog();
+            showDialog("200-F");
         }
 
         private void button7_Click(object sender, EventArgs e)
         {
-            AssignRoomPatient ar = new AssignRoomPatient("200-G");
-            ar.ShowDialog();
+            showDialog("200-G");
         }
 
         private void button8_Click(object sender, EventArgs e)
         {
-            AssignRoomPatient ar = new AssignRoomPatient("200-H");
-            ar.ShowDialog();
+            showDialog("200-H");
         }
 
         private void button11_Click(object sender, EventArgs e)
         {
-            AssignRoomPatient ar = new AssignRoomPatient("201");
-            ar.ShowDialog();
+            showDialog("201");
         }
 
         private void button12_Click(object sender, EventArgs e)
         {
-            AssignRoomPatient ar = new AssignRoomPatient("202");
-            ar.ShowDialog();
+            showDialog("202");
         }
 
         private void button13_Click(object sender, EventArgs e)
         {
-            AssignRoomPatient ar = new AssignRoomPatient("203");
-            ar.ShowDialog();
+            showDialog("203");
         }
     }
 }

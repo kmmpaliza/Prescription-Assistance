@@ -31,8 +31,9 @@
             this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.button7 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -43,11 +44,9 @@
             this.ThirdFloorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.FourthFloorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.FifthFloorToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.allRoomsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pnlOverlay = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.contextMenuStrip1.SuspendLayout();
@@ -81,17 +80,6 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(102, 18);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(99, 22);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "John Smith";
-            // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(48)))), ((int)(((byte)(46)))));
@@ -105,6 +93,36 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(200, 743);
             this.panel2.TabIndex = 1;
+            // 
+            // button7
+            // 
+            this.button7.BackColor = System.Drawing.Color.Transparent;
+            this.button7.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(184)))), ((int)(((byte)(182)))));
+            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button7.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button7.ForeColor = System.Drawing.Color.White;
+            this.button7.Location = new System.Drawing.Point(0, 275);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(201, 55);
+            this.button7.TabIndex = 5;
+            this.button7.Text = "Test Results";
+            this.button7.UseVisualStyleBackColor = false;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
+            // 
+            // button6
+            // 
+            this.button6.BackColor = System.Drawing.Color.Transparent;
+            this.button6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(184)))), ((int)(((byte)(182)))));
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button6.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button6.ForeColor = System.Drawing.Color.White;
+            this.button6.Location = new System.Drawing.Point(0, 220);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(201, 55);
+            this.button6.TabIndex = 4;
+            this.button6.Text = "Medical Records";
+            this.button6.UseVisualStyleBackColor = false;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // button5
             // 
@@ -181,16 +199,15 @@
             this.SecondFloorToolStripMenuItem,
             this.ThirdFloorToolStripMenuItem,
             this.FourthFloorToolStripMenuItem,
-            this.FifthFloorToolStripMenuItem1,
-            this.allRoomsToolStripMenuItem});
+            this.FifthFloorToolStripMenuItem1});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(131, 114);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(128, 92);
             // 
             // SecondFloorToolStripMenuItem
             // 
             this.SecondFloorToolStripMenuItem.Font = new System.Drawing.Font("Open Sans", 9F);
             this.SecondFloorToolStripMenuItem.Name = "SecondFloorToolStripMenuItem";
-            this.SecondFloorToolStripMenuItem.Size = new System.Drawing.Size(130, 22);
+            this.SecondFloorToolStripMenuItem.Size = new System.Drawing.Size(127, 22);
             this.SecondFloorToolStripMenuItem.Text = "2nd Floor";
             this.SecondFloorToolStripMenuItem.Click += new System.EventHandler(this.SecondFloorToolStripMenuItem_Click);
             // 
@@ -198,7 +215,7 @@
             // 
             this.ThirdFloorToolStripMenuItem.Font = new System.Drawing.Font("Open Sans", 9F);
             this.ThirdFloorToolStripMenuItem.Name = "ThirdFloorToolStripMenuItem";
-            this.ThirdFloorToolStripMenuItem.Size = new System.Drawing.Size(130, 22);
+            this.ThirdFloorToolStripMenuItem.Size = new System.Drawing.Size(127, 22);
             this.ThirdFloorToolStripMenuItem.Text = "3rd Floor";
             this.ThirdFloorToolStripMenuItem.Click += new System.EventHandler(this.ThirdFloorToolStripMenuItem_Click);
             // 
@@ -206,7 +223,7 @@
             // 
             this.FourthFloorToolStripMenuItem.Font = new System.Drawing.Font("Open Sans", 9F);
             this.FourthFloorToolStripMenuItem.Name = "FourthFloorToolStripMenuItem";
-            this.FourthFloorToolStripMenuItem.Size = new System.Drawing.Size(130, 22);
+            this.FourthFloorToolStripMenuItem.Size = new System.Drawing.Size(127, 22);
             this.FourthFloorToolStripMenuItem.Text = "4th Floor";
             this.FourthFloorToolStripMenuItem.Click += new System.EventHandler(this.FourthFloorToolStripMenuItem_Click);
             // 
@@ -214,17 +231,9 @@
             // 
             this.FifthFloorToolStripMenuItem1.Font = new System.Drawing.Font("Open Sans", 9F);
             this.FifthFloorToolStripMenuItem1.Name = "FifthFloorToolStripMenuItem1";
-            this.FifthFloorToolStripMenuItem1.Size = new System.Drawing.Size(130, 22);
+            this.FifthFloorToolStripMenuItem1.Size = new System.Drawing.Size(127, 22);
             this.FifthFloorToolStripMenuItem1.Text = "5th Floor";
             this.FifthFloorToolStripMenuItem1.Click += new System.EventHandler(this.FifthFloorToolStripMenuItem1_Click);
-            // 
-            // allRoomsToolStripMenuItem
-            // 
-            this.allRoomsToolStripMenuItem.Font = new System.Drawing.Font("Open Sans", 9F);
-            this.allRoomsToolStripMenuItem.Name = "allRoomsToolStripMenuItem";
-            this.allRoomsToolStripMenuItem.Size = new System.Drawing.Size(130, 22);
-            this.allRoomsToolStripMenuItem.Text = "All Rooms";
-            this.allRoomsToolStripMenuItem.Click += new System.EventHandler(this.allRoomsToolStripMenuItem_Click);
             // 
             // pnlOverlay
             // 
@@ -233,6 +242,18 @@
             this.pnlOverlay.Name = "pnlOverlay";
             this.pnlOverlay.Size = new System.Drawing.Size(1171, 673);
             this.pnlOverlay.TabIndex = 3;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(102, 18);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(99, 22);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "John Smith";
+            this.label1.Visible = false;
             // 
             // pictureBox1
             // 
@@ -243,36 +264,6 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
-            // 
-            // button6
-            // 
-            this.button6.BackColor = System.Drawing.Color.Transparent;
-            this.button6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(184)))), ((int)(((byte)(182)))));
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button6.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.ForeColor = System.Drawing.Color.White;
-            this.button6.Location = new System.Drawing.Point(0, 220);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(201, 55);
-            this.button6.TabIndex = 4;
-            this.button6.Text = "Medical Records";
-            this.button6.UseVisualStyleBackColor = false;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
-            // 
-            // button7
-            // 
-            this.button7.BackColor = System.Drawing.Color.Transparent;
-            this.button7.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(184)))), ((int)(((byte)(182)))));
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button7.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.ForeColor = System.Drawing.Color.White;
-            this.button7.Location = new System.Drawing.Point(0, 275);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(201, 55);
-            this.button7.TabIndex = 5;
-            this.button7.Text = "Test Results";
-            this.button7.UseVisualStyleBackColor = false;
-            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // Doctor_Dashboard
             // 
@@ -301,7 +292,6 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button3;
@@ -313,10 +303,10 @@
         private System.Windows.Forms.ToolStripMenuItem ThirdFloorToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem FourthFloorToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem FifthFloorToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem allRoomsToolStripMenuItem;
         private System.Windows.Forms.Panel pnlOverlay;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Label label1;
 
     }
 }

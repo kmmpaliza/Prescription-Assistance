@@ -15,7 +15,7 @@ namespace Prescription_Assistance
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Main());
+            Application.Run(new FileUpload());
         }
     }
 }

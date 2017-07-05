@@ -61,3 +61,44 @@ C:\Users\Katrina\Documents\Freelance\Topic2\Prescription Assistance\Prescription
 C:\Users\Katrina\Documents\Freelance\Topic2\Prescription Assistance\Prescription Assistance\obj\x86\Debug\Prescription Assistance.pdb
 C:\Users\Katrina\Documents\Freelance\Topic2\Prescription Assistance\Prescription Assistance\obj\x86\Debug\Prescription_Assistance.View_MedicalRecords.resources
 C:\Users\Katrina\Documents\Freelance\Topic2\Prescription Assistance\Prescription Assistance\obj\x86\Debug\Prescription_Assistance.AssignRoomPatient.resources
+D:\MC\Programs\ASP\Topic2\Prescription Assistance\Prescription Assistance\bin\Debug\Prescription Assistance.exe.config
+D:\MC\Programs\ASP\Topic2\Prescription Assistance\Prescription Assistance\obj\x86\Debug\Prescription Assistance.exe
+D:\MC\Programs\ASP\Topic2\Prescription Assistance\Prescription Assistance\obj\x86\Debug\Prescription Assistance.pdb
+D:\MC\Programs\ASP\Topic2\Prescription Assistance\Prescription Assistance\obj\x86\Debug\Prescription Assistance.csprojResolveAssemblyReference.cache
+D:\MC\Programs\ASP\Topic2\Prescription Assistance\Prescription Assistance\obj\x86\Debug\Prescription_Assistance._2ndFloorPrivateRoom.resources
+D:\MC\Programs\ASP\Topic2\Prescription Assistance\Prescription Assistance\obj\x86\Debug\Prescription_Assistance._3rdFloor.resources
+D:\MC\Programs\ASP\Topic2\Prescription Assistance\Prescription Assistance\obj\x86\Debug\Prescription_Assistance._4thFloor.resources
+D:\MC\Programs\ASP\Topic2\Prescription Assistance\Prescription Assistance\obj\x86\Debug\Prescription_Assistance._5thFloor.resources
+D:\MC\Programs\ASP\Topic2\Prescription Assistance\Prescription Assistance\obj\x86\Debug\Prescription_Assistance.Alert_Assistance.resources
+D:\MC\Programs\ASP\Topic2\Prescription Assistance\Prescription Assistance\obj\x86\Debug\Prescription_Assistance.Alert_Medicine.resources
+D:\MC\Programs\ASP\Topic2\Prescription Assistance\Prescription Assistance\obj\x86\Debug\Prescription_Assistance.Alert_Vitals.resources
+D:\MC\Programs\ASP\Topic2\Prescription Assistance\Prescription Assistance\obj\x86\Debug\Prescription_Assistance.AssignRoomPatient.resources
+D:\MC\Programs\ASP\Topic2\Prescription Assistance\Prescription Assistance\obj\x86\Debug\Prescription_Assistance.Doctor_Dashboard.resources
+D:\MC\Programs\ASP\Topic2\Prescription Assistance\Prescription Assistance\obj\x86\Debug\Prescription_Assistance.ExtendedPanel.resources
+D:\MC\Programs\ASP\Topic2\Prescription Assistance\Prescription Assistance\obj\x86\Debug\Prescription_Assistance.FileUpload.resources
+D:\MC\Programs\ASP\Topic2\Prescription Assistance\Prescription Assistance\obj\x86\Debug\Prescription_Assistance.Form1.resources
+D:\MC\Programs\ASP\Topic2\Prescription Assistance\Prescription Assistance\obj\x86\Debug\Prescription_Assistance.Insert_InPatient.resources
+D:\MC\Programs\ASP\Topic2\Prescription Assistance\Prescription Assistance\obj\x86\Debug\Prescription_Assistance.Insert_MedicalRecords.resources
+D:\MC\Programs\ASP\Topic2\Prescription Assistance\Prescription Assistance\obj\x86\Debug\Prescription_Assistance.InsertPrescription_Nurse.resources
+D:\MC\Programs\ASP\Topic2\Prescription Assistance\Prescription Assistance\obj\x86\Debug\Prescription_Assistance.InsertPrescription.resources
+D:\MC\Programs\ASP\Topic2\Prescription Assistance\Prescription Assistance\obj\x86\Debug\Prescription_Assistance.Main.resources
+D:\MC\Programs\ASP\Topic2\Prescription Assistance\Prescription Assistance\obj\x86\Debug\Prescription_Assistance.Nurse_Dashboard.resources
+D:\MC\Programs\ASP\Topic2\Prescription Assistance\Prescription Assistance\obj\x86\Debug\Prescription_Assistance.Patient_Dashboard.resources
+D:\MC\Programs\ASP\Topic2\Prescription Assistance\Prescription Assistance\obj\x86\Debug\Prescription_Assistance.Properties.Resources.resources
+D:\MC\Programs\ASP\Topic2\Prescription Assistance\Prescription Assistance\obj\x86\Debug\Prescription_Assistance.Room_Layout.resources
+D:\MC\Programs\ASP\Topic2\Prescription Assistance\Prescription Assistance\obj\x86\Debug\Prescription_Assistance.Room_Type.resources
+D:\MC\Programs\ASP\Topic2\Prescription Assistance\Prescription Assistance\obj\x86\Debug\Prescription_Assistance.Show_PatientinBed.resources
+D:\MC\Programs\ASP\Topic2\Prescription Assistance\Prescription Assistance\obj\x86\Debug\Prescription_Assistance.Update_InPatientDetailsDoctor.resources
+D:\MC\Programs\ASP\Topic2\Prescription Assistance\Prescription Assistance\obj\x86\Debug\Prescription_Assistance.Update_InPatientDetailsNurse.resources
+D:\MC\Programs\ASP\Topic2\Prescription Assistance\Prescription Assistance\obj\x86\Debug\Prescription_Assistance.View_InPatient_Nurse.resources
+D:\MC\Programs\ASP\Topic2\Prescription Assistance\Prescription Assistance\obj\x86\Debug\Prescription_Assistance.View_InPatient.resources
+D:\MC\Programs\ASP\Topic2\Prescription Assistance\Prescription Assistance\obj\x86\Debug\Prescription_Assistance.View_MedicalRecords.resources
+D:\MC\Programs\ASP\Topic2\Prescription Assistance\Prescription Assistance\obj\x86\Debug\Prescription_Assistance.View_Rooms.resources
+D:\MC\Programs\ASP\Topic2\Prescription Assistance\Prescription Assistance\obj\x86\Debug\Prescription_Assistance.Ward_Layout.resources
+D:\MC\Programs\ASP\Topic2\Prescription Assistance\Prescription Assistance\obj\x86\Debug\Prescription Assistance.csproj.GenerateResource.Cache
+D:\MC\Programs\ASP\Topic2\Prescription Assistance\Prescription Assistance\bin\Debug\Database1.mdf
+D:\MC\Programs\ASP\Topic2\Prescription Assistance\Prescription Assistance\bin\Debug\Database1_log.ldf
+D:\MC\Programs\ASP\Topic2\Prescription Assistance\Prescription Assistance\bin\Debug\Prescription Assistance.exe
+D:\MC\Programs\ASP\Topic2\Prescription Assistance\Prescription Assistance\bin\Debug\Prescription Assistance.pdb
+D:\MC\Programs\ASP\Topic2\Prescription Assistance\Prescription Assistance\bin\Debug\ClassLibrary.dll
+D:\MC\Programs\ASP\Topic2\Prescription Assistance\Prescription Assistance\bin\Debug\ClassLibrary.pdb

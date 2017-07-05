@@ -8,3 +8,8 @@ C:\Users\Katrina\Documents\Freelance\Topic2\Prescription Assistance\ClassLibrary
 C:\Users\Katrina\Documents\Freelance\Topic2\Prescription Assistance\ClassLibrary\obj\Debug\ClassLibrary.csprojResolveAssemblyReference.cache
 C:\Users\Katrina\Documents\Freelance\Topic2\Prescription Assistance\ClassLibrary\obj\Debug\ClassLibrary.dll
 C:\Users\Katrina\Documents\Freelance\Topic2\Prescription Assistance\ClassLibrary\obj\Debug\ClassLibrary.pdb
+D:\MC\Programs\ASP\Topic2\Prescription Assistance\ClassLibrary\bin\Debug\ClassLibrary.dll
+D:\MC\Programs\ASP\Topic2\Prescription Assistance\ClassLibrary\bin\Debug\ClassLibrary.pdb
+D:\MC\Programs\ASP\Topic2\Prescription Assistance\ClassLibrary\obj\Debug\ClassLibrary.csprojResolveAssemblyReference.cache
+D:\MC\Programs\ASP\Topic2\Prescription Assistance\ClassLibrary\obj\Debug\ClassLibrary.dll
+D:\MC\Programs\ASP\Topic2\Prescription Assistance\ClassLibrary\obj\Debug\ClassLibrary.pdb

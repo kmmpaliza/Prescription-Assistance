@@ -216,7 +216,7 @@
             this.labelG.Size = new System.Drawing.Size(137, 22);
             this.labelG.TabIndex = 16;
             this.labelG.Text = "Solante, Charlie";
-            this.labelG.Click += new System.EventHandler(this.labelG_Click);
+           // this.labelG.Click += new System.EventHandler(this.labelG_Click);
             // 
             // labelF
             // 
@@ -229,7 +229,7 @@
             this.labelF.Size = new System.Drawing.Size(137, 22);
             this.labelF.TabIndex = 15;
             this.labelF.Text = "Solante, Charlie";
-            this.labelF.Click += new System.EventHandler(this.labelF_Click);
+          //  this.labelF.Click += new System.EventHandler(this.labelF_Click);
             // 
             // labelE
             // 
@@ -242,7 +242,7 @@
             this.labelE.Size = new System.Drawing.Size(137, 22);
             this.labelE.TabIndex = 14;
             this.labelE.Text = "Solante, Charlie";
-            this.labelE.Click += new System.EventHandler(this.labelE_Click);
+          //  this.labelE.Click += new System.EventHandler(this.labelE_Click);
             // 
             // label7
             // 
@@ -266,7 +266,7 @@
             this.labelD.Size = new System.Drawing.Size(137, 22);
             this.labelD.TabIndex = 12;
             this.labelD.Text = "Solante, Charlie";
-            this.labelD.Click += new System.EventHandler(this.labelD_Click);
+          //  this.labelD.Click += new System.EventHandler(this.labelD_Click);
             // 
             // labelC
             // 
@@ -279,7 +279,7 @@
             this.labelC.Size = new System.Drawing.Size(137, 22);
             this.labelC.TabIndex = 11;
             this.labelC.Text = "Solante, Charlie";
-            this.labelC.Click += new System.EventHandler(this.labelC_Click);
+          //  this.labelC.Click += new System.EventHandler(this.labelC_Click);
             // 
             // labelB
             // 
@@ -292,7 +292,7 @@
             this.labelB.Size = new System.Drawing.Size(137, 22);
             this.labelB.TabIndex = 10;
             this.labelB.Text = "Solante, Charlie";
-            this.labelB.Click += new System.EventHandler(this.labelB_Click);
+          //  this.labelB.Click += new System.EventHandler(this.labelB_Click);
             // 
             // labelA
             // 
@@ -305,7 +305,7 @@
             this.labelA.Size = new System.Drawing.Size(137, 22);
             this.labelA.TabIndex = 9;
             this.labelA.Text = "Solante, Charlie";
-            this.labelA.Click += new System.EventHandler(this.labelA_Click);
+           // this.labelA.Click += new System.EventHandler(this.labelA_Click);
             // 
             // button8
             // 

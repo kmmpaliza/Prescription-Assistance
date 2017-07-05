@@ -74,7 +74,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(230, 276);
             this.panel1.TabIndex = 13;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+          //  this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // button9
             // 
@@ -121,7 +121,7 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(230, 276);
             this.panel3.TabIndex = 15;
-            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
+        //    this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
             // button11
             // 
@@ -145,7 +145,7 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(230, 276);
             this.panel4.TabIndex = 16;
-            this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
+         //   this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
             // 
             // button12
             // 
@@ -291,7 +291,7 @@
             this.labelC.Size = new System.Drawing.Size(137, 22);
             this.labelC.TabIndex = 15;
             this.labelC.Text = "Solante, Charlie";
-            this.labelC.Click += new System.EventHandler(this.labelC_Click);
+           // this.labelC.Click += new System.EventHandler(this.labelC_Click);
             // 
             // labelB
             // 
@@ -304,7 +304,7 @@
             this.labelB.Size = new System.Drawing.Size(76, 44);
             this.labelB.TabIndex = 14;
             this.labelB.Text = "Solante,\r\nCharlie";
-            this.labelB.Click += new System.EventHandler(this.labelB_Click);
+           // this.labelB.Click += new System.EventHandler(this.labelB_Click);
             // 
             // labelA
             // 
@@ -329,7 +329,7 @@
             this.labelD.Size = new System.Drawing.Size(137, 22);
             this.labelD.TabIndex = 16;
             this.labelD.Text = "Solante, Charlie";
-            this.labelD.Click += new System.EventHandler(this.labelD_Click);
+          //  this.labelD.Click += new System.EventHandler(this.labelD_Click);
             // 
             // labelH
             // 

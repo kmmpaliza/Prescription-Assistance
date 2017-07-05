@@ -20,7 +20,7 @@ namespace Prescription_Assistance
         {
             //this.TopMost = true;
             //this.FormBorderStyle = FormBorderStyle.None;
-            this.WindowState = FormWindowState.Maximized;
+            //this.WindowState = FormWindowState.Maximized;
 
             pnlOverlay.Controls.Clear();
             pnlOverlay.Visible = false;
@@ -177,6 +177,11 @@ namespace Prescription_Assistance
             pnlOverlay.Controls.Clear();
             var abc = new View_Rooms();
             pnlOverlay.Controls.Add(abc);
+        }
+
+        private void pnlOverlay_Paint(object sender, PaintEventArgs e)
+        {
+
         }
 
     }

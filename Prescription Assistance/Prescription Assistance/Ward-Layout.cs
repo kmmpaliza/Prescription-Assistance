@@ -26,7 +26,7 @@ namespace Prescription_Assistance
         {
             //this.TopMost = true;
 
-            this.WindowState = FormWindowState.Maximized;
+          //  this.WindowState = FormWindowState.Maximized;
             //this.FormBorderStyle = FormBorderStyle.None;
 
             switch (floor)
@@ -143,6 +143,46 @@ namespace Prescription_Assistance
             Room_Type r = new Room_Type();
             r.Show();
             this.Hide();
+        }
+
+        private void labelA_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labelB_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labelC_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labelD_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labelE_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labelF_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labelG_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labelH_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

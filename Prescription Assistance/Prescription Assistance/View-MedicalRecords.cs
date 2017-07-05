@@ -28,5 +28,10 @@ namespace Prescription_Assistance
             dataGridView1.ReadOnly = true;
             dataGridView1.DataSource = ds.Tables[0];
         }
+
+        private void View_MedicalRecords_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

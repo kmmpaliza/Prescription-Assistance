@@ -68,7 +68,7 @@
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.button11);
-            this.panel1.Location = new System.Drawing.Point(581, 19);
+            this.panel1.Location = new System.Drawing.Point(656, 37);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(400, 169);
             this.panel1.TabIndex = 12;
@@ -77,17 +77,17 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(31, 72);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(137, 22);
+            this.label1.Size = new System.Drawing.Size(137, 20);
             this.label1.TabIndex = 18;
             this.label1.Text = "Solante, Charlie";
             // 
             // button11
             // 
-            this.button11.Font = new System.Drawing.Font("Open Sans", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button11.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button11.Image = global::Prescription_Assistance.Properties.Resources._private;
             this.button11.Location = new System.Drawing.Point(203, 24);
             this.button11.Name = "button11";
@@ -103,7 +103,7 @@
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.button12);
-            this.panel2.Location = new System.Drawing.Point(581, 215);
+            this.panel2.Location = new System.Drawing.Point(656, 233);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(400, 169);
             this.panel2.TabIndex = 13;
@@ -112,17 +112,17 @@
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(31, 81);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(137, 22);
+            this.label2.Size = new System.Drawing.Size(137, 20);
             this.label2.TabIndex = 19;
             this.label2.Text = "Solante, Charlie";
             // 
             // button12
             // 
-            this.button12.Font = new System.Drawing.Font("Open Sans", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button12.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button12.Image = global::Prescription_Assistance.Properties.Resources._private;
             this.button12.Location = new System.Drawing.Point(203, 33);
             this.button12.Name = "button12";
@@ -138,7 +138,7 @@
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel3.Controls.Add(this.label3);
             this.panel3.Controls.Add(this.button13);
-            this.panel3.Location = new System.Drawing.Point(581, 411);
+            this.panel3.Location = new System.Drawing.Point(656, 429);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(400, 169);
             this.panel3.TabIndex = 13;
@@ -147,17 +147,17 @@
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(31, 74);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(137, 22);
+            this.label3.Size = new System.Drawing.Size(137, 20);
             this.label3.TabIndex = 20;
             this.label3.Text = "Solante, Charlie";
             // 
             // button13
             // 
-            this.button13.Font = new System.Drawing.Font("Open Sans", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button13.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button13.Image = global::Prescription_Assistance.Properties.Resources._private;
             this.button13.Location = new System.Drawing.Point(203, 26);
             this.button13.Name = "button13";
@@ -187,7 +187,7 @@
             this.panel4.Controls.Add(this.button3);
             this.panel4.Controls.Add(this.button2);
             this.panel4.Controls.Add(this.button1);
-            this.panel4.Location = new System.Drawing.Point(19, 19);
+            this.panel4.Location = new System.Drawing.Point(94, 37);
             this.panel4.Name = "panel4";
             this.panel4.Padding = new System.Windows.Forms.Padding(8);
             this.panel4.Size = new System.Drawing.Size(540, 561);
@@ -197,11 +197,11 @@
             // 
             this.labelH.AutoSize = true;
             this.labelH.BackColor = System.Drawing.Color.Transparent;
-            this.labelH.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelH.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelH.ForeColor = System.Drawing.Color.White;
             this.labelH.Location = new System.Drawing.Point(364, 529);
             this.labelH.Name = "labelH";
-            this.labelH.Size = new System.Drawing.Size(137, 22);
+            this.labelH.Size = new System.Drawing.Size(137, 20);
             this.labelH.TabIndex = 17;
             this.labelH.Text = "Solante, Charlie";
             // 
@@ -209,11 +209,11 @@
             // 
             this.labelG.AutoSize = true;
             this.labelG.BackColor = System.Drawing.Color.Transparent;
-            this.labelG.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelG.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelG.ForeColor = System.Drawing.Color.White;
             this.labelG.Location = new System.Drawing.Point(364, 389);
             this.labelG.Name = "labelG";
-            this.labelG.Size = new System.Drawing.Size(137, 22);
+            this.labelG.Size = new System.Drawing.Size(137, 20);
             this.labelG.TabIndex = 16;
             this.labelG.Text = "Solante, Charlie";
             // 
@@ -221,11 +221,11 @@
             // 
             this.labelF.AutoSize = true;
             this.labelF.BackColor = System.Drawing.Color.Transparent;
-            this.labelF.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelF.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelF.ForeColor = System.Drawing.Color.White;
             this.labelF.Location = new System.Drawing.Point(364, 245);
             this.labelF.Name = "labelF";
-            this.labelF.Size = new System.Drawing.Size(137, 22);
+            this.labelF.Size = new System.Drawing.Size(137, 20);
             this.labelF.TabIndex = 15;
             this.labelF.Text = "Solante, Charlie";
             // 
@@ -233,11 +233,11 @@
             // 
             this.labelE.AutoSize = true;
             this.labelE.BackColor = System.Drawing.Color.Transparent;
-            this.labelE.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelE.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelE.ForeColor = System.Drawing.Color.White;
             this.labelE.Location = new System.Drawing.Point(364, 103);
             this.labelE.Name = "labelE";
-            this.labelE.Size = new System.Drawing.Size(137, 22);
+            this.labelE.Size = new System.Drawing.Size(137, 20);
             this.labelE.TabIndex = 14;
             this.labelE.Text = "Solante, Charlie";
             // 
@@ -245,10 +245,10 @@
             // 
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.White;
-            this.label7.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(367, -39);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(137, 22);
+            this.label7.Size = new System.Drawing.Size(137, 20);
             this.label7.TabIndex = 13;
             this.label7.Text = "Solante, Charlie";
             // 
@@ -256,11 +256,11 @@
             // 
             this.labelD.AutoSize = true;
             this.labelD.BackColor = System.Drawing.Color.Transparent;
-            this.labelD.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelD.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelD.ForeColor = System.Drawing.Color.White;
             this.labelD.Location = new System.Drawing.Point(40, 531);
             this.labelD.Name = "labelD";
-            this.labelD.Size = new System.Drawing.Size(137, 22);
+            this.labelD.Size = new System.Drawing.Size(137, 20);
             this.labelD.TabIndex = 12;
             this.labelD.Text = "Solante, Charlie";
             // 
@@ -268,11 +268,11 @@
             // 
             this.labelC.AutoSize = true;
             this.labelC.BackColor = System.Drawing.Color.Transparent;
-            this.labelC.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelC.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelC.ForeColor = System.Drawing.Color.White;
             this.labelC.Location = new System.Drawing.Point(40, 387);
             this.labelC.Name = "labelC";
-            this.labelC.Size = new System.Drawing.Size(137, 22);
+            this.labelC.Size = new System.Drawing.Size(137, 20);
             this.labelC.TabIndex = 11;
             this.labelC.Text = "Solante, Charlie";
             // 
@@ -280,11 +280,11 @@
             // 
             this.labelB.AutoSize = true;
             this.labelB.BackColor = System.Drawing.Color.Transparent;
-            this.labelB.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelB.ForeColor = System.Drawing.Color.White;
             this.labelB.Location = new System.Drawing.Point(40, 245);
             this.labelB.Name = "labelB";
-            this.labelB.Size = new System.Drawing.Size(137, 22);
+            this.labelB.Size = new System.Drawing.Size(137, 20);
             this.labelB.TabIndex = 10;
             this.labelB.Text = "Solante, Charlie";
             // 
@@ -292,17 +292,17 @@
             // 
             this.labelA.AutoSize = true;
             this.labelA.BackColor = System.Drawing.Color.Transparent;
-            this.labelA.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelA.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelA.ForeColor = System.Drawing.Color.White;
             this.labelA.Location = new System.Drawing.Point(40, 103);
             this.labelA.Name = "labelA";
-            this.labelA.Size = new System.Drawing.Size(137, 22);
+            this.labelA.Size = new System.Drawing.Size(137, 20);
             this.labelA.TabIndex = 9;
             this.labelA.Text = "Solante, Charlie";
             // 
             // button8
             // 
-            this.button8.Font = new System.Drawing.Font("Open Sans", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button8.Image = global::Prescription_Assistance.Properties.Resources.otherside;
             this.button8.Location = new System.Drawing.Point(335, 437);
             this.button8.Name = "button8";
@@ -314,7 +314,7 @@
             // 
             // button7
             // 
-            this.button7.Font = new System.Drawing.Font("Open Sans", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button7.Image = global::Prescription_Assistance.Properties.Resources.otherside;
             this.button7.Location = new System.Drawing.Point(335, 295);
             this.button7.Name = "button7";
@@ -326,7 +326,7 @@
             // 
             // button6
             // 
-            this.button6.Font = new System.Drawing.Font("Open Sans", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button6.Image = global::Prescription_Assistance.Properties.Resources.otherside;
             this.button6.Location = new System.Drawing.Point(335, 153);
             this.button6.Name = "button6";
@@ -338,7 +338,7 @@
             // 
             // button5
             // 
-            this.button5.Font = new System.Drawing.Font("Open Sans", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.Image = global::Prescription_Assistance.Properties.Resources.otherside;
             this.button5.Location = new System.Drawing.Point(335, 11);
             this.button5.Name = "button5";
@@ -350,7 +350,7 @@
             // 
             // button4
             // 
-            this.button4.Font = new System.Drawing.Font("Open Sans", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.Image = global::Prescription_Assistance.Properties.Resources.bedd;
             this.button4.Location = new System.Drawing.Point(11, 437);
             this.button4.Name = "button4";
@@ -362,7 +362,7 @@
             // 
             // button3
             // 
-            this.button3.Font = new System.Drawing.Font("Open Sans", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.Image = global::Prescription_Assistance.Properties.Resources.bedd;
             this.button3.Location = new System.Drawing.Point(11, 295);
             this.button3.Name = "button3";
@@ -374,7 +374,7 @@
             // 
             // button2
             // 
-            this.button2.Font = new System.Drawing.Font("Open Sans", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.Image = global::Prescription_Assistance.Properties.Resources.bedd;
             this.button2.Location = new System.Drawing.Point(11, 153);
             this.button2.Name = "button2";
@@ -386,7 +386,7 @@
             // 
             // button1
             // 
-            this.button1.Font = new System.Drawing.Font("Open Sans", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Image = global::Prescription_Assistance.Properties.Resources.bedd;
             this.button1.Location = new System.Drawing.Point(11, 11);
             this.button1.Name = "button1";

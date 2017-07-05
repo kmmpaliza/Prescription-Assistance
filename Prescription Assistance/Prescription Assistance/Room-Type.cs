@@ -61,8 +61,8 @@ namespace Prescription_Assistance
         {
             //this.TopMost = true;
 
-            this.WindowState = FormWindowState.Maximized;
-            //this.FormBorderStyle = FormBorderStyle.None;
+            
+            this.FormBorderStyle = FormBorderStyle.None;
         }
     }
 }

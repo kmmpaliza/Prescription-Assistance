@@ -27,7 +27,7 @@ namespace Prescription_Assistance
         {
             //this.TopMost = true;
             
-            this.WindowState = FormWindowState.Maximized;
+           
             //this.FormBorderStyle = FormBorderStyle.None;
         }
 
@@ -73,6 +73,16 @@ namespace Prescription_Assistance
             Main rt = new Main();
             rt.Show();
             this.Hide();
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

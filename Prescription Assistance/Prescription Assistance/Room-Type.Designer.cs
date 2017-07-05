@@ -48,7 +48,7 @@
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.White;
             this.button2.Image = global::Prescription_Assistance.Properties.Resources.ward;
-            this.button2.Location = new System.Drawing.Point(717, 218);
+            this.button2.Location = new System.Drawing.Point(717, 190);
             this.button2.Margin = new System.Windows.Forms.Padding(16);
             this.button2.Name = "button2";
             this.button2.Padding = new System.Windows.Forms.Padding(8);
@@ -66,7 +66,7 @@
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Image = global::Prescription_Assistance.Properties.Resources.privateroooom2;
-            this.button1.Location = new System.Drawing.Point(395, 218);
+            this.button1.Location = new System.Drawing.Point(395, 190);
             this.button1.Margin = new System.Windows.Forms.Padding(16);
             this.button1.Name = "button1";
             this.button1.Padding = new System.Windows.Forms.Padding(8);
@@ -77,7 +77,7 @@
             // 
             // cboPrivate
             // 
-            this.cboPrivate.Font = new System.Drawing.Font("Open Sans", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cboPrivate.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboPrivate.FormattingEnabled = true;
             this.cboPrivate.Items.AddRange(new object[] {
             "Select Room..",
@@ -96,15 +96,15 @@
             "502",
             "503",
             "504"});
-            this.cboPrivate.Location = new System.Drawing.Point(395, 495);
+            this.cboPrivate.Location = new System.Drawing.Point(395, 467);
             this.cboPrivate.Name = "cboPrivate";
-            this.cboPrivate.Size = new System.Drawing.Size(251, 28);
+            this.cboPrivate.Size = new System.Drawing.Size(251, 26);
             this.cboPrivate.TabIndex = 59;
             this.cboPrivate.Visible = false;
             // 
             // cboWard
             // 
-            this.cboWard.Font = new System.Drawing.Font("Open Sans", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cboWard.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboWard.FormattingEnabled = true;
             this.cboWard.Items.AddRange(new object[] {
             "Select Floor..",
@@ -112,9 +112,9 @@
             "3rd Floor",
             "4th Floor",
             "5th Floor"});
-            this.cboWard.Location = new System.Drawing.Point(717, 495);
+            this.cboWard.Location = new System.Drawing.Point(717, 467);
             this.cboWard.Name = "cboWard";
-            this.cboWard.Size = new System.Drawing.Size(251, 28);
+            this.cboWard.Size = new System.Drawing.Size(251, 26);
             this.cboWard.TabIndex = 60;
             this.cboWard.Visible = false;
             // 
@@ -123,13 +123,13 @@
             this.button3.BackColor = System.Drawing.Color.Transparent;
             this.button3.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button3.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.Font = new System.Drawing.Font("Century Gothic", 12F);
             this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(1123, 25);
+            this.button3.Location = new System.Drawing.Point(1140, 25);
             this.button3.Margin = new System.Windows.Forms.Padding(16);
             this.button3.Name = "button3";
             this.button3.Padding = new System.Windows.Forms.Padding(8);
-            this.button3.Size = new System.Drawing.Size(214, 50);
+            this.button3.Size = new System.Drawing.Size(197, 50);
             this.button3.TabIndex = 61;
             this.button3.Text = "Return to Main Page";
             this.button3.UseVisualStyleBackColor = false;
@@ -152,9 +152,9 @@
             this.button4.BackColor = System.Drawing.Color.Green;
             this.button4.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(472, 529);
+            this.button4.Location = new System.Drawing.Point(472, 503);
             this.button4.Margin = new System.Windows.Forms.Padding(16);
             this.button4.Name = "button4";
             this.button4.Padding = new System.Windows.Forms.Padding(8);
@@ -170,9 +170,9 @@
             this.button5.BackColor = System.Drawing.Color.Green;
             this.button5.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.ForeColor = System.Drawing.Color.White;
-            this.button5.Location = new System.Drawing.Point(794, 529);
+            this.button5.Location = new System.Drawing.Point(794, 503);
             this.button5.Margin = new System.Windows.Forms.Padding(16);
             this.button5.Name = "button5";
             this.button5.Padding = new System.Windows.Forms.Padding(8);
@@ -199,6 +199,7 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Name = "Room_Type";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "iCare";
             this.Load += new System.EventHandler(this.Room_Type_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

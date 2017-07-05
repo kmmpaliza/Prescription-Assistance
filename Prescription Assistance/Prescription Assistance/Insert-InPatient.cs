@@ -46,6 +46,11 @@ namespace Prescription_Assistance
         {
             Doctor_Dashboard parent = (Doctor_Dashboard)this.ParentForm;
             parent.changetoViewPatient();
+        }
+
+        private void Insert_InPatient_Load(object sender, EventArgs e)
+        {
+
         }    
     }
 }

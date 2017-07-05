@@ -79,5 +79,10 @@ namespace Prescription_Assistance
         {
             ct.insertFile(filename, txtSearch.Text, data);
         }
+
+        private void Insert_TestResult_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

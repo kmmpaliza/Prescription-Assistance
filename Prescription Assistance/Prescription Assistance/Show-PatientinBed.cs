@@ -16,5 +16,10 @@ namespace Prescription_Assistance
             InitializeComponent();
         }
 
+        private void Show_PatientinBed_Load(object sender, EventArgs e)
+        {
+
+        }
+
     }
 }

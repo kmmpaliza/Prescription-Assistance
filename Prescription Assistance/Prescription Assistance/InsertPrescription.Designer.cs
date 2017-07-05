@@ -373,6 +373,7 @@
             this.Name = "InsertPrescription";
             this.Padding = new System.Windows.Forms.Padding(8);
             this.Size = new System.Drawing.Size(1150, 635);
+            this.Load += new System.EventHandler(this.InsertPrescription_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvPrescription)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

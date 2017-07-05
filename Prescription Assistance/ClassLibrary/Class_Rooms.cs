@@ -99,5 +99,17 @@ namespace ClassLibrary
             da.Fill(ds, "select_OccupiedRooms");
             return ds;
         }
+
+        public void updateRoom()
+        {
+            conn.Open();
+            SqlCommand cmd = new SqlCommand("update_Room", conn);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.Add("@Bed_ID", SqlDbType.VarChar).Value = bed_id;
+            cmd.Parameters.Add("@Patient_ID", SqlDbType.VarChar).Value = patient_id;
+            cmd.ExecuteNonQuery();
+
+            conn.Close();
+        } 
     }
 }

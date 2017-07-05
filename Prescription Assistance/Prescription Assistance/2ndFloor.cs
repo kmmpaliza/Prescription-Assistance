@@ -70,58 +70,68 @@ namespace Prescription_Assistance
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            AssignRoomPatient ar = new AssignRoomPatient();
+            AssignRoomPatient ar = new AssignRoomPatient("200-A");
             ar.ShowDialog();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            
+            AssignRoomPatient ar = new AssignRoomPatient("200-B");
+            ar.ShowDialog();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            
+            AssignRoomPatient ar = new AssignRoomPatient("200-C");
+            ar.ShowDialog();
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            
+            AssignRoomPatient ar = new AssignRoomPatient("200-D");
+            ar.ShowDialog();
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
-            
+            AssignRoomPatient ar = new AssignRoomPatient("200-E");
+            ar.ShowDialog();
         }
 
         private void button6_Click(object sender, EventArgs e)
         {
-            
+            AssignRoomPatient ar = new AssignRoomPatient("200-F");
+            ar.ShowDialog();
         }
 
         private void button7_Click(object sender, EventArgs e)
         {
-            
+            AssignRoomPatient ar = new AssignRoomPatient("200-G");
+            ar.ShowDialog();
         }
 
         private void button8_Click(object sender, EventArgs e)
         {
-            
+            AssignRoomPatient ar = new AssignRoomPatient("200-H");
+            ar.ShowDialog();
         }
 
         private void button11_Click(object sender, EventArgs e)
         {
-            
+            AssignRoomPatient ar = new AssignRoomPatient("201");
+            ar.ShowDialog();
         }
 
         private void button12_Click(object sender, EventArgs e)
         {
-            
+            AssignRoomPatient ar = new AssignRoomPatient("202");
+            ar.ShowDialog();
         }
 
         private void button13_Click(object sender, EventArgs e)
         {
-            
+            AssignRoomPatient ar = new AssignRoomPatient("203");
+            ar.ShowDialog();
         }
     }
 }

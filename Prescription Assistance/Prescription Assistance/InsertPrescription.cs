@@ -111,6 +111,11 @@ namespace Prescription_Assistance
             ClearTexts();
         }
 
+        private void InsertPrescription_Load(object sender, EventArgs e)
+        {
+
+        }
+
 
 
     }

@@ -70,7 +70,7 @@ namespace Prescription_Assistance
 
         private void button3_Click(object sender, EventArgs e)
         {
-            Room_Type rt = new Room_Type();
+            Main rt = new Main();
             rt.Show();
             this.Hide();
         }

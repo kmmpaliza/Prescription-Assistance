@@ -70,11 +70,23 @@
     <Compile Include="2ndFloor.Designer.cs">
       <DependentUpon>2ndFloor.cs</DependentUpon>
     </Compile>
+    <Compile Include="2ndFloorD.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="2ndFloorD.Designer.cs">
+      <DependentUpon>2ndFloorD.cs</DependentUpon>
+    </Compile>
     <Compile Include="3rdFloor.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="3rdFloor.Designer.cs">
       <DependentUpon>3rdFloor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="3rdFloorD.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="3rdFloorD.Designer.cs">
+      <DependentUpon>3rdFloorD.cs</DependentUpon>
     </Compile>
     <Compile Include="4thFloor.cs">
       <SubType>UserControl</SubType>
@@ -82,17 +94,47 @@
     <Compile Include="4thFloor.Designer.cs">
       <DependentUpon>4thFloor.cs</DependentUpon>
     </Compile>
+    <Compile Include="4thFloorD.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="4thFloorD.Designer.cs">
+      <DependentUpon>4thFloorD.cs</DependentUpon>
+    </Compile>
     <Compile Include="5thFloor.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="5thFloor.Designer.cs">
       <DependentUpon>5thFloor.cs</DependentUpon>
     </Compile>
+    <Compile Include="5thFloorD.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="5thFloorD.Designer.cs">
+      <DependentUpon>5thFloorD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Alert-Assistance.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Alert-Assistance.Designer.cs">
+      <DependentUpon>Alert-Assistance.cs</DependentUpon>
+    </Compile>
     <Compile Include="Alert-Medicine.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Alert-Medicine.Designer.cs">
       <DependentUpon>Alert-Medicine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Alert-Vitals.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Alert-Vitals.Designer.cs">
+      <DependentUpon>Alert-Vitals.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AssignRoomPatient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AssignRoomPatient.Designer.cs">
+      <DependentUpon>AssignRoomPatient.cs</DependentUpon>
     </Compile>
     <Compile Include="Database1DataSet.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -110,6 +152,12 @@
     <Compile Include="Doctor-Dashboard.Designer.cs">
       <DependentUpon>Doctor-Dashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="ExtendedPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ExtendedPanel.Designer.cs">
+      <DependentUpon>ExtendedPanel.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -122,11 +170,41 @@
     <Compile Include="Insert-InPatient.Designer.cs">
       <DependentUpon>Insert-InPatient.cs</DependentUpon>
     </Compile>
+    <Compile Include="Insert-MedicalRecords.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Insert-MedicalRecords.Designer.cs">
+      <DependentUpon>Insert-MedicalRecords.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Insert-TestResult.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Insert-TestResult.Designer.cs">
+      <DependentUpon>Insert-TestResult.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InsertPrescription-Nurse.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="InsertPrescription-Nurse.Designer.cs">
+      <DependentUpon>InsertPrescription-Nurse.cs</DependentUpon>
+    </Compile>
     <Compile Include="InsertPrescription.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="InsertPrescription.Designer.cs">
       <DependentUpon>InsertPrescription.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Nurse-Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Nurse-Dashboard.Designer.cs">
+      <DependentUpon>Nurse-Dashboard.cs</DependentUpon>
     </Compile>
     <Compile Include="Patient-Dashboard.cs">
       <SubType>Form</SubType>
@@ -141,6 +219,12 @@
     </Compile>
     <Compile Include="Room-Layout.Designer.cs">
       <DependentUpon>Room-Layout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Room-Type.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Room-Type.Designer.cs">
+      <DependentUpon>Room-Type.cs</DependentUpon>
     </Compile>
     <Compile Include="Show-PatientinBed.cs">
       <SubType>UserControl</SubType>
@@ -160,17 +244,23 @@
     <Compile Include="Update-InPatientDetailsNurse.Designer.cs">
       <DependentUpon>Update-InPatientDetailsNurse.cs</DependentUpon>
     </Compile>
+    <Compile Include="View-InPatient-Nurse.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View-InPatient-Nurse.Designer.cs">
+      <DependentUpon>View-InPatient-Nurse.cs</DependentUpon>
+    </Compile>
     <Compile Include="View-InPatient.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="View-InPatient.Designer.cs">
       <DependentUpon>View-InPatient.cs</DependentUpon>
     </Compile>
-    <Compile Include="View-InPatientDetails.cs">
+    <Compile Include="View-MedicalRecords.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="View-InPatientDetails.Designer.cs">
-      <DependentUpon>View-InPatientDetails.cs</DependentUpon>
+    <Compile Include="View-MedicalRecords.Designer.cs">
+      <DependentUpon>View-MedicalRecords.cs</DependentUpon>
     </Compile>
     <Compile Include="View-Rooms.cs">
       <SubType>UserControl</SubType>
@@ -178,23 +268,53 @@
     <Compile Include="View-Rooms.Designer.cs">
       <DependentUpon>View-Rooms.cs</DependentUpon>
     </Compile>
+    <Compile Include="Ward-Layout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ward-Layout.Designer.cs">
+      <DependentUpon>Ward-Layout.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="2ndFloor.resx">
       <DependentUpon>2ndFloor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="2ndFloorD.resx">
+      <DependentUpon>2ndFloorD.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="3rdFloor.resx">
       <DependentUpon>3rdFloor.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="3rdFloorD.resx">
+      <DependentUpon>3rdFloorD.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="4thFloor.resx">
       <DependentUpon>4thFloor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="4thFloorD.resx">
+      <DependentUpon>4thFloorD.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="5thFloor.resx">
       <DependentUpon>5thFloor.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="5thFloorD.resx">
+      <DependentUpon>5thFloorD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Alert-Assistance.resx">
+      <DependentUpon>Alert-Assistance.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Alert-Medicine.resx">
       <DependentUpon>Alert-Medicine.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Alert-Vitals.resx">
+      <DependentUpon>Alert-Vitals.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AssignRoomPatient.resx">
+      <DependentUpon>AssignRoomPatient.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Doctor-Dashboard.resx">
       <DependentUpon>Doctor-Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExtendedPanel.resx">
+      <DependentUpon>ExtendedPanel.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -202,8 +322,23 @@
     <EmbeddedResource Include="Insert-InPatient.resx">
       <DependentUpon>Insert-InPatient.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Insert-MedicalRecords.resx">
+      <DependentUpon>Insert-MedicalRecords.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Insert-TestResult.resx">
+      <DependentUpon>Insert-TestResult.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InsertPrescription-Nurse.resx">
+      <DependentUpon>InsertPrescription-Nurse.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="InsertPrescription.resx">
       <DependentUpon>InsertPrescription.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Nurse-Dashboard.resx">
+      <DependentUpon>Nurse-Dashboard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Patient-Dashboard.resx">
       <DependentUpon>Patient-Dashboard.cs</DependentUpon>
@@ -221,6 +356,9 @@
     <EmbeddedResource Include="Room-Layout.resx">
       <DependentUpon>Room-Layout.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Room-Type.resx">
+      <DependentUpon>Room-Type.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Show-PatientinBed.resx">
       <DependentUpon>Show-PatientinBed.cs</DependentUpon>
     </EmbeddedResource>
@@ -230,14 +368,20 @@
     <EmbeddedResource Include="Update-InPatientDetailsNurse.resx">
       <DependentUpon>Update-InPatientDetailsNurse.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="View-InPatient-Nurse.resx">
+      <DependentUpon>View-InPatient-Nurse.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View-InPatient.resx">
       <DependentUpon>View-InPatient.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View-InPatientDetails.resx">
-      <DependentUpon>View-InPatientDetails.cs</DependentUpon>
+    <EmbeddedResource Include="View-MedicalRecords.resx">
+      <DependentUpon>View-MedicalRecords.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View-Rooms.resx">
       <DependentUpon>View-Rooms.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ward-Layout.resx">
+      <DependentUpon>Ward-Layout.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="app.config" />
     <None Include="Database1DataSet.xsc">
@@ -281,6 +425,24 @@
       <DependentUpon>Database1.mdf</DependentUpon>
     </Content>
     <Content Include="Images\logo.png" />
+    <None Include="Resources\meal.jpg" />
+    <None Include="Resources\pharmacy.jpg" />
+    <None Include="Resources\medicalsta.jpg" />
+    <None Include="Resources\wheel.jpg" />
+    <None Include="Resources\roommaint.jpg" />
+    <None Include="Resources\shut.jpg" />
+    <None Include="Resources\cons.jpg" />
+    <None Include="Resources\room.jpg" />
+    <None Include="Resources\logoo3.png" />
+    <None Include="Resources\logoo4.png" />
+    <None Include="Resources\ward.png" />
+    <None Include="Resources\privateroooom2.jpg" />
+    <None Include="Resources\logoo2.png" />
+    <None Include="Resources\patient1.jpg" />
+    <None Include="Resources\stafffffffff.jpg" />
+    <None Include="Resources\greenbg1.jpg" />
+    <None Include="Resources\cancel1.png" />
+    <None Include="Resources\cancel.png" />
     <None Include="Resources\maint.png" />
     <None Include="Resources\shuttle.png" />
     <None Include="Resources\wheelchair.png" />

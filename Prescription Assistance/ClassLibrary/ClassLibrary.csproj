@@ -55,12 +55,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Class_Alert.cs" />
     <Compile Include="Class_Doctor.cs" />
     <Compile Include="Class_MedRec.cs" />
     <Compile Include="Class_Nurse.cs" />
+    <Compile Include="Class_PAlert.cs" />
     <Compile Include="Class_Patient.cs" />
     <Compile Include="Class_Prescription.cs" />
     <Compile Include="Class_Rooms.cs" />
+    <Compile Include="Class_Test.cs" />
+    <Compile Include="Class_Vitals.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ValidateConnection.cs" />
   </ItemGroup>

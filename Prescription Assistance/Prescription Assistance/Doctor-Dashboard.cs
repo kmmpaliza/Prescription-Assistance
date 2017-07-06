@@ -11,69 +11,75 @@ namespace Prescription_Assistance
 {
     public partial class Doctor_Dashboard : Form
     {
-        
+        Room_Layout rl = new Room_Layout();
 
         public Doctor_Dashboard()
         {
             InitializeComponent();
+            
         }
 
         private void Doctor_Dashboard_Load(object sender, EventArgs e)
         {
             //this.TopMost = true;
-            //this.FormBorderStyle = Fo rmBorderStyle.None;
-            //this.WindowState = FormWindowState.Maximized;
+            //this.FormBorderStyle = FormBorderStyle.None;
+          //  this.WindowState = FormWindowState.Maximized;
 
+            pnlOverlay.Controls.Clear();
+            pnlOverlay.Visible = false;
             pnlFrame.Controls.Clear();
             var abc = new Room_Layout();
+            abc.runAssistance();
+            abc.runVitals();
+            abc.runTimeforPrescription();
+            abc.runPrescription();
             pnlFrame.Controls.Add(abc);
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            Form1 f = new Form1();
+            f.Show();
+            this.Close();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            pnlFrame.Controls.Clear();
+            pnlOverlay.Visible = true;
+            pnlOverlay.Controls.Clear();
             var viewInPatient = new View_InPatient();
-            pnlFrame.Controls.Add(viewInPatient);
+            pnlOverlay.Controls.Add(viewInPatient);
         }
 
         public void changetoViewPatient()
         {
-            pnlFrame.Controls.Clear();
+            pnlOverlay.Visible = true;
+            pnlOverlay.Controls.Clear();
             var viewInPatient = new View_InPatient();
-            pnlFrame.Controls.Add(viewInPatient);
+            pnlOverlay.Controls.Add(viewInPatient);
         }
 
         public void changetoInsert()
         {
-            pnlFrame.Controls.Clear();
+            pnlOverlay.Visible = true;
+            pnlOverlay.Controls.Clear();
             var insertPatient = new Insert_InPatient();
-            pnlFrame.Controls.Add(insertPatient);
+            pnlOverlay.Controls.Add(insertPatient);
         }
 
-        public void changetoViewPatientDetails(string id)
+        public void changetoUpdatePatientAsDoctor(string id) //pansamantala
         {
-            pnlFrame.Controls.Clear();
-            var viewinPatientDetails = new View_InPatientDetails(id);
-            pnlFrame.Controls.Add(viewinPatientDetails);
-        }
-
-        public void changetoUpdatePatientAsNurse(string id) //pansamantala
-        {
-            pnlFrame.Controls.Clear();
-            var abc = new Update_InPatientDetailsNurse(id);
-            pnlFrame.Controls.Add(abc);
+            pnlOverlay.Visible = true;
+            pnlOverlay.Controls.Clear();
+            var abc = new Update_InPatientDetailsDoctor(id);
+            pnlOverlay.Controls.Add(abc);
         }
 
         private void button4_MouseDown(object sender, MouseEventArgs e)
         {
             Point menuLocation;
             base.OnMouseDown(e);
-            if (e.Button == MouseButtons.Left);
+            if (e.Button == MouseButtons.Left)
             {
                 menuLocation = e.Location;
                 contextMenuStrip1.Show(button4, menuLocation);
@@ -82,44 +88,70 @@ namespace Prescription_Assistance
 
         private void SecondFloorToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            pnlFrame.Controls.Clear();
-            var abc = new _2ndFloorPrivateRoom();
-            pnlFrame.Controls.Add(abc);
+            pnlOverlay.Visible = true;
+            pnlOverlay.Controls.Clear();
+            var abc = new _2ndFloorD();
+            pnlOverlay.Controls.Add(abc);
         }
 
         private void ThirdFloorToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            pnlFrame.Controls.Clear();
-            var abc = new _3rdFloor();
-            pnlFrame.Controls.Add(abc);
+            pnlOverlay.Visible = true;
+            pnlOverlay.Controls.Clear();
+            var abc = new _3rdFloorD();
+            pnlOverlay.Controls.Add(abc);
         }
 
         private void FourthFloorToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            pnlFrame.Controls.Clear();
-            var abc = new _4thFloor();
-            pnlFrame.Controls.Add(abc);
+            pnlOverlay.Visible = true;
+            pnlOverlay.Controls.Clear();
+            var abc = new _4thFloorD();
+            pnlOverlay.Controls.Add(abc);
         }
 
         private void FifthFloorToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            pnlFrame.Controls.Clear();
-            var abc = new _5thFloor();
-            pnlFrame.Controls.Add(abc);
-        }
-
-        private void allRoomsToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            pnlFrame.Controls.Clear();
-            var abc = new View_Rooms();
-            pnlFrame.Controls.Add(abc);
+            pnlOverlay.Visible = true;
+            pnlOverlay.Controls.Clear();
+            var abc = new _5thFloorD();
+            pnlOverlay.Controls.Add(abc);
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            pnlFrame.Controls.Clear();
-            var abc = new Room_Layout();
-            pnlFrame.Controls.Add(abc);
+            pnlOverlay.Visible = false;
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            pnlOverlay.Visible = true;
+            pnlOverlay.Controls.Clear();
+            var abc = new InsertPrescription();
+            pnlOverlay.Controls.Add(abc);
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            //medical records
+            pnlOverlay.Visible = true;
+            pnlOverlay.Controls.Clear();
+            var abc = new View_MedicalRecords();
+            pnlOverlay.Controls.Add(abc);
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            //test results
+            pnlOverlay.Visible = true;
+            pnlOverlay.Controls.Clear();
+            var viewInPatient = new Insert_TestResult();
+            pnlOverlay.Controls.Add(viewInPatient);
+        }
+
+        private void pnlOverlay_Paint(object sender, PaintEventArgs e)
+        {
+
         }
 
     }

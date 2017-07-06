@@ -15,7 +15,6 @@ namespace Prescription_Assistance
         Class_Nurse cn = new Class_Nurse();
         Class_Doctor cd = new Class_Doctor();
         Class_Rooms cr = new Class_Rooms();
-        string password;
 
         public Form1()
         {
@@ -28,7 +27,8 @@ namespace Prescription_Assistance
         {
             //this.TopMost = true;
             
-            //this.WindowState = FormWindowState.Maximized;this.FormBorderStyle = FormBorderStyle.None;
+           
+            //this.FormBorderStyle = FormBorderStyle.None;
         }
 
 
@@ -40,7 +40,6 @@ namespace Prescription_Assistance
                 
             if (Convert.ToBoolean(cd.viewDoctorDetails().Tables[0].Rows.Count > 0))
             {
-                MessageBox.Show(cd.viewDoctorDetails().Tables[0].Rows[0]["Doctor_ID"].ToString());
                 Doctor_Dashboard dd = new Doctor_Dashboard();
                 dd.Show();
                 this.Hide();
@@ -53,29 +52,36 @@ namespace Prescription_Assistance
 
                 if (Convert.ToBoolean(cn.viewNurseDetails().Tables[0].Rows.Count > 0))
                 {
-                    MessageBox.Show(cn.viewNurseDetails().Tables[0].Rows[0]["Nurse_ID"].ToString());                    
+                    Nurse_Dashboard nd = new Nurse_Dashboard();
+                    nd.Show();
+                    this.Hide();                  
                 }
 
                 else
                 {
-                    cr.Bed_id = textBox1.Text;
-                    password = textBox2.Text;
-
-                    if (Convert.ToBoolean(cr.viewBedDetails().Tables[0].Rows.Count > 0) && password.Equals("12345"))
-                    {
-                        MessageBox.Show(cr.viewBedDetails().Tables[0].Rows[0]["Bed_ID"].ToString());
-                    }
-
-                    else 
-                    {
-                        
-                        label2.Visible = true; 
-                        textBox1.Clear();
-                        textBox2.Clear();
-                        textBox1.Focus();
-                    }
+                    label2.Visible = true;
+                    textBox1.Clear();
+                    textBox2.Clear();
+                    textBox1.Focus();  
                 }
             }           
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Main rt = new Main();
+            rt.Show();
+            this.Hide();
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
 
         }
     }

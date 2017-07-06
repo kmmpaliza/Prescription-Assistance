@@ -16,25 +16,19 @@ namespace ClassLibrary
         private static SqlConnection conn = new SqlConnection(conString);
         #endregion
         #region Variables
-        private string patient_id, weight, height, heart_rate, blood_sugar, blood_pressure, temperature, medical_history, medical_findings, special_instructions;
+        private string patient_id, heart_rate, blood_sugar, blood_pressure, temperature, datetime, nurse_id;
 
-        public string Medical_findings
+        public string Nurse_id
         {
-            get { return medical_findings; }
-            set { medical_findings = value; }
+            get { return nurse_id; }
+            set { nurse_id = value; }
         }
 
-        public string Special_instructions
+        public string Datetime
         {
-            get { return special_instructions; }
-            set { special_instructions = value; }
-        }
-
-        public string Medical_history
-        {
-            get { return medical_history; }
-            set { medical_history = value; }
-        }
+            get { return datetime; }
+            set { datetime = value; }
+        }       
 
         public string Temperature
         {
@@ -60,17 +54,7 @@ namespace ClassLibrary
             set { heart_rate = value; }
         }
 
-        public string Height
-        {
-            get { return height; }
-            set { height = value; }
-        }
-
-        public string Weight
-        {
-            get { return weight; }
-            set { weight = value; }
-        }
+        
 
         public string Patient_id
         {
@@ -84,16 +68,14 @@ namespace ClassLibrary
             conn.Open();
             SqlCommand cmd = new SqlCommand("insert_MedRec", conn);
             cmd.CommandType = CommandType.StoredProcedure;
-            cmd.Parameters.Add("@Patient_ID", SqlDbType.VarChar).Value = patient_id;
-            cmd.Parameters.Add("@Weight", SqlDbType.VarChar).Value = weight;
-            cmd.Parameters.Add("@Height", SqlDbType.VarChar).Value = height;
+            cmd.Parameters.Add("@Patient_ID", SqlDbType.VarChar).Value = patient_id;            
             cmd.Parameters.Add("@Heart_Rate", SqlDbType.VarChar).Value = heart_rate;
             cmd.Parameters.Add("@Blood_Sugar", SqlDbType.VarChar).Value = blood_sugar;
             cmd.Parameters.Add("@Blood_Pressure", SqlDbType.VarChar).Value = blood_pressure;
             cmd.Parameters.Add("@Temperature", SqlDbType.VarChar).Value = temperature;
-            cmd.Parameters.Add("@Medical_History", SqlDbType.VarChar).Value = medical_history;
-            cmd.Parameters.Add("@Medical_Findings", SqlDbType.VarChar).Value = medical_findings;
-            cmd.Parameters.Add("@Special_Instructions", SqlDbType.VarChar).Value = special_instructions;
+            cmd.Parameters.Add("@DateTime", SqlDbType.VarChar).Value = datetime;
+            cmd.Parameters.Add("@Nurse_ID", SqlDbType.VarChar).Value = nurse_id;
+            
             cmd.ExecuteNonQuery();
 
             conn.Close();
@@ -108,37 +90,6 @@ namespace ClassLibrary
             ds.Clear();
             da.Fill(ds, "select_MedRec");
             return ds;
-        }
-
-        public void updateMedRec()
-        {
-            conn.Open();
-
-            SqlCommand cmd = new SqlCommand("update_MedRecAsNurse", conn);
-            cmd.CommandType = CommandType.StoredProcedure;
-            cmd.Parameters.Add("@Patient_ID", SqlDbType.VarChar).Value = patient_id;
-            cmd.Parameters.Add("@Weight", SqlDbType.VarChar).Value = weight;
-            cmd.Parameters.Add("@Height", SqlDbType.VarChar).Value = height;
-            cmd.Parameters.Add("@Heart_Rate", SqlDbType.VarChar).Value = heart_rate;
-            cmd.Parameters.Add("@Blood_Sugar", SqlDbType.VarChar).Value = blood_sugar;
-            cmd.Parameters.Add("@Blood_Pressure", SqlDbType.VarChar).Value = blood_pressure;
-            cmd.Parameters.Add("@Temperature", SqlDbType.VarChar).Value = temperature;
-            cmd.Parameters.Add("@Medical_History", SqlDbType.VarChar).Value = medical_history;
-            cmd.ExecuteNonQuery();
-            conn.Close();
-        }
-
-        public void updateMedRecDoctor()
-        {
-            conn.Open();
-
-            SqlCommand cmd = new SqlCommand("update_MedRecAsDoctor", conn);
-            cmd.CommandType = CommandType.StoredProcedure;
-            cmd.Parameters.Add("@Patient_ID", SqlDbType.VarChar).Value = patient_id;
-            cmd.Parameters.Add("@Medical_Findings", SqlDbType.VarChar).Value = medical_findings;
-            cmd.Parameters.Add("@Special_Instructions", SqlDbType.VarChar).Value = special_instructions;
-            cmd.ExecuteNonQuery();
-            conn.Close();
         }
     }
 }

@@ -32,9 +32,6 @@ namespace Prescription_Assistance
             ds = cp.viewPatientDetails();
             ds2 = cm.viewMedRecDetails();
 
-            string name = ds.Tables[0].Rows[0][2].ToString() + ", " + ds.Tables[0].Rows[0][3].ToString();
-            lblName.Text = name;
-
             txtLast.Text = ds.Tables[0].Rows[0][2].ToString();
             txtFirst.Text = ds.Tables[0].Rows[0][3].ToString();
             cboGender.Text = ds.Tables[0].Rows[0][4].ToString();
@@ -42,14 +39,11 @@ namespace Prescription_Assistance
             dateTimePicker1.Text = ds.Tables[0].Rows[0][6].ToString();
             txtAddress.Text = ds.Tables[0].Rows[0][7].ToString();
             txtContact.Text = ds.Tables[0].Rows[0][8].ToString();
-
-            txtWeight.Text = ds2.Tables[0].Rows[0][3].ToString();
-            txtHeight.Text = ds2.Tables[0].Rows[0][4].ToString();
-            txtHR.Text = ds2.Tables[0].Rows[0][5].ToString();
-            txtBS.Text = ds2.Tables[0].Rows[0][6].ToString();
-            txtBP.Text = ds2.Tables[0].Rows[0][7].ToString();
-            txtTemp.Text = ds2.Tables[0].Rows[0][8].ToString();
-            txtMH.Text = ds2.Tables[0].Rows[0][9].ToString();
+            txtWeight.Text = ds.Tables[0].Rows[0][9].ToString();
+            txtHeight.Text = ds.Tables[0].Rows[0][10].ToString();
+            txtMH.Text = ds.Tables[0].Rows[0][11].ToString();
+            txtMF.Text = ds.Tables[0].Rows[0][12].ToString();
+            txtSI.Text = ds.Tables[0].Rows[0][13].ToString();
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -65,29 +59,51 @@ namespace Prescription_Assistance
             cp.Birthday = dateTimePicker1.Value.Date.ToShortDateString();
             cp.Address = txtAddress.Text;
             cp.Contact = txtContact.Text;
-
-            cm.Weight = txtWeight.Text;
-            cm.Height = txtHeight.Text;
-            cm.Heart_rate = txtHR.Text;
-            cm.Blood_sugar = txtBS.Text;
-            cm.Blood_pressure = txtBP.Text;
-            cm.Temperature = txtTemp.Text;
-            cm.Medical_history = txtMH.Text;
+            cp.Weight = txtWeight.Text;
+            cp.Height = txtHeight.Text;
+            cp.Medical_history = txtMH.Text;
 
             cp.updatePatient();
-            cm.updateMedRec();
 
             MessageBox.Show("Patient Details successfully updated.");
-            Doctor_Dashboard parent = (Doctor_Dashboard)this.ParentForm;
-            parent.changetoViewPatientDetails(id);
+
+            txtLast.Enabled = false;
+            txtFirst.Enabled = false;
+            cboGender.Enabled = false;
+            txtAge.Enabled = false;
+            dateTimePicker1.Enabled = false;
+            txtAddress.Enabled = false;
+            txtContact.Enabled = false;
+            txtWeight.Enabled = false;
+            txtHeight.Enabled = false;
+            txtMH.Enabled = false;
+
+            button3.Enabled = true;
+            button2.Enabled = false;
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             //cancel
-            Doctor_Dashboard parent = (Doctor_Dashboard)this.ParentForm;
-            parent.changetoViewPatientDetails(id);
+            Nurse_Dashboard parent = (Nurse_Dashboard)this.ParentForm;
+            parent.changetoViewPatient();
         }
 
+        private void button3_Click(object sender, EventArgs e)
+        {
+            txtLast.Enabled = true;
+            txtFirst.Enabled = true;
+            cboGender.Enabled = true;
+            txtAge.Enabled = true;
+            dateTimePicker1.Enabled = true;
+            txtAddress.Enabled = true;
+            txtContact.Enabled = true;
+            txtWeight.Enabled = true;
+            txtHeight.Enabled = true;
+            txtMH.Enabled = true;
+
+            button3.Enabled = false;
+            button2.Enabled = true;
+        }
     }
 }

@@ -16,7 +16,13 @@ namespace ClassLibrary
         private static SqlConnection conn = new SqlConnection(conString);
         #endregion
         #region Variables
-        private string last_name, first_name, password, doctor_id;
+        private string last_name, first_name, password, doctor_id, contact;
+
+        public string Contact
+        {
+            get { return contact; }
+            set { contact = value; }
+        }
 
         public string Doctor_id
         {
@@ -43,6 +49,7 @@ namespace ClassLibrary
         }
 
         #endregion
+        string id;
 
         public DataSet viewDoctorDetails()
         {
@@ -54,6 +61,29 @@ namespace ClassLibrary
             ds.Clear();
             da.Fill(ds, "select_Doctor");
             return ds;
+        }
+
+        public string insertNewDoctor()
+        {
+            conn.Open();
+            SqlCommand cmd = new SqlCommand("insert_Doctor", conn);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.Add("@First_name", SqlDbType.VarChar).Value = first_name;
+            cmd.Parameters.Add("@Last_name", SqlDbType.VarChar).Value = last_name;
+            cmd.Parameters.Add("@Contact", SqlDbType.VarChar).Value = contact;
+            cmd.Parameters.Add("@Password", SqlDbType.VarChar).Value = password;
+            //cmd.ExecuteNonQuery();
+            //conn.Close();
+
+            SqlDataReader dr = cmd.ExecuteReader();
+            while (dr.Read())
+            {
+                id = dr[0].ToString();
+                break;
+            }
+            conn.Close();
+
+            return id;
         }
     }
 }

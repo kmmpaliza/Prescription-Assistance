@@ -47,10 +47,13 @@
             this.FourthFloorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.FifthFloorToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.pnlOverlay = new System.Windows.Forms.Panel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.button8 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
             this.contextMenuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -105,6 +108,8 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(48)))), ((int)(((byte)(46)))));
+            this.panel2.Controls.Add(this.button8);
+            this.panel2.Controls.Add(this.pictureBox2);
             this.panel2.Controls.Add(this.button7);
             this.panel2.Controls.Add(this.button6);
             this.panel2.Controls.Add(this.button5);
@@ -123,7 +128,7 @@
             this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button7.ForeColor = System.Drawing.Color.White;
-            this.button7.Location = new System.Drawing.Point(0, 275);
+            this.button7.Location = new System.Drawing.Point(0, 401);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(201, 55);
             this.button7.TabIndex = 5;
@@ -138,7 +143,7 @@
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button6.ForeColor = System.Drawing.Color.White;
-            this.button6.Location = new System.Drawing.Point(0, 220);
+            this.button6.Location = new System.Drawing.Point(0, 346);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(201, 55);
             this.button6.TabIndex = 4;
@@ -153,7 +158,7 @@
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.ForeColor = System.Drawing.Color.White;
-            this.button5.Location = new System.Drawing.Point(0, 165);
+            this.button5.Location = new System.Drawing.Point(0, 291);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(201, 55);
             this.button5.TabIndex = 3;
@@ -168,7 +173,7 @@
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(0, 55);
+            this.button4.Location = new System.Drawing.Point(0, 181);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(201, 55);
             this.button4.TabIndex = 2;
@@ -183,7 +188,7 @@
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(0, 110);
+            this.button3.Location = new System.Drawing.Point(0, 236);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(201, 55);
             this.button3.TabIndex = 1;
@@ -198,7 +203,7 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(0, 0);
+            this.button2.Location = new System.Drawing.Point(0, 126);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(201, 55);
             this.button2.TabIndex = 0;
@@ -266,12 +271,37 @@
             this.pnlOverlay.TabIndex = 3;
             this.pnlOverlay.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlOverlay_Paint);
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox2.Image = global::Prescription_Assistance.Properties.Resources.logoo4;
+            this.pictureBox2.Location = new System.Drawing.Point(3, 6);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(194, 114);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 6;
+            this.pictureBox2.TabStop = false;
+            // 
+            // button8
+            // 
+            this.button8.BackColor = System.Drawing.Color.Transparent;
+            this.button8.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(184)))), ((int)(((byte)(182)))));
+            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button8.ForeColor = System.Drawing.Color.White;
+            this.button8.Location = new System.Drawing.Point(-1, 456);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(201, 55);
+            this.button8.TabIndex = 7;
+            this.button8.Text = "Doctor\'s Details";
+            this.button8.UseVisualStyleBackColor = false;
+            // 
             // Doctor_Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1362, 741);
+            this.ClientSize = new System.Drawing.Size(1354, 733);
             this.Controls.Add(this.pnlOverlay);
             this.Controls.Add(this.pnlFrame);
             this.Controls.Add(this.panel2);
@@ -284,6 +314,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.contextMenuStrip1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -308,6 +339,8 @@
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Button button8;
 
     }
 }

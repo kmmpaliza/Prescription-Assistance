@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label9 = new System.Windows.Forms.Label();
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnAdd = new System.Windows.Forms.Button();
@@ -77,7 +77,7 @@
             this.btnDelete.Margin = new System.Windows.Forms.Padding(16);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(119, 32);
-            this.btnDelete.TabIndex = 62;
+            this.btnDelete.TabIndex = 9;
             this.btnDelete.Text = "Delete";
             this.btnDelete.UseVisualStyleBackColor = false;
             this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
@@ -94,7 +94,7 @@
             this.btnAdd.Margin = new System.Windows.Forms.Padding(16);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(119, 32);
-            this.btnAdd.TabIndex = 60;
+            this.btnAdd.TabIndex = 7;
             this.btnAdd.Text = "Add";
             this.btnAdd.UseVisualStyleBackColor = false;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
@@ -118,7 +118,7 @@
             this.cboInterval.Location = new System.Drawing.Point(236, 388);
             this.cboInterval.Name = "cboInterval";
             this.cboInterval.Size = new System.Drawing.Size(200, 28);
-            this.cboInterval.TabIndex = 58;
+            this.cboInterval.TabIndex = 5;
             // 
             // label15
             // 
@@ -149,7 +149,7 @@
             this.cboForm.Location = new System.Drawing.Point(517, 350);
             this.cboForm.Name = "cboForm";
             this.cboForm.Size = new System.Drawing.Size(194, 28);
-            this.cboForm.TabIndex = 56;
+            this.cboForm.TabIndex = 4;
             // 
             // label14
             // 
@@ -178,7 +178,7 @@
             this.cboRoute.Location = new System.Drawing.Point(293, 350);
             this.cboRoute.Name = "cboRoute";
             this.cboRoute.Size = new System.Drawing.Size(143, 28);
-            this.cboRoute.TabIndex = 54;
+            this.cboRoute.TabIndex = 3;
             // 
             // label13
             // 
@@ -197,7 +197,7 @@
             this.txtDosage.Location = new System.Drawing.Point(531, 313);
             this.txtDosage.Name = "txtDosage";
             this.txtDosage.Size = new System.Drawing.Size(180, 27);
-            this.txtDosage.TabIndex = 50;
+            this.txtDosage.TabIndex = 2;
             // 
             // label10
             // 
@@ -216,7 +216,7 @@
             this.txtNote.Location = new System.Drawing.Point(515, 389);
             this.txtNote.Name = "txtNote";
             this.txtNote.Size = new System.Drawing.Size(196, 27);
-            this.txtNote.TabIndex = 51;
+            this.txtNote.TabIndex = 6;
             // 
             // label11
             // 
@@ -235,7 +235,7 @@
             this.txtMedName.Location = new System.Drawing.Point(237, 313);
             this.txtMedName.Name = "txtMedName";
             this.txtMedName.Size = new System.Drawing.Size(199, 27);
-            this.txtMedName.TabIndex = 49;
+            this.txtMedName.TabIndex = 1;
             // 
             // label12
             // 
@@ -255,24 +255,24 @@
             this.dgvPrescription.BackgroundColor = System.Drawing.Color.DimGray;
             this.dgvPrescription.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvPrescription.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Open Sans", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.Padding = new System.Windows.Forms.Padding(2);
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.Green;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvPrescription.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Open Sans", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.Padding = new System.Windows.Forms.Padding(2);
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.Green;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvPrescription.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dgvPrescription.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Open Sans", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(184)))), ((int)(((byte)(182)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvPrescription.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Open Sans", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(184)))), ((int)(((byte)(182)))));
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvPrescription.DefaultCellStyle = dataGridViewCellStyle4;
             this.dgvPrescription.GridColor = System.Drawing.Color.White;
             this.dgvPrescription.Location = new System.Drawing.Point(60, 142);
             this.dgvPrescription.Name = "dgvPrescription";
@@ -292,7 +292,7 @@
             this.btnEdit.Margin = new System.Windows.Forms.Padding(16);
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.Size = new System.Drawing.Size(119, 32);
-            this.btnEdit.TabIndex = 61;
+            this.btnEdit.TabIndex = 8;
             this.btnEdit.Text = "Edit";
             this.btnEdit.UseVisualStyleBackColor = false;
             this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
@@ -304,7 +304,7 @@
             this.button1.Name = "button1";
             this.button1.Padding = new System.Windows.Forms.Padding(3);
             this.button1.Size = new System.Drawing.Size(160, 37);
-            this.button1.TabIndex = 67;
+            this.button1.TabIndex = 0;
             this.button1.Text = "Search In-Patient";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -339,7 +339,7 @@
             this.btnClear.Margin = new System.Windows.Forms.Padding(16);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(119, 32);
-            this.btnClear.TabIndex = 69;
+            this.btnClear.TabIndex = 10;
             this.btnClear.Text = "Clear Fields";
             this.btnClear.UseVisualStyleBackColor = false;
             this.btnClear.Click += new System.EventHandler(this.btnClear_Click);

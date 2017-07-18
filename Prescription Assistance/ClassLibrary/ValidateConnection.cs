@@ -9,7 +9,7 @@ namespace ClassLibrary
     {
         public static string ConString()
         {
-            return @"Data Source=.\SQLEXPRESS;AttachDbFilename=C:\Users\chaelamorin\Topic2\Prescription Assistance\Prescription Assistance\Database1.mdf;Integrated Security=True;User Instance=True";
+            return @"Data Source=.\SQLEXPRESS;AttachDbFilename=C:\Users\Katrina\Documents\Freelance\Topic2\Prescription Assistance\Prescription Assistance\Database1.mdf;Integrated Security=True;User Instance=True";
         }
     }
 }

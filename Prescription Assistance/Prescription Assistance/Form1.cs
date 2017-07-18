@@ -84,5 +84,11 @@ namespace Prescription_Assistance
         {
 
         }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Registration r = new Registration();
+            r.ShowDialog();
+        }
     }
 }

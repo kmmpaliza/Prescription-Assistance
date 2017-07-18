@@ -88,3 +88,4 @@ C:\Users\chaelamorin\Topic2\Prescription Assistance\Prescription Assistance\obj\
 C:\Users\chaelamorin\Topic2\Prescription Assistance\Prescription Assistance\obj\x86\Debug\Prescription_Assistance.View_MedicalRecords.resources
 C:\Users\chaelamorin\Topic2\Prescription Assistance\Prescription Assistance\obj\x86\Debug\Prescription_Assistance.View_Rooms.resources
 C:\Users\chaelamorin\Topic2\Prescription Assistance\Prescription Assistance\obj\x86\Debug\Prescription_Assistance.Ward_Layout.resources
+C:\Users\Katrina\Documents\Freelance\Topic2\Prescription Assistance\Prescription Assistance\obj\x86\Debug\Prescription_Assistance.Registration.resources

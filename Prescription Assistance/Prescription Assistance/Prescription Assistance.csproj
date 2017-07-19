@@ -274,6 +274,12 @@
     <Compile Include="View-Rooms.Designer.cs">
       <DependentUpon>View-Rooms.cs</DependentUpon>
     </Compile>
+    <Compile Include="View-Staff.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View-Staff.Designer.cs">
+      <DependentUpon>View-Staff.cs</DependentUpon>
+    </Compile>
     <Compile Include="Ward-Layout.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -388,6 +394,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View-Rooms.resx">
       <DependentUpon>View-Rooms.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View-Staff.resx">
+      <DependentUpon>View-Staff.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Ward-Layout.resx">
       <DependentUpon>Ward-Layout.cs</DependentUpon>

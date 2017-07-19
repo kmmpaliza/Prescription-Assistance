@@ -24,7 +24,7 @@ namespace Prescription_Assistance
             this.id = id;
         }
 
-        private void Update_InPatientDetailsDoctor_Load(object sender, EventArgs e)
+        private void load()
         {
             cp.Patient_id = id;
             cm.Patient_id = id;
@@ -43,6 +43,16 @@ namespace Prescription_Assistance
             txtMH.Text = ds.Tables[0].Rows[0][11].ToString();
             txtMF.Text = ds.Tables[0].Rows[0][12].ToString();
             txtSI.Text = ds.Tables[0].Rows[0][13].ToString();
+
+            button2.Visible = false;
+            button1.Visible = false;
+            txtMF.Enabled = false;
+            txtSI.Enabled = false;
+        }
+
+        private void Update_InPatientDetailsDoctor_Load(object sender, EventArgs e)
+        {
+            load();
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -51,7 +61,8 @@ namespace Prescription_Assistance
             txtSI.Enabled = true;
 
             button3.Enabled = false;
-            button2.Enabled = true;
+            button2.Visible = true;
+            button1.Visible = true;
         }
 
         private void button2_Click_1(object sender, EventArgs e)
@@ -64,11 +75,9 @@ namespace Prescription_Assistance
 
             MessageBox.Show("Patient Details successfully updated.");
 
-            txtMF.Enabled = false;
-            txtSI.Enabled = false;
-
             button3.Enabled = true;
-            button2.Enabled = false;
+
+            load();
         }
 
         private void button1_Click_1(object sender, EventArgs e)

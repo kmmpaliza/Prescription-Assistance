@@ -24,7 +24,7 @@ namespace Prescription_Assistance
             this.id = id;
         }
 
-        private void Update_InPatientDetailsNurse_Load(object sender, EventArgs e)
+        private void load()
         {
             cp.Patient_id = id;
             cm.Patient_id = id;
@@ -44,6 +44,27 @@ namespace Prescription_Assistance
             txtMH.Text = ds.Tables[0].Rows[0][11].ToString();
             txtMF.Text = ds.Tables[0].Rows[0][12].ToString();
             txtSI.Text = ds.Tables[0].Rows[0][13].ToString();
+
+            button2.Visible = false;
+            button1.Visible = false;
+
+            txtLast.Enabled = false;
+            txtFirst.Enabled = false;
+            cboGender.Enabled = false;
+            txtAge.Enabled = false;
+            dateTimePicker1.Enabled = false;
+            txtAddress.Enabled = false;
+            txtContact.Enabled = false;
+            txtWeight.Enabled = false;
+            txtHeight.Enabled = false;
+            txtMH.Enabled = false;
+
+            button3.Enabled = true;
+        }
+
+        private void Update_InPatientDetailsNurse_Load(object sender, EventArgs e)
+        {
+            load();
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -67,19 +88,7 @@ namespace Prescription_Assistance
 
             MessageBox.Show("Patient Details successfully updated.");
 
-            txtLast.Enabled = false;
-            txtFirst.Enabled = false;
-            cboGender.Enabled = false;
-            txtAge.Enabled = false;
-            dateTimePicker1.Enabled = false;
-            txtAddress.Enabled = false;
-            txtContact.Enabled = false;
-            txtWeight.Enabled = false;
-            txtHeight.Enabled = false;
-            txtMH.Enabled = false;
-
-            button3.Enabled = true;
-            button2.Enabled = false;
+            load();            
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -103,7 +112,8 @@ namespace Prescription_Assistance
             txtMH.Enabled = true;
 
             button3.Enabled = false;
-            button2.Enabled = true;
+            button2.Visible = true;
+            button1.Visible = true;
         }
     }
 }

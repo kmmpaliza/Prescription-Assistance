@@ -49,7 +49,7 @@
             this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.DimGray;
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.LightGray;
             this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
@@ -71,24 +71,24 @@
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridView1.GridColor = System.Drawing.Color.White;
-            this.dataGridView1.Location = new System.Drawing.Point(82, 40);
+            this.dataGridView1.Location = new System.Drawing.Point(50, 31);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(900, 400);
+            this.dataGridView1.Size = new System.Drawing.Size(1050, 400);
             this.dataGridView1.TabIndex = 31;
             // 
             // txtBP
             // 
             this.txtBP.Font = new System.Drawing.Font("Open Sans", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBP.Location = new System.Drawing.Point(636, 511);
+            this.txtBP.Location = new System.Drawing.Point(651, 508);
             this.txtBP.Name = "txtBP";
             this.txtBP.Size = new System.Drawing.Size(101, 27);
-            this.txtBP.TabIndex = 56;
+            this.txtBP.TabIndex = 3;
             // 
             // label14
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Open Sans", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(522, 546);
+            this.label14.Location = new System.Drawing.Point(521, 511);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(124, 20);
             this.label14.TabIndex = 57;
@@ -97,16 +97,16 @@
             // txtBS
             // 
             this.txtBS.Font = new System.Drawing.Font("Open Sans", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBS.Location = new System.Drawing.Point(339, 511);
+            this.txtBS.Location = new System.Drawing.Point(343, 508);
             this.txtBS.Name = "txtBS";
             this.txtBS.Size = new System.Drawing.Size(161, 27);
-            this.txtBS.TabIndex = 54;
+            this.txtBS.TabIndex = 2;
             // 
             // label13
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Open Sans", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(248, 546);
+            this.label13.Location = new System.Drawing.Point(236, 511);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(101, 20);
             this.label13.TabIndex = 55;
@@ -115,16 +115,16 @@
             // txtHR
             // 
             this.txtHR.Font = new System.Drawing.Font("Open Sans", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtHR.Location = new System.Drawing.Point(333, 469);
+            this.txtHR.Location = new System.Drawing.Point(337, 466);
             this.txtHR.Name = "txtHR";
             this.txtHR.Size = new System.Drawing.Size(167, 27);
-            this.txtHR.TabIndex = 52;
+            this.txtHR.TabIndex = 0;
             // 
             // label12
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Open Sans", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(248, 504);
+            this.label12.Location = new System.Drawing.Point(236, 469);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(95, 20);
             this.label12.TabIndex = 53;
@@ -133,16 +133,16 @@
             // txtTemp
             // 
             this.txtTemp.Font = new System.Drawing.Font("Open Sans", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTemp.Location = new System.Drawing.Point(625, 469);
+            this.txtTemp.Location = new System.Drawing.Point(640, 466);
             this.txtTemp.Name = "txtTemp";
             this.txtTemp.Size = new System.Drawing.Size(112, 27);
-            this.txtTemp.TabIndex = 50;
+            this.txtTemp.TabIndex = 1;
             // 
             // label11
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Open Sans", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(522, 504);
+            this.label11.Location = new System.Drawing.Point(521, 469);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(113, 20);
             this.label11.TabIndex = 51;
@@ -155,12 +155,12 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(775, 473);
+            this.button2.Location = new System.Drawing.Point(771, 470);
             this.button2.Margin = new System.Windows.Forms.Padding(16);
             this.button2.Name = "button2";
             this.button2.Padding = new System.Windows.Forms.Padding(8);
             this.button2.Size = new System.Drawing.Size(144, 61);
-            this.button2.TabIndex = 58;
+            this.button2.TabIndex = 4;
             this.button2.Text = "SAVE";
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
@@ -169,7 +169,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Open Sans", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(365, 593);
+            this.label1.Location = new System.Drawing.Point(440, 558);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(270, 20);
             this.label1.TabIndex = 59;

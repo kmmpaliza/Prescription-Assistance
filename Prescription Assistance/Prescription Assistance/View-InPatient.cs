@@ -58,5 +58,10 @@ namespace Prescription_Assistance
             dataGridView1.Refresh();
             dataGridView1.DataSource = ds2.Tables["search_Patient"];            
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

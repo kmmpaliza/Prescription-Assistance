@@ -24,13 +24,17 @@ namespace Prescription_Assistance
             this.vid = vid;
         }
 
-        private void Insert_MedicalRecords_Load(object sender, EventArgs e)
+        private void load()
         {
             cm.Patient_id = id;
             ds = cm.viewMedRecDetails();
 
             dataGridView1.ReadOnly = true;
             dataGridView1.DataSource = ds.Tables[0];
+        }
+        private void Insert_MedicalRecords_Load(object sender, EventArgs e)
+        {
+            load();
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -39,7 +43,7 @@ namespace Prescription_Assistance
             cm.Temperature = txtTemp.Text;
             cm.Blood_sugar = txtBS.Text;
             cm.Blood_pressure = txtBP.Text;
-            cm.Nurse_id = "";
+            cm.Nurse_id = Form1.userid;
             cm.Datetime = DateTime.Now.ToString("yyyy-MM-dd HH:mm");
             cm.insertNewMedRec();
             MessageBox.Show("Medical Record for " + cm.Patient_id + " is successfully inserted.");
@@ -47,6 +51,8 @@ namespace Prescription_Assistance
             cv.Vital_id = vid;
             cv.Status = "Done";
             cv.updateVital();
+
+            load();
         }
     }
 }

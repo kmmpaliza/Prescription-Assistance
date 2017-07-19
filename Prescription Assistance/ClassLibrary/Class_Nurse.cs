@@ -84,5 +84,20 @@ namespace ClassLibrary
 
             return id;
         }
+
+        public void updateNurse()
+        {
+            conn.Open();
+            SqlCommand cmd = new SqlCommand("update_Nurse", conn);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.Add("@Nurse_ID", SqlDbType.VarChar).Value = nurse_id;
+            cmd.Parameters.Add("@First_name", SqlDbType.VarChar).Value = first_name;
+            cmd.Parameters.Add("@Last_name", SqlDbType.VarChar).Value = last_name;
+            cmd.Parameters.Add("@Contact", SqlDbType.VarChar).Value = contact;
+            cmd.Parameters.Add("@Password", SqlDbType.VarChar).Value = password;
+            cmd.ExecuteNonQuery();
+            conn.Close();
+        }
+
     }
 }

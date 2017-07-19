@@ -154,5 +154,13 @@ namespace Prescription_Assistance
 
         }
 
+        private void button8_Click(object sender, EventArgs e)
+        {
+            pnlOverlay.Visible = true;
+            pnlOverlay.Controls.Clear();
+            var abc = new View_Staff();
+            pnlOverlay.Controls.Add(abc);
+        }
+
     }
 }

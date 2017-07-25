@@ -28,15 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Ward_Layout));
-            this.buttonD = new System.Windows.Forms.Button();
-            this.buttonC = new System.Windows.Forms.Button();
-            this.buttonB = new System.Windows.Forms.Button();
-            this.buttonA = new System.Windows.Forms.Button();
-            this.buttonH = new System.Windows.Forms.Button();
-            this.buttonG = new System.Windows.Forms.Button();
-            this.buttonF = new System.Windows.Forms.Button();
-            this.buttonE = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button3 = new System.Windows.Forms.Button();
             this.labelA = new System.Windows.Forms.Label();
@@ -47,120 +38,32 @@
             this.labelF = new System.Windows.Forms.Label();
             this.labelG = new System.Windows.Forms.Label();
             this.labelH = new System.Windows.Forms.Label();
+            this.pbA = new System.Windows.Forms.PictureBox();
+            this.lblA = new System.Windows.Forms.Label();
+            this.lblB = new System.Windows.Forms.Label();
+            this.pbB = new System.Windows.Forms.PictureBox();
+            this.lblC = new System.Windows.Forms.Label();
+            this.pbC = new System.Windows.Forms.PictureBox();
+            this.lblD = new System.Windows.Forms.Label();
+            this.pbD = new System.Windows.Forms.PictureBox();
+            this.lblE = new System.Windows.Forms.Label();
+            this.pbE = new System.Windows.Forms.PictureBox();
+            this.lblF = new System.Windows.Forms.Label();
+            this.pbF = new System.Windows.Forms.PictureBox();
+            this.lblG = new System.Windows.Forms.Label();
+            this.pbG = new System.Windows.Forms.PictureBox();
+            this.lblH = new System.Windows.Forms.Label();
+            this.pbH = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbA)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbB)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbC)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbD)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbE)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbF)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbG)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbH)).BeginInit();
             this.SuspendLayout();
-            // 
-            // buttonD
-            // 
-            this.buttonD.BackColor = System.Drawing.Color.Transparent;
-            this.buttonD.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LimeGreen;
-            this.buttonD.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonD.Image = ((System.Drawing.Image)(resources.GetObject("buttonD.Image")));
-            this.buttonD.Location = new System.Drawing.Point(907, 113);
-            this.buttonD.Name = "buttonD";
-            this.buttonD.Size = new System.Drawing.Size(91, 193);
-            this.buttonD.TabIndex = 6;
-            this.buttonD.Text = "400-D";
-            this.buttonD.UseVisualStyleBackColor = false;
-            this.buttonD.Click += new System.EventHandler(this.buttonD_Click);
-            // 
-            // buttonC
-            // 
-            this.buttonC.BackColor = System.Drawing.Color.Transparent;
-            this.buttonC.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LimeGreen;
-            this.buttonC.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonC.Image = ((System.Drawing.Image)(resources.GetObject("buttonC.Image")));
-            this.buttonC.Location = new System.Drawing.Point(726, 113);
-            this.buttonC.Name = "buttonC";
-            this.buttonC.Size = new System.Drawing.Size(91, 193);
-            this.buttonC.TabIndex = 4;
-            this.buttonC.Text = "400-C";
-            this.buttonC.UseVisualStyleBackColor = false;
-            this.buttonC.Click += new System.EventHandler(this.buttonC_Click);
-            // 
-            // buttonB
-            // 
-            this.buttonB.BackColor = System.Drawing.Color.Transparent;
-            this.buttonB.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LimeGreen;
-            this.buttonB.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonB.Image = ((System.Drawing.Image)(resources.GetObject("buttonB.Image")));
-            this.buttonB.Location = new System.Drawing.Point(545, 113);
-            this.buttonB.Name = "buttonB";
-            this.buttonB.Size = new System.Drawing.Size(91, 193);
-            this.buttonB.TabIndex = 2;
-            this.buttonB.Text = "400-B";
-            this.buttonB.UseVisualStyleBackColor = false;
-            this.buttonB.Click += new System.EventHandler(this.buttonB_Click);
-            // 
-            // buttonA
-            // 
-            this.buttonA.BackColor = System.Drawing.Color.Transparent;
-            this.buttonA.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LimeGreen;
-            this.buttonA.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonA.Image = ((System.Drawing.Image)(resources.GetObject("buttonA.Image")));
-            this.buttonA.Location = new System.Drawing.Point(364, 113);
-            this.buttonA.Name = "buttonA";
-            this.buttonA.Size = new System.Drawing.Size(91, 193);
-            this.buttonA.TabIndex = 0;
-            this.buttonA.Text = "400-A";
-            this.buttonA.UseVisualStyleBackColor = false;
-            this.buttonA.Click += new System.EventHandler(this.buttonA_Click);
-            // 
-            // buttonH
-            // 
-            this.buttonH.BackColor = System.Drawing.Color.Transparent;
-            this.buttonH.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LimeGreen;
-            this.buttonH.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonH.Image = ((System.Drawing.Image)(resources.GetObject("buttonH.Image")));
-            this.buttonH.Location = new System.Drawing.Point(907, 386);
-            this.buttonH.Name = "buttonH";
-            this.buttonH.Size = new System.Drawing.Size(91, 193);
-            this.buttonH.TabIndex = 14;
-            this.buttonH.Text = "400-H";
-            this.buttonH.UseVisualStyleBackColor = false;
-            this.buttonH.Click += new System.EventHandler(this.buttonH_Click);
-            // 
-            // buttonG
-            // 
-            this.buttonG.BackColor = System.Drawing.Color.Transparent;
-            this.buttonG.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LimeGreen;
-            this.buttonG.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonG.Image = ((System.Drawing.Image)(resources.GetObject("buttonG.Image")));
-            this.buttonG.Location = new System.Drawing.Point(726, 386);
-            this.buttonG.Name = "buttonG";
-            this.buttonG.Size = new System.Drawing.Size(91, 193);
-            this.buttonG.TabIndex = 12;
-            this.buttonG.Text = "400-G";
-            this.buttonG.UseVisualStyleBackColor = false;
-            this.buttonG.Click += new System.EventHandler(this.buttonG_Click);
-            // 
-            // buttonF
-            // 
-            this.buttonF.BackColor = System.Drawing.Color.Transparent;
-            this.buttonF.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LimeGreen;
-            this.buttonF.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonF.Image = ((System.Drawing.Image)(resources.GetObject("buttonF.Image")));
-            this.buttonF.Location = new System.Drawing.Point(545, 386);
-            this.buttonF.Name = "buttonF";
-            this.buttonF.Size = new System.Drawing.Size(91, 193);
-            this.buttonF.TabIndex = 10;
-            this.buttonF.Text = "400-F";
-            this.buttonF.UseVisualStyleBackColor = false;
-            this.buttonF.Click += new System.EventHandler(this.buttonF_Click);
-            // 
-            // buttonE
-            // 
-            this.buttonE.BackColor = System.Drawing.Color.Transparent;
-            this.buttonE.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LimeGreen;
-            this.buttonE.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonE.Image = ((System.Drawing.Image)(resources.GetObject("buttonE.Image")));
-            this.buttonE.Location = new System.Drawing.Point(364, 386);
-            this.buttonE.Name = "buttonE";
-            this.buttonE.Size = new System.Drawing.Size(91, 193);
-            this.buttonE.TabIndex = 8;
-            this.buttonE.Text = "400-E";
-            this.buttonE.UseVisualStyleBackColor = false;
-            this.buttonE.Click += new System.EventHandler(this.buttonE_Click);
             // 
             // pictureBox1
             // 
@@ -169,17 +72,17 @@
             this.pictureBox1.Location = new System.Drawing.Point(32, 32);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(16);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(196, 91);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.Size = new System.Drawing.Size(210, 85);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 63;
             this.pictureBox1.TabStop = false;
             // 
             // button3
             // 
-            this.button3.BackColor = System.Drawing.Color.Transparent;
+            this.button3.BackColor = System.Drawing.Color.Green;
             this.button3.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button3.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Bold);
             this.button3.ForeColor = System.Drawing.Color.White;
             this.button3.Location = new System.Drawing.Point(1240, 32);
             this.button3.Margin = new System.Windows.Forms.Padding(16);
@@ -197,12 +100,11 @@
             this.labelA.BackColor = System.Drawing.Color.Transparent;
             this.labelA.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelA.ForeColor = System.Drawing.Color.White;
-            this.labelA.Location = new System.Drawing.Point(341, 335);
+            this.labelA.Location = new System.Drawing.Point(300, 330);
             this.labelA.Name = "labelA";
             this.labelA.Size = new System.Drawing.Size(137, 20);
             this.labelA.TabIndex = 1;
             this.labelA.Text = "Solante, Charlie";
-            this.labelA.Click += new System.EventHandler(this.labelA_Click);
             // 
             // labelB
             // 
@@ -210,12 +112,11 @@
             this.labelB.BackColor = System.Drawing.Color.Transparent;
             this.labelB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelB.ForeColor = System.Drawing.Color.White;
-            this.labelB.Location = new System.Drawing.Point(522, 335);
+            this.labelB.Location = new System.Drawing.Point(506, 330);
             this.labelB.Name = "labelB";
             this.labelB.Size = new System.Drawing.Size(137, 20);
             this.labelB.TabIndex = 3;
             this.labelB.Text = "Solante, Charlie";
-            this.labelB.Click += new System.EventHandler(this.labelB_Click);
             // 
             // labelC
             // 
@@ -223,12 +124,11 @@
             this.labelC.BackColor = System.Drawing.Color.Transparent;
             this.labelC.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelC.ForeColor = System.Drawing.Color.White;
-            this.labelC.Location = new System.Drawing.Point(703, 335);
+            this.labelC.Location = new System.Drawing.Point(712, 330);
             this.labelC.Name = "labelC";
             this.labelC.Size = new System.Drawing.Size(137, 20);
             this.labelC.TabIndex = 5;
             this.labelC.Text = "Solante, Charlie";
-            this.labelC.Click += new System.EventHandler(this.labelC_Click);
             // 
             // labelD
             // 
@@ -236,12 +136,11 @@
             this.labelD.BackColor = System.Drawing.Color.Transparent;
             this.labelD.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelD.ForeColor = System.Drawing.Color.White;
-            this.labelD.Location = new System.Drawing.Point(884, 335);
+            this.labelD.Location = new System.Drawing.Point(918, 330);
             this.labelD.Name = "labelD";
             this.labelD.Size = new System.Drawing.Size(137, 20);
             this.labelD.TabIndex = 7;
             this.labelD.Text = "Solante, Charlie";
-            this.labelD.Click += new System.EventHandler(this.labelD_Click);
             // 
             // labelE
             // 
@@ -249,12 +148,11 @@
             this.labelE.BackColor = System.Drawing.Color.Transparent;
             this.labelE.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelE.ForeColor = System.Drawing.Color.White;
-            this.labelE.Location = new System.Drawing.Point(341, 608);
+            this.labelE.Location = new System.Drawing.Point(300, 620);
             this.labelE.Name = "labelE";
             this.labelE.Size = new System.Drawing.Size(137, 20);
             this.labelE.TabIndex = 9;
             this.labelE.Text = "Solante, Charlie";
-            this.labelE.Click += new System.EventHandler(this.labelE_Click);
             // 
             // labelF
             // 
@@ -262,12 +160,11 @@
             this.labelF.BackColor = System.Drawing.Color.Transparent;
             this.labelF.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelF.ForeColor = System.Drawing.Color.White;
-            this.labelF.Location = new System.Drawing.Point(522, 608);
+            this.labelF.Location = new System.Drawing.Point(506, 620);
             this.labelF.Name = "labelF";
             this.labelF.Size = new System.Drawing.Size(137, 20);
             this.labelF.TabIndex = 11;
             this.labelF.Text = "Solante, Charlie";
-            this.labelF.Click += new System.EventHandler(this.labelF_Click);
             // 
             // labelG
             // 
@@ -275,12 +172,11 @@
             this.labelG.BackColor = System.Drawing.Color.Transparent;
             this.labelG.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelG.ForeColor = System.Drawing.Color.White;
-            this.labelG.Location = new System.Drawing.Point(703, 608);
+            this.labelG.Location = new System.Drawing.Point(712, 620);
             this.labelG.Name = "labelG";
             this.labelG.Size = new System.Drawing.Size(137, 20);
             this.labelG.TabIndex = 13;
             this.labelG.Text = "Solante, Charlie";
-            this.labelG.Click += new System.EventHandler(this.labelG_Click);
             // 
             // labelH
             // 
@@ -288,12 +184,195 @@
             this.labelH.BackColor = System.Drawing.Color.Transparent;
             this.labelH.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelH.ForeColor = System.Drawing.Color.White;
-            this.labelH.Location = new System.Drawing.Point(884, 608);
+            this.labelH.Location = new System.Drawing.Point(918, 620);
             this.labelH.Name = "labelH";
             this.labelH.Size = new System.Drawing.Size(137, 20);
             this.labelH.TabIndex = 15;
             this.labelH.Text = "Solante, Charlie";
-            this.labelH.Click += new System.EventHandler(this.labelH_Click);
+            // 
+            // pbA
+            // 
+            this.pbA.BackColor = System.Drawing.Color.Transparent;
+            this.pbA.Image = global::Prescription_Assistance.Properties.Resources.images21;
+            this.pbA.Location = new System.Drawing.Point(303, 92);
+            this.pbA.Name = "pbA";
+            this.pbA.Size = new System.Drawing.Size(130, 230);
+            this.pbA.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbA.TabIndex = 66;
+            this.pbA.TabStop = false;
+            this.pbA.Click += new System.EventHandler(this.pbA_Click);
+            // 
+            // lblA
+            // 
+            this.lblA.AutoSize = true;
+            this.lblA.BackColor = System.Drawing.Color.White;
+            this.lblA.Font = new System.Drawing.Font("Open Sans", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblA.Location = new System.Drawing.Point(342, 193);
+            this.lblA.Name = "lblA";
+            this.lblA.Size = new System.Drawing.Size(50, 20);
+            this.lblA.TabIndex = 67;
+            this.lblA.Text = "400-A";
+            // 
+            // lblB
+            // 
+            this.lblB.AutoSize = true;
+            this.lblB.BackColor = System.Drawing.Color.White;
+            this.lblB.Font = new System.Drawing.Font("Open Sans", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblB.Location = new System.Drawing.Point(548, 193);
+            this.lblB.Name = "lblB";
+            this.lblB.Size = new System.Drawing.Size(50, 20);
+            this.lblB.TabIndex = 69;
+            this.lblB.Text = "400-A";
+            // 
+            // pbB
+            // 
+            this.pbB.BackColor = System.Drawing.Color.Transparent;
+            this.pbB.Image = global::Prescription_Assistance.Properties.Resources.images21;
+            this.pbB.Location = new System.Drawing.Point(509, 92);
+            this.pbB.Name = "pbB";
+            this.pbB.Size = new System.Drawing.Size(130, 230);
+            this.pbB.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbB.TabIndex = 68;
+            this.pbB.TabStop = false;
+            this.pbB.Click += new System.EventHandler(this.pbB_Click);
+            // 
+            // lblC
+            // 
+            this.lblC.AutoSize = true;
+            this.lblC.BackColor = System.Drawing.Color.White;
+            this.lblC.Font = new System.Drawing.Font("Open Sans", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblC.Location = new System.Drawing.Point(756, 193);
+            this.lblC.Name = "lblC";
+            this.lblC.Size = new System.Drawing.Size(50, 20);
+            this.lblC.TabIndex = 71;
+            this.lblC.Text = "400-A";
+            // 
+            // pbC
+            // 
+            this.pbC.BackColor = System.Drawing.Color.Transparent;
+            this.pbC.Image = global::Prescription_Assistance.Properties.Resources.images21;
+            this.pbC.Location = new System.Drawing.Point(715, 92);
+            this.pbC.Name = "pbC";
+            this.pbC.Size = new System.Drawing.Size(130, 230);
+            this.pbC.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbC.TabIndex = 70;
+            this.pbC.TabStop = false;
+            this.pbC.Click += new System.EventHandler(this.pbC_Click);
+            // 
+            // lblD
+            // 
+            this.lblD.AutoSize = true;
+            this.lblD.BackColor = System.Drawing.Color.White;
+            this.lblD.Font = new System.Drawing.Font("Open Sans", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblD.Location = new System.Drawing.Point(962, 193);
+            this.lblD.Name = "lblD";
+            this.lblD.Size = new System.Drawing.Size(50, 20);
+            this.lblD.TabIndex = 73;
+            this.lblD.Text = "400-A";
+            // 
+            // pbD
+            // 
+            this.pbD.BackColor = System.Drawing.Color.Transparent;
+            this.pbD.Image = global::Prescription_Assistance.Properties.Resources.images21;
+            this.pbD.Location = new System.Drawing.Point(921, 92);
+            this.pbD.Name = "pbD";
+            this.pbD.Size = new System.Drawing.Size(130, 230);
+            this.pbD.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbD.TabIndex = 72;
+            this.pbD.TabStop = false;
+            this.pbD.Click += new System.EventHandler(this.pbD_Click);
+            // 
+            // lblE
+            // 
+            this.lblE.AutoSize = true;
+            this.lblE.BackColor = System.Drawing.Color.White;
+            this.lblE.Font = new System.Drawing.Font("Open Sans", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblE.Location = new System.Drawing.Point(342, 498);
+            this.lblE.Name = "lblE";
+            this.lblE.Size = new System.Drawing.Size(50, 20);
+            this.lblE.TabIndex = 75;
+            this.lblE.Text = "400-A";
+            // 
+            // pbE
+            // 
+            this.pbE.BackColor = System.Drawing.Color.Transparent;
+            this.pbE.Image = global::Prescription_Assistance.Properties.Resources.images21;
+            this.pbE.Location = new System.Drawing.Point(303, 382);
+            this.pbE.Name = "pbE";
+            this.pbE.Size = new System.Drawing.Size(130, 230);
+            this.pbE.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbE.TabIndex = 74;
+            this.pbE.TabStop = false;
+            this.pbE.Click += new System.EventHandler(this.pbE_Click);
+            // 
+            // lblF
+            // 
+            this.lblF.AutoSize = true;
+            this.lblF.BackColor = System.Drawing.Color.White;
+            this.lblF.Font = new System.Drawing.Font("Open Sans", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblF.Location = new System.Drawing.Point(548, 499);
+            this.lblF.Name = "lblF";
+            this.lblF.Size = new System.Drawing.Size(50, 20);
+            this.lblF.TabIndex = 77;
+            this.lblF.Text = "400-A";
+            // 
+            // pbF
+            // 
+            this.pbF.BackColor = System.Drawing.Color.Transparent;
+            this.pbF.Image = global::Prescription_Assistance.Properties.Resources.images21;
+            this.pbF.Location = new System.Drawing.Point(509, 382);
+            this.pbF.Name = "pbF";
+            this.pbF.Size = new System.Drawing.Size(130, 230);
+            this.pbF.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbF.TabIndex = 76;
+            this.pbF.TabStop = false;
+            this.pbF.Click += new System.EventHandler(this.pbF_Click);
+            // 
+            // lblG
+            // 
+            this.lblG.AutoSize = true;
+            this.lblG.BackColor = System.Drawing.Color.White;
+            this.lblG.Font = new System.Drawing.Font("Open Sans", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblG.Location = new System.Drawing.Point(756, 499);
+            this.lblG.Name = "lblG";
+            this.lblG.Size = new System.Drawing.Size(50, 20);
+            this.lblG.TabIndex = 79;
+            this.lblG.Text = "400-A";
+            // 
+            // pbG
+            // 
+            this.pbG.BackColor = System.Drawing.Color.Transparent;
+            this.pbG.Image = global::Prescription_Assistance.Properties.Resources.images21;
+            this.pbG.Location = new System.Drawing.Point(715, 382);
+            this.pbG.Name = "pbG";
+            this.pbG.Size = new System.Drawing.Size(130, 230);
+            this.pbG.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbG.TabIndex = 78;
+            this.pbG.TabStop = false;
+            this.pbG.Click += new System.EventHandler(this.pbG_Click);
+            // 
+            // lblH
+            // 
+            this.lblH.AutoSize = true;
+            this.lblH.BackColor = System.Drawing.Color.White;
+            this.lblH.Font = new System.Drawing.Font("Open Sans", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblH.Location = new System.Drawing.Point(962, 499);
+            this.lblH.Name = "lblH";
+            this.lblH.Size = new System.Drawing.Size(50, 20);
+            this.lblH.TabIndex = 81;
+            this.lblH.Text = "400-A";
+            // 
+            // pbH
+            // 
+            this.pbH.BackColor = System.Drawing.Color.Transparent;
+            this.pbH.Image = global::Prescription_Assistance.Properties.Resources.images21;
+            this.pbH.Location = new System.Drawing.Point(921, 382);
+            this.pbH.Name = "pbH";
+            this.pbH.Size = new System.Drawing.Size(130, 230);
+            this.pbH.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbH.TabIndex = 80;
+            this.pbH.TabStop = false;
+            this.pbH.Click += new System.EventHandler(this.pbH_Click);
             // 
             // Ward_Layout
             // 
@@ -301,7 +380,21 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Prescription_Assistance.Properties.Resources.greenbg1;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1362, 741);
+            this.ClientSize = new System.Drawing.Size(1354, 733);
+            this.Controls.Add(this.lblH);
+            this.Controls.Add(this.pbH);
+            this.Controls.Add(this.lblG);
+            this.Controls.Add(this.lblF);
+            this.Controls.Add(this.pbF);
+            this.Controls.Add(this.lblE);
+            this.Controls.Add(this.pbE);
+            this.Controls.Add(this.lblD);
+            this.Controls.Add(this.pbD);
+            this.Controls.Add(this.lblC);
+            this.Controls.Add(this.pbC);
+            this.Controls.Add(this.lblB);
+            this.Controls.Add(this.pbB);
+            this.Controls.Add(this.lblA);
             this.Controls.Add(this.labelH);
             this.Controls.Add(this.labelG);
             this.Controls.Add(this.labelF);
@@ -312,20 +405,22 @@
             this.Controls.Add(this.labelA);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.buttonD);
-            this.Controls.Add(this.buttonC);
-            this.Controls.Add(this.buttonB);
-            this.Controls.Add(this.buttonA);
-            this.Controls.Add(this.buttonH);
-            this.Controls.Add(this.buttonG);
-            this.Controls.Add(this.buttonF);
-            this.Controls.Add(this.buttonE);
+            this.Controls.Add(this.pbA);
+            this.Controls.Add(this.pbG);
             this.Name = "Ward_Layout";
             this.Padding = new System.Windows.Forms.Padding(16);
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "iCare | Patient";
             this.Load += new System.EventHandler(this.Ward_Layout_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbA)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbB)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbC)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbD)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbE)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbF)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbG)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbH)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -333,14 +428,6 @@
 
         #endregion
 
-        private System.Windows.Forms.Button buttonD;
-        private System.Windows.Forms.Button buttonC;
-        private System.Windows.Forms.Button buttonB;
-        private System.Windows.Forms.Button buttonA;
-        private System.Windows.Forms.Button buttonH;
-        private System.Windows.Forms.Button buttonG;
-        private System.Windows.Forms.Button buttonF;
-        private System.Windows.Forms.Button buttonE;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Label labelA;
@@ -351,5 +438,21 @@
         private System.Windows.Forms.Label labelF;
         private System.Windows.Forms.Label labelG;
         private System.Windows.Forms.Label labelH;
+        private System.Windows.Forms.PictureBox pbA;
+        private System.Windows.Forms.Label lblA;
+        private System.Windows.Forms.Label lblB;
+        private System.Windows.Forms.PictureBox pbB;
+        private System.Windows.Forms.Label lblC;
+        private System.Windows.Forms.PictureBox pbC;
+        private System.Windows.Forms.Label lblD;
+        private System.Windows.Forms.PictureBox pbD;
+        private System.Windows.Forms.Label lblE;
+        private System.Windows.Forms.PictureBox pbE;
+        private System.Windows.Forms.Label lblF;
+        private System.Windows.Forms.PictureBox pbF;
+        private System.Windows.Forms.Label lblG;
+        private System.Windows.Forms.PictureBox pbG;
+        private System.Windows.Forms.Label lblH;
+        private System.Windows.Forms.PictureBox pbH;
     }
 }

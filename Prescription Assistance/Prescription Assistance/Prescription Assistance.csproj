@@ -443,6 +443,8 @@
       <DependentUpon>Database1.mdf</DependentUpon>
     </Content>
     <Content Include="Images\logo.png" />
+    <None Include="Resources\images21.png" />
+    <None Include="Resources\images2.png" />
     <None Include="Resources\meal.jpg" />
     <None Include="Resources\pharmacy.jpg" />
     <None Include="Resources\medicalsta.jpg" />

@@ -44,6 +44,7 @@ namespace Prescription_Assistance
             ca.Assistance = "Pharmacy";
             ca.Status = "Undone";
             ca.insertAlert();
+            MessageBox.Show("Request for Pharmacy is successful. Please wait while your request is processed.");
             returntoWard();
         }
 
@@ -52,6 +53,7 @@ namespace Prescription_Assistance
             ca.Assistance = "Order Meal";
             ca.Status = "Undone";
             ca.insertAlert();
+            MessageBox.Show("Request to Order Meal is successful. Please wait while your request is processed.");
             returntoWard();
         }
 
@@ -60,6 +62,7 @@ namespace Prescription_Assistance
             ca.Assistance = "Room Transfer";
             ca.Status = "Undone";
             ca.insertAlert();
+            MessageBox.Show("Request for Room Transfer is successful. Please wait while your request is processed.");
             returntoWard();
         }
 
@@ -68,6 +71,7 @@ namespace Prescription_Assistance
             ca.Assistance = "Medical Consultation";
             ca.Status = "Undone";
             ca.insertAlert();
+            MessageBox.Show("Request for Medical Consultation is successful. Please wait while your request is processed.");
             returntoWard();
         }
 
@@ -76,6 +80,7 @@ namespace Prescription_Assistance
             ca.Assistance = "Check Medical Status";
             ca.Status = "Undone";
             ca.insertAlert();
+            MessageBox.Show("Request for Medical Status Check is successful. Please wait while your request is processed.");
             returntoWard();
         }
 
@@ -84,6 +89,7 @@ namespace Prescription_Assistance
             ca.Assistance = "Request for Wheelchair";
             ca.Status = "Undone";
             ca.insertAlert();
+            MessageBox.Show("Request for Wheelchair is successful. Please wait while your request is processed.");
             returntoWard();
         }
 
@@ -92,14 +98,16 @@ namespace Prescription_Assistance
             ca.Assistance = "Request for Shuttle";
             ca.Status = "Undone";
             ca.insertAlert();
+            MessageBox.Show("Request for Shuttle is successful. Please wait while your request is processed.");
             returntoWard();
         }
 
         private void button8_Click(object sender, EventArgs e)
         {
-            ca.Assistance = "Room Maintenance";
+            ca.Assistance = "Room/Bed Maintenance";
             ca.Status = "Undone";
             ca.insertAlert();
+            MessageBox.Show("Request for Room/Bed Maintenance is successful. Please wait while your request is processed.");
             returntoWard();
         }
 

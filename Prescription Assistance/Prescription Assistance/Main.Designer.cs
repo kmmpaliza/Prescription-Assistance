@@ -43,7 +43,7 @@
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Image = global::Prescription_Assistance.Properties.Resources.stafffffffff;
-            this.button1.Location = new System.Drawing.Point(541, 256);
+            this.button1.Location = new System.Drawing.Point(369, 399);
             this.button1.Margin = new System.Windows.Forms.Padding(16);
             this.button1.Name = "button1";
             this.button1.Padding = new System.Windows.Forms.Padding(8);
@@ -60,7 +60,7 @@
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.White;
             this.button2.Image = global::Prescription_Assistance.Properties.Resources.patient1;
-            this.button2.Location = new System.Drawing.Point(541, 386);
+            this.button2.Location = new System.Drawing.Point(705, 399);
             this.button2.Margin = new System.Windows.Forms.Padding(16);
             this.button2.Name = "button2";
             this.button2.Padding = new System.Windows.Forms.Padding(8);
@@ -72,13 +72,12 @@
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Image = global::Prescription_Assistance.Properties.Resources.logoo2;
-            this.pictureBox1.Location = new System.Drawing.Point(25, 25);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(16);
+            this.pictureBox1.Image = global::Prescription_Assistance.Properties.Resources.logoo3;
+            this.pictureBox1.Location = new System.Drawing.Point(528, 236);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(196, 91);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 7;
+            this.pictureBox1.Size = new System.Drawing.Size(300, 125);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox1.TabIndex = 19;
             this.pictureBox1.TabStop = false;
             // 
             // Main
@@ -87,7 +86,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Prescription_Assistance.Properties.Resources.greenbg1;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1362, 741);
+            this.ClientSize = new System.Drawing.Size(1354, 733);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
@@ -97,6 +96,7 @@
             this.Load += new System.EventHandler(this.Main_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 

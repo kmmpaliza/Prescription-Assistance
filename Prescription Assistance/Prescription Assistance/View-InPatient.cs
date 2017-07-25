@@ -52,7 +52,7 @@ namespace Prescription_Assistance
             cp.First_name = txtSearch.Text;
             cp.Gender = txtSearch.Text;
             cp.Age = txtSearch.Text;
-            cp.Birthday = txtSearch.Text;
+            cp.Contact = txtSearch.Text;
 
             ds2 = cp.searchPatient();
             dataGridView1.Refresh();

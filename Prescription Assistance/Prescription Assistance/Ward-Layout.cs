@@ -48,87 +48,47 @@ namespace Prescription_Assistance
 
         private void setButtons(string init)
         {
-            buttonA.Text = "" + init + "-A";
-            buttonB.Text = "" + init + "-B";
-            buttonC.Text = "" + init + "-C";
-            buttonD.Text = "" + init + "-D";
-            buttonE.Text = "" + init + "-E";
-            buttonF.Text = "" + init + "-F";
-            buttonG.Text = "" + init + "-G";
-            buttonH.Text = "" + init + "-H";
+            lblA.Text = "" + init + "-A";
+            lblB.Text = "" + init + "-B";
+            lblC.Text = "" + init + "-C";
+            lblD.Text = "" + init + "-D";
+            lblE.Text = "" + init + "-E";
+            lblF.Text = "" + init + "-F";
+            lblG.Text = "" + init + "-G";
+            lblH.Text = "" + init + "-H";
 
-            cr.Bed_id = buttonA.Text;
+            cr.Bed_id = lblA.Text;
             ds = cr.viewBedandPatient();
             labelA.Text = ds.Tables[0].Rows[0][3].ToString();
 
-            cr.Bed_id = buttonB.Text;
+            cr.Bed_id = lblB.Text;
             ds = cr.viewBedandPatient();
             labelB.Text = ds.Tables[0].Rows[0][3].ToString();
 
-            cr.Bed_id = buttonC.Text;
+            cr.Bed_id = lblC.Text;
             ds = cr.viewBedandPatient();
             labelC.Text = ds.Tables[0].Rows[0][3].ToString();
 
-            cr.Bed_id = buttonD.Text;
+            cr.Bed_id = lblD.Text;
             ds = cr.viewBedandPatient();
             labelD.Text = ds.Tables[0].Rows[0][3].ToString();
 
-            cr.Bed_id = buttonE.Text;
+            cr.Bed_id = lblE.Text;
             ds = cr.viewBedandPatient();
             labelE.Text = ds.Tables[0].Rows[0][3].ToString();
 
-            cr.Bed_id = buttonF.Text;
+            cr.Bed_id = lblF.Text;
             ds = cr.viewBedandPatient();
             labelF.Text = ds.Tables[0].Rows[0][3].ToString();
 
-            cr.Bed_id = buttonG.Text;
+            cr.Bed_id = lblG.Text;
             ds = cr.viewBedandPatient();
             labelG.Text = ds.Tables[0].Rows[0][3].ToString();
 
-            cr.Bed_id = buttonH.Text;
+            cr.Bed_id = lblH.Text;
             ds = cr.viewBedandPatient();
             labelH.Text = ds.Tables[0].Rows[0][3].ToString();
             
-        }
-
-        private void buttonA_Click(object sender, EventArgs e)
-        {
-            directtoPatientDashboard(buttonA.Text);          
-        }
-
-        private void buttonB_Click(object sender, EventArgs e)
-        {
-            directtoPatientDashboard(buttonB.Text);   
-        }
-
-        private void buttonC_Click(object sender, EventArgs e)
-        {
-            directtoPatientDashboard(buttonC.Text);   
-        }
-
-        private void buttonD_Click(object sender, EventArgs e)
-        {
-            directtoPatientDashboard(buttonD.Text);   
-        }
-
-        private void buttonE_Click(object sender, EventArgs e)
-        {
-            directtoPatientDashboard(buttonE.Text);   
-        }
-
-        private void buttonF_Click(object sender, EventArgs e)
-        {
-            directtoPatientDashboard(buttonF.Text);   
-        }
-
-        private void buttonG_Click(object sender, EventArgs e)
-        {
-            directtoPatientDashboard(buttonH.Text);   
-        }
-
-        private void buttonH_Click(object sender, EventArgs e)
-        {
-            directtoPatientDashboard(buttonG.Text);   
         }
 
         private void directtoPatientDashboard(string bed)
@@ -145,44 +105,44 @@ namespace Prescription_Assistance
             this.Hide();
         }
 
-        private void labelA_Click(object sender, EventArgs e)
+        private void pbA_Click(object sender, EventArgs e)
         {
-
+            directtoPatientDashboard(lblA.Text);
         }
 
-        private void labelB_Click(object sender, EventArgs e)
+        private void pbB_Click(object sender, EventArgs e)
         {
-
+            directtoPatientDashboard(lblB.Text);
         }
 
-        private void labelC_Click(object sender, EventArgs e)
+        private void pbC_Click(object sender, EventArgs e)
         {
-
+            directtoPatientDashboard(lblC.Text);
         }
 
-        private void labelD_Click(object sender, EventArgs e)
+        private void pbD_Click(object sender, EventArgs e)
         {
-
+            directtoPatientDashboard(lblD.Text);
         }
 
-        private void labelE_Click(object sender, EventArgs e)
+        private void pbE_Click(object sender, EventArgs e)
         {
-
+            directtoPatientDashboard(lblE.Text);
         }
 
-        private void labelF_Click(object sender, EventArgs e)
+        private void pbF_Click(object sender, EventArgs e)
         {
-
+            directtoPatientDashboard(lblF.Text);
         }
 
-        private void labelG_Click(object sender, EventArgs e)
+        private void pbG_Click(object sender, EventArgs e)
         {
-
+            directtoPatientDashboard(lblG.Text);
         }
 
-        private void labelH_Click(object sender, EventArgs e)
+        private void pbH_Click(object sender, EventArgs e)
         {
-
+            directtoPatientDashboard(lblH.Text);
         }
     }
 }

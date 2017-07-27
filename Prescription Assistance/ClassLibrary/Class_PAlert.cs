@@ -56,6 +56,7 @@ namespace ClassLibrary
      
 
         #endregion
+        string id;
 
         public DataSet viewPAlert()
         {
@@ -78,7 +79,7 @@ namespace ClassLibrary
             return ds;
         }
 
-        public void insertPAlert()
+        public string insertPAlert()
         {
             conn.Open();
             SqlCommand cmd = new SqlCommand("insert_PAlert", conn);
@@ -88,8 +89,17 @@ namespace ClassLibrary
             cmd.Parameters.Add("@Prescription_ID", SqlDbType.VarChar).Value = prescription_id;
             cmd.Parameters.Add("@Time", SqlDbType.VarChar).Value = time;
             cmd.Parameters.Add("@Status", SqlDbType.VarChar).Value = status;
-            cmd.ExecuteNonQuery();
+            //cmd.ExecuteNonQuery();
+
+            SqlDataReader dr = cmd.ExecuteReader();
+            while (dr.Read())
+            {
+                id = dr[0].ToString();
+                break;
+            }
             conn.Close();
+
+            return id;
         }
 
         public void updatePAlert()

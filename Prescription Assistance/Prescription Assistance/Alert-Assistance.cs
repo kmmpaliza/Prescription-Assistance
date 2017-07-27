@@ -29,18 +29,18 @@ namespace Prescription_Assistance
             label2.Text = assistance;
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void Alert_Assistance_Click(object sender, EventArgs e)
         {
             ca.Alert_id = alertid;
             ca.Bed_id = bed;
             ca.Assistance = assistance;
             ca.Status = "Done";
-            ca.updateAlertStatus();  
+            ca.updateAlertStatus();
 
             this.Enabled = false;
             this.Visible = false;
             this.Parent.Refresh();
-            this.Parent.Controls.Remove(this);   
+            this.Parent.Controls.Remove(this); 
         } 
     }
 }

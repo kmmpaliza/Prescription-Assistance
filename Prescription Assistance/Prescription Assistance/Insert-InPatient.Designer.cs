@@ -47,6 +47,8 @@
             this.label21 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -202,7 +204,7 @@
             this.txtHeight.Font = new System.Drawing.Font("Open Sans", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtHeight.Location = new System.Drawing.Point(144, 351);
             this.txtHeight.Name = "txtHeight";
-            this.txtHeight.Size = new System.Drawing.Size(211, 27);
+            this.txtHeight.Size = new System.Drawing.Size(169, 27);
             this.txtHeight.TabIndex = 5;
             // 
             // txtWeight
@@ -210,7 +212,7 @@
             this.txtWeight.Font = new System.Drawing.Font("Open Sans", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtWeight.Location = new System.Drawing.Point(148, 307);
             this.txtWeight.Name = "txtWeight";
-            this.txtWeight.Size = new System.Drawing.Size(207, 27);
+            this.txtWeight.Size = new System.Drawing.Size(165, 27);
             this.txtWeight.TabIndex = 4;
             // 
             // label21
@@ -243,11 +245,33 @@
             this.label2.TabIndex = 116;
             this.label2.Text = "Patient Details";
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Open Sans", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(319, 310);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(29, 20);
+            this.label3.TabIndex = 117;
+            this.label3.Text = "lbs";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Open Sans", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(319, 354);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(30, 20);
+            this.label9.TabIndex = 118;
+            this.label9.Text = "cm";
+            // 
             // Insert_InPatient
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtHeight);
             this.Controls.Add(this.txtWeight);
@@ -270,6 +294,7 @@
             this.Name = "Insert_InPatient";
             this.Padding = new System.Windows.Forms.Padding(16, 32, 16, 16);
             this.Size = new System.Drawing.Size(1150, 635);
+            this.Load += new System.EventHandler(this.Insert_InPatient_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -296,5 +321,7 @@
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label9;
     }
 }

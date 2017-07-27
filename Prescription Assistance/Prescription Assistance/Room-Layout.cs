@@ -26,7 +26,7 @@ namespace Prescription_Assistance
         DataSet ds2 = new DataSet();
         DataSet ds3 = new DataSet();
         DataSet ds4 = new DataSet();
-        string bed;
+        string bed, id;
 
         public Room_Layout()
         {
@@ -35,7 +35,6 @@ namespace Prescription_Assistance
 
         private void Room_Layout_Load(object sender, EventArgs e)
         {
-            //pictureBox1.Fore
         }   
 
         #region Vital Alerts
@@ -77,7 +76,6 @@ namespace Prescription_Assistance
             }
 
             Alert_Vitals a = new Alert_Vitals(id, this);
-            a.Location = new Point(100, 100);
             ePanel.Controls.Add(a);
             a.BringToFront();                      
         }
@@ -117,8 +115,6 @@ namespace Prescription_Assistance
             }
 
             Alert_Assistance a = new Alert_Assistance(alertid, bed, assistance, status);
-            int[] loc = setLocation(bed);
-            a.Location = new Point(loc[0], loc[1]);
             ePanel.Controls.Add(a);
         }
         #endregion
@@ -168,61 +164,114 @@ namespace Prescription_Assistance
             cpa.Prescription_id = prescription_id;
             cpa.Status = "Undone";
 
-            switch (interval)
-            {
-                case "Once a day (Day)":
-                    cpa.Time = "08"; cpa.insertPAlert();
-                    break;
-                case "Once a day (Night)":
-                    cpa.Time = "18"; cpa.insertPAlert();
-                    break;
-                case "Twice a day":
-                    cpa.Time = "08"; cpa.insertPAlert();
-                    cpa.Time = "20"; cpa.insertPAlert();
-                    break;
-                case "Three times a day":
-                    cpa.Time = "08"; cpa.insertPAlert();
-                    cpa.Time = "12"; cpa.insertPAlert();
-                    cpa.Time = "20"; cpa.insertPAlert();
-                    break;
-                case "Four times a day":
-                    cpa.Time = "08"; cpa.insertPAlert();
-                    cpa.Time = "12"; cpa.insertPAlert();
-                    cpa.Time = "18"; cpa.insertPAlert();
-                    cpa.Time = "22"; cpa.insertPAlert();
-                    break;
-                case "Every 4 hours":
-                    cpa.Time = "02"; cpa.insertPAlert();
-                    cpa.Time = "06"; cpa.insertPAlert();
-                    cpa.Time = "10"; cpa.insertPAlert();
-                    cpa.Time = "14"; cpa.insertPAlert();
-                    cpa.Time = "18"; cpa.insertPAlert();
-                    cpa.Time = "22"; cpa.insertPAlert();
-                    break;
-                case "Every 6 hours":
-                    cpa.Time = "06"; cpa.insertPAlert();
-                    cpa.Time = "12"; cpa.insertPAlert();
-                    cpa.Time = "18"; cpa.insertPAlert();
-                    cpa.Time = "24"; cpa.insertPAlert();
-                    break;
-                case "Every 8 hours":
-                    cpa.Time = "06"; cpa.insertPAlert();
-                    cpa.Time = "14"; cpa.insertPAlert();
-                    cpa.Time = "22"; cpa.insertPAlert();
-                    break;
-                case "Before meals":
-                    cpa.Time = "08"; cpa.insertPAlert();
-                    cpa.Time = "12"; cpa.insertPAlert();
-                    cpa.Time = "18"; cpa.insertPAlert();
-                    break;
-                case "After meals":
-                    cpa.Time = "09"; cpa.insertPAlert();
-                    cpa.Time = "13"; cpa.insertPAlert();
-                    cpa.Time = "19"; cpa.insertPAlert();
-                    break;
+            if (interval.Equals("Every 5 minutes"))
+            {                
+                runMinute5Meds(bed_id, patient_id, prescription_id);
             }
+            else if (interval.Equals("Every 10 minutes"))
+            {                
+                runMinute10Meds(bed_id, patient_id, prescription_id);
+            }
+            else 
+            {
+                if (interval.Equals("Once a day (Day)"))
+                {
+                    cpa.Time = "08";
+                    id = cpa.insertPAlert();
+                }
+                else if (interval.Equals("Once a day (Night)"))
+                {
+                    cpa.Time = "18";
+                    id = cpa.insertPAlert();
+                }
+                else if (interval.Equals("Twice a day"))
+                {
+                    cpa.Time = "08"; id = cpa.insertPAlert();
+                    cpa.Time = "20"; id = cpa.insertPAlert();
+                }
+                else if (interval.Equals("Three times a day"))
+                {
+                    cpa.Time = "08"; id = cpa.insertPAlert();
+                    cpa.Time = "12"; id = cpa.insertPAlert();
+                    cpa.Time = "20"; id = cpa.insertPAlert();
+                }
+                else if (interval.Equals("Four times a day"))
+                {
+                    cpa.Time = "08"; id = cpa.insertPAlert();
+                    cpa.Time = "12"; id = cpa.insertPAlert();
+                    cpa.Time = "18"; id = cpa.insertPAlert();
+                    cpa.Time = "22"; id = cpa.insertPAlert();
+                }
+                else if (interval.Equals("Every 4 hours"))
+                {
+                    cpa.Time = "02"; id = cpa.insertPAlert();
+                    cpa.Time = "06"; id = cpa.insertPAlert();
+                    cpa.Time = "10"; id = cpa.insertPAlert();
+                    cpa.Time = "14"; id = cpa.insertPAlert();
+                    cpa.Time = "18"; id = cpa.insertPAlert();
+                    cpa.Time = "22"; id = cpa.insertPAlert();
+                }
+                else if (interval.Equals("Every 6 hours"))
+                {
+                    cpa.Time = "06"; id = cpa.insertPAlert();
+                    cpa.Time = "12"; id = cpa.insertPAlert();
+                    cpa.Time = "18"; id = cpa.insertPAlert();
+                    cpa.Time = "24"; id = cpa.insertPAlert();
+                }
+                else if (interval.Equals("Every 8 hours"))
+                {
+                    cpa.Time = "06"; id = cpa.insertPAlert();
+                    cpa.Time = "14"; id = cpa.insertPAlert();
+                    cpa.Time = "22"; id = cpa.insertPAlert();
+                }
+                else if (interval.Equals("Before meals"))
+                {
+                    cpa.Time = "08"; id = cpa.insertPAlert();
+                    cpa.Time = "12"; id = cpa.insertPAlert();
+                    cpa.Time = "18"; id = cpa.insertPAlert();
+                }
+                else if (interval.Equals("After meals"))
+                {
+                    cpa.Time = "09"; id = cpa.insertPAlert();
+                    cpa.Time = "13"; id = cpa.insertPAlert();
+                    cpa.Time = "19"; id = cpa.insertPAlert();
+                }
 
-            runTimeforPrescription();
+                runTimeforPrescription();   
+            }           
+        }
+
+        public void runMinute5Meds(string bed_id, string patient_id, string prescription_id) //check med every 5 minutes
+        {
+            var startTimeSpan = TimeSpan.Zero;
+            var periodTimeSpan = TimeSpan.FromMinutes(5);
+
+            timer = new System.Threading.Timer((e) =>
+            {
+                cpa.Bed_id = bed_id;
+                cpa.Patient_id = patient_id;
+                cpa.Prescription_id = prescription_id;
+                cpa.Status = "Undone";
+                cpa.Time = "";
+                id = cpa.insertPAlert();
+                showAlertforPrescription(id, bed_id);
+            }, null, startTimeSpan, periodTimeSpan);
+        }
+        public void runMinute10Meds(string bed_id, string patient_id, string prescription_id) //check med every 10 minutes
+        {
+            var startTimeSpan = TimeSpan.Zero;
+            var periodTimeSpan = TimeSpan.FromMinutes(10);
+
+            timer = new System.Threading.Timer((e) =>
+            {
+                cpa.Bed_id = bed_id;
+                cpa.Patient_id = patient_id;
+                cpa.Prescription_id = prescription_id;
+                cpa.Status = "Undone";
+                cpa.Time = "";
+                id = cpa.insertPAlert();
+                showAlertforPrescription(id, bed_id);
+            }, null, startTimeSpan, periodTimeSpan);
         }
 
         public void runPrescription() //every hour
@@ -258,8 +307,6 @@ namespace Prescription_Assistance
             }
 
             Alert_Medicine a = new Alert_Medicine(palert_id);
-            int[] loc = setLocation(bed);
-            a.Location = new Point(loc[0], loc[1]);
             ePanel.Controls.Add(a);
             a.BringToFront();          
         }
@@ -287,203 +334,253 @@ namespace Prescription_Assistance
             parent.changetoInsertMedicalRecords(id, vid);
         }
 
-        public int[] setLocation(string bed)
+        public void setBedLocation(string bed)
         {
-            int[] loc = new int[2];
-
             switch (bed)
             {
-                case "200-A":
-                    loc[0] = 110;
-                    loc[1] = 11;
+                case "ICU-A":
                     break;
-                case "200-B":
-                    loc[0] = 110;
-                    loc[1] = 81;
+                case "ICU-B":
                     break;
-                case "200-C":
-                    loc[0] = 110;
-                    loc[1] = 151;
+                case "ICU-C":
                     break;
-                case "200-D":
-                    loc[0] = 110;
-                    loc[1] = 221;
+                case "ICU-D":
                     break;
-                case "200-E":
-                    loc[0] = 313;
-                    loc[1] = 11;
+                case "ICU-E":
                     break;
-                case "200-F":
-                    loc[0] = 313;
-                    loc[1] = 81;
+                case "ICU-F":
                     break;
-                case "200-G":
-                    loc[0] = 313;
-                    loc[1] = 151;
+                case "ORE-A":
                     break;
-                case "200-H":
-                    loc[0] = 313;
-                    loc[1] = 221;
+                case "ORE-B":
                     break;
-                case "201":
-                    loc[0] = 503;
-                    loc[1] = 56;
+                case "FW2-A":
                     break;
-                case "202":
-                    loc[0] = 503;
-                    loc[1] = 140;
+                case "FW2-B":
                     break;
-                case "203":
-                    loc[0] = 503;
-                    loc[1] = 246;
+                case "FW2-C":
                     break;
-                case "300-A":
-                    loc[0] = 41;
-                    loc[1] = 409;
+                case "FW2-D":
                     break;
-                case "300-B":
-                    loc[0] = 112;
-                    loc[1] = 409;
+                case "FW2-E":
                     break;
-                case "300-C":
-                    loc[0] = 184;
-                    loc[1] = 409;
+                case "FW1-A":
                     break;
-                case "300-D":
-                    loc[0] = 262;
-                    loc[1] = 409;
+                case "FW1-B":
                     break;
-                case "300-E":
-                    loc[0] = 41;
-                    loc[1] = 545;
+                case "FW1-C":
                     break;
-                case "300-F":
-                    loc[0] = 112;
-                    loc[1] = 545;
+                case "FW1-D":
                     break;
-                case "300-G":
-                    loc[0] = 184;
-                    loc[1] = 545;
+                case "PED-A":
                     break;
-                case "300-H":
-                    loc[0] = 262;
-                    loc[1] = 545;
+                case "PED-B":
                     break;
-                case "301":
-                    loc[0] = 362;
-                    loc[1] = 432;
+                case "PED-C":
                     break;
-                case "302":
-                    loc[0] = 487;
-                    loc[1] = 432;
+                //2nd floor
+                case "301-A":
                     break;
-                case "303":
-                    loc[0] = 362;
-                    loc[1] = 563;
+                case "301-B":
                     break;
-                case "304":
-                    loc[0] = 487;
-                    loc[1] = 563;
+                case "301-C":
                     break;
-                case "400-A":
-                    loc[0] = 594;
-                    loc[1] = 110;
+                case "302-A":
                     break;
-                case "400-B":
-                    loc[0] = 661;
-                    loc[1] = 110;
+                case "302-B":
                     break;
-                case "400-C":
-                    loc[0] = 741;
-                    loc[1] = 110;
+                case "302-C":
                     break;
-                case "400-D":
-                    loc[0] = 802;
-                    loc[1] = 110;
+                case "303-A":
                     break;
-                case "400-E":
-                    loc[0] = 861;
-                    loc[1] = 110;
+                case "303-B":
                     break;
-                case "400-F":
-                    loc[0] = 933;
-                    loc[1] = 110;
+                case "303-C":
                     break;
-                case "400-G":
-                    loc[0] = 974;
-                    loc[1] = 125;
+                case "304-A":
                     break;
-                case "400-H":
-                    loc[0] = 1031;
-                    loc[1] = 125;
+                case "304-B":
                     break;
-                case "401":
-                    loc[0] = 606;
-                    loc[1] = 247;
+                case "304-C":
                     break;
-                case "402":
-                    loc[0] = 728;
-                    loc[1] = 253;
+                case "305-A":
                     break;
-                case "403":
-                    loc[0] = 856;
-                    loc[1] = 253;
+                case "305-B":
                     break;
-                case "404":
-                    loc[0] = 989;
-                    loc[1] = 253;
+                case "305-C":
                     break;
-                case "500-A":
-                    loc[0] = 705;
-                    loc[1] = 407;
+                case "306-A":
                     break;
-                case "500-B":
-                    loc[0] = 775;
-                    loc[1] = 407;
+                case "306-B":
                     break;
-                case "500-C":
-                    loc[0] = 845;
-                    loc[1] = 407;
+                case "307-A":
                     break;
-                case "500-D":
-                    loc[0] = 915;
-                    loc[1] = 407;
+                case "307-B":
                     break;
-                case "500-E":
-                    loc[0] = 709;
-                    loc[1] = 541;
+                case "307-C":
                     break;
-                case "500-F":
-                    loc[0] = 779;
-                    loc[1] = 541;
+                case "307-D":
                     break;
-                case "500-G":
-                    loc[0] = 849;
-                    loc[1] = 541;
+                case "307-E":
                     break;
-                case "500-H":
-                    loc[0] = 1031;
-                    loc[1] = 541;
+                case "308-A":
                     break;
-                case "501":
-                    loc[0] = 600;
-                    loc[1] = 400;
+                case "308-B":
                     break;
-                case "502":
-                    loc[0] = 600;
-                    loc[1] = 530;
+                case "308-C":
                     break;
-                case "503":
-                    loc[0] = 1010;
-                    loc[1] = 400;
+                case "308-D":
                     break;
-                case "504":
-                    loc[0] = 1010;
-                    loc[1] = 530;
+                case "308-E":
+                    break;
+                case "309-A":
+                    break;
+                case "309-B":
+                    break;
+                case "309-C":
+                    break;
+                case "309-D":
+                    break;
+                case "309-E":
+                    break;
+                //3rd Floor
+                case "401-A":
+                    break;
+                case "401-B":
+                    break;
+                case "401-C":
+                    break;
+                case "402-A":
+                    break;
+                case "402-B":
+                    break;
+                case "402-C":
+                    break;
+                case "403-A":
+                    break;
+                case "403-B":
+                    break;
+                case "403-C":
+                    break;
+                case "404-A":
+                    break;
+                case "404-B":
+                    break;
+                case "404-C":
+                    break;
+                case "405-A":
+                    break;
+                case "405-B":
+                    break;
+                case "405-C":
+                    break;
+                case "406-A":
+                    break;
+                case "406-B":
+                    break;
+                case "407-A":
+                    break;
+                case "407-B":
+                    break;
+                case "407-C":
+                    break;
+                case "407-D":
+                    break;
+                case "407-E":
+                    break;
+                case "408-A":
+                    break;
+                case "408-B":
+                    break;
+                case "408-C":
+                    break;
+                case "408-D":
+                    break;
+                case "408-E":
+                    break;
+                case "409-A":
+                    break;
+                case "409-B":
+                    break;
+                case "409-C":
+                    break;
+                case "409-D":
+                    break;
+                case "409-E":
+                    break;
+                //4th
+                case "501-A":
+                    break;
+                case "501-B":
+                    break;
+                case "501-C":
+                    break;
+                case "502-A":
+                    break;
+                case "502-B":
+                    break;
+                case "502-C":
+                    break;
+                case "503-A":
+                    break;
+                case "503-B":
+                    break;
+                case "503-C":
+                    break;
+                case "504-A":
+                    break;
+                case "504-B":
+                    break;
+                case "504-C":
+                    break;
+                case "505-A":
+                    break;
+                case "505-B":
+                    break;
+                case "505-C":
+                    break;
+                case "506-A":
+                    break;
+                case "506-B":
+                    break;
+                case "507-A":
+                    break;
+                case "507-B":
+                    break;
+                case "507-C":
+                    break;
+                case "507-D":
+                    break;
+                case "507-E":
+                    break;
+                case "508-A":
+                    break;
+                case "508-B":
+                    break;
+                case "508-C":
+                    break;
+                case "508-D":
+                    break;
+                case "508-E":
+                    break;
+                case "509-A":
+                    break;
+                case "509-B":
+                    break;
+                case "509-C":
+                    break;
+                case "509-D":
+                    break;
+                case "509-E":
                     break;
             }
-
-            return loc;
         }
+
+
+        private void icuA_Click(object sender, EventArgs e)
+        {
+            
+        }
+
     }
 }

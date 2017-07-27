@@ -45,6 +45,7 @@
             this.txtMedName = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.dgvPrescription = new System.Windows.Forms.DataGridView();
+            this.View = new System.Windows.Forms.DataGridViewLinkColumn();
             this.btnEdit = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.txtSearch = new System.Windows.Forms.TextBox();
@@ -53,7 +54,6 @@
             this.lblCounter = new System.Windows.Forms.Label();
             this.lblText = new System.Windows.Forms.Label();
             this.cboType = new System.Windows.Forms.ComboBox();
-            this.View = new System.Windows.Forms.DataGridViewLinkColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPrescription)).BeginInit();
             this.SuspendLayout();
             // 
@@ -106,7 +106,9 @@
             "Every 6 hours",
             "Every 8 hours",
             "Before meals",
-            "After meals"});
+            "After meals",
+            "Every 5 minutes",
+            "Every 10 minutes"});
             this.cboInterval.Location = new System.Drawing.Point(397, 430);
             this.cboInterval.Name = "cboInterval";
             this.cboInterval.Size = new System.Drawing.Size(200, 28);
@@ -275,6 +277,16 @@
             this.dgvPrescription.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvPrescription_CellContentClick);
             this.dgvPrescription.RowHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgvPrescription_RowHeaderMouseClick);
             // 
+            // View
+            // 
+            this.View.ActiveLinkColor = System.Drawing.Color.Green;
+            this.View.HeaderText = "";
+            this.View.LinkColor = System.Drawing.Color.Green;
+            this.View.Name = "View";
+            this.View.Text = "View";
+            this.View.UseColumnTextForLinkValue = true;
+            this.View.VisitedLinkColor = System.Drawing.Color.DarkGreen;
+            // 
             // btnEdit
             // 
             this.btnEdit.BackColor = System.Drawing.Color.Green;
@@ -375,16 +387,6 @@
             this.cboType.Size = new System.Drawing.Size(106, 30);
             this.cboType.TabIndex = 92;
             this.cboType.Text = "Patient ID";
-            // 
-            // View
-            // 
-            this.View.ActiveLinkColor = System.Drawing.Color.Green;
-            this.View.HeaderText = "";
-            this.View.LinkColor = System.Drawing.Color.Green;
-            this.View.Name = "View";
-            this.View.Text = "View";
-            this.View.UseColumnTextForLinkValue = true;
-            this.View.VisitedLinkColor = System.Drawing.Color.DarkGreen;
             // 
             // InsertPrescription
             // 

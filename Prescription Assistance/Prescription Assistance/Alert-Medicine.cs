@@ -39,7 +39,7 @@ namespace Prescription_Assistance
             label3.Text = ds2.Tables[0].Rows[0][3].ToString() + "/" + ds2.Tables[0].Rows[0][4].ToString() + "/" + ds2.Tables[0].Rows[0][6].ToString();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void Alert_Medicine_Click(object sender, EventArgs e)
         {
             cpa.Status = "Done";
             cpa.updatePAlert();

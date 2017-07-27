@@ -33,7 +33,7 @@ namespace Prescription_Assistance
             label2.Text = "Vital Check for " + ds.Tables[0].Rows[0][2].ToString();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void Alert_Vitals_Click(object sender, EventArgs e)
         {
             cv.Vital_id = id;
             cv.Status = "Doing";

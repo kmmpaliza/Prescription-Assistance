@@ -27,47 +27,47 @@ namespace Prescription_Assistance
         {
             cr.Bed_id = "200-A";
             ds = cr.viewBedandPatient();
-            labelA.Text = ds.Tables[0].Rows[0][3].ToString();
+            //labelA.Text = ds.Tables[0].Rows[0][3].ToString();
 
             cr.Bed_id = "200-B";
             ds = cr.viewBedandPatient();
-            labelB.Text = ds.Tables[0].Rows[0][3].ToString();
+            //labelB.Text = ds.Tables[0].Rows[0][3].ToString();
 
             cr.Bed_id = "200-C";
             ds = cr.viewBedandPatient();
-            labelC.Text = ds.Tables[0].Rows[0][3].ToString();
+            //labelC.Text = ds.Tables[0].Rows[0][3].ToString();
 
             cr.Bed_id = "200-D";
             ds = cr.viewBedandPatient();
-            labelD.Text = ds.Tables[0].Rows[0][3].ToString();
+            //labelD.Text = ds.Tables[0].Rows[0][3].ToString();
 
             cr.Bed_id = "200-E";
             ds = cr.viewBedandPatient();
-            labelE.Text = ds.Tables[0].Rows[0][3].ToString();
+            //labelE.Text = ds.Tables[0].Rows[0][3].ToString();
 
             cr.Bed_id = "200-F";
             ds = cr.viewBedandPatient();
-            labelF.Text = ds.Tables[0].Rows[0][3].ToString();
+            //labelF.Text = ds.Tables[0].Rows[0][3].ToString();
 
             cr.Bed_id = "200-G";
             ds = cr.viewBedandPatient();
-            labelG.Text = ds.Tables[0].Rows[0][3].ToString();
+            //labelG.Text = ds.Tables[0].Rows[0][3].ToString();
 
             cr.Bed_id = "200-H";
             ds = cr.viewBedandPatient();
-            labelH.Text = ds.Tables[0].Rows[0][3].ToString();
+            //labelH.Text = ds.Tables[0].Rows[0][3].ToString();
 
             cr.Bed_id = "201";
             ds = cr.viewBedandPatient();
-            label1.Text = ds.Tables[0].Rows[0][3].ToString();
+            //label1.Text = ds.Tables[0].Rows[0][3].ToString();
 
             cr.Bed_id = "202";
             ds = cr.viewBedandPatient();
-            label2.Text = ds.Tables[0].Rows[0][3].ToString();
+            //label2.Text = ds.Tables[0].Rows[0][3].ToString();
 
             cr.Bed_id = "203";
             ds = cr.viewBedandPatient();
-            label3.Text = ds.Tables[0].Rows[0][3].ToString();
+            //label3.Text = ds.Tables[0].Rows[0][3].ToString();
         }
 
         public void _2ndFloorPrivateRoom_Load(object sender, EventArgs e)

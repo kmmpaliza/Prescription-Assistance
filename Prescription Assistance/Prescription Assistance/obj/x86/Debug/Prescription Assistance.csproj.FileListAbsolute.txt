@@ -52,13 +52,9 @@ C:\Users\Katrina\Documents\Freelance\Topic2\Prescription Assistance\Prescription
 C:\Users\Katrina\Documents\Freelance\Topic2\Prescription Assistance\Prescription Assistance\bin\Debug\ClassLibrary.pdb
 C:\Users\Katrina\Documents\Freelance\Topic2\Prescription Assistance\Prescription Assistance\obj\x86\Debug\Prescription Assistance.csprojResolveAssemblyReference.cache
 C:\Users\Katrina\Documents\Freelance\Topic2\Prescription Assistance\Prescription Assistance\obj\x86\Debug\Prescription_Assistance._2ndFloorPrivateRoomD.resources
-C:\Users\Katrina\Documents\Freelance\Topic2\Prescription Assistance\Prescription Assistance\obj\x86\Debug\Prescription_Assistance._2ndFloorD.resources
 C:\Users\Katrina\Documents\Freelance\Topic2\Prescription Assistance\Prescription Assistance\obj\x86\Debug\Prescription_Assistance._3rdFloor.resources
-C:\Users\Katrina\Documents\Freelance\Topic2\Prescription Assistance\Prescription Assistance\obj\x86\Debug\Prescription_Assistance._3rdFloorD.resources
 C:\Users\Katrina\Documents\Freelance\Topic2\Prescription Assistance\Prescription Assistance\obj\x86\Debug\Prescription_Assistance._4thFloor.resources
-C:\Users\Katrina\Documents\Freelance\Topic2\Prescription Assistance\Prescription Assistance\obj\x86\Debug\Prescription_Assistance._4thFloorD.resources
 C:\Users\Katrina\Documents\Freelance\Topic2\Prescription Assistance\Prescription Assistance\obj\x86\Debug\Prescription_Assistance._5thFloor.resources
-C:\Users\Katrina\Documents\Freelance\Topic2\Prescription Assistance\Prescription Assistance\obj\x86\Debug\Prescription_Assistance._5thFloorD.resources
 C:\Users\Katrina\Documents\Freelance\Topic2\Prescription Assistance\Prescription Assistance\obj\x86\Debug\Prescription_Assistance.Alert_Assistance.resources
 C:\Users\Katrina\Documents\Freelance\Topic2\Prescription Assistance\Prescription Assistance\obj\x86\Debug\Prescription_Assistance.Alert_Medicine.resources
 C:\Users\Katrina\Documents\Freelance\Topic2\Prescription Assistance\Prescription Assistance\obj\x86\Debug\Prescription_Assistance.Alert_Vitals.resources

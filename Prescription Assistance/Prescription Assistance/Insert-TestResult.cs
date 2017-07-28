@@ -61,7 +61,10 @@ namespace Prescription_Assistance
             {
                 lblText.Text = @"No results for '" + text + @"'";
                 lblCounter.Visible = false;
-            } 
+            }
+            
+            button2.Enabled = true;
+            button3.Enabled = true; 
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -159,9 +162,16 @@ namespace Prescription_Assistance
 
         private void button3_Click(object sender, EventArgs e)
         {
-            ct.insertFile(filename, id, data);
-            MessageBox.Show("Test Result successfully uploaded.");
-            RefreshData();
+            if (data == null)
+            {
+                MessageBox.Show("Error. No Test Result inserted.");
+            }
+            else
+            {
+                ct.insertFile(filename, id, data);
+                MessageBox.Show("Test Result successfully uploaded.");
+                RefreshData();
+            }
         }
 
         private void Insert_TestResult_Load(object sender, EventArgs e)
@@ -169,6 +179,8 @@ namespace Prescription_Assistance
             dataGridView1.Columns[0].Visible = false;
             dataGridView1.Columns[1].Visible = false;
             lblCounter.Visible = false;
+            button2.Enabled = false;
+            button3.Enabled = false; 
         }
     }
 }

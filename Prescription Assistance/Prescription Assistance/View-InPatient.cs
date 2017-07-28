@@ -32,16 +32,33 @@ namespace Prescription_Assistance
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Doctor_Dashboard parent = (Doctor_Dashboard)this.ParentForm;
-            parent.changetoInsert();
+            if (Form1.usertype.Equals("Doctor"))
+            {
+                Doctor_Dashboard parent = (Doctor_Dashboard)this.ParentForm;
+                parent.changetoInsert();
+            }
+            else
+            {
+                Nurse_Dashboard parent = (Nurse_Dashboard)this.ParentForm;
+                parent.changetoInsert();
+            }
         }
 
         private void dataGridView1_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
         {
             if (e.ColumnIndex == 0)
             {
-                Doctor_Dashboard parent = (Doctor_Dashboard)this.ParentForm;
-                parent.changetoUpdatePatientAsDoctor(dataGridView1.CurrentRow.Cells[1].Value.ToString());
+                if (Form1.usertype.Equals("Doctor"))
+                {
+                    Doctor_Dashboard parent = (Doctor_Dashboard)this.ParentForm;
+                    parent.changetoUpdatePatientAsDoctor(dataGridView1.CurrentRow.Cells[1].Value.ToString());
+                }
+                else
+                {
+                    Nurse_Dashboard parent = (Nurse_Dashboard)this.ParentForm;
+                    parent.changetoUpdatePatientAsNurse(dataGridView1.CurrentRow.Cells[1].Value.ToString());
+                }
+                
             }
         }
 

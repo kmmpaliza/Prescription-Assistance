@@ -49,6 +49,9 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
+            this.txtFile = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.button3 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -265,11 +268,48 @@
             this.label9.TabIndex = 118;
             this.label9.Text = "cm";
             // 
+            // txtFile
+            // 
+            this.txtFile.Font = new System.Drawing.Font("Open Sans", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtFile.Location = new System.Drawing.Point(216, 398);
+            this.txtFile.Name = "txtFile";
+            this.txtFile.Size = new System.Drawing.Size(139, 27);
+            this.txtFile.TabIndex = 119;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Open Sans", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(75, 401);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(57, 20);
+            this.label10.TabIndex = 120;
+            this.label10.Text = "Photo:";
+            // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.LightGray;
+            this.button3.FlatAppearance.BorderColor = System.Drawing.SystemColors.ActiveBorder;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Font = new System.Drawing.Font("Open Sans", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.ForeColor = System.Drawing.Color.Black;
+            this.button3.Location = new System.Drawing.Point(140, 396);
+            this.button3.Margin = new System.Windows.Forms.Padding(16);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(68, 30);
+            this.button3.TabIndex = 121;
+            this.button3.Text = "Browse";
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
             // Insert_InPatient
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.txtFile);
+            this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -323,5 +363,8 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.TextBox txtFile;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Button button3;
     }
 }

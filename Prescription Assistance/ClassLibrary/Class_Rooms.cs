@@ -57,8 +57,7 @@ namespace ClassLibrary
         {
             SqlCommand cmd = new SqlCommand("select_RoomDetails", conn);
             cmd.CommandType = CommandType.StoredProcedure;
-            cmd.Parameters.Add("@Bed_ID", SqlDbType.VarChar).Value 
-            = bed_id;
+            cmd.Parameters.Add("@Bed_ID", SqlDbType.VarChar).Value = bed_id;
             SqlDataAdapter da = new SqlDataAdapter(cmd);
             ds.Clear();
             da.Fill(ds, "select_RoomDetails");

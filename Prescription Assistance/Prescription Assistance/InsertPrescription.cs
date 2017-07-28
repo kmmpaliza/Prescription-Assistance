@@ -66,6 +66,11 @@ namespace Prescription_Assistance
 
         private void button1_Click(object sender, EventArgs e)
         {
+            btnAdd.Enabled = false;
+            btnEdit.Enabled = false;
+            btnDelete.Enabled = false;
+            btnClear.Enabled = false;
+
             if (txtSearch.Text.Equals(""))
             {
                 lblText.Text = "Search field is required.";
@@ -76,6 +81,10 @@ namespace Prescription_Assistance
                 if (type.Equals("Patient ID"))
                 {
                     displayRecords(txtSearch.Text);
+                    btnAdd.Enabled = true;
+                    btnEdit.Enabled = false;
+                    btnDelete.Enabled = false;
+                    btnClear.Enabled = false;
                 }
                 else if (type.Equals("Last Name") || type.Equals("First Name"))
                 {
@@ -92,6 +101,10 @@ namespace Prescription_Assistance
                     if (count == 1)
                     {
                         displayRecords(ds2.Tables[0].Rows[0][0].ToString());
+                        btnAdd.Enabled = true;
+                        btnEdit.Enabled = false;
+                        btnDelete.Enabled = false;
+                        btnClear.Enabled = false;
                     }
                     else if (count > 1)
                     {
@@ -139,6 +152,9 @@ namespace Prescription_Assistance
             cboRoute.SelectedIndex = -1;
             cboInterval.SelectedIndex = -1;
             txtSearch.Text = "";
+            btnClear.Enabled = false;
+            dgvPrescription.ClearSelection();
+            dgvPrescription.CurrentCell = null;
         }
 
         private void dgvPrescription_RowHeaderMouseClick(object sender, DataGridViewCellMouseEventArgs e)
@@ -152,6 +168,11 @@ namespace Prescription_Assistance
             cboForm.Text = dgvPrescription.Rows[e.RowIndex].Cells[5].Value.ToString();
             cboRoute.Text = dgvPrescription.Rows[e.RowIndex].Cells[4].Value.ToString();
             cboInterval.Text = dgvPrescription.Rows[e.RowIndex].Cells[6].Value.ToString();
+
+            btnAdd.Enabled = false;
+            btnEdit.Enabled = true;
+            btnDelete.Enabled = true;
+            btnClear.Enabled = true;  
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
@@ -180,6 +201,10 @@ namespace Prescription_Assistance
             cpr.updatePrescription();
             ClearTexts();
             RefreshData();
+
+            btnEdit.Enabled = false;
+            btnAdd.Enabled = true;
+            btnDelete.Enabled = false;
         }
 
         private void btnDelete_Click(object sender, EventArgs e)
@@ -187,6 +212,10 @@ namespace Prescription_Assistance
             cpr.deletePrescription();
             ClearTexts();
             RefreshData();
+            btnEdit.Enabled = false;
+            btnAdd.Enabled = true;
+            btnDelete.Enabled = false;
+
         }
 
         private void btnClear_Click(object sender, EventArgs e)
@@ -198,6 +227,11 @@ namespace Prescription_Assistance
         {
             dgvPrescription.Columns[0].Visible = false;
             lblCounter.Visible = false;
+
+            btnAdd.Enabled = false;
+            btnEdit.Enabled = false;
+            btnDelete.Enabled = false;
+            btnClear.Enabled = false;
         }
 
         private void dgvPrescription_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -205,6 +239,10 @@ namespace Prescription_Assistance
             if (e.ColumnIndex == 0)
             {
                 displayRecords(dgvPrescription.CurrentRow.Cells[1].Value.ToString());
+                btnAdd.Enabled = true;
+                btnEdit.Enabled = false;
+                btnDelete.Enabled = false;
+                btnClear.Enabled = false;              
             }
         }
     }

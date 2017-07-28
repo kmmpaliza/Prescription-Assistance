@@ -30,248 +30,248 @@
         {
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.pbox112 = new System.Windows.Forms.PictureBox();
+            this.pbox111 = new System.Windows.Forms.PictureBox();
+            this.pbox110 = new System.Windows.Forms.PictureBox();
+            this.pbox109 = new System.Windows.Forms.PictureBox();
+            this.pbox108 = new System.Windows.Forms.PictureBox();
+            this.pbox107 = new System.Windows.Forms.PictureBox();
+            this.pbox106 = new System.Windows.Forms.PictureBox();
+            this.pbox105 = new System.Windows.Forms.PictureBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.pbox96 = new System.Windows.Forms.PictureBox();
+            this.pbox97 = new System.Windows.Forms.PictureBox();
+            this.pbox98 = new System.Windows.Forms.PictureBox();
+            this.pbox99 = new System.Windows.Forms.PictureBox();
+            this.pbox17 = new System.Windows.Forms.PictureBox();
+            this.pbox18 = new System.Windows.Forms.PictureBox();
+            this.pbox19 = new System.Windows.Forms.PictureBox();
+            this.pbox16 = new System.Windows.Forms.PictureBox();
+            this.pbox15 = new System.Windows.Forms.PictureBox();
+            this.pbox14 = new System.Windows.Forms.PictureBox();
+            this.pbox13 = new System.Windows.Forms.PictureBox();
+            this.pbox12 = new System.Windows.Forms.PictureBox();
+            this.pbox104 = new System.Windows.Forms.PictureBox();
+            this.pbox103 = new System.Windows.Forms.PictureBox();
+            this.pbox100 = new System.Windows.Forms.PictureBox();
+            this.pbox102 = new System.Windows.Forms.PictureBox();
+            this.pbox101 = new System.Windows.Forms.PictureBox();
+            this.pbox21 = new System.Windows.Forms.PictureBox();
+            this.pbox20 = new System.Windows.Forms.PictureBox();
+            this.pbox22 = new System.Windows.Forms.PictureBox();
+            this.pbox24 = new System.Windows.Forms.PictureBox();
+            this.pbox23 = new System.Windows.Forms.PictureBox();
+            this.pbox26 = new System.Windows.Forms.PictureBox();
+            this.pbox25 = new System.Windows.Forms.PictureBox();
+            this.pbox28 = new System.Windows.Forms.PictureBox();
+            this.pbox27 = new System.Windows.Forms.PictureBox();
+            this.pbox31 = new System.Windows.Forms.PictureBox();
+            this.pbox30 = new System.Windows.Forms.PictureBox();
+            this.pbox29 = new System.Windows.Forms.PictureBox();
+            this.pbox115 = new System.Windows.Forms.PictureBox();
+            this.pbox114 = new System.Windows.Forms.PictureBox();
+            this.pbox113 = new System.Windows.Forms.PictureBox();
+            this.pbox11 = new System.Windows.Forms.PictureBox();
+            this.pbox10 = new System.Windows.Forms.PictureBox();
+            this.pbox9 = new System.Windows.Forms.PictureBox();
+            this.pbox8 = new System.Windows.Forms.PictureBox();
+            this.pbox7 = new System.Windows.Forms.PictureBox();
+            this.pbox6 = new System.Windows.Forms.PictureBox();
+            this.pbox5 = new System.Windows.Forms.PictureBox();
+            this.pbox4 = new System.Windows.Forms.PictureBox();
+            this.pbox3 = new System.Windows.Forms.PictureBox();
+            this.pbox2 = new System.Windows.Forms.PictureBox();
+            this.pbox1 = new System.Windows.Forms.PictureBox();
+            this.pbox0 = new System.Windows.Forms.PictureBox();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.pbox49 = new System.Windows.Forms.PictureBox();
+            this.pbox50 = new System.Windows.Forms.PictureBox();
+            this.pbox51 = new System.Windows.Forms.PictureBox();
+            this.pbox48 = new System.Windows.Forms.PictureBox();
+            this.pbox47 = new System.Windows.Forms.PictureBox();
+            this.pbox46 = new System.Windows.Forms.PictureBox();
+            this.pbox45 = new System.Windows.Forms.PictureBox();
+            this.pbox44 = new System.Windows.Forms.PictureBox();
+            this.pbox53 = new System.Windows.Forms.PictureBox();
+            this.pbox52 = new System.Windows.Forms.PictureBox();
+            this.pbox54 = new System.Windows.Forms.PictureBox();
+            this.pbox56 = new System.Windows.Forms.PictureBox();
+            this.pbox55 = new System.Windows.Forms.PictureBox();
+            this.pbox58 = new System.Windows.Forms.PictureBox();
+            this.pbox57 = new System.Windows.Forms.PictureBox();
+            this.pbox60 = new System.Windows.Forms.PictureBox();
+            this.pbox59 = new System.Windows.Forms.PictureBox();
+            this.pbox63 = new System.Windows.Forms.PictureBox();
+            this.pbox62 = new System.Windows.Forms.PictureBox();
+            this.pbox61 = new System.Windows.Forms.PictureBox();
+            this.pbox43 = new System.Windows.Forms.PictureBox();
+            this.pbox42 = new System.Windows.Forms.PictureBox();
+            this.pbox41 = new System.Windows.Forms.PictureBox();
+            this.pbox40 = new System.Windows.Forms.PictureBox();
+            this.pbox39 = new System.Windows.Forms.PictureBox();
+            this.pbox38 = new System.Windows.Forms.PictureBox();
+            this.pbox37 = new System.Windows.Forms.PictureBox();
+            this.pbox36 = new System.Windows.Forms.PictureBox();
+            this.pbox35 = new System.Windows.Forms.PictureBox();
+            this.pbox34 = new System.Windows.Forms.PictureBox();
+            this.pbox33 = new System.Windows.Forms.PictureBox();
+            this.pbox32 = new System.Windows.Forms.PictureBox();
             this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.pbox81 = new System.Windows.Forms.PictureBox();
+            this.pbox82 = new System.Windows.Forms.PictureBox();
+            this.pbox83 = new System.Windows.Forms.PictureBox();
+            this.pbox80 = new System.Windows.Forms.PictureBox();
+            this.pbox79 = new System.Windows.Forms.PictureBox();
+            this.pbox78 = new System.Windows.Forms.PictureBox();
+            this.pbox77 = new System.Windows.Forms.PictureBox();
+            this.pbox76 = new System.Windows.Forms.PictureBox();
+            this.pbox85 = new System.Windows.Forms.PictureBox();
+            this.pbox84 = new System.Windows.Forms.PictureBox();
+            this.pbox86 = new System.Windows.Forms.PictureBox();
+            this.pbox88 = new System.Windows.Forms.PictureBox();
+            this.pbox87 = new System.Windows.Forms.PictureBox();
+            this.pbox90 = new System.Windows.Forms.PictureBox();
+            this.pbox89 = new System.Windows.Forms.PictureBox();
+            this.pbox92 = new System.Windows.Forms.PictureBox();
+            this.pbox91 = new System.Windows.Forms.PictureBox();
+            this.pbox95 = new System.Windows.Forms.PictureBox();
+            this.pbox94 = new System.Windows.Forms.PictureBox();
+            this.pbox93 = new System.Windows.Forms.PictureBox();
+            this.pbox75 = new System.Windows.Forms.PictureBox();
+            this.pbox74 = new System.Windows.Forms.PictureBox();
+            this.pbox73 = new System.Windows.Forms.PictureBox();
+            this.pbox72 = new System.Windows.Forms.PictureBox();
+            this.pbox71 = new System.Windows.Forms.PictureBox();
+            this.pbox70 = new System.Windows.Forms.PictureBox();
+            this.pbox69 = new System.Windows.Forms.PictureBox();
+            this.pbox68 = new System.Windows.Forms.PictureBox();
+            this.pbox67 = new System.Windows.Forms.PictureBox();
+            this.pbox66 = new System.Windows.Forms.PictureBox();
+            this.pbox65 = new System.Windows.Forms.PictureBox();
+            this.pbox64 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.ePanel = new System.Windows.Forms.FlowLayoutPanel();
-            this.icuA = new System.Windows.Forms.PictureBox();
-            this.icuB = new System.Windows.Forms.PictureBox();
-            this.icuC = new System.Windows.Forms.PictureBox();
-            this.icuD = new System.Windows.Forms.PictureBox();
-            this.icuE = new System.Windows.Forms.PictureBox();
-            this.icuF = new System.Windows.Forms.PictureBox();
-            this.oreA = new System.Windows.Forms.PictureBox();
-            this.oreB = new System.Windows.Forms.PictureBox();
-            this.a301 = new System.Windows.Forms.PictureBox();
-            this.b301 = new System.Windows.Forms.PictureBox();
-            this.c301 = new System.Windows.Forms.PictureBox();
-            this.c302 = new System.Windows.Forms.PictureBox();
-            this.b302 = new System.Windows.Forms.PictureBox();
-            this.a302 = new System.Windows.Forms.PictureBox();
-            this.c303 = new System.Windows.Forms.PictureBox();
-            this.b303 = new System.Windows.Forms.PictureBox();
-            this.a303 = new System.Windows.Forms.PictureBox();
-            this.c304 = new System.Windows.Forms.PictureBox();
-            this.b304 = new System.Windows.Forms.PictureBox();
-            this.a304 = new System.Windows.Forms.PictureBox();
-            this.cPed = new System.Windows.Forms.PictureBox();
-            this.bPed = new System.Windows.Forms.PictureBox();
-            this.aPed = new System.Windows.Forms.PictureBox();
-            this.e309 = new System.Windows.Forms.PictureBox();
-            this.d309 = new System.Windows.Forms.PictureBox();
-            this.c309 = new System.Windows.Forms.PictureBox();
-            this.a309 = new System.Windows.Forms.PictureBox();
-            this.b309 = new System.Windows.Forms.PictureBox();
-            this.e308 = new System.Windows.Forms.PictureBox();
-            this.d308 = new System.Windows.Forms.PictureBox();
-            this.c308 = new System.Windows.Forms.PictureBox();
-            this.b308 = new System.Windows.Forms.PictureBox();
-            this.a308 = new System.Windows.Forms.PictureBox();
-            this.e307 = new System.Windows.Forms.PictureBox();
-            this.d307 = new System.Windows.Forms.PictureBox();
-            this.cFw2 = new System.Windows.Forms.PictureBox();
-            this.bFw2 = new System.Windows.Forms.PictureBox();
-            this.dFw2 = new System.Windows.Forms.PictureBox();
-            this.aFw2 = new System.Windows.Forms.PictureBox();
-            this.eFw2 = new System.Windows.Forms.PictureBox();
-            this.a305 = new System.Windows.Forms.PictureBox();
-            this.b305 = new System.Windows.Forms.PictureBox();
-            this.c305 = new System.Windows.Forms.PictureBox();
-            this.b306 = new System.Windows.Forms.PictureBox();
-            this.a306 = new System.Windows.Forms.PictureBox();
-            this.a307 = new System.Windows.Forms.PictureBox();
-            this.b307 = new System.Windows.Forms.PictureBox();
-            this.c307 = new System.Windows.Forms.PictureBox();
-            this.aFw1 = new System.Windows.Forms.PictureBox();
-            this.bFw1 = new System.Windows.Forms.PictureBox();
-            this.cFw1 = new System.Windows.Forms.PictureBox();
-            this.dFw1 = new System.Windows.Forms.PictureBox();
-            this.a407 = new System.Windows.Forms.PictureBox();
-            this.b407 = new System.Windows.Forms.PictureBox();
-            this.c407 = new System.Windows.Forms.PictureBox();
-            this.b406 = new System.Windows.Forms.PictureBox();
-            this.a406 = new System.Windows.Forms.PictureBox();
-            this.c405 = new System.Windows.Forms.PictureBox();
-            this.b405 = new System.Windows.Forms.PictureBox();
-            this.a405 = new System.Windows.Forms.PictureBox();
-            this.e407 = new System.Windows.Forms.PictureBox();
-            this.d407 = new System.Windows.Forms.PictureBox();
-            this.a408 = new System.Windows.Forms.PictureBox();
-            this.c408 = new System.Windows.Forms.PictureBox();
-            this.b408 = new System.Windows.Forms.PictureBox();
-            this.e408 = new System.Windows.Forms.PictureBox();
-            this.d408 = new System.Windows.Forms.PictureBox();
-            this.b409 = new System.Windows.Forms.PictureBox();
-            this.a409 = new System.Windows.Forms.PictureBox();
-            this.e409 = new System.Windows.Forms.PictureBox();
-            this.d409 = new System.Windows.Forms.PictureBox();
-            this.c409 = new System.Windows.Forms.PictureBox();
-            this.c404 = new System.Windows.Forms.PictureBox();
-            this.b404 = new System.Windows.Forms.PictureBox();
-            this.a404 = new System.Windows.Forms.PictureBox();
-            this.c403 = new System.Windows.Forms.PictureBox();
-            this.b403 = new System.Windows.Forms.PictureBox();
-            this.a403 = new System.Windows.Forms.PictureBox();
-            this.c402 = new System.Windows.Forms.PictureBox();
-            this.b402 = new System.Windows.Forms.PictureBox();
-            this.a402 = new System.Windows.Forms.PictureBox();
-            this.c401 = new System.Windows.Forms.PictureBox();
-            this.b401 = new System.Windows.Forms.PictureBox();
-            this.a401 = new System.Windows.Forms.PictureBox();
-            this.a507 = new System.Windows.Forms.PictureBox();
-            this.b507 = new System.Windows.Forms.PictureBox();
-            this.c507 = new System.Windows.Forms.PictureBox();
-            this.b506 = new System.Windows.Forms.PictureBox();
-            this.a506 = new System.Windows.Forms.PictureBox();
-            this.c505 = new System.Windows.Forms.PictureBox();
-            this.b505 = new System.Windows.Forms.PictureBox();
-            this.a505 = new System.Windows.Forms.PictureBox();
-            this.e507 = new System.Windows.Forms.PictureBox();
-            this.d507 = new System.Windows.Forms.PictureBox();
-            this.a508 = new System.Windows.Forms.PictureBox();
-            this.c508 = new System.Windows.Forms.PictureBox();
-            this.b508 = new System.Windows.Forms.PictureBox();
-            this.e508 = new System.Windows.Forms.PictureBox();
-            this.d508 = new System.Windows.Forms.PictureBox();
-            this.b509 = new System.Windows.Forms.PictureBox();
-            this.a509 = new System.Windows.Forms.PictureBox();
-            this.e509 = new System.Windows.Forms.PictureBox();
-            this.d509 = new System.Windows.Forms.PictureBox();
-            this.c509 = new System.Windows.Forms.PictureBox();
-            this.c504 = new System.Windows.Forms.PictureBox();
-            this.b504 = new System.Windows.Forms.PictureBox();
-            this.a504 = new System.Windows.Forms.PictureBox();
-            this.c503 = new System.Windows.Forms.PictureBox();
-            this.b503 = new System.Windows.Forms.PictureBox();
-            this.a503 = new System.Windows.Forms.PictureBox();
-            this.c502 = new System.Windows.Forms.PictureBox();
-            this.b502 = new System.Windows.Forms.PictureBox();
-            this.a502 = new System.Windows.Forms.PictureBox();
-            this.c501 = new System.Windows.Forms.PictureBox();
-            this.b501 = new System.Windows.Forms.PictureBox();
-            this.a501 = new System.Windows.Forms.PictureBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox112)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox111)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox110)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox109)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox108)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox107)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox106)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox105)).BeginInit();
             this.tabPage2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox96)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox97)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox98)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox99)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox17)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox18)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox19)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox16)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox15)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox14)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox13)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox104)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox103)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox100)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox102)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox101)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox21)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox20)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox22)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox24)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox23)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox26)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox25)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox28)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox27)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox31)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox30)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox29)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox115)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox114)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox113)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox0)).BeginInit();
             this.tabPage3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox49)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox50)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox51)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox48)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox47)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox46)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox45)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox44)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox53)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox52)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox54)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox56)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox55)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox58)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox57)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox60)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox59)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox63)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox62)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox61)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox43)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox42)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox41)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox40)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox39)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox38)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox37)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox36)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox35)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox34)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox33)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox32)).BeginInit();
             this.tabPage4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.icuA)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.icuB)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.icuC)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.icuD)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.icuE)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.icuF)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.oreA)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.oreB)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.a301)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.b301)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.c301)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.c302)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.b302)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.a302)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.c303)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.b303)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.a303)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.c304)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.b304)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.a304)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cPed)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bPed)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.aPed)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.e309)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.d309)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.c309)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.a309)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.b309)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.e308)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.d308)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.c308)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.b308)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.a308)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.e307)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.d307)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cFw2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bFw2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dFw2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.aFw2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.eFw2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.a305)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.b305)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.c305)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.b306)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.a306)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.a307)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.b307)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.c307)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.aFw1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bFw1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cFw1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dFw1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.a407)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.b407)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.c407)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.b406)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.a406)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.c405)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.b405)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.a405)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.e407)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.d407)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.a408)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.c408)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.b408)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.e408)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.d408)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.b409)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.a409)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.e409)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.d409)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.c409)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.c404)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.b404)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.a404)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.c403)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.b403)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.a403)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.c402)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.b402)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.a402)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.c401)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.b401)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.a401)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.a507)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.b507)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.c507)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.b506)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.a506)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.c505)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.b505)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.a505)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.e507)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.d507)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.a508)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.c508)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.b508)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.e508)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.d508)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.b509)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.a509)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.e509)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.d509)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.c509)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.c504)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.b504)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.a504)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.c503)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.b503)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.a503)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.c502)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.b502)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.a502)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.c501)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.b501)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.a501)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox81)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox82)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox83)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox80)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox79)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox78)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox77)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox76)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox85)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox84)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox86)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox88)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox87)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox90)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox89)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox92)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox91)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox95)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox94)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox93)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox75)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox74)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox73)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox72)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox71)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox70)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox69)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox68)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox67)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox66)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox65)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox64)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -291,14 +291,14 @@
             // 
             this.tabPage1.BackgroundImage = global::Prescription_Assistance.Properties.Resources._2nd2;
             this.tabPage1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tabPage1.Controls.Add(this.oreB);
-            this.tabPage1.Controls.Add(this.oreA);
-            this.tabPage1.Controls.Add(this.icuF);
-            this.tabPage1.Controls.Add(this.icuE);
-            this.tabPage1.Controls.Add(this.icuD);
-            this.tabPage1.Controls.Add(this.icuC);
-            this.tabPage1.Controls.Add(this.icuB);
-            this.tabPage1.Controls.Add(this.icuA);
+            this.tabPage1.Controls.Add(this.pbox112);
+            this.tabPage1.Controls.Add(this.pbox111);
+            this.tabPage1.Controls.Add(this.pbox110);
+            this.tabPage1.Controls.Add(this.pbox109);
+            this.tabPage1.Controls.Add(this.pbox108);
+            this.tabPage1.Controls.Add(this.pbox107);
+            this.tabPage1.Controls.Add(this.pbox106);
+            this.tabPage1.Controls.Add(this.pbox105);
             this.tabPage1.Location = new System.Drawing.Point(4, 29);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
@@ -307,54 +307,126 @@
             this.tabPage1.Text = "2nd Floor";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
+            // pbox112
+            // 
+            this.pbox112.Image = global::Prescription_Assistance.Properties.Resources.blank;
+            this.pbox112.Location = new System.Drawing.Point(696, 331);
+            this.pbox112.Name = "pbox112";
+            this.pbox112.Size = new System.Drawing.Size(28, 43);
+            this.pbox112.TabIndex = 7;
+            this.pbox112.TabStop = false;
+            // 
+            // pbox111
+            // 
+            this.pbox111.Image = global::Prescription_Assistance.Properties.Resources.blank;
+            this.pbox111.Location = new System.Drawing.Point(667, 331);
+            this.pbox111.Name = "pbox111";
+            this.pbox111.Size = new System.Drawing.Size(28, 43);
+            this.pbox111.TabIndex = 6;
+            this.pbox111.TabStop = false;
+            // 
+            // pbox110
+            // 
+            this.pbox110.Image = global::Prescription_Assistance.Properties.Resources.blank;
+            this.pbox110.Location = new System.Drawing.Point(264, 493);
+            this.pbox110.Name = "pbox110";
+            this.pbox110.Size = new System.Drawing.Size(28, 43);
+            this.pbox110.TabIndex = 5;
+            this.pbox110.TabStop = false;
+            // 
+            // pbox109
+            // 
+            this.pbox109.Image = global::Prescription_Assistance.Properties.Resources.blank;
+            this.pbox109.Location = new System.Drawing.Point(236, 493);
+            this.pbox109.Name = "pbox109";
+            this.pbox109.Size = new System.Drawing.Size(28, 43);
+            this.pbox109.TabIndex = 4;
+            this.pbox109.TabStop = false;
+            // 
+            // pbox108
+            // 
+            this.pbox108.Location = new System.Drawing.Point(208, 493);
+            this.pbox108.Name = "pbox108";
+            this.pbox108.Size = new System.Drawing.Size(28, 43);
+            this.pbox108.TabIndex = 3;
+            this.pbox108.TabStop = false;
+            // 
+            // pbox107
+            // 
+            this.pbox107.BackColor = System.Drawing.Color.Transparent;
+            this.pbox107.Image = global::Prescription_Assistance.Properties.Resources.blank;
+            this.pbox107.Location = new System.Drawing.Point(180, 493);
+            this.pbox107.Name = "pbox107";
+            this.pbox107.Size = new System.Drawing.Size(28, 43);
+            this.pbox107.TabIndex = 2;
+            this.pbox107.TabStop = false;
+            // 
+            // pbox106
+            // 
+            this.pbox106.Image = global::Prescription_Assistance.Properties.Resources.blank;
+            this.pbox106.Location = new System.Drawing.Point(149, 493);
+            this.pbox106.Name = "pbox106";
+            this.pbox106.Size = new System.Drawing.Size(31, 43);
+            this.pbox106.TabIndex = 1;
+            this.pbox106.TabStop = false;
+            // 
+            // pbox105
+            // 
+            this.pbox105.Image = global::Prescription_Assistance.Properties.Resources.blank;
+            this.pbox105.Location = new System.Drawing.Point(119, 493);
+            this.pbox105.Name = "pbox105";
+            this.pbox105.Size = new System.Drawing.Size(30, 43);
+            this.pbox105.TabIndex = 0;
+            this.pbox105.TabStop = false;
+            // 
             // tabPage2
             // 
             this.tabPage2.BackgroundImage = global::Prescription_Assistance.Properties.Resources._3rd2;
             this.tabPage2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tabPage2.Controls.Add(this.aFw1);
-            this.tabPage2.Controls.Add(this.bFw1);
-            this.tabPage2.Controls.Add(this.cFw1);
-            this.tabPage2.Controls.Add(this.dFw1);
-            this.tabPage2.Controls.Add(this.a307);
-            this.tabPage2.Controls.Add(this.b307);
-            this.tabPage2.Controls.Add(this.c307);
-            this.tabPage2.Controls.Add(this.b306);
-            this.tabPage2.Controls.Add(this.a306);
-            this.tabPage2.Controls.Add(this.c305);
-            this.tabPage2.Controls.Add(this.b305);
-            this.tabPage2.Controls.Add(this.a305);
-            this.tabPage2.Controls.Add(this.eFw2);
-            this.tabPage2.Controls.Add(this.dFw2);
-            this.tabPage2.Controls.Add(this.aFw2);
-            this.tabPage2.Controls.Add(this.cFw2);
-            this.tabPage2.Controls.Add(this.bFw2);
-            this.tabPage2.Controls.Add(this.e307);
-            this.tabPage2.Controls.Add(this.d307);
-            this.tabPage2.Controls.Add(this.a308);
-            this.tabPage2.Controls.Add(this.c308);
-            this.tabPage2.Controls.Add(this.b308);
-            this.tabPage2.Controls.Add(this.e308);
-            this.tabPage2.Controls.Add(this.d308);
-            this.tabPage2.Controls.Add(this.b309);
-            this.tabPage2.Controls.Add(this.a309);
-            this.tabPage2.Controls.Add(this.e309);
-            this.tabPage2.Controls.Add(this.d309);
-            this.tabPage2.Controls.Add(this.c309);
-            this.tabPage2.Controls.Add(this.cPed);
-            this.tabPage2.Controls.Add(this.bPed);
-            this.tabPage2.Controls.Add(this.aPed);
-            this.tabPage2.Controls.Add(this.c304);
-            this.tabPage2.Controls.Add(this.b304);
-            this.tabPage2.Controls.Add(this.a304);
-            this.tabPage2.Controls.Add(this.c303);
-            this.tabPage2.Controls.Add(this.b303);
-            this.tabPage2.Controls.Add(this.a303);
-            this.tabPage2.Controls.Add(this.c302);
-            this.tabPage2.Controls.Add(this.b302);
-            this.tabPage2.Controls.Add(this.a302);
-            this.tabPage2.Controls.Add(this.c301);
-            this.tabPage2.Controls.Add(this.b301);
-            this.tabPage2.Controls.Add(this.a301);
+            this.tabPage2.Controls.Add(this.pbox96);
+            this.tabPage2.Controls.Add(this.pbox97);
+            this.tabPage2.Controls.Add(this.pbox98);
+            this.tabPage2.Controls.Add(this.pbox99);
+            this.tabPage2.Controls.Add(this.pbox17);
+            this.tabPage2.Controls.Add(this.pbox18);
+            this.tabPage2.Controls.Add(this.pbox19);
+            this.tabPage2.Controls.Add(this.pbox16);
+            this.tabPage2.Controls.Add(this.pbox15);
+            this.tabPage2.Controls.Add(this.pbox14);
+            this.tabPage2.Controls.Add(this.pbox13);
+            this.tabPage2.Controls.Add(this.pbox12);
+            this.tabPage2.Controls.Add(this.pbox104);
+            this.tabPage2.Controls.Add(this.pbox103);
+            this.tabPage2.Controls.Add(this.pbox100);
+            this.tabPage2.Controls.Add(this.pbox102);
+            this.tabPage2.Controls.Add(this.pbox101);
+            this.tabPage2.Controls.Add(this.pbox21);
+            this.tabPage2.Controls.Add(this.pbox20);
+            this.tabPage2.Controls.Add(this.pbox22);
+            this.tabPage2.Controls.Add(this.pbox24);
+            this.tabPage2.Controls.Add(this.pbox23);
+            this.tabPage2.Controls.Add(this.pbox26);
+            this.tabPage2.Controls.Add(this.pbox25);
+            this.tabPage2.Controls.Add(this.pbox28);
+            this.tabPage2.Controls.Add(this.pbox27);
+            this.tabPage2.Controls.Add(this.pbox31);
+            this.tabPage2.Controls.Add(this.pbox30);
+            this.tabPage2.Controls.Add(this.pbox29);
+            this.tabPage2.Controls.Add(this.pbox115);
+            this.tabPage2.Controls.Add(this.pbox114);
+            this.tabPage2.Controls.Add(this.pbox113);
+            this.tabPage2.Controls.Add(this.pbox11);
+            this.tabPage2.Controls.Add(this.pbox10);
+            this.tabPage2.Controls.Add(this.pbox9);
+            this.tabPage2.Controls.Add(this.pbox8);
+            this.tabPage2.Controls.Add(this.pbox7);
+            this.tabPage2.Controls.Add(this.pbox6);
+            this.tabPage2.Controls.Add(this.pbox5);
+            this.tabPage2.Controls.Add(this.pbox4);
+            this.tabPage2.Controls.Add(this.pbox3);
+            this.tabPage2.Controls.Add(this.pbox2);
+            this.tabPage2.Controls.Add(this.pbox1);
+            this.tabPage2.Controls.Add(this.pbox0);
             this.tabPage2.Location = new System.Drawing.Point(4, 29);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
@@ -363,42 +435,426 @@
             this.tabPage2.Text = "3rd Floor";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
+            // pbox96
+            // 
+            this.pbox96.Location = new System.Drawing.Point(655, 251);
+            this.pbox96.Name = "pbox96";
+            this.pbox96.Size = new System.Drawing.Size(20, 20);
+            this.pbox96.TabIndex = 51;
+            this.pbox96.TabStop = false;
+            // 
+            // pbox97
+            // 
+            this.pbox97.Location = new System.Drawing.Point(665, 271);
+            this.pbox97.Name = "pbox97";
+            this.pbox97.Size = new System.Drawing.Size(20, 20);
+            this.pbox97.TabIndex = 50;
+            this.pbox97.TabStop = false;
+            // 
+            // pbox98
+            // 
+            this.pbox98.Location = new System.Drawing.Point(677, 291);
+            this.pbox98.Name = "pbox98";
+            this.pbox98.Size = new System.Drawing.Size(20, 20);
+            this.pbox98.TabIndex = 49;
+            this.pbox98.TabStop = false;
+            // 
+            // pbox99
+            // 
+            this.pbox99.Location = new System.Drawing.Point(688, 312);
+            this.pbox99.Name = "pbox99";
+            this.pbox99.Size = new System.Drawing.Size(20, 20);
+            this.pbox99.TabIndex = 48;
+            this.pbox99.TabStop = false;
+            // 
+            // pbox17
+            // 
+            this.pbox17.Location = new System.Drawing.Point(87, 440);
+            this.pbox17.Name = "pbox17";
+            this.pbox17.Size = new System.Drawing.Size(20, 20);
+            this.pbox17.TabIndex = 47;
+            this.pbox17.TabStop = false;
+            // 
+            // pbox18
+            // 
+            this.pbox18.Location = new System.Drawing.Point(65, 460);
+            this.pbox18.Name = "pbox18";
+            this.pbox18.Size = new System.Drawing.Size(20, 20);
+            this.pbox18.TabIndex = 46;
+            this.pbox18.TabStop = false;
+            // 
+            // pbox19
+            // 
+            this.pbox19.Location = new System.Drawing.Point(40, 481);
+            this.pbox19.Name = "pbox19";
+            this.pbox19.Size = new System.Drawing.Size(20, 20);
+            this.pbox19.TabIndex = 45;
+            this.pbox19.TabStop = false;
+            // 
+            // pbox16
+            // 
+            this.pbox16.Location = new System.Drawing.Point(478, 115);
+            this.pbox16.Name = "pbox16";
+            this.pbox16.Size = new System.Drawing.Size(20, 20);
+            this.pbox16.TabIndex = 44;
+            this.pbox16.TabStop = false;
+            // 
+            // pbox15
+            // 
+            this.pbox15.Location = new System.Drawing.Point(461, 130);
+            this.pbox15.Name = "pbox15";
+            this.pbox15.Size = new System.Drawing.Size(20, 20);
+            this.pbox15.TabIndex = 43;
+            this.pbox15.TabStop = false;
+            // 
+            // pbox14
+            // 
+            this.pbox14.Location = new System.Drawing.Point(433, 153);
+            this.pbox14.Name = "pbox14";
+            this.pbox14.Size = new System.Drawing.Size(20, 20);
+            this.pbox14.TabIndex = 42;
+            this.pbox14.TabStop = false;
+            // 
+            // pbox13
+            // 
+            this.pbox13.Location = new System.Drawing.Point(416, 168);
+            this.pbox13.Name = "pbox13";
+            this.pbox13.Size = new System.Drawing.Size(20, 20);
+            this.pbox13.TabIndex = 41;
+            this.pbox13.TabStop = false;
+            // 
+            // pbox12
+            // 
+            this.pbox12.Location = new System.Drawing.Point(401, 182);
+            this.pbox12.Name = "pbox12";
+            this.pbox12.Size = new System.Drawing.Size(20, 20);
+            this.pbox12.TabIndex = 40;
+            this.pbox12.TabStop = false;
+            // 
+            // pbox104
+            // 
+            this.pbox104.Image = global::Prescription_Assistance.Properties.Resources.blank;
+            this.pbox104.Location = new System.Drawing.Point(597, 341);
+            this.pbox104.Name = "pbox104";
+            this.pbox104.Size = new System.Drawing.Size(35, 20);
+            this.pbox104.TabIndex = 39;
+            this.pbox104.TabStop = false;
+            // 
+            // pbox103
+            // 
+            this.pbox103.Image = global::Prescription_Assistance.Properties.Resources.blank;
+            this.pbox103.Location = new System.Drawing.Point(549, 356);
+            this.pbox103.Name = "pbox103";
+            this.pbox103.Size = new System.Drawing.Size(35, 20);
+            this.pbox103.TabIndex = 38;
+            this.pbox103.TabStop = false;
+            // 
+            // pbox100
+            // 
+            this.pbox100.Image = global::Prescription_Assistance.Properties.Resources.blank;
+            this.pbox100.Location = new System.Drawing.Point(549, 279);
+            this.pbox100.Name = "pbox100";
+            this.pbox100.Size = new System.Drawing.Size(35, 20);
+            this.pbox100.TabIndex = 37;
+            this.pbox100.TabStop = false;
+            // 
+            // pbox102
+            // 
+            this.pbox102.Image = global::Prescription_Assistance.Properties.Resources.blank;
+            this.pbox102.Location = new System.Drawing.Point(549, 333);
+            this.pbox102.Name = "pbox102";
+            this.pbox102.Size = new System.Drawing.Size(35, 20);
+            this.pbox102.TabIndex = 36;
+            this.pbox102.TabStop = false;
+            // 
+            // pbox101
+            // 
+            this.pbox101.Image = global::Prescription_Assistance.Properties.Resources.blank;
+            this.pbox101.Location = new System.Drawing.Point(549, 302);
+            this.pbox101.Name = "pbox101";
+            this.pbox101.Size = new System.Drawing.Size(35, 20);
+            this.pbox101.TabIndex = 35;
+            this.pbox101.TabStop = false;
+            // 
+            // pbox21
+            // 
+            this.pbox21.Image = global::Prescription_Assistance.Properties.Resources.blank;
+            this.pbox21.Location = new System.Drawing.Point(91, 512);
+            this.pbox21.Name = "pbox21";
+            this.pbox21.Size = new System.Drawing.Size(35, 20);
+            this.pbox21.TabIndex = 34;
+            this.pbox21.TabStop = false;
+            // 
+            // pbox20
+            // 
+            this.pbox20.Image = global::Prescription_Assistance.Properties.Resources.blank;
+            this.pbox20.Location = new System.Drawing.Point(91, 487);
+            this.pbox20.Name = "pbox20";
+            this.pbox20.Size = new System.Drawing.Size(35, 20);
+            this.pbox20.TabIndex = 33;
+            this.pbox20.TabStop = false;
+            // 
+            // pbox22
+            // 
+            this.pbox22.Image = global::Prescription_Assistance.Properties.Resources.blank;
+            this.pbox22.Location = new System.Drawing.Point(150, 502);
+            this.pbox22.Name = "pbox22";
+            this.pbox22.Size = new System.Drawing.Size(20, 35);
+            this.pbox22.TabIndex = 32;
+            this.pbox22.TabStop = false;
+            // 
+            // pbox24
+            // 
+            this.pbox24.Image = global::Prescription_Assistance.Properties.Resources.blank;
+            this.pbox24.Location = new System.Drawing.Point(208, 500);
+            this.pbox24.Name = "pbox24";
+            this.pbox24.Size = new System.Drawing.Size(20, 35);
+            this.pbox24.TabIndex = 31;
+            this.pbox24.TabStop = false;
+            // 
+            // pbox23
+            // 
+            this.pbox23.Image = global::Prescription_Assistance.Properties.Resources.blank;
+            this.pbox23.Location = new System.Drawing.Point(179, 500);
+            this.pbox23.Name = "pbox23";
+            this.pbox23.Size = new System.Drawing.Size(20, 35);
+            this.pbox23.TabIndex = 30;
+            this.pbox23.TabStop = false;
+            // 
+            // pbox26
+            // 
+            this.pbox26.Image = global::Prescription_Assistance.Properties.Resources.blank;
+            this.pbox26.Location = new System.Drawing.Point(269, 500);
+            this.pbox26.Name = "pbox26";
+            this.pbox26.Size = new System.Drawing.Size(20, 35);
+            this.pbox26.TabIndex = 29;
+            this.pbox26.TabStop = false;
+            // 
+            // pbox25
+            // 
+            this.pbox25.Image = global::Prescription_Assistance.Properties.Resources.blank;
+            this.pbox25.Location = new System.Drawing.Point(240, 500);
+            this.pbox25.Name = "pbox25";
+            this.pbox25.Size = new System.Drawing.Size(20, 35);
+            this.pbox25.TabIndex = 28;
+            this.pbox25.TabStop = false;
+            // 
+            // pbox28
+            // 
+            this.pbox28.Image = global::Prescription_Assistance.Properties.Resources.blank;
+            this.pbox28.Location = new System.Drawing.Point(237, 455);
+            this.pbox28.Name = "pbox28";
+            this.pbox28.Size = new System.Drawing.Size(20, 35);
+            this.pbox28.TabIndex = 27;
+            this.pbox28.TabStop = false;
+            // 
+            // pbox27
+            // 
+            this.pbox27.Image = global::Prescription_Assistance.Properties.Resources.blank;
+            this.pbox27.Location = new System.Drawing.Point(214, 455);
+            this.pbox27.Name = "pbox27";
+            this.pbox27.Size = new System.Drawing.Size(20, 35);
+            this.pbox27.TabIndex = 26;
+            this.pbox27.TabStop = false;
+            // 
+            // pbox31
+            // 
+            this.pbox31.Image = global::Prescription_Assistance.Properties.Resources.blank;
+            this.pbox31.Location = new System.Drawing.Point(258, 470);
+            this.pbox31.Name = "pbox31";
+            this.pbox31.Size = new System.Drawing.Size(35, 20);
+            this.pbox31.TabIndex = 25;
+            this.pbox31.TabStop = false;
+            // 
+            // pbox30
+            // 
+            this.pbox30.Image = global::Prescription_Assistance.Properties.Resources.blank;
+            this.pbox30.Location = new System.Drawing.Point(258, 445);
+            this.pbox30.Name = "pbox30";
+            this.pbox30.Size = new System.Drawing.Size(35, 20);
+            this.pbox30.TabIndex = 24;
+            this.pbox30.TabStop = false;
+            // 
+            // pbox29
+            // 
+            this.pbox29.Image = global::Prescription_Assistance.Properties.Resources.blank;
+            this.pbox29.Location = new System.Drawing.Point(258, 419);
+            this.pbox29.Name = "pbox29";
+            this.pbox29.Size = new System.Drawing.Size(35, 20);
+            this.pbox29.TabIndex = 23;
+            this.pbox29.TabStop = false;
+            // 
+            // pbox115
+            // 
+            this.pbox115.Image = global::Prescription_Assistance.Properties.Resources.blank;
+            this.pbox115.Location = new System.Drawing.Point(637, 438);
+            this.pbox115.Name = "pbox115";
+            this.pbox115.Size = new System.Drawing.Size(35, 20);
+            this.pbox115.TabIndex = 22;
+            this.pbox115.TabStop = false;
+            // 
+            // pbox114
+            // 
+            this.pbox114.Image = global::Prescription_Assistance.Properties.Resources.blank;
+            this.pbox114.Location = new System.Drawing.Point(637, 418);
+            this.pbox114.Name = "pbox114";
+            this.pbox114.Size = new System.Drawing.Size(35, 20);
+            this.pbox114.TabIndex = 21;
+            this.pbox114.TabStop = false;
+            // 
+            // pbox113
+            // 
+            this.pbox113.Image = global::Prescription_Assistance.Properties.Resources.blank;
+            this.pbox113.Location = new System.Drawing.Point(637, 397);
+            this.pbox113.Name = "pbox113";
+            this.pbox113.Size = new System.Drawing.Size(35, 20);
+            this.pbox113.TabIndex = 20;
+            this.pbox113.TabStop = false;
+            // 
+            // pbox11
+            // 
+            this.pbox11.Image = global::Prescription_Assistance.Properties.Resources.blank;
+            this.pbox11.Location = new System.Drawing.Point(509, 383);
+            this.pbox11.Name = "pbox11";
+            this.pbox11.Size = new System.Drawing.Size(35, 20);
+            this.pbox11.TabIndex = 19;
+            this.pbox11.TabStop = false;
+            // 
+            // pbox10
+            // 
+            this.pbox10.Image = global::Prescription_Assistance.Properties.Resources.blank;
+            this.pbox10.Location = new System.Drawing.Point(509, 363);
+            this.pbox10.Name = "pbox10";
+            this.pbox10.Size = new System.Drawing.Size(35, 20);
+            this.pbox10.TabIndex = 18;
+            this.pbox10.TabStop = false;
+            // 
+            // pbox9
+            // 
+            this.pbox9.Image = global::Prescription_Assistance.Properties.Resources.blank;
+            this.pbox9.Location = new System.Drawing.Point(509, 342);
+            this.pbox9.Name = "pbox9";
+            this.pbox9.Size = new System.Drawing.Size(35, 20);
+            this.pbox9.TabIndex = 17;
+            this.pbox9.TabStop = false;
+            // 
+            // pbox8
+            // 
+            this.pbox8.Image = global::Prescription_Assistance.Properties.Resources.blank;
+            this.pbox8.Location = new System.Drawing.Point(434, 383);
+            this.pbox8.Name = "pbox8";
+            this.pbox8.Size = new System.Drawing.Size(35, 20);
+            this.pbox8.TabIndex = 16;
+            this.pbox8.TabStop = false;
+            // 
+            // pbox7
+            // 
+            this.pbox7.Image = global::Prescription_Assistance.Properties.Resources.blank;
+            this.pbox7.Location = new System.Drawing.Point(434, 363);
+            this.pbox7.Name = "pbox7";
+            this.pbox7.Size = new System.Drawing.Size(35, 20);
+            this.pbox7.TabIndex = 15;
+            this.pbox7.TabStop = false;
+            // 
+            // pbox6
+            // 
+            this.pbox6.Image = global::Prescription_Assistance.Properties.Resources.blank;
+            this.pbox6.Location = new System.Drawing.Point(434, 342);
+            this.pbox6.Name = "pbox6";
+            this.pbox6.Size = new System.Drawing.Size(35, 20);
+            this.pbox6.TabIndex = 14;
+            this.pbox6.TabStop = false;
+            // 
+            // pbox5
+            // 
+            this.pbox5.Image = global::Prescription_Assistance.Properties.Resources.blank;
+            this.pbox5.Location = new System.Drawing.Point(344, 385);
+            this.pbox5.Name = "pbox5";
+            this.pbox5.Size = new System.Drawing.Size(35, 20);
+            this.pbox5.TabIndex = 13;
+            this.pbox5.TabStop = false;
+            // 
+            // pbox4
+            // 
+            this.pbox4.Image = global::Prescription_Assistance.Properties.Resources.blank;
+            this.pbox4.Location = new System.Drawing.Point(344, 365);
+            this.pbox4.Name = "pbox4";
+            this.pbox4.Size = new System.Drawing.Size(35, 20);
+            this.pbox4.TabIndex = 12;
+            this.pbox4.TabStop = false;
+            // 
+            // pbox3
+            // 
+            this.pbox3.Image = global::Prescription_Assistance.Properties.Resources.blank;
+            this.pbox3.Location = new System.Drawing.Point(344, 344);
+            this.pbox3.Name = "pbox3";
+            this.pbox3.Size = new System.Drawing.Size(35, 20);
+            this.pbox3.TabIndex = 11;
+            this.pbox3.TabStop = false;
+            // 
+            // pbox2
+            // 
+            this.pbox2.Image = global::Prescription_Assistance.Properties.Resources.blank;
+            this.pbox2.Location = new System.Drawing.Point(308, 384);
+            this.pbox2.Name = "pbox2";
+            this.pbox2.Size = new System.Drawing.Size(35, 20);
+            this.pbox2.TabIndex = 10;
+            this.pbox2.TabStop = false;
+            // 
+            // pbox1
+            // 
+            this.pbox1.Image = global::Prescription_Assistance.Properties.Resources.blank;
+            this.pbox1.Location = new System.Drawing.Point(308, 364);
+            this.pbox1.Name = "pbox1";
+            this.pbox1.Size = new System.Drawing.Size(35, 20);
+            this.pbox1.TabIndex = 9;
+            this.pbox1.TabStop = false;
+            // 
+            // pbox0
+            // 
+            this.pbox0.Image = global::Prescription_Assistance.Properties.Resources.blank;
+            this.pbox0.Location = new System.Drawing.Point(308, 343);
+            this.pbox0.Name = "pbox0";
+            this.pbox0.Size = new System.Drawing.Size(35, 20);
+            this.pbox0.TabIndex = 8;
+            this.pbox0.TabStop = false;
+            // 
             // tabPage3
             // 
             this.tabPage3.BackgroundImage = global::Prescription_Assistance.Properties.Resources._4th2;
             this.tabPage3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tabPage3.Controls.Add(this.a407);
-            this.tabPage3.Controls.Add(this.b407);
-            this.tabPage3.Controls.Add(this.c407);
-            this.tabPage3.Controls.Add(this.b406);
-            this.tabPage3.Controls.Add(this.a406);
-            this.tabPage3.Controls.Add(this.c405);
-            this.tabPage3.Controls.Add(this.b405);
-            this.tabPage3.Controls.Add(this.a405);
-            this.tabPage3.Controls.Add(this.e407);
-            this.tabPage3.Controls.Add(this.d407);
-            this.tabPage3.Controls.Add(this.a408);
-            this.tabPage3.Controls.Add(this.c408);
-            this.tabPage3.Controls.Add(this.b408);
-            this.tabPage3.Controls.Add(this.e408);
-            this.tabPage3.Controls.Add(this.d408);
-            this.tabPage3.Controls.Add(this.b409);
-            this.tabPage3.Controls.Add(this.a409);
-            this.tabPage3.Controls.Add(this.e409);
-            this.tabPage3.Controls.Add(this.d409);
-            this.tabPage3.Controls.Add(this.c409);
-            this.tabPage3.Controls.Add(this.c404);
-            this.tabPage3.Controls.Add(this.b404);
-            this.tabPage3.Controls.Add(this.a404);
-            this.tabPage3.Controls.Add(this.c403);
-            this.tabPage3.Controls.Add(this.b403);
-            this.tabPage3.Controls.Add(this.a403);
-            this.tabPage3.Controls.Add(this.c402);
-            this.tabPage3.Controls.Add(this.b402);
-            this.tabPage3.Controls.Add(this.a402);
-            this.tabPage3.Controls.Add(this.c401);
-            this.tabPage3.Controls.Add(this.b401);
-            this.tabPage3.Controls.Add(this.a401);
+            this.tabPage3.Controls.Add(this.pbox49);
+            this.tabPage3.Controls.Add(this.pbox50);
+            this.tabPage3.Controls.Add(this.pbox51);
+            this.tabPage3.Controls.Add(this.pbox48);
+            this.tabPage3.Controls.Add(this.pbox47);
+            this.tabPage3.Controls.Add(this.pbox46);
+            this.tabPage3.Controls.Add(this.pbox45);
+            this.tabPage3.Controls.Add(this.pbox44);
+            this.tabPage3.Controls.Add(this.pbox53);
+            this.tabPage3.Controls.Add(this.pbox52);
+            this.tabPage3.Controls.Add(this.pbox54);
+            this.tabPage3.Controls.Add(this.pbox56);
+            this.tabPage3.Controls.Add(this.pbox55);
+            this.tabPage3.Controls.Add(this.pbox58);
+            this.tabPage3.Controls.Add(this.pbox57);
+            this.tabPage3.Controls.Add(this.pbox60);
+            this.tabPage3.Controls.Add(this.pbox59);
+            this.tabPage3.Controls.Add(this.pbox63);
+            this.tabPage3.Controls.Add(this.pbox62);
+            this.tabPage3.Controls.Add(this.pbox61);
+            this.tabPage3.Controls.Add(this.pbox43);
+            this.tabPage3.Controls.Add(this.pbox42);
+            this.tabPage3.Controls.Add(this.pbox41);
+            this.tabPage3.Controls.Add(this.pbox40);
+            this.tabPage3.Controls.Add(this.pbox39);
+            this.tabPage3.Controls.Add(this.pbox38);
+            this.tabPage3.Controls.Add(this.pbox37);
+            this.tabPage3.Controls.Add(this.pbox36);
+            this.tabPage3.Controls.Add(this.pbox35);
+            this.tabPage3.Controls.Add(this.pbox34);
+            this.tabPage3.Controls.Add(this.pbox33);
+            this.tabPage3.Controls.Add(this.pbox32);
             this.tabPage3.Location = new System.Drawing.Point(4, 29);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
@@ -407,42 +863,322 @@
             this.tabPage3.Text = "4th Floor";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
+            // pbox49
+            // 
+            this.pbox49.Location = new System.Drawing.Point(88, 441);
+            this.pbox49.Name = "pbox49";
+            this.pbox49.Size = new System.Drawing.Size(20, 20);
+            this.pbox49.TabIndex = 79;
+            this.pbox49.TabStop = false;
+            // 
+            // pbox50
+            // 
+            this.pbox50.Location = new System.Drawing.Point(66, 461);
+            this.pbox50.Name = "pbox50";
+            this.pbox50.Size = new System.Drawing.Size(20, 20);
+            this.pbox50.TabIndex = 78;
+            this.pbox50.TabStop = false;
+            // 
+            // pbox51
+            // 
+            this.pbox51.Location = new System.Drawing.Point(41, 482);
+            this.pbox51.Name = "pbox51";
+            this.pbox51.Size = new System.Drawing.Size(20, 20);
+            this.pbox51.TabIndex = 77;
+            this.pbox51.TabStop = false;
+            // 
+            // pbox48
+            // 
+            this.pbox48.Location = new System.Drawing.Point(479, 116);
+            this.pbox48.Name = "pbox48";
+            this.pbox48.Size = new System.Drawing.Size(20, 20);
+            this.pbox48.TabIndex = 76;
+            this.pbox48.TabStop = false;
+            // 
+            // pbox47
+            // 
+            this.pbox47.Location = new System.Drawing.Point(462, 131);
+            this.pbox47.Name = "pbox47";
+            this.pbox47.Size = new System.Drawing.Size(20, 20);
+            this.pbox47.TabIndex = 75;
+            this.pbox47.TabStop = false;
+            // 
+            // pbox46
+            // 
+            this.pbox46.Location = new System.Drawing.Point(434, 154);
+            this.pbox46.Name = "pbox46";
+            this.pbox46.Size = new System.Drawing.Size(20, 20);
+            this.pbox46.TabIndex = 74;
+            this.pbox46.TabStop = false;
+            // 
+            // pbox45
+            // 
+            this.pbox45.Location = new System.Drawing.Point(417, 169);
+            this.pbox45.Name = "pbox45";
+            this.pbox45.Size = new System.Drawing.Size(20, 20);
+            this.pbox45.TabIndex = 73;
+            this.pbox45.TabStop = false;
+            // 
+            // pbox44
+            // 
+            this.pbox44.Location = new System.Drawing.Point(402, 183);
+            this.pbox44.Name = "pbox44";
+            this.pbox44.Size = new System.Drawing.Size(20, 20);
+            this.pbox44.TabIndex = 72;
+            this.pbox44.TabStop = false;
+            // 
+            // pbox53
+            // 
+            this.pbox53.Image = global::Prescription_Assistance.Properties.Resources.blank;
+            this.pbox53.Location = new System.Drawing.Point(92, 513);
+            this.pbox53.Name = "pbox53";
+            this.pbox53.Size = new System.Drawing.Size(35, 20);
+            this.pbox53.TabIndex = 71;
+            this.pbox53.TabStop = false;
+            // 
+            // pbox52
+            // 
+            this.pbox52.Image = global::Prescription_Assistance.Properties.Resources.blank;
+            this.pbox52.Location = new System.Drawing.Point(92, 488);
+            this.pbox52.Name = "pbox52";
+            this.pbox52.Size = new System.Drawing.Size(35, 20);
+            this.pbox52.TabIndex = 70;
+            this.pbox52.TabStop = false;
+            // 
+            // pbox54
+            // 
+            this.pbox54.Image = global::Prescription_Assistance.Properties.Resources.blank;
+            this.pbox54.Location = new System.Drawing.Point(151, 503);
+            this.pbox54.Name = "pbox54";
+            this.pbox54.Size = new System.Drawing.Size(20, 35);
+            this.pbox54.TabIndex = 69;
+            this.pbox54.TabStop = false;
+            // 
+            // pbox56
+            // 
+            this.pbox56.Image = global::Prescription_Assistance.Properties.Resources.blank;
+            this.pbox56.Location = new System.Drawing.Point(209, 501);
+            this.pbox56.Name = "pbox56";
+            this.pbox56.Size = new System.Drawing.Size(20, 35);
+            this.pbox56.TabIndex = 68;
+            this.pbox56.TabStop = false;
+            // 
+            // pbox55
+            // 
+            this.pbox55.Image = global::Prescription_Assistance.Properties.Resources.blank;
+            this.pbox55.Location = new System.Drawing.Point(180, 501);
+            this.pbox55.Name = "pbox55";
+            this.pbox55.Size = new System.Drawing.Size(20, 35);
+            this.pbox55.TabIndex = 67;
+            this.pbox55.TabStop = false;
+            // 
+            // pbox58
+            // 
+            this.pbox58.Image = global::Prescription_Assistance.Properties.Resources.blank;
+            this.pbox58.Location = new System.Drawing.Point(270, 501);
+            this.pbox58.Name = "pbox58";
+            this.pbox58.Size = new System.Drawing.Size(20, 35);
+            this.pbox58.TabIndex = 66;
+            this.pbox58.TabStop = false;
+            // 
+            // pbox57
+            // 
+            this.pbox57.Image = global::Prescription_Assistance.Properties.Resources.blank;
+            this.pbox57.Location = new System.Drawing.Point(241, 501);
+            this.pbox57.Name = "pbox57";
+            this.pbox57.Size = new System.Drawing.Size(20, 35);
+            this.pbox57.TabIndex = 65;
+            this.pbox57.TabStop = false;
+            // 
+            // pbox60
+            // 
+            this.pbox60.Image = global::Prescription_Assistance.Properties.Resources.blank;
+            this.pbox60.Location = new System.Drawing.Point(238, 456);
+            this.pbox60.Name = "pbox60";
+            this.pbox60.Size = new System.Drawing.Size(20, 35);
+            this.pbox60.TabIndex = 64;
+            this.pbox60.TabStop = false;
+            // 
+            // pbox59
+            // 
+            this.pbox59.Image = global::Prescription_Assistance.Properties.Resources.blank;
+            this.pbox59.Location = new System.Drawing.Point(215, 456);
+            this.pbox59.Name = "pbox59";
+            this.pbox59.Size = new System.Drawing.Size(20, 35);
+            this.pbox59.TabIndex = 63;
+            this.pbox59.TabStop = false;
+            // 
+            // pbox63
+            // 
+            this.pbox63.Image = global::Prescription_Assistance.Properties.Resources.blank;
+            this.pbox63.Location = new System.Drawing.Point(259, 471);
+            this.pbox63.Name = "pbox63";
+            this.pbox63.Size = new System.Drawing.Size(35, 20);
+            this.pbox63.TabIndex = 62;
+            this.pbox63.TabStop = false;
+            // 
+            // pbox62
+            // 
+            this.pbox62.Image = global::Prescription_Assistance.Properties.Resources.blank;
+            this.pbox62.Location = new System.Drawing.Point(259, 446);
+            this.pbox62.Name = "pbox62";
+            this.pbox62.Size = new System.Drawing.Size(35, 20);
+            this.pbox62.TabIndex = 61;
+            this.pbox62.TabStop = false;
+            // 
+            // pbox61
+            // 
+            this.pbox61.Image = global::Prescription_Assistance.Properties.Resources.blank;
+            this.pbox61.Location = new System.Drawing.Point(259, 420);
+            this.pbox61.Name = "pbox61";
+            this.pbox61.Size = new System.Drawing.Size(35, 20);
+            this.pbox61.TabIndex = 60;
+            this.pbox61.TabStop = false;
+            // 
+            // pbox43
+            // 
+            this.pbox43.Image = global::Prescription_Assistance.Properties.Resources.blank;
+            this.pbox43.Location = new System.Drawing.Point(510, 384);
+            this.pbox43.Name = "pbox43";
+            this.pbox43.Size = new System.Drawing.Size(35, 20);
+            this.pbox43.TabIndex = 59;
+            this.pbox43.TabStop = false;
+            // 
+            // pbox42
+            // 
+            this.pbox42.Image = global::Prescription_Assistance.Properties.Resources.blank;
+            this.pbox42.Location = new System.Drawing.Point(510, 364);
+            this.pbox42.Name = "pbox42";
+            this.pbox42.Size = new System.Drawing.Size(35, 20);
+            this.pbox42.TabIndex = 58;
+            this.pbox42.TabStop = false;
+            // 
+            // pbox41
+            // 
+            this.pbox41.Image = global::Prescription_Assistance.Properties.Resources.blank;
+            this.pbox41.Location = new System.Drawing.Point(510, 343);
+            this.pbox41.Name = "pbox41";
+            this.pbox41.Size = new System.Drawing.Size(35, 20);
+            this.pbox41.TabIndex = 57;
+            this.pbox41.TabStop = false;
+            // 
+            // pbox40
+            // 
+            this.pbox40.Image = global::Prescription_Assistance.Properties.Resources.blank;
+            this.pbox40.Location = new System.Drawing.Point(435, 384);
+            this.pbox40.Name = "pbox40";
+            this.pbox40.Size = new System.Drawing.Size(35, 20);
+            this.pbox40.TabIndex = 56;
+            this.pbox40.TabStop = false;
+            // 
+            // pbox39
+            // 
+            this.pbox39.Image = global::Prescription_Assistance.Properties.Resources.blank;
+            this.pbox39.Location = new System.Drawing.Point(435, 364);
+            this.pbox39.Name = "pbox39";
+            this.pbox39.Size = new System.Drawing.Size(35, 20);
+            this.pbox39.TabIndex = 55;
+            this.pbox39.TabStop = false;
+            // 
+            // pbox38
+            // 
+            this.pbox38.Image = global::Prescription_Assistance.Properties.Resources.blank;
+            this.pbox38.Location = new System.Drawing.Point(435, 343);
+            this.pbox38.Name = "pbox38";
+            this.pbox38.Size = new System.Drawing.Size(35, 20);
+            this.pbox38.TabIndex = 54;
+            this.pbox38.TabStop = false;
+            // 
+            // pbox37
+            // 
+            this.pbox37.Image = global::Prescription_Assistance.Properties.Resources.blank;
+            this.pbox37.Location = new System.Drawing.Point(345, 386);
+            this.pbox37.Name = "pbox37";
+            this.pbox37.Size = new System.Drawing.Size(35, 20);
+            this.pbox37.TabIndex = 53;
+            this.pbox37.TabStop = false;
+            // 
+            // pbox36
+            // 
+            this.pbox36.Image = global::Prescription_Assistance.Properties.Resources.blank;
+            this.pbox36.Location = new System.Drawing.Point(345, 366);
+            this.pbox36.Name = "pbox36";
+            this.pbox36.Size = new System.Drawing.Size(35, 20);
+            this.pbox36.TabIndex = 52;
+            this.pbox36.TabStop = false;
+            // 
+            // pbox35
+            // 
+            this.pbox35.Image = global::Prescription_Assistance.Properties.Resources.blank;
+            this.pbox35.Location = new System.Drawing.Point(345, 345);
+            this.pbox35.Name = "pbox35";
+            this.pbox35.Size = new System.Drawing.Size(35, 20);
+            this.pbox35.TabIndex = 51;
+            this.pbox35.TabStop = false;
+            // 
+            // pbox34
+            // 
+            this.pbox34.Image = global::Prescription_Assistance.Properties.Resources.blank;
+            this.pbox34.Location = new System.Drawing.Point(309, 385);
+            this.pbox34.Name = "pbox34";
+            this.pbox34.Size = new System.Drawing.Size(35, 20);
+            this.pbox34.TabIndex = 50;
+            this.pbox34.TabStop = false;
+            // 
+            // pbox33
+            // 
+            this.pbox33.Image = global::Prescription_Assistance.Properties.Resources.blank;
+            this.pbox33.Location = new System.Drawing.Point(309, 365);
+            this.pbox33.Name = "pbox33";
+            this.pbox33.Size = new System.Drawing.Size(35, 20);
+            this.pbox33.TabIndex = 49;
+            this.pbox33.TabStop = false;
+            // 
+            // pbox32
+            // 
+            this.pbox32.Image = global::Prescription_Assistance.Properties.Resources.blank;
+            this.pbox32.Location = new System.Drawing.Point(309, 344);
+            this.pbox32.Name = "pbox32";
+            this.pbox32.Size = new System.Drawing.Size(35, 20);
+            this.pbox32.TabIndex = 48;
+            this.pbox32.TabStop = false;
+            // 
             // tabPage4
             // 
             this.tabPage4.BackgroundImage = global::Prescription_Assistance.Properties.Resources._5th2;
             this.tabPage4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tabPage4.Controls.Add(this.a507);
-            this.tabPage4.Controls.Add(this.b507);
-            this.tabPage4.Controls.Add(this.c507);
-            this.tabPage4.Controls.Add(this.b506);
-            this.tabPage4.Controls.Add(this.a506);
-            this.tabPage4.Controls.Add(this.c505);
-            this.tabPage4.Controls.Add(this.b505);
-            this.tabPage4.Controls.Add(this.a505);
-            this.tabPage4.Controls.Add(this.e507);
-            this.tabPage4.Controls.Add(this.d507);
-            this.tabPage4.Controls.Add(this.a508);
-            this.tabPage4.Controls.Add(this.c508);
-            this.tabPage4.Controls.Add(this.b508);
-            this.tabPage4.Controls.Add(this.e508);
-            this.tabPage4.Controls.Add(this.d508);
-            this.tabPage4.Controls.Add(this.b509);
-            this.tabPage4.Controls.Add(this.a509);
-            this.tabPage4.Controls.Add(this.e509);
-            this.tabPage4.Controls.Add(this.d509);
-            this.tabPage4.Controls.Add(this.c509);
-            this.tabPage4.Controls.Add(this.c504);
-            this.tabPage4.Controls.Add(this.b504);
-            this.tabPage4.Controls.Add(this.a504);
-            this.tabPage4.Controls.Add(this.c503);
-            this.tabPage4.Controls.Add(this.b503);
-            this.tabPage4.Controls.Add(this.a503);
-            this.tabPage4.Controls.Add(this.c502);
-            this.tabPage4.Controls.Add(this.b502);
-            this.tabPage4.Controls.Add(this.a502);
-            this.tabPage4.Controls.Add(this.c501);
-            this.tabPage4.Controls.Add(this.b501);
-            this.tabPage4.Controls.Add(this.a501);
+            this.tabPage4.Controls.Add(this.pbox81);
+            this.tabPage4.Controls.Add(this.pbox82);
+            this.tabPage4.Controls.Add(this.pbox83);
+            this.tabPage4.Controls.Add(this.pbox80);
+            this.tabPage4.Controls.Add(this.pbox79);
+            this.tabPage4.Controls.Add(this.pbox78);
+            this.tabPage4.Controls.Add(this.pbox77);
+            this.tabPage4.Controls.Add(this.pbox76);
+            this.tabPage4.Controls.Add(this.pbox85);
+            this.tabPage4.Controls.Add(this.pbox84);
+            this.tabPage4.Controls.Add(this.pbox86);
+            this.tabPage4.Controls.Add(this.pbox88);
+            this.tabPage4.Controls.Add(this.pbox87);
+            this.tabPage4.Controls.Add(this.pbox90);
+            this.tabPage4.Controls.Add(this.pbox89);
+            this.tabPage4.Controls.Add(this.pbox92);
+            this.tabPage4.Controls.Add(this.pbox91);
+            this.tabPage4.Controls.Add(this.pbox95);
+            this.tabPage4.Controls.Add(this.pbox94);
+            this.tabPage4.Controls.Add(this.pbox93);
+            this.tabPage4.Controls.Add(this.pbox75);
+            this.tabPage4.Controls.Add(this.pbox74);
+            this.tabPage4.Controls.Add(this.pbox73);
+            this.tabPage4.Controls.Add(this.pbox72);
+            this.tabPage4.Controls.Add(this.pbox71);
+            this.tabPage4.Controls.Add(this.pbox70);
+            this.tabPage4.Controls.Add(this.pbox69);
+            this.tabPage4.Controls.Add(this.pbox68);
+            this.tabPage4.Controls.Add(this.pbox67);
+            this.tabPage4.Controls.Add(this.pbox66);
+            this.tabPage4.Controls.Add(this.pbox65);
+            this.tabPage4.Controls.Add(this.pbox64);
             this.tabPage4.Location = new System.Drawing.Point(4, 29);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
@@ -450,6 +1186,286 @@
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "5th Floor";
             this.tabPage4.UseVisualStyleBackColor = true;
+            // 
+            // pbox81
+            // 
+            this.pbox81.Location = new System.Drawing.Point(85, 439);
+            this.pbox81.Name = "pbox81";
+            this.pbox81.Size = new System.Drawing.Size(20, 20);
+            this.pbox81.TabIndex = 79;
+            this.pbox81.TabStop = false;
+            // 
+            // pbox82
+            // 
+            this.pbox82.Location = new System.Drawing.Point(63, 459);
+            this.pbox82.Name = "pbox82";
+            this.pbox82.Size = new System.Drawing.Size(20, 20);
+            this.pbox82.TabIndex = 78;
+            this.pbox82.TabStop = false;
+            // 
+            // pbox83
+            // 
+            this.pbox83.Location = new System.Drawing.Point(38, 480);
+            this.pbox83.Name = "pbox83";
+            this.pbox83.Size = new System.Drawing.Size(20, 20);
+            this.pbox83.TabIndex = 77;
+            this.pbox83.TabStop = false;
+            // 
+            // pbox80
+            // 
+            this.pbox80.Location = new System.Drawing.Point(476, 114);
+            this.pbox80.Name = "pbox80";
+            this.pbox80.Size = new System.Drawing.Size(20, 20);
+            this.pbox80.TabIndex = 76;
+            this.pbox80.TabStop = false;
+            // 
+            // pbox79
+            // 
+            this.pbox79.Location = new System.Drawing.Point(459, 129);
+            this.pbox79.Name = "pbox79";
+            this.pbox79.Size = new System.Drawing.Size(20, 20);
+            this.pbox79.TabIndex = 75;
+            this.pbox79.TabStop = false;
+            // 
+            // pbox78
+            // 
+            this.pbox78.Location = new System.Drawing.Point(431, 152);
+            this.pbox78.Name = "pbox78";
+            this.pbox78.Size = new System.Drawing.Size(20, 20);
+            this.pbox78.TabIndex = 74;
+            this.pbox78.TabStop = false;
+            // 
+            // pbox77
+            // 
+            this.pbox77.Location = new System.Drawing.Point(414, 167);
+            this.pbox77.Name = "pbox77";
+            this.pbox77.Size = new System.Drawing.Size(20, 20);
+            this.pbox77.TabIndex = 73;
+            this.pbox77.TabStop = false;
+            // 
+            // pbox76
+            // 
+            this.pbox76.Location = new System.Drawing.Point(399, 181);
+            this.pbox76.Name = "pbox76";
+            this.pbox76.Size = new System.Drawing.Size(20, 20);
+            this.pbox76.TabIndex = 72;
+            this.pbox76.TabStop = false;
+            // 
+            // pbox85
+            // 
+            this.pbox85.Image = global::Prescription_Assistance.Properties.Resources.blank;
+            this.pbox85.Location = new System.Drawing.Point(89, 511);
+            this.pbox85.Name = "pbox85";
+            this.pbox85.Size = new System.Drawing.Size(35, 20);
+            this.pbox85.TabIndex = 71;
+            this.pbox85.TabStop = false;
+            // 
+            // pbox84
+            // 
+            this.pbox84.Image = global::Prescription_Assistance.Properties.Resources.blank;
+            this.pbox84.Location = new System.Drawing.Point(89, 486);
+            this.pbox84.Name = "pbox84";
+            this.pbox84.Size = new System.Drawing.Size(35, 20);
+            this.pbox84.TabIndex = 70;
+            this.pbox84.TabStop = false;
+            // 
+            // pbox86
+            // 
+            this.pbox86.Image = global::Prescription_Assistance.Properties.Resources.blank;
+            this.pbox86.Location = new System.Drawing.Point(148, 501);
+            this.pbox86.Name = "pbox86";
+            this.pbox86.Size = new System.Drawing.Size(20, 35);
+            this.pbox86.TabIndex = 69;
+            this.pbox86.TabStop = false;
+            // 
+            // pbox88
+            // 
+            this.pbox88.Image = global::Prescription_Assistance.Properties.Resources.blank;
+            this.pbox88.Location = new System.Drawing.Point(206, 499);
+            this.pbox88.Name = "pbox88";
+            this.pbox88.Size = new System.Drawing.Size(20, 35);
+            this.pbox88.TabIndex = 68;
+            this.pbox88.TabStop = false;
+            // 
+            // pbox87
+            // 
+            this.pbox87.Image = global::Prescription_Assistance.Properties.Resources.blank;
+            this.pbox87.Location = new System.Drawing.Point(177, 499);
+            this.pbox87.Name = "pbox87";
+            this.pbox87.Size = new System.Drawing.Size(20, 35);
+            this.pbox87.TabIndex = 67;
+            this.pbox87.TabStop = false;
+            // 
+            // pbox90
+            // 
+            this.pbox90.Image = global::Prescription_Assistance.Properties.Resources.blank;
+            this.pbox90.Location = new System.Drawing.Point(267, 499);
+            this.pbox90.Name = "pbox90";
+            this.pbox90.Size = new System.Drawing.Size(20, 35);
+            this.pbox90.TabIndex = 66;
+            this.pbox90.TabStop = false;
+            // 
+            // pbox89
+            // 
+            this.pbox89.Image = global::Prescription_Assistance.Properties.Resources.blank;
+            this.pbox89.Location = new System.Drawing.Point(238, 499);
+            this.pbox89.Name = "pbox89";
+            this.pbox89.Size = new System.Drawing.Size(20, 35);
+            this.pbox89.TabIndex = 65;
+            this.pbox89.TabStop = false;
+            // 
+            // pbox92
+            // 
+            this.pbox92.Image = global::Prescription_Assistance.Properties.Resources.blank;
+            this.pbox92.Location = new System.Drawing.Point(235, 454);
+            this.pbox92.Name = "pbox92";
+            this.pbox92.Size = new System.Drawing.Size(20, 35);
+            this.pbox92.TabIndex = 64;
+            this.pbox92.TabStop = false;
+            // 
+            // pbox91
+            // 
+            this.pbox91.Image = global::Prescription_Assistance.Properties.Resources.blank;
+            this.pbox91.Location = new System.Drawing.Point(212, 454);
+            this.pbox91.Name = "pbox91";
+            this.pbox91.Size = new System.Drawing.Size(20, 35);
+            this.pbox91.TabIndex = 63;
+            this.pbox91.TabStop = false;
+            // 
+            // pbox95
+            // 
+            this.pbox95.Image = global::Prescription_Assistance.Properties.Resources.blank;
+            this.pbox95.Location = new System.Drawing.Point(256, 469);
+            this.pbox95.Name = "pbox95";
+            this.pbox95.Size = new System.Drawing.Size(35, 20);
+            this.pbox95.TabIndex = 62;
+            this.pbox95.TabStop = false;
+            // 
+            // pbox94
+            // 
+            this.pbox94.Image = global::Prescription_Assistance.Properties.Resources.blank;
+            this.pbox94.Location = new System.Drawing.Point(256, 444);
+            this.pbox94.Name = "pbox94";
+            this.pbox94.Size = new System.Drawing.Size(35, 20);
+            this.pbox94.TabIndex = 61;
+            this.pbox94.TabStop = false;
+            // 
+            // pbox93
+            // 
+            this.pbox93.Image = global::Prescription_Assistance.Properties.Resources.blank;
+            this.pbox93.Location = new System.Drawing.Point(256, 418);
+            this.pbox93.Name = "pbox93";
+            this.pbox93.Size = new System.Drawing.Size(35, 20);
+            this.pbox93.TabIndex = 60;
+            this.pbox93.TabStop = false;
+            // 
+            // pbox75
+            // 
+            this.pbox75.Image = global::Prescription_Assistance.Properties.Resources.blank;
+            this.pbox75.Location = new System.Drawing.Point(507, 382);
+            this.pbox75.Name = "pbox75";
+            this.pbox75.Size = new System.Drawing.Size(35, 20);
+            this.pbox75.TabIndex = 59;
+            this.pbox75.TabStop = false;
+            // 
+            // pbox74
+            // 
+            this.pbox74.Image = global::Prescription_Assistance.Properties.Resources.blank;
+            this.pbox74.Location = new System.Drawing.Point(507, 362);
+            this.pbox74.Name = "pbox74";
+            this.pbox74.Size = new System.Drawing.Size(35, 20);
+            this.pbox74.TabIndex = 58;
+            this.pbox74.TabStop = false;
+            // 
+            // pbox73
+            // 
+            this.pbox73.Image = global::Prescription_Assistance.Properties.Resources.blank;
+            this.pbox73.Location = new System.Drawing.Point(507, 341);
+            this.pbox73.Name = "pbox73";
+            this.pbox73.Size = new System.Drawing.Size(35, 20);
+            this.pbox73.TabIndex = 57;
+            this.pbox73.TabStop = false;
+            // 
+            // pbox72
+            // 
+            this.pbox72.Image = global::Prescription_Assistance.Properties.Resources.blank;
+            this.pbox72.Location = new System.Drawing.Point(432, 382);
+            this.pbox72.Name = "pbox72";
+            this.pbox72.Size = new System.Drawing.Size(35, 20);
+            this.pbox72.TabIndex = 56;
+            this.pbox72.TabStop = false;
+            // 
+            // pbox71
+            // 
+            this.pbox71.Image = global::Prescription_Assistance.Properties.Resources.blank;
+            this.pbox71.Location = new System.Drawing.Point(432, 362);
+            this.pbox71.Name = "pbox71";
+            this.pbox71.Size = new System.Drawing.Size(35, 20);
+            this.pbox71.TabIndex = 55;
+            this.pbox71.TabStop = false;
+            // 
+            // pbox70
+            // 
+            this.pbox70.Image = global::Prescription_Assistance.Properties.Resources.blank;
+            this.pbox70.Location = new System.Drawing.Point(432, 341);
+            this.pbox70.Name = "pbox70";
+            this.pbox70.Size = new System.Drawing.Size(35, 20);
+            this.pbox70.TabIndex = 54;
+            this.pbox70.TabStop = false;
+            // 
+            // pbox69
+            // 
+            this.pbox69.Image = global::Prescription_Assistance.Properties.Resources.blank;
+            this.pbox69.Location = new System.Drawing.Point(342, 384);
+            this.pbox69.Name = "pbox69";
+            this.pbox69.Size = new System.Drawing.Size(35, 20);
+            this.pbox69.TabIndex = 53;
+            this.pbox69.TabStop = false;
+            // 
+            // pbox68
+            // 
+            this.pbox68.Image = global::Prescription_Assistance.Properties.Resources.blank;
+            this.pbox68.Location = new System.Drawing.Point(342, 364);
+            this.pbox68.Name = "pbox68";
+            this.pbox68.Size = new System.Drawing.Size(35, 20);
+            this.pbox68.TabIndex = 52;
+            this.pbox68.TabStop = false;
+            // 
+            // pbox67
+            // 
+            this.pbox67.Image = global::Prescription_Assistance.Properties.Resources.blank;
+            this.pbox67.Location = new System.Drawing.Point(342, 343);
+            this.pbox67.Name = "pbox67";
+            this.pbox67.Size = new System.Drawing.Size(35, 20);
+            this.pbox67.TabIndex = 51;
+            this.pbox67.TabStop = false;
+            // 
+            // pbox66
+            // 
+            this.pbox66.Image = global::Prescription_Assistance.Properties.Resources.blank;
+            this.pbox66.Location = new System.Drawing.Point(306, 383);
+            this.pbox66.Name = "pbox66";
+            this.pbox66.Size = new System.Drawing.Size(35, 20);
+            this.pbox66.TabIndex = 50;
+            this.pbox66.TabStop = false;
+            // 
+            // pbox65
+            // 
+            this.pbox65.Image = global::Prescription_Assistance.Properties.Resources.blank;
+            this.pbox65.Location = new System.Drawing.Point(306, 363);
+            this.pbox65.Name = "pbox65";
+            this.pbox65.Size = new System.Drawing.Size(35, 20);
+            this.pbox65.TabIndex = 49;
+            this.pbox65.TabStop = false;
+            // 
+            // pbox64
+            // 
+            this.pbox64.Image = global::Prescription_Assistance.Properties.Resources.blank;
+            this.pbox64.Location = new System.Drawing.Point(306, 342);
+            this.pbox64.Name = "pbox64";
+            this.pbox64.Size = new System.Drawing.Size(35, 20);
+            this.pbox64.TabIndex = 48;
+            this.pbox64.TabStop = false;
             // 
             // label1
             // 
@@ -470,1022 +1486,6 @@
             this.ePanel.Size = new System.Drawing.Size(267, 564);
             this.ePanel.TabIndex = 1;
             // 
-            // icuA
-            // 
-            this.icuA.Image = global::Prescription_Assistance.Properties.Resources.blank;
-            this.icuA.Location = new System.Drawing.Point(119, 493);
-            this.icuA.Name = "icuA";
-            this.icuA.Size = new System.Drawing.Size(30, 43);
-            this.icuA.TabIndex = 0;
-            this.icuA.TabStop = false;
-            // 
-            // icuB
-            // 
-            this.icuB.Image = global::Prescription_Assistance.Properties.Resources.blank;
-            this.icuB.Location = new System.Drawing.Point(149, 493);
-            this.icuB.Name = "icuB";
-            this.icuB.Size = new System.Drawing.Size(31, 43);
-            this.icuB.TabIndex = 1;
-            this.icuB.TabStop = false;
-            // 
-            // icuC
-            // 
-            this.icuC.Image = global::Prescription_Assistance.Properties.Resources.blank;
-            this.icuC.Location = new System.Drawing.Point(180, 493);
-            this.icuC.Name = "icuC";
-            this.icuC.Size = new System.Drawing.Size(28, 43);
-            this.icuC.TabIndex = 2;
-            this.icuC.TabStop = false;
-            // 
-            // icuD
-            // 
-            this.icuD.Image = global::Prescription_Assistance.Properties.Resources.blank;
-            this.icuD.Location = new System.Drawing.Point(208, 493);
-            this.icuD.Name = "icuD";
-            this.icuD.Size = new System.Drawing.Size(28, 43);
-            this.icuD.TabIndex = 3;
-            this.icuD.TabStop = false;
-            // 
-            // icuE
-            // 
-            this.icuE.Image = global::Prescription_Assistance.Properties.Resources.blank;
-            this.icuE.Location = new System.Drawing.Point(236, 493);
-            this.icuE.Name = "icuE";
-            this.icuE.Size = new System.Drawing.Size(28, 43);
-            this.icuE.TabIndex = 4;
-            this.icuE.TabStop = false;
-            // 
-            // icuF
-            // 
-            this.icuF.Image = global::Prescription_Assistance.Properties.Resources.blank;
-            this.icuF.Location = new System.Drawing.Point(264, 493);
-            this.icuF.Name = "icuF";
-            this.icuF.Size = new System.Drawing.Size(28, 43);
-            this.icuF.TabIndex = 5;
-            this.icuF.TabStop = false;
-            // 
-            // oreA
-            // 
-            this.oreA.Image = global::Prescription_Assistance.Properties.Resources.blank;
-            this.oreA.Location = new System.Drawing.Point(667, 331);
-            this.oreA.Name = "oreA";
-            this.oreA.Size = new System.Drawing.Size(28, 43);
-            this.oreA.TabIndex = 6;
-            this.oreA.TabStop = false;
-            // 
-            // oreB
-            // 
-            this.oreB.Image = global::Prescription_Assistance.Properties.Resources.blank;
-            this.oreB.Location = new System.Drawing.Point(696, 331);
-            this.oreB.Name = "oreB";
-            this.oreB.Size = new System.Drawing.Size(28, 43);
-            this.oreB.TabIndex = 7;
-            this.oreB.TabStop = false;
-            // 
-            // a301
-            // 
-            this.a301.Image = global::Prescription_Assistance.Properties.Resources.blank;
-            this.a301.Location = new System.Drawing.Point(308, 343);
-            this.a301.Name = "a301";
-            this.a301.Size = new System.Drawing.Size(35, 20);
-            this.a301.TabIndex = 8;
-            this.a301.TabStop = false;
-            // 
-            // b301
-            // 
-            this.b301.Image = global::Prescription_Assistance.Properties.Resources.blank;
-            this.b301.Location = new System.Drawing.Point(308, 364);
-            this.b301.Name = "b301";
-            this.b301.Size = new System.Drawing.Size(35, 20);
-            this.b301.TabIndex = 9;
-            this.b301.TabStop = false;
-            // 
-            // c301
-            // 
-            this.c301.Image = global::Prescription_Assistance.Properties.Resources.blank;
-            this.c301.Location = new System.Drawing.Point(308, 384);
-            this.c301.Name = "c301";
-            this.c301.Size = new System.Drawing.Size(35, 20);
-            this.c301.TabIndex = 10;
-            this.c301.TabStop = false;
-            // 
-            // c302
-            // 
-            this.c302.Image = global::Prescription_Assistance.Properties.Resources.blank;
-            this.c302.Location = new System.Drawing.Point(344, 385);
-            this.c302.Name = "c302";
-            this.c302.Size = new System.Drawing.Size(35, 20);
-            this.c302.TabIndex = 13;
-            this.c302.TabStop = false;
-            // 
-            // b302
-            // 
-            this.b302.Image = global::Prescription_Assistance.Properties.Resources.blank;
-            this.b302.Location = new System.Drawing.Point(344, 365);
-            this.b302.Name = "b302";
-            this.b302.Size = new System.Drawing.Size(35, 20);
-            this.b302.TabIndex = 12;
-            this.b302.TabStop = false;
-            // 
-            // a302
-            // 
-            this.a302.Image = global::Prescription_Assistance.Properties.Resources.blank;
-            this.a302.Location = new System.Drawing.Point(344, 344);
-            this.a302.Name = "a302";
-            this.a302.Size = new System.Drawing.Size(35, 20);
-            this.a302.TabIndex = 11;
-            this.a302.TabStop = false;
-            // 
-            // c303
-            // 
-            this.c303.Image = global::Prescription_Assistance.Properties.Resources.blank;
-            this.c303.Location = new System.Drawing.Point(434, 383);
-            this.c303.Name = "c303";
-            this.c303.Size = new System.Drawing.Size(35, 20);
-            this.c303.TabIndex = 16;
-            this.c303.TabStop = false;
-            // 
-            // b303
-            // 
-            this.b303.Image = global::Prescription_Assistance.Properties.Resources.blank;
-            this.b303.Location = new System.Drawing.Point(434, 363);
-            this.b303.Name = "b303";
-            this.b303.Size = new System.Drawing.Size(35, 20);
-            this.b303.TabIndex = 15;
-            this.b303.TabStop = false;
-            // 
-            // a303
-            // 
-            this.a303.Image = global::Prescription_Assistance.Properties.Resources.blank;
-            this.a303.Location = new System.Drawing.Point(434, 342);
-            this.a303.Name = "a303";
-            this.a303.Size = new System.Drawing.Size(35, 20);
-            this.a303.TabIndex = 14;
-            this.a303.TabStop = false;
-            // 
-            // c304
-            // 
-            this.c304.Image = global::Prescription_Assistance.Properties.Resources.blank;
-            this.c304.Location = new System.Drawing.Point(509, 383);
-            this.c304.Name = "c304";
-            this.c304.Size = new System.Drawing.Size(35, 20);
-            this.c304.TabIndex = 19;
-            this.c304.TabStop = false;
-            // 
-            // b304
-            // 
-            this.b304.Image = global::Prescription_Assistance.Properties.Resources.blank;
-            this.b304.Location = new System.Drawing.Point(509, 363);
-            this.b304.Name = "b304";
-            this.b304.Size = new System.Drawing.Size(35, 20);
-            this.b304.TabIndex = 18;
-            this.b304.TabStop = false;
-            // 
-            // a304
-            // 
-            this.a304.Image = global::Prescription_Assistance.Properties.Resources.blank;
-            this.a304.Location = new System.Drawing.Point(509, 342);
-            this.a304.Name = "a304";
-            this.a304.Size = new System.Drawing.Size(35, 20);
-            this.a304.TabIndex = 17;
-            this.a304.TabStop = false;
-            // 
-            // cPed
-            // 
-            this.cPed.Image = global::Prescription_Assistance.Properties.Resources.blank;
-            this.cPed.Location = new System.Drawing.Point(637, 438);
-            this.cPed.Name = "cPed";
-            this.cPed.Size = new System.Drawing.Size(35, 20);
-            this.cPed.TabIndex = 22;
-            this.cPed.TabStop = false;
-            // 
-            // bPed
-            // 
-            this.bPed.Image = global::Prescription_Assistance.Properties.Resources.blank;
-            this.bPed.Location = new System.Drawing.Point(637, 418);
-            this.bPed.Name = "bPed";
-            this.bPed.Size = new System.Drawing.Size(35, 20);
-            this.bPed.TabIndex = 21;
-            this.bPed.TabStop = false;
-            // 
-            // aPed
-            // 
-            this.aPed.Image = global::Prescription_Assistance.Properties.Resources.blank;
-            this.aPed.Location = new System.Drawing.Point(637, 397);
-            this.aPed.Name = "aPed";
-            this.aPed.Size = new System.Drawing.Size(35, 20);
-            this.aPed.TabIndex = 20;
-            this.aPed.TabStop = false;
-            // 
-            // e309
-            // 
-            this.e309.Image = global::Prescription_Assistance.Properties.Resources.blank;
-            this.e309.Location = new System.Drawing.Point(258, 470);
-            this.e309.Name = "e309";
-            this.e309.Size = new System.Drawing.Size(35, 20);
-            this.e309.TabIndex = 25;
-            this.e309.TabStop = false;
-            // 
-            // d309
-            // 
-            this.d309.Image = global::Prescription_Assistance.Properties.Resources.blank;
-            this.d309.Location = new System.Drawing.Point(258, 445);
-            this.d309.Name = "d309";
-            this.d309.Size = new System.Drawing.Size(35, 20);
-            this.d309.TabIndex = 24;
-            this.d309.TabStop = false;
-            // 
-            // c309
-            // 
-            this.c309.Image = global::Prescription_Assistance.Properties.Resources.blank;
-            this.c309.Location = new System.Drawing.Point(258, 419);
-            this.c309.Name = "c309";
-            this.c309.Size = new System.Drawing.Size(35, 20);
-            this.c309.TabIndex = 23;
-            this.c309.TabStop = false;
-            // 
-            // a309
-            // 
-            this.a309.Image = global::Prescription_Assistance.Properties.Resources.blank;
-            this.a309.Location = new System.Drawing.Point(214, 455);
-            this.a309.Name = "a309";
-            this.a309.Size = new System.Drawing.Size(20, 35);
-            this.a309.TabIndex = 26;
-            this.a309.TabStop = false;
-            // 
-            // b309
-            // 
-            this.b309.Image = global::Prescription_Assistance.Properties.Resources.blank;
-            this.b309.Location = new System.Drawing.Point(237, 455);
-            this.b309.Name = "b309";
-            this.b309.Size = new System.Drawing.Size(20, 35);
-            this.b309.TabIndex = 27;
-            this.b309.TabStop = false;
-            // 
-            // e308
-            // 
-            this.e308.Image = global::Prescription_Assistance.Properties.Resources.blank;
-            this.e308.Location = new System.Drawing.Point(269, 500);
-            this.e308.Name = "e308";
-            this.e308.Size = new System.Drawing.Size(20, 35);
-            this.e308.TabIndex = 29;
-            this.e308.TabStop = false;
-            // 
-            // d308
-            // 
-            this.d308.Image = global::Prescription_Assistance.Properties.Resources.blank;
-            this.d308.Location = new System.Drawing.Point(240, 500);
-            this.d308.Name = "d308";
-            this.d308.Size = new System.Drawing.Size(20, 35);
-            this.d308.TabIndex = 28;
-            this.d308.TabStop = false;
-            // 
-            // c308
-            // 
-            this.c308.Image = global::Prescription_Assistance.Properties.Resources.blank;
-            this.c308.Location = new System.Drawing.Point(208, 500);
-            this.c308.Name = "c308";
-            this.c308.Size = new System.Drawing.Size(20, 35);
-            this.c308.TabIndex = 31;
-            this.c308.TabStop = false;
-            // 
-            // b308
-            // 
-            this.b308.Image = global::Prescription_Assistance.Properties.Resources.blank;
-            this.b308.Location = new System.Drawing.Point(179, 500);
-            this.b308.Name = "b308";
-            this.b308.Size = new System.Drawing.Size(20, 35);
-            this.b308.TabIndex = 30;
-            this.b308.TabStop = false;
-            // 
-            // a308
-            // 
-            this.a308.Image = global::Prescription_Assistance.Properties.Resources.blank;
-            this.a308.Location = new System.Drawing.Point(150, 502);
-            this.a308.Name = "a308";
-            this.a308.Size = new System.Drawing.Size(20, 35);
-            this.a308.TabIndex = 32;
-            this.a308.TabStop = false;
-            // 
-            // e307
-            // 
-            this.e307.Image = global::Prescription_Assistance.Properties.Resources.blank;
-            this.e307.Location = new System.Drawing.Point(91, 512);
-            this.e307.Name = "e307";
-            this.e307.Size = new System.Drawing.Size(35, 20);
-            this.e307.TabIndex = 34;
-            this.e307.TabStop = false;
-            // 
-            // d307
-            // 
-            this.d307.Image = global::Prescription_Assistance.Properties.Resources.blank;
-            this.d307.Location = new System.Drawing.Point(91, 487);
-            this.d307.Name = "d307";
-            this.d307.Size = new System.Drawing.Size(35, 20);
-            this.d307.TabIndex = 33;
-            this.d307.TabStop = false;
-            // 
-            // cFw2
-            // 
-            this.cFw2.Image = global::Prescription_Assistance.Properties.Resources.blank;
-            this.cFw2.Location = new System.Drawing.Point(549, 333);
-            this.cFw2.Name = "cFw2";
-            this.cFw2.Size = new System.Drawing.Size(35, 20);
-            this.cFw2.TabIndex = 36;
-            this.cFw2.TabStop = false;
-            // 
-            // bFw2
-            // 
-            this.bFw2.Image = global::Prescription_Assistance.Properties.Resources.blank;
-            this.bFw2.Location = new System.Drawing.Point(549, 302);
-            this.bFw2.Name = "bFw2";
-            this.bFw2.Size = new System.Drawing.Size(35, 20);
-            this.bFw2.TabIndex = 35;
-            this.bFw2.TabStop = false;
-            // 
-            // dFw2
-            // 
-            this.dFw2.Image = global::Prescription_Assistance.Properties.Resources.blank;
-            this.dFw2.Location = new System.Drawing.Point(549, 356);
-            this.dFw2.Name = "dFw2";
-            this.dFw2.Size = new System.Drawing.Size(35, 20);
-            this.dFw2.TabIndex = 38;
-            this.dFw2.TabStop = false;
-            // 
-            // aFw2
-            // 
-            this.aFw2.Image = global::Prescription_Assistance.Properties.Resources.blank;
-            this.aFw2.Location = new System.Drawing.Point(549, 279);
-            this.aFw2.Name = "aFw2";
-            this.aFw2.Size = new System.Drawing.Size(35, 20);
-            this.aFw2.TabIndex = 37;
-            this.aFw2.TabStop = false;
-            // 
-            // eFw2
-            // 
-            this.eFw2.Image = global::Prescription_Assistance.Properties.Resources.blank;
-            this.eFw2.Location = new System.Drawing.Point(597, 341);
-            this.eFw2.Name = "eFw2";
-            this.eFw2.Size = new System.Drawing.Size(35, 20);
-            this.eFw2.TabIndex = 39;
-            this.eFw2.TabStop = false;
-            // 
-            // a305
-            // 
-            this.a305.Location = new System.Drawing.Point(401, 182);
-            this.a305.Name = "a305";
-            this.a305.Size = new System.Drawing.Size(20, 20);
-            this.a305.TabIndex = 40;
-            this.a305.TabStop = false;
-            // 
-            // b305
-            // 
-            this.b305.Location = new System.Drawing.Point(416, 168);
-            this.b305.Name = "b305";
-            this.b305.Size = new System.Drawing.Size(20, 20);
-            this.b305.TabIndex = 41;
-            this.b305.TabStop = false;
-            // 
-            // c305
-            // 
-            this.c305.Location = new System.Drawing.Point(433, 153);
-            this.c305.Name = "c305";
-            this.c305.Size = new System.Drawing.Size(20, 20);
-            this.c305.TabIndex = 42;
-            this.c305.TabStop = false;
-            // 
-            // b306
-            // 
-            this.b306.Location = new System.Drawing.Point(478, 115);
-            this.b306.Name = "b306";
-            this.b306.Size = new System.Drawing.Size(20, 20);
-            this.b306.TabIndex = 44;
-            this.b306.TabStop = false;
-            // 
-            // a306
-            // 
-            this.a306.Location = new System.Drawing.Point(461, 130);
-            this.a306.Name = "a306";
-            this.a306.Size = new System.Drawing.Size(20, 20);
-            this.a306.TabIndex = 43;
-            this.a306.TabStop = false;
-            // 
-            // a307
-            // 
-            this.a307.Location = new System.Drawing.Point(87, 440);
-            this.a307.Name = "a307";
-            this.a307.Size = new System.Drawing.Size(20, 20);
-            this.a307.TabIndex = 47;
-            this.a307.TabStop = false;
-            // 
-            // b307
-            // 
-            this.b307.Location = new System.Drawing.Point(65, 460);
-            this.b307.Name = "b307";
-            this.b307.Size = new System.Drawing.Size(20, 20);
-            this.b307.TabIndex = 46;
-            this.b307.TabStop = false;
-            // 
-            // c307
-            // 
-            this.c307.Location = new System.Drawing.Point(40, 481);
-            this.c307.Name = "c307";
-            this.c307.Size = new System.Drawing.Size(20, 20);
-            this.c307.TabIndex = 45;
-            this.c307.TabStop = false;
-            // 
-            // aFw1
-            // 
-            this.aFw1.Location = new System.Drawing.Point(655, 251);
-            this.aFw1.Name = "aFw1";
-            this.aFw1.Size = new System.Drawing.Size(20, 20);
-            this.aFw1.TabIndex = 51;
-            this.aFw1.TabStop = false;
-            // 
-            // bFw1
-            // 
-            this.bFw1.Location = new System.Drawing.Point(665, 271);
-            this.bFw1.Name = "bFw1";
-            this.bFw1.Size = new System.Drawing.Size(20, 20);
-            this.bFw1.TabIndex = 50;
-            this.bFw1.TabStop = false;
-            // 
-            // cFw1
-            // 
-            this.cFw1.Location = new System.Drawing.Point(677, 291);
-            this.cFw1.Name = "cFw1";
-            this.cFw1.Size = new System.Drawing.Size(20, 20);
-            this.cFw1.TabIndex = 49;
-            this.cFw1.TabStop = false;
-            // 
-            // dFw1
-            // 
-            this.dFw1.Location = new System.Drawing.Point(688, 312);
-            this.dFw1.Name = "dFw1";
-            this.dFw1.Size = new System.Drawing.Size(20, 20);
-            this.dFw1.TabIndex = 48;
-            this.dFw1.TabStop = false;
-            // 
-            // a407
-            // 
-            this.a407.Location = new System.Drawing.Point(88, 441);
-            this.a407.Name = "a407";
-            this.a407.Size = new System.Drawing.Size(20, 20);
-            this.a407.TabIndex = 79;
-            this.a407.TabStop = false;
-            // 
-            // b407
-            // 
-            this.b407.Location = new System.Drawing.Point(66, 461);
-            this.b407.Name = "b407";
-            this.b407.Size = new System.Drawing.Size(20, 20);
-            this.b407.TabIndex = 78;
-            this.b407.TabStop = false;
-            // 
-            // c407
-            // 
-            this.c407.Location = new System.Drawing.Point(41, 482);
-            this.c407.Name = "c407";
-            this.c407.Size = new System.Drawing.Size(20, 20);
-            this.c407.TabIndex = 77;
-            this.c407.TabStop = false;
-            // 
-            // b406
-            // 
-            this.b406.Location = new System.Drawing.Point(479, 116);
-            this.b406.Name = "b406";
-            this.b406.Size = new System.Drawing.Size(20, 20);
-            this.b406.TabIndex = 76;
-            this.b406.TabStop = false;
-            // 
-            // a406
-            // 
-            this.a406.Location = new System.Drawing.Point(462, 131);
-            this.a406.Name = "a406";
-            this.a406.Size = new System.Drawing.Size(20, 20);
-            this.a406.TabIndex = 75;
-            this.a406.TabStop = false;
-            // 
-            // c405
-            // 
-            this.c405.Location = new System.Drawing.Point(434, 154);
-            this.c405.Name = "c405";
-            this.c405.Size = new System.Drawing.Size(20, 20);
-            this.c405.TabIndex = 74;
-            this.c405.TabStop = false;
-            // 
-            // b405
-            // 
-            this.b405.Location = new System.Drawing.Point(417, 169);
-            this.b405.Name = "b405";
-            this.b405.Size = new System.Drawing.Size(20, 20);
-            this.b405.TabIndex = 73;
-            this.b405.TabStop = false;
-            // 
-            // a405
-            // 
-            this.a405.Location = new System.Drawing.Point(402, 183);
-            this.a405.Name = "a405";
-            this.a405.Size = new System.Drawing.Size(20, 20);
-            this.a405.TabIndex = 72;
-            this.a405.TabStop = false;
-            // 
-            // e407
-            // 
-            this.e407.Image = global::Prescription_Assistance.Properties.Resources.blank;
-            this.e407.Location = new System.Drawing.Point(92, 513);
-            this.e407.Name = "e407";
-            this.e407.Size = new System.Drawing.Size(35, 20);
-            this.e407.TabIndex = 71;
-            this.e407.TabStop = false;
-            // 
-            // d407
-            // 
-            this.d407.Image = global::Prescription_Assistance.Properties.Resources.blank;
-            this.d407.Location = new System.Drawing.Point(92, 488);
-            this.d407.Name = "d407";
-            this.d407.Size = new System.Drawing.Size(35, 20);
-            this.d407.TabIndex = 70;
-            this.d407.TabStop = false;
-            // 
-            // a408
-            // 
-            this.a408.Image = global::Prescription_Assistance.Properties.Resources.blank;
-            this.a408.Location = new System.Drawing.Point(151, 503);
-            this.a408.Name = "a408";
-            this.a408.Size = new System.Drawing.Size(20, 35);
-            this.a408.TabIndex = 69;
-            this.a408.TabStop = false;
-            // 
-            // c408
-            // 
-            this.c408.Image = global::Prescription_Assistance.Properties.Resources.blank;
-            this.c408.Location = new System.Drawing.Point(209, 501);
-            this.c408.Name = "c408";
-            this.c408.Size = new System.Drawing.Size(20, 35);
-            this.c408.TabIndex = 68;
-            this.c408.TabStop = false;
-            // 
-            // b408
-            // 
-            this.b408.Image = global::Prescription_Assistance.Properties.Resources.blank;
-            this.b408.Location = new System.Drawing.Point(180, 501);
-            this.b408.Name = "b408";
-            this.b408.Size = new System.Drawing.Size(20, 35);
-            this.b408.TabIndex = 67;
-            this.b408.TabStop = false;
-            // 
-            // e408
-            // 
-            this.e408.Image = global::Prescription_Assistance.Properties.Resources.blank;
-            this.e408.Location = new System.Drawing.Point(270, 501);
-            this.e408.Name = "e408";
-            this.e408.Size = new System.Drawing.Size(20, 35);
-            this.e408.TabIndex = 66;
-            this.e408.TabStop = false;
-            // 
-            // d408
-            // 
-            this.d408.Image = global::Prescription_Assistance.Properties.Resources.blank;
-            this.d408.Location = new System.Drawing.Point(241, 501);
-            this.d408.Name = "d408";
-            this.d408.Size = new System.Drawing.Size(20, 35);
-            this.d408.TabIndex = 65;
-            this.d408.TabStop = false;
-            // 
-            // b409
-            // 
-            this.b409.Image = global::Prescription_Assistance.Properties.Resources.blank;
-            this.b409.Location = new System.Drawing.Point(238, 456);
-            this.b409.Name = "b409";
-            this.b409.Size = new System.Drawing.Size(20, 35);
-            this.b409.TabIndex = 64;
-            this.b409.TabStop = false;
-            // 
-            // a409
-            // 
-            this.a409.Image = global::Prescription_Assistance.Properties.Resources.blank;
-            this.a409.Location = new System.Drawing.Point(215, 456);
-            this.a409.Name = "a409";
-            this.a409.Size = new System.Drawing.Size(20, 35);
-            this.a409.TabIndex = 63;
-            this.a409.TabStop = false;
-            // 
-            // e409
-            // 
-            this.e409.Image = global::Prescription_Assistance.Properties.Resources.blank;
-            this.e409.Location = new System.Drawing.Point(259, 471);
-            this.e409.Name = "e409";
-            this.e409.Size = new System.Drawing.Size(35, 20);
-            this.e409.TabIndex = 62;
-            this.e409.TabStop = false;
-            // 
-            // d409
-            // 
-            this.d409.Image = global::Prescription_Assistance.Properties.Resources.blank;
-            this.d409.Location = new System.Drawing.Point(259, 446);
-            this.d409.Name = "d409";
-            this.d409.Size = new System.Drawing.Size(35, 20);
-            this.d409.TabIndex = 61;
-            this.d409.TabStop = false;
-            // 
-            // c409
-            // 
-            this.c409.Image = global::Prescription_Assistance.Properties.Resources.blank;
-            this.c409.Location = new System.Drawing.Point(259, 420);
-            this.c409.Name = "c409";
-            this.c409.Size = new System.Drawing.Size(35, 20);
-            this.c409.TabIndex = 60;
-            this.c409.TabStop = false;
-            // 
-            // c404
-            // 
-            this.c404.Image = global::Prescription_Assistance.Properties.Resources.blank;
-            this.c404.Location = new System.Drawing.Point(510, 384);
-            this.c404.Name = "c404";
-            this.c404.Size = new System.Drawing.Size(35, 20);
-            this.c404.TabIndex = 59;
-            this.c404.TabStop = false;
-            // 
-            // b404
-            // 
-            this.b404.Image = global::Prescription_Assistance.Properties.Resources.blank;
-            this.b404.Location = new System.Drawing.Point(510, 364);
-            this.b404.Name = "b404";
-            this.b404.Size = new System.Drawing.Size(35, 20);
-            this.b404.TabIndex = 58;
-            this.b404.TabStop = false;
-            // 
-            // a404
-            // 
-            this.a404.Image = global::Prescription_Assistance.Properties.Resources.blank;
-            this.a404.Location = new System.Drawing.Point(510, 343);
-            this.a404.Name = "a404";
-            this.a404.Size = new System.Drawing.Size(35, 20);
-            this.a404.TabIndex = 57;
-            this.a404.TabStop = false;
-            // 
-            // c403
-            // 
-            this.c403.Image = global::Prescription_Assistance.Properties.Resources.blank;
-            this.c403.Location = new System.Drawing.Point(435, 384);
-            this.c403.Name = "c403";
-            this.c403.Size = new System.Drawing.Size(35, 20);
-            this.c403.TabIndex = 56;
-            this.c403.TabStop = false;
-            // 
-            // b403
-            // 
-            this.b403.Image = global::Prescription_Assistance.Properties.Resources.blank;
-            this.b403.Location = new System.Drawing.Point(435, 364);
-            this.b403.Name = "b403";
-            this.b403.Size = new System.Drawing.Size(35, 20);
-            this.b403.TabIndex = 55;
-            this.b403.TabStop = false;
-            // 
-            // a403
-            // 
-            this.a403.Image = global::Prescription_Assistance.Properties.Resources.blank;
-            this.a403.Location = new System.Drawing.Point(435, 343);
-            this.a403.Name = "a403";
-            this.a403.Size = new System.Drawing.Size(35, 20);
-            this.a403.TabIndex = 54;
-            this.a403.TabStop = false;
-            // 
-            // c402
-            // 
-            this.c402.Image = global::Prescription_Assistance.Properties.Resources.blank;
-            this.c402.Location = new System.Drawing.Point(345, 386);
-            this.c402.Name = "c402";
-            this.c402.Size = new System.Drawing.Size(35, 20);
-            this.c402.TabIndex = 53;
-            this.c402.TabStop = false;
-            // 
-            // b402
-            // 
-            this.b402.Image = global::Prescription_Assistance.Properties.Resources.blank;
-            this.b402.Location = new System.Drawing.Point(345, 366);
-            this.b402.Name = "b402";
-            this.b402.Size = new System.Drawing.Size(35, 20);
-            this.b402.TabIndex = 52;
-            this.b402.TabStop = false;
-            // 
-            // a402
-            // 
-            this.a402.Image = global::Prescription_Assistance.Properties.Resources.blank;
-            this.a402.Location = new System.Drawing.Point(345, 345);
-            this.a402.Name = "a402";
-            this.a402.Size = new System.Drawing.Size(35, 20);
-            this.a402.TabIndex = 51;
-            this.a402.TabStop = false;
-            // 
-            // c401
-            // 
-            this.c401.Image = global::Prescription_Assistance.Properties.Resources.blank;
-            this.c401.Location = new System.Drawing.Point(309, 385);
-            this.c401.Name = "c401";
-            this.c401.Size = new System.Drawing.Size(35, 20);
-            this.c401.TabIndex = 50;
-            this.c401.TabStop = false;
-            // 
-            // b401
-            // 
-            this.b401.Image = global::Prescription_Assistance.Properties.Resources.blank;
-            this.b401.Location = new System.Drawing.Point(309, 365);
-            this.b401.Name = "b401";
-            this.b401.Size = new System.Drawing.Size(35, 20);
-            this.b401.TabIndex = 49;
-            this.b401.TabStop = false;
-            // 
-            // a401
-            // 
-            this.a401.Image = global::Prescription_Assistance.Properties.Resources.blank;
-            this.a401.Location = new System.Drawing.Point(309, 344);
-            this.a401.Name = "a401";
-            this.a401.Size = new System.Drawing.Size(35, 20);
-            this.a401.TabIndex = 48;
-            this.a401.TabStop = false;
-            // 
-            // a507
-            // 
-            this.a507.Location = new System.Drawing.Point(85, 439);
-            this.a507.Name = "a507";
-            this.a507.Size = new System.Drawing.Size(20, 20);
-            this.a507.TabIndex = 79;
-            this.a507.TabStop = false;
-            // 
-            // b507
-            // 
-            this.b507.Location = new System.Drawing.Point(63, 459);
-            this.b507.Name = "b507";
-            this.b507.Size = new System.Drawing.Size(20, 20);
-            this.b507.TabIndex = 78;
-            this.b507.TabStop = false;
-            // 
-            // c507
-            // 
-            this.c507.Location = new System.Drawing.Point(38, 480);
-            this.c507.Name = "c507";
-            this.c507.Size = new System.Drawing.Size(20, 20);
-            this.c507.TabIndex = 77;
-            this.c507.TabStop = false;
-            // 
-            // b506
-            // 
-            this.b506.Location = new System.Drawing.Point(476, 114);
-            this.b506.Name = "b506";
-            this.b506.Size = new System.Drawing.Size(20, 20);
-            this.b506.TabIndex = 76;
-            this.b506.TabStop = false;
-            // 
-            // a506
-            // 
-            this.a506.Location = new System.Drawing.Point(459, 129);
-            this.a506.Name = "a506";
-            this.a506.Size = new System.Drawing.Size(20, 20);
-            this.a506.TabIndex = 75;
-            this.a506.TabStop = false;
-            // 
-            // c505
-            // 
-            this.c505.Location = new System.Drawing.Point(431, 152);
-            this.c505.Name = "c505";
-            this.c505.Size = new System.Drawing.Size(20, 20);
-            this.c505.TabIndex = 74;
-            this.c505.TabStop = false;
-            // 
-            // b505
-            // 
-            this.b505.Location = new System.Drawing.Point(414, 167);
-            this.b505.Name = "b505";
-            this.b505.Size = new System.Drawing.Size(20, 20);
-            this.b505.TabIndex = 73;
-            this.b505.TabStop = false;
-            // 
-            // a505
-            // 
-            this.a505.Location = new System.Drawing.Point(399, 181);
-            this.a505.Name = "a505";
-            this.a505.Size = new System.Drawing.Size(20, 20);
-            this.a505.TabIndex = 72;
-            this.a505.TabStop = false;
-            // 
-            // e507
-            // 
-            this.e507.Image = global::Prescription_Assistance.Properties.Resources.blank;
-            this.e507.Location = new System.Drawing.Point(89, 511);
-            this.e507.Name = "e507";
-            this.e507.Size = new System.Drawing.Size(35, 20);
-            this.e507.TabIndex = 71;
-            this.e507.TabStop = false;
-            // 
-            // d507
-            // 
-            this.d507.Image = global::Prescription_Assistance.Properties.Resources.blank;
-            this.d507.Location = new System.Drawing.Point(89, 486);
-            this.d507.Name = "d507";
-            this.d507.Size = new System.Drawing.Size(35, 20);
-            this.d507.TabIndex = 70;
-            this.d507.TabStop = false;
-            // 
-            // a508
-            // 
-            this.a508.Image = global::Prescription_Assistance.Properties.Resources.blank;
-            this.a508.Location = new System.Drawing.Point(148, 501);
-            this.a508.Name = "a508";
-            this.a508.Size = new System.Drawing.Size(20, 35);
-            this.a508.TabIndex = 69;
-            this.a508.TabStop = false;
-            // 
-            // c508
-            // 
-            this.c508.Image = global::Prescription_Assistance.Properties.Resources.blank;
-            this.c508.Location = new System.Drawing.Point(206, 499);
-            this.c508.Name = "c508";
-            this.c508.Size = new System.Drawing.Size(20, 35);
-            this.c508.TabIndex = 68;
-            this.c508.TabStop = false;
-            // 
-            // b508
-            // 
-            this.b508.Image = global::Prescription_Assistance.Properties.Resources.blank;
-            this.b508.Location = new System.Drawing.Point(177, 499);
-            this.b508.Name = "b508";
-            this.b508.Size = new System.Drawing.Size(20, 35);
-            this.b508.TabIndex = 67;
-            this.b508.TabStop = false;
-            // 
-            // e508
-            // 
-            this.e508.Image = global::Prescription_Assistance.Properties.Resources.blank;
-            this.e508.Location = new System.Drawing.Point(267, 499);
-            this.e508.Name = "e508";
-            this.e508.Size = new System.Drawing.Size(20, 35);
-            this.e508.TabIndex = 66;
-            this.e508.TabStop = false;
-            // 
-            // d508
-            // 
-            this.d508.Image = global::Prescription_Assistance.Properties.Resources.blank;
-            this.d508.Location = new System.Drawing.Point(238, 499);
-            this.d508.Name = "d508";
-            this.d508.Size = new System.Drawing.Size(20, 35);
-            this.d508.TabIndex = 65;
-            this.d508.TabStop = false;
-            // 
-            // b509
-            // 
-            this.b509.Image = global::Prescription_Assistance.Properties.Resources.blank;
-            this.b509.Location = new System.Drawing.Point(235, 454);
-            this.b509.Name = "b509";
-            this.b509.Size = new System.Drawing.Size(20, 35);
-            this.b509.TabIndex = 64;
-            this.b509.TabStop = false;
-            // 
-            // a509
-            // 
-            this.a509.Image = global::Prescription_Assistance.Properties.Resources.blank;
-            this.a509.Location = new System.Drawing.Point(212, 454);
-            this.a509.Name = "a509";
-            this.a509.Size = new System.Drawing.Size(20, 35);
-            this.a509.TabIndex = 63;
-            this.a509.TabStop = false;
-            // 
-            // e509
-            // 
-            this.e509.Image = global::Prescription_Assistance.Properties.Resources.blank;
-            this.e509.Location = new System.Drawing.Point(256, 469);
-            this.e509.Name = "e509";
-            this.e509.Size = new System.Drawing.Size(35, 20);
-            this.e509.TabIndex = 62;
-            this.e509.TabStop = false;
-            // 
-            // d509
-            // 
-            this.d509.Image = global::Prescription_Assistance.Properties.Resources.blank;
-            this.d509.Location = new System.Drawing.Point(256, 444);
-            this.d509.Name = "d509";
-            this.d509.Size = new System.Drawing.Size(35, 20);
-            this.d509.TabIndex = 61;
-            this.d509.TabStop = false;
-            // 
-            // c509
-            // 
-            this.c509.Image = global::Prescription_Assistance.Properties.Resources.blank;
-            this.c509.Location = new System.Drawing.Point(256, 418);
-            this.c509.Name = "c509";
-            this.c509.Size = new System.Drawing.Size(35, 20);
-            this.c509.TabIndex = 60;
-            this.c509.TabStop = false;
-            // 
-            // c504
-            // 
-            this.c504.Image = global::Prescription_Assistance.Properties.Resources.blank;
-            this.c504.Location = new System.Drawing.Point(507, 382);
-            this.c504.Name = "c504";
-            this.c504.Size = new System.Drawing.Size(35, 20);
-            this.c504.TabIndex = 59;
-            this.c504.TabStop = false;
-            // 
-            // b504
-            // 
-            this.b504.Image = global::Prescription_Assistance.Properties.Resources.blank;
-            this.b504.Location = new System.Drawing.Point(507, 362);
-            this.b504.Name = "b504";
-            this.b504.Size = new System.Drawing.Size(35, 20);
-            this.b504.TabIndex = 58;
-            this.b504.TabStop = false;
-            // 
-            // a504
-            // 
-            this.a504.Image = global::Prescription_Assistance.Properties.Resources.blank;
-            this.a504.Location = new System.Drawing.Point(507, 341);
-            this.a504.Name = "a504";
-            this.a504.Size = new System.Drawing.Size(35, 20);
-            this.a504.TabIndex = 57;
-            this.a504.TabStop = false;
-            // 
-            // c503
-            // 
-            this.c503.Image = global::Prescription_Assistance.Properties.Resources.blank;
-            this.c503.Location = new System.Drawing.Point(432, 382);
-            this.c503.Name = "c503";
-            this.c503.Size = new System.Drawing.Size(35, 20);
-            this.c503.TabIndex = 56;
-            this.c503.TabStop = false;
-            // 
-            // b503
-            // 
-            this.b503.Image = global::Prescription_Assistance.Properties.Resources.blank;
-            this.b503.Location = new System.Drawing.Point(432, 362);
-            this.b503.Name = "b503";
-            this.b503.Size = new System.Drawing.Size(35, 20);
-            this.b503.TabIndex = 55;
-            this.b503.TabStop = false;
-            // 
-            // a503
-            // 
-            this.a503.Image = global::Prescription_Assistance.Properties.Resources.blank;
-            this.a503.Location = new System.Drawing.Point(432, 341);
-            this.a503.Name = "a503";
-            this.a503.Size = new System.Drawing.Size(35, 20);
-            this.a503.TabIndex = 54;
-            this.a503.TabStop = false;
-            // 
-            // c502
-            // 
-            this.c502.Image = global::Prescription_Assistance.Properties.Resources.blank;
-            this.c502.Location = new System.Drawing.Point(342, 384);
-            this.c502.Name = "c502";
-            this.c502.Size = new System.Drawing.Size(35, 20);
-            this.c502.TabIndex = 53;
-            this.c502.TabStop = false;
-            // 
-            // b502
-            // 
-            this.b502.Image = global::Prescription_Assistance.Properties.Resources.blank;
-            this.b502.Location = new System.Drawing.Point(342, 364);
-            this.b502.Name = "b502";
-            this.b502.Size = new System.Drawing.Size(35, 20);
-            this.b502.TabIndex = 52;
-            this.b502.TabStop = false;
-            // 
-            // a502
-            // 
-            this.a502.Image = global::Prescription_Assistance.Properties.Resources.blank;
-            this.a502.Location = new System.Drawing.Point(342, 343);
-            this.a502.Name = "a502";
-            this.a502.Size = new System.Drawing.Size(35, 20);
-            this.a502.TabIndex = 51;
-            this.a502.TabStop = false;
-            // 
-            // c501
-            // 
-            this.c501.Image = global::Prescription_Assistance.Properties.Resources.blank;
-            this.c501.Location = new System.Drawing.Point(306, 383);
-            this.c501.Name = "c501";
-            this.c501.Size = new System.Drawing.Size(35, 20);
-            this.c501.TabIndex = 50;
-            this.c501.TabStop = false;
-            // 
-            // b501
-            // 
-            this.b501.Image = global::Prescription_Assistance.Properties.Resources.blank;
-            this.b501.Location = new System.Drawing.Point(306, 363);
-            this.b501.Name = "b501";
-            this.b501.Size = new System.Drawing.Size(35, 20);
-            this.b501.TabIndex = 49;
-            this.b501.TabStop = false;
-            // 
-            // a501
-            // 
-            this.a501.Image = global::Prescription_Assistance.Properties.Resources.blank;
-            this.a501.Location = new System.Drawing.Point(306, 342);
-            this.a501.Name = "a501";
-            this.a501.Size = new System.Drawing.Size(35, 20);
-            this.a501.TabIndex = 48;
-            this.a501.TabStop = false;
-            // 
             // Room_Layout
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1499,125 +1499,125 @@
             this.Load += new System.EventHandler(this.Room_Layout_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pbox112)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox111)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox110)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox109)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox108)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox107)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox106)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox105)).EndInit();
             this.tabPage2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pbox96)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox97)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox98)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox99)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox17)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox18)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox19)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox16)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox15)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox14)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox13)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox104)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox103)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox100)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox102)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox101)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox21)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox20)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox22)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox24)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox23)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox26)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox25)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox28)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox27)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox31)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox30)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox29)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox115)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox114)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox113)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox0)).EndInit();
             this.tabPage3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pbox49)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox50)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox51)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox48)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox47)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox46)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox45)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox44)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox53)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox52)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox54)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox56)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox55)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox58)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox57)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox60)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox59)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox63)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox62)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox61)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox43)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox42)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox41)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox40)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox39)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox38)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox37)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox36)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox35)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox34)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox33)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox32)).EndInit();
             this.tabPage4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.icuA)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.icuB)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.icuC)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.icuD)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.icuE)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.icuF)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.oreA)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.oreB)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.a301)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.b301)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.c301)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.c302)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.b302)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.a302)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.c303)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.b303)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.a303)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.c304)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.b304)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.a304)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cPed)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bPed)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.aPed)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.e309)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.d309)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.c309)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.a309)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.b309)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.e308)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.d308)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.c308)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.b308)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.a308)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.e307)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.d307)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cFw2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bFw2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dFw2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.aFw2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.eFw2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.a305)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.b305)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.c305)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.b306)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.a306)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.a307)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.b307)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.c307)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.aFw1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bFw1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cFw1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dFw1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.a407)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.b407)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.c407)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.b406)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.a406)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.c405)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.b405)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.a405)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.e407)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.d407)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.a408)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.c408)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.b408)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.e408)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.d408)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.b409)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.a409)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.e409)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.d409)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.c409)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.c404)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.b404)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.a404)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.c403)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.b403)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.a403)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.c402)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.b402)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.a402)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.c401)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.b401)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.a401)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.a507)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.b507)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.c507)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.b506)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.a506)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.c505)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.b505)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.a505)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.e507)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.d507)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.a508)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.c508)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.b508)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.e508)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.d508)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.b509)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.a509)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.e509)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.d509)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.c509)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.c504)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.b504)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.a504)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.c503)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.b503)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.a503)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.c502)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.b502)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.a502)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.c501)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.b501)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.a501)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox81)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox82)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox83)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox80)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox79)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox78)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox77)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox76)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox85)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox84)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox86)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox88)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox87)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox90)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox89)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox92)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox91)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox95)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox94)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox93)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox75)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox74)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox73)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox72)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox71)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox70)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox69)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox68)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox67)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox66)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox65)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox64)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1632,122 +1632,122 @@
         private System.Windows.Forms.TabPage tabPage4;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.FlowLayoutPanel ePanel;
-        private System.Windows.Forms.PictureBox icuA;
-        private System.Windows.Forms.PictureBox icuD;
-        private System.Windows.Forms.PictureBox icuC;
-        private System.Windows.Forms.PictureBox icuB;
-        private System.Windows.Forms.PictureBox icuF;
-        private System.Windows.Forms.PictureBox icuE;
-        private System.Windows.Forms.PictureBox oreB;
-        private System.Windows.Forms.PictureBox oreA;
-        private System.Windows.Forms.PictureBox e309;
-        private System.Windows.Forms.PictureBox d309;
-        private System.Windows.Forms.PictureBox c309;
-        private System.Windows.Forms.PictureBox cPed;
-        private System.Windows.Forms.PictureBox bPed;
-        private System.Windows.Forms.PictureBox aPed;
-        private System.Windows.Forms.PictureBox c304;
-        private System.Windows.Forms.PictureBox b304;
-        private System.Windows.Forms.PictureBox a304;
-        private System.Windows.Forms.PictureBox c303;
-        private System.Windows.Forms.PictureBox b303;
-        private System.Windows.Forms.PictureBox a303;
-        private System.Windows.Forms.PictureBox c302;
-        private System.Windows.Forms.PictureBox b302;
-        private System.Windows.Forms.PictureBox a302;
-        private System.Windows.Forms.PictureBox c301;
-        private System.Windows.Forms.PictureBox b301;
-        private System.Windows.Forms.PictureBox a301;
-        private System.Windows.Forms.PictureBox a308;
-        private System.Windows.Forms.PictureBox c308;
-        private System.Windows.Forms.PictureBox b308;
-        private System.Windows.Forms.PictureBox e308;
-        private System.Windows.Forms.PictureBox d308;
-        private System.Windows.Forms.PictureBox b309;
-        private System.Windows.Forms.PictureBox a309;
-        private System.Windows.Forms.PictureBox e307;
-        private System.Windows.Forms.PictureBox d307;
-        private System.Windows.Forms.PictureBox a305;
-        private System.Windows.Forms.PictureBox eFw2;
-        private System.Windows.Forms.PictureBox dFw2;
-        private System.Windows.Forms.PictureBox aFw2;
-        private System.Windows.Forms.PictureBox cFw2;
-        private System.Windows.Forms.PictureBox bFw2;
-        private System.Windows.Forms.PictureBox b306;
-        private System.Windows.Forms.PictureBox a306;
-        private System.Windows.Forms.PictureBox c305;
-        private System.Windows.Forms.PictureBox b305;
-        private System.Windows.Forms.PictureBox aFw1;
-        private System.Windows.Forms.PictureBox bFw1;
-        private System.Windows.Forms.PictureBox cFw1;
-        private System.Windows.Forms.PictureBox dFw1;
-        private System.Windows.Forms.PictureBox a307;
-        private System.Windows.Forms.PictureBox b307;
-        private System.Windows.Forms.PictureBox c307;
-        private System.Windows.Forms.PictureBox a407;
-        private System.Windows.Forms.PictureBox b407;
-        private System.Windows.Forms.PictureBox c407;
-        private System.Windows.Forms.PictureBox b406;
-        private System.Windows.Forms.PictureBox a406;
-        private System.Windows.Forms.PictureBox c405;
-        private System.Windows.Forms.PictureBox b405;
-        private System.Windows.Forms.PictureBox a405;
-        private System.Windows.Forms.PictureBox e407;
-        private System.Windows.Forms.PictureBox d407;
-        private System.Windows.Forms.PictureBox a408;
-        private System.Windows.Forms.PictureBox c408;
-        private System.Windows.Forms.PictureBox b408;
-        private System.Windows.Forms.PictureBox e408;
-        private System.Windows.Forms.PictureBox d408;
-        private System.Windows.Forms.PictureBox b409;
-        private System.Windows.Forms.PictureBox a409;
-        private System.Windows.Forms.PictureBox e409;
-        private System.Windows.Forms.PictureBox d409;
-        private System.Windows.Forms.PictureBox c409;
-        private System.Windows.Forms.PictureBox c404;
-        private System.Windows.Forms.PictureBox b404;
-        private System.Windows.Forms.PictureBox a404;
-        private System.Windows.Forms.PictureBox c403;
-        private System.Windows.Forms.PictureBox b403;
-        private System.Windows.Forms.PictureBox a403;
-        private System.Windows.Forms.PictureBox c402;
-        private System.Windows.Forms.PictureBox b402;
-        private System.Windows.Forms.PictureBox a402;
-        private System.Windows.Forms.PictureBox c401;
-        private System.Windows.Forms.PictureBox b401;
-        private System.Windows.Forms.PictureBox a401;
-        private System.Windows.Forms.PictureBox a507;
-        private System.Windows.Forms.PictureBox b507;
-        private System.Windows.Forms.PictureBox c507;
-        private System.Windows.Forms.PictureBox b506;
-        private System.Windows.Forms.PictureBox a506;
-        private System.Windows.Forms.PictureBox c505;
-        private System.Windows.Forms.PictureBox b505;
-        private System.Windows.Forms.PictureBox a505;
-        private System.Windows.Forms.PictureBox e507;
-        private System.Windows.Forms.PictureBox d507;
-        private System.Windows.Forms.PictureBox a508;
-        private System.Windows.Forms.PictureBox c508;
-        private System.Windows.Forms.PictureBox b508;
-        private System.Windows.Forms.PictureBox e508;
-        private System.Windows.Forms.PictureBox d508;
-        private System.Windows.Forms.PictureBox b509;
-        private System.Windows.Forms.PictureBox a509;
-        private System.Windows.Forms.PictureBox e509;
-        private System.Windows.Forms.PictureBox d509;
-        private System.Windows.Forms.PictureBox c509;
-        private System.Windows.Forms.PictureBox c504;
-        private System.Windows.Forms.PictureBox b504;
-        private System.Windows.Forms.PictureBox a504;
-        private System.Windows.Forms.PictureBox c503;
-        private System.Windows.Forms.PictureBox b503;
-        private System.Windows.Forms.PictureBox a503;
-        private System.Windows.Forms.PictureBox c502;
-        private System.Windows.Forms.PictureBox b502;
-        private System.Windows.Forms.PictureBox a502;
-        private System.Windows.Forms.PictureBox c501;
-        private System.Windows.Forms.PictureBox b501;
-        private System.Windows.Forms.PictureBox a501;
+        private System.Windows.Forms.PictureBox pbox105;
+        private System.Windows.Forms.PictureBox pbox108;
+        private System.Windows.Forms.PictureBox pbox107;
+        private System.Windows.Forms.PictureBox pbox106;
+        private System.Windows.Forms.PictureBox pbox110;
+        private System.Windows.Forms.PictureBox pbox109;
+        private System.Windows.Forms.PictureBox pbox112;
+        private System.Windows.Forms.PictureBox pbox111;
+        private System.Windows.Forms.PictureBox pbox31;
+        private System.Windows.Forms.PictureBox pbox30;
+        private System.Windows.Forms.PictureBox pbox29;
+        private System.Windows.Forms.PictureBox pbox115;
+        private System.Windows.Forms.PictureBox pbox114;
+        private System.Windows.Forms.PictureBox pbox113;
+        private System.Windows.Forms.PictureBox pbox11;
+        private System.Windows.Forms.PictureBox pbox10;
+        private System.Windows.Forms.PictureBox pbox9;
+        private System.Windows.Forms.PictureBox pbox8;
+        private System.Windows.Forms.PictureBox pbox7;
+        private System.Windows.Forms.PictureBox pbox6;
+        private System.Windows.Forms.PictureBox pbox5;
+        private System.Windows.Forms.PictureBox pbox4;
+        private System.Windows.Forms.PictureBox pbox3;
+        private System.Windows.Forms.PictureBox pbox2;
+        private System.Windows.Forms.PictureBox pbox1;
+        private System.Windows.Forms.PictureBox pbox0;
+        private System.Windows.Forms.PictureBox pbox22;
+        private System.Windows.Forms.PictureBox pbox24;
+        private System.Windows.Forms.PictureBox pbox23;
+        private System.Windows.Forms.PictureBox pbox26;
+        private System.Windows.Forms.PictureBox pbox25;
+        private System.Windows.Forms.PictureBox pbox28;
+        private System.Windows.Forms.PictureBox pbox27;
+        private System.Windows.Forms.PictureBox pbox21;
+        private System.Windows.Forms.PictureBox pbox20;
+        private System.Windows.Forms.PictureBox pbox12;
+        private System.Windows.Forms.PictureBox pbox104;
+        private System.Windows.Forms.PictureBox pbox103;
+        private System.Windows.Forms.PictureBox pbox100;
+        private System.Windows.Forms.PictureBox pbox102;
+        private System.Windows.Forms.PictureBox pbox101;
+        private System.Windows.Forms.PictureBox pbox16;
+        private System.Windows.Forms.PictureBox pbox15;
+        private System.Windows.Forms.PictureBox pbox14;
+        private System.Windows.Forms.PictureBox pbox13;
+        private System.Windows.Forms.PictureBox pbox96;
+        private System.Windows.Forms.PictureBox pbox97;
+        private System.Windows.Forms.PictureBox pbox98;
+        private System.Windows.Forms.PictureBox pbox99;
+        private System.Windows.Forms.PictureBox pbox17;
+        private System.Windows.Forms.PictureBox pbox18;
+        private System.Windows.Forms.PictureBox pbox19;
+        private System.Windows.Forms.PictureBox pbox49;
+        private System.Windows.Forms.PictureBox pbox50;
+        private System.Windows.Forms.PictureBox pbox51;
+        private System.Windows.Forms.PictureBox pbox48;
+        private System.Windows.Forms.PictureBox pbox47;
+        private System.Windows.Forms.PictureBox pbox46;
+        private System.Windows.Forms.PictureBox pbox45;
+        private System.Windows.Forms.PictureBox pbox44;
+        private System.Windows.Forms.PictureBox pbox53;
+        private System.Windows.Forms.PictureBox pbox52;
+        private System.Windows.Forms.PictureBox pbox54;
+        private System.Windows.Forms.PictureBox pbox56;
+        private System.Windows.Forms.PictureBox pbox55;
+        private System.Windows.Forms.PictureBox pbox58;
+        private System.Windows.Forms.PictureBox pbox57;
+        private System.Windows.Forms.PictureBox pbox60;
+        private System.Windows.Forms.PictureBox pbox59;
+        private System.Windows.Forms.PictureBox pbox63;
+        private System.Windows.Forms.PictureBox pbox62;
+        private System.Windows.Forms.PictureBox pbox61;
+        private System.Windows.Forms.PictureBox pbox43;
+        private System.Windows.Forms.PictureBox pbox42;
+        private System.Windows.Forms.PictureBox pbox41;
+        private System.Windows.Forms.PictureBox pbox40;
+        private System.Windows.Forms.PictureBox pbox39;
+        private System.Windows.Forms.PictureBox pbox38;
+        private System.Windows.Forms.PictureBox pbox37;
+        private System.Windows.Forms.PictureBox pbox36;
+        private System.Windows.Forms.PictureBox pbox35;
+        private System.Windows.Forms.PictureBox pbox34;
+        private System.Windows.Forms.PictureBox pbox33;
+        private System.Windows.Forms.PictureBox pbox32;
+        private System.Windows.Forms.PictureBox pbox81;
+        private System.Windows.Forms.PictureBox pbox82;
+        private System.Windows.Forms.PictureBox pbox83;
+        private System.Windows.Forms.PictureBox pbox80;
+        private System.Windows.Forms.PictureBox pbox79;
+        private System.Windows.Forms.PictureBox pbox78;
+        private System.Windows.Forms.PictureBox pbox77;
+        private System.Windows.Forms.PictureBox pbox76;
+        private System.Windows.Forms.PictureBox pbox85;
+        private System.Windows.Forms.PictureBox pbox84;
+        private System.Windows.Forms.PictureBox pbox86;
+        private System.Windows.Forms.PictureBox pbox88;
+        private System.Windows.Forms.PictureBox pbox87;
+        private System.Windows.Forms.PictureBox pbox90;
+        private System.Windows.Forms.PictureBox pbox89;
+        private System.Windows.Forms.PictureBox pbox92;
+        private System.Windows.Forms.PictureBox pbox91;
+        private System.Windows.Forms.PictureBox pbox95;
+        private System.Windows.Forms.PictureBox pbox94;
+        private System.Windows.Forms.PictureBox pbox93;
+        private System.Windows.Forms.PictureBox pbox75;
+        private System.Windows.Forms.PictureBox pbox74;
+        private System.Windows.Forms.PictureBox pbox73;
+        private System.Windows.Forms.PictureBox pbox72;
+        private System.Windows.Forms.PictureBox pbox71;
+        private System.Windows.Forms.PictureBox pbox70;
+        private System.Windows.Forms.PictureBox pbox69;
+        private System.Windows.Forms.PictureBox pbox68;
+        private System.Windows.Forms.PictureBox pbox67;
+        private System.Windows.Forms.PictureBox pbox66;
+        private System.Windows.Forms.PictureBox pbox65;
+        private System.Windows.Forms.PictureBox pbox64;
 
 
     }

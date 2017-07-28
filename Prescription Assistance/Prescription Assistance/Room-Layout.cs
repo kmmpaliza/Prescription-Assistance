@@ -16,26 +16,27 @@ namespace Prescription_Assistance
     public partial class Room_Layout : UserControl
     {
         private System.Threading.Timer timer;
+        private System.Windows.Forms.Timer[] btimer = new System.Windows.Forms.Timer[116];
+
         Class_Alert ca = new Class_Alert();
         Class_Patient cp = new Class_Patient();
         Class_Vitals cv = new Class_Vitals();
         Class_Rooms cr = new Class_Rooms();
         Class_PAlert cpa = new Class_PAlert();
         Class_Prescription cpr = new Class_Prescription();
+
         DataSet ds = new DataSet();
         DataSet ds2 = new DataSet();
         DataSet ds3 = new DataSet();
         DataSet ds4 = new DataSet();
-        string bed, id;
+        DataSet ds5 = new DataSet();
+
+        string bed, id;        
 
         public Room_Layout()
         {
             InitializeComponent();
-        }
-
-        private void Room_Layout_Load(object sender, EventArgs e)
-        {
-        }   
+        }  
 
         #region Vital Alerts
         public void runVitals() //every hour
@@ -60,6 +61,7 @@ namespace Prescription_Assistance
                     cv.Bed_id = ds2.Tables[0].Rows[i]["Bed_ID"].ToString();
                     string id = cv.insertVital();
 
+                    //setBedtoBlink(cv.Bed_id.ToString());
                     showAlertforVitals(id);
                 }
             }
@@ -74,10 +76,10 @@ namespace Prescription_Assistance
                 });
                 return;
             }
-
+            
             Alert_Vitals a = new Alert_Vitals(id, this);
             ePanel.Controls.Add(a);
-            a.BringToFront();                      
+            a.BringToFront();                        
         }
         #endregion
 
@@ -114,6 +116,7 @@ namespace Prescription_Assistance
                 return;
             }
 
+            //setBedtoBlink(bed);
             Alert_Assistance a = new Alert_Assistance(alertid, bed, assistance, status);
             ePanel.Controls.Add(a);
         }
@@ -253,7 +256,7 @@ namespace Prescription_Assistance
                 cpa.Prescription_id = prescription_id;
                 cpa.Status = "Undone";
                 cpa.Time = "";
-                id = cpa.insertPAlert();
+                id = cpa.insertPAlert();              
                 showAlertforPrescription(id, bed_id);
             }, null, startTimeSpan, periodTimeSpan);
         }
@@ -270,6 +273,7 @@ namespace Prescription_Assistance
                 cpa.Status = "Undone";
                 cpa.Time = "";
                 id = cpa.insertPAlert();
+
                 showAlertforPrescription(id, bed_id);
             }, null, startTimeSpan, periodTimeSpan);
         }
@@ -291,6 +295,7 @@ namespace Prescription_Assistance
             {
                 if (DateTime.Now.Hour.ToString() == ds4.Tables[0].Rows[i]["Time"].ToString())
                 {
+                    bed = ds4.Tables[0].Rows[i][2].ToString();
                     showAlertforPrescription(ds4.Tables[0].Rows[i][1].ToString(), ds4.Tables[0].Rows[i][2].ToString());
                 }
             }
@@ -306,13 +311,46 @@ namespace Prescription_Assistance
                 return;
             }
 
+            //setBedtoBlink(bed);
             Alert_Medicine a = new Alert_Medicine(palert_id);
             ePanel.Controls.Add(a);
             a.BringToFront();          
         }
         #endregion
 
-        public void runTime()
+
+        public void setBedtoBlink(string bed_id)
+        { 
+            ds5 = cr.viewAllBeds();
+            if (ds5.Tables[0].Rows.Count > 0)
+            {
+                for (int i = 0; i < ds5.Tables[0].Rows.Count; i++)
+                {
+                    if (ds5.Tables[0].Rows[i][0].ToString() == bed_id)
+                    {
+                        btimer[i] = new System.Windows.Forms.Timer();
+                        btimer[i].Start();
+                        btimer[i].Enabled = true;
+                        btimer[i].Interval = 500;
+                        btimer[i].Tag = i;
+                        btimer[i].Tick += new EventHandler(Room_Layout_Tick);
+                        bed = "" + i;
+                    }
+                }                
+            }            
+        }
+
+        private void Room_Layout_Tick(object sender, EventArgs e)
+        {
+            if (this.Controls.Find("pbox" + bed, true)[0].BackColor == Color.Transparent)
+                this.Controls.Find("pbox" + bed, true)[0].BackColor = Color.FromArgb(153, 255, 255, 0);
+            else
+            {
+                this.Controls.Find("pbox" + bed, true)[0].BackColor = Color.Transparent;
+            }
+        }
+
+        /**public void runTime()
         {
             DateTime requiredTime = DateTime.Today.AddHours(21).AddMinutes(38);
             
@@ -326,7 +364,7 @@ namespace Prescription_Assistance
                 checkPrescription();
 
             }, null, (int)(requiredTime - DateTime.Now).TotalMilliseconds, Timeout.Infinite);
-        }    
+        }    */
 
         public void gotoInsertMedicalRecords(string id, string vid)
         {
@@ -334,7 +372,7 @@ namespace Prescription_Assistance
             parent.changetoInsertMedicalRecords(id, vid);
         }
 
-        public void setBedLocation(string bed)
+        private void timer1_Tick(object sender, EventArgs e)
         {
             switch (bed)
             {
@@ -378,7 +416,7 @@ namespace Prescription_Assistance
                     break;
                 case "PED-C":
                     break;
-                //2nd floor
+                //3rd floor
                 case "301-A":
                     break;
                 case "301-B":
@@ -443,7 +481,7 @@ namespace Prescription_Assistance
                     break;
                 case "309-E":
                     break;
-                //3rd Floor
+                //4th Floor
                 case "401-A":
                     break;
                 case "401-B":
@@ -508,7 +546,7 @@ namespace Prescription_Assistance
                     break;
                 case "409-E":
                     break;
-                //4th
+                //5th
                 case "501-A":
                     break;
                 case "501-B":
@@ -576,11 +614,9 @@ namespace Prescription_Assistance
             }
         }
 
-
-        private void icuA_Click(object sender, EventArgs e)
+        private void Room_Layout_Load(object sender, EventArgs e)
         {
-            
-        }
 
+        }        
     }
 }

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using ClassLibrary;
+using System.IO;
 
 namespace Prescription_Assistance
 {
@@ -15,8 +16,12 @@ namespace Prescription_Assistance
         string id;
         Class_Patient cp = new Class_Patient();
         Class_MedRec cm = new Class_MedRec();
+        Class_Prescription cpa = new Class_Prescription();
+        Class_Test ct = new Class_Test();
         DataSet ds = new DataSet();
         DataSet ds2 = new DataSet();
+        DataSet ds3 = new DataSet();
+        DataSet ds4 = new DataSet();
 
         public Update_InPatientDetailsDoctor(string id)
         {
@@ -28,8 +33,12 @@ namespace Prescription_Assistance
         {
             cp.Patient_id = id;
             cm.Patient_id = id;
+            cpa.Patient_id = id;
+
             ds = cp.viewPatientDetails();
             ds2 = cm.viewMedRecDetails();
+            ds3 = cpa.viewPescriptionDetails();
+            ds4 = ct.selectTest(id);
 
             txtLast.Text = ds.Tables[0].Rows[0][2].ToString();
             txtFirst.Text = ds.Tables[0].Rows[0][3].ToString();
@@ -43,6 +52,19 @@ namespace Prescription_Assistance
             txtMH.Text = ds.Tables[0].Rows[0][11].ToString();
             txtMF.Text = ds.Tables[0].Rows[0][12].ToString();
             txtSI.Text = ds.Tables[0].Rows[0][13].ToString();
+
+            //byte[] data = (byte[])(ds.Tables[0].Rows[0][14]);
+            //MemoryStream mem = new MemoryStream(data);
+            //pBoxPhoto.Image = Image.FromStream(mem);
+
+            dgvMR.ReadOnly = true;
+            dgvMR.DataSource = ds2.Tables[0];
+
+            dgvTR.ReadOnly = true;
+            dgvTR.DataSource = ds4.Tables[0];
+
+            dgvP.ReadOnly = true;
+            dgvP.DataSource = ds3.Tables[0];
 
             button2.Visible = false;
             button1.Visible = false;

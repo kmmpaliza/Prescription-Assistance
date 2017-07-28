@@ -17,6 +17,13 @@ namespace ClassLibrary
         #region Variables
         private string last_name, first_name, gender, age, birthday, address, contact, patient_id,
         weight, height, medical_history, medical_findings, special_instructions;
+        private byte[] imgfile;
+
+        public byte[] Imgfile
+        {
+            get { return imgfile; }
+            set { imgfile = value; }
+        }
 
         public string Medical_findings
         {
@@ -152,6 +159,7 @@ namespace ClassLibrary
             cmd.Parameters.Add("@Medical_History", SqlDbType.VarChar).Value = medical_history;
             cmd.Parameters.Add("@Medical_Findings", SqlDbType.VarChar).Value = medical_findings;
             cmd.Parameters.Add("@Special_Instructions", SqlDbType.VarChar).Value = special_instructions;
+            cmd.Parameters.Add("@Photo", SqlDbType.Image).Value = imgfile;
             cmd.ExecuteNonQuery();
             conn.Close();
         }

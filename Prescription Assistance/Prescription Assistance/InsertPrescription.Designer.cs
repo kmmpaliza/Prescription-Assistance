@@ -93,7 +93,6 @@
             // 
             // cboInterval
             // 
-            this.cboInterval.Enabled = false;
             this.cboInterval.Font = new System.Drawing.Font("Open Sans", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboInterval.FormattingEnabled = true;
             this.cboInterval.Items.AddRange(new object[] {
@@ -126,7 +125,6 @@
             // 
             // cboForm
             // 
-            this.cboForm.Enabled = false;
             this.cboForm.Font = new System.Drawing.Font("Open Sans", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboForm.FormattingEnabled = true;
             this.cboForm.Items.AddRange(new object[] {
@@ -157,7 +155,6 @@
             // 
             // cboRoute
             // 
-            this.cboRoute.Enabled = false;
             this.cboRoute.Font = new System.Drawing.Font("Open Sans", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboRoute.FormattingEnabled = true;
             this.cboRoute.Items.AddRange(new object[] {
@@ -186,7 +183,6 @@
             // 
             // txtDosage
             // 
-            this.txtDosage.Enabled = false;
             this.txtDosage.Font = new System.Drawing.Font("Open Sans", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDosage.Location = new System.Drawing.Point(700, 347);
             this.txtDosage.Name = "txtDosage";
@@ -205,7 +201,6 @@
             // 
             // txtNote
             // 
-            this.txtNote.Enabled = false;
             this.txtNote.Font = new System.Drawing.Font("Open Sans", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNote.Location = new System.Drawing.Point(682, 431);
             this.txtNote.Name = "txtNote";
@@ -224,7 +219,6 @@
             // 
             // txtMedName
             // 
-            this.txtMedName.Enabled = false;
             this.txtMedName.Font = new System.Drawing.Font("Open Sans", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMedName.Location = new System.Drawing.Point(398, 347);
             this.txtMedName.Name = "txtMedName";

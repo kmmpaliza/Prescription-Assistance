@@ -71,10 +71,14 @@
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.btnBrowse = new System.Windows.Forms.Button();
+            this.label14 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pBoxPhoto)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvP)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTR)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMR)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // button3
@@ -264,7 +268,7 @@
             // 
             this.dateTimePicker1.CalendarForeColor = System.Drawing.Color.Black;
             this.dateTimePicker1.CalendarMonthBackground = System.Drawing.Color.White;
-            this.dateTimePicker1.CalendarTitleBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(184)))), ((int)(((byte)(182)))));
+            this.dateTimePicker1.CalendarTitleBackColor = System.Drawing.Color.Green;
             this.dateTimePicker1.CalendarTitleForeColor = System.Drawing.Color.Black;
             this.dateTimePicker1.Enabled = false;
             this.dateTimePicker1.Font = new System.Drawing.Font("Open Sans", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -273,7 +277,7 @@
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(187, 27);
             this.dateTimePicker1.TabIndex = 4;
-            this.dateTimePicker1.Value = new System.DateTime(2017, 6, 28, 0, 46, 43, 0);
+            this.dateTimePicker1.Value = new System.DateTime(2017, 6, 28, 0, 0, 0, 0);
             // 
             // txtContact
             // 
@@ -406,7 +410,8 @@
             // 
             // pBoxPhoto
             // 
-            this.pBoxPhoto.Location = new System.Drawing.Point(111, 112);
+            this.pBoxPhoto.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pBoxPhoto.Location = new System.Drawing.Point(24, 112);
             this.pBoxPhoto.Name = "pBoxPhoto";
             this.pBoxPhoto.Size = new System.Drawing.Size(100, 100);
             this.pBoxPhoto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -560,11 +565,47 @@
             this.label13.TabIndex = 136;
             this.label13.Text = "Prescriptions:";
             // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.btnBrowse);
+            this.panel1.Controls.Add(this.label14);
+            this.panel1.Location = new System.Drawing.Point(130, 112);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(170, 100);
+            this.panel1.TabIndex = 147;
+            // 
+            // btnBrowse
+            // 
+            this.btnBrowse.BackColor = System.Drawing.Color.LightGray;
+            this.btnBrowse.Enabled = false;
+            this.btnBrowse.FlatAppearance.BorderColor = System.Drawing.SystemColors.ActiveBorder;
+            this.btnBrowse.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBrowse.Font = new System.Drawing.Font("Open Sans", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBrowse.ForeColor = System.Drawing.Color.Green;
+            this.btnBrowse.Location = new System.Drawing.Point(16, 44);
+            this.btnBrowse.Margin = new System.Windows.Forms.Padding(16);
+            this.btnBrowse.Name = "btnBrowse";
+            this.btnBrowse.Size = new System.Drawing.Size(138, 43);
+            this.btnBrowse.TabIndex = 144;
+            this.btnBrowse.Text = "Browse...";
+            this.btnBrowse.UseVisualStyleBackColor = false;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Open Sans", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(12, 17);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(117, 20);
+            this.label14.TabIndex = 143;
+            this.label14.Text = "Change photo:";
+            // 
             // Update_InPatientDetailsDoctor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Transparent;
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.dgvTR);
             this.Controls.Add(this.dgvMR);
             this.Controls.Add(this.label11);
@@ -610,6 +651,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvP)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTR)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMR)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -654,6 +697,9 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button btnBrowse;
+        private System.Windows.Forms.Label label14;
 
     }
 }

@@ -53,9 +53,16 @@ namespace Prescription_Assistance
             txtMF.Text = ds.Tables[0].Rows[0][12].ToString();
             txtSI.Text = ds.Tables[0].Rows[0][13].ToString();
 
-            byte[] data = (byte[])(ds.Tables[0].Rows[0][14]);
-            MemoryStream mem = new MemoryStream(data);
-            pBoxPhoto.Image = Image.FromStream(mem);
+            if (ds.Tables[0].Rows[0][14] != DBNull.Value)
+            {
+                byte[] data = (byte[])(ds.Tables[0].Rows[0][14]);
+                MemoryStream mem = new MemoryStream(data);
+                pBoxPhoto.Image = Image.FromStream(mem);
+            }
+            else
+            {
+                pBoxPhoto.Image = Properties.Resources.blank;
+            }   
 
             dgvMR.ReadOnly = true;
             dgvMR.DataSource = ds2.Tables[0];
@@ -104,8 +111,9 @@ namespace Prescription_Assistance
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            Doctor_Dashboard parent = (Doctor_Dashboard)this.ParentForm;
-            parent.changetoViewPatient();
+            //Doctor_Dashboard parent = (Doctor_Dashboard)this.ParentForm;
+            //parent.changetoViewPatient();
+            load();
         }
     }
 }

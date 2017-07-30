@@ -180,6 +180,7 @@ namespace ClassLibrary
             cmd.Parameters.Add("@Weight", SqlDbType.VarChar).Value = weight;
             cmd.Parameters.Add("@Height", SqlDbType.VarChar).Value = height;
             cmd.Parameters.Add("@Medical_History", SqlDbType.VarChar).Value = medical_history;
+            cmd.Parameters.Add("@Photo", SqlDbType.Image).Value = imgfile;
             cmd.ExecuteNonQuery();
             conn.Close();
         }

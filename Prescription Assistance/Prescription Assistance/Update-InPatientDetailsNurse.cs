@@ -22,6 +22,8 @@ namespace Prescription_Assistance
         DataSet ds2 = new DataSet();
         DataSet ds3 = new DataSet();
         DataSet ds4 = new DataSet();
+        string filename;
+        byte[] data = null;
 
         public Update_InPatientDetailsNurse(string id)
         {
@@ -53,9 +55,16 @@ namespace Prescription_Assistance
             txtMF.Text = ds.Tables[0].Rows[0][12].ToString();
             txtSI.Text = ds.Tables[0].Rows[0][13].ToString();
 
-            //byte[] data = (byte[])(ds.Tables[0].Rows[0][14]);
-            //MemoryStream mem = new MemoryStream(data);
-           // pBoxPhoto.Image = Image.FromStream(mem);
+            if (ds.Tables[0].Rows[0][14] != DBNull.Value) {
+                byte[] data = (byte[])(ds.Tables[0].Rows[0][14]);
+                MemoryStream mem = new MemoryStream(data);
+                pBoxPhoto.Image = Image.FromStream(mem);
+            }
+            else {
+                pBoxPhoto.Image = Properties.Resources.blank;
+                ImageConverter ic = new ImageConverter();
+                data = (byte[])ic.ConvertTo(pBoxPhoto.Image, typeof(byte[]));
+            }
 
             dgvMR.ReadOnly = true;
             dgvMR.DataSource = ds2.Tables[0];
@@ -81,6 +90,7 @@ namespace Prescription_Assistance
             txtMH.Enabled = false;
 
             button3.Enabled = true;
+            btnBrowse.Enabled = false;
         }
 
         private void Update_InPatientDetailsNurse_Load(object sender, EventArgs e)
@@ -104,6 +114,7 @@ namespace Prescription_Assistance
             cp.Weight = txtWeight.Text;
             cp.Height = txtHeight.Text;
             cp.Medical_history = txtMH.Text;
+            cp.Imgfile = data;
 
             cp.updatePatient();
 
@@ -115,12 +126,14 @@ namespace Prescription_Assistance
         private void button1_Click(object sender, EventArgs e)
         {
             //cancel
-            Nurse_Dashboard parent = (Nurse_Dashboard)this.ParentForm;
-            parent.changetoViewPatient();
+            //Nurse_Dashboard parent = (Nurse_Dashboard)this.ParentForm;
+            //parent.changetoViewPatient();
+            load();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
+            btnBrowse.Enabled = true;
             txtLast.Enabled = true;
             txtFirst.Enabled = true;
             cboGender.Enabled = true;
@@ -140,6 +153,30 @@ namespace Prescription_Assistance
         private void pBoxPhoto_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnBrowse_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog Openpdf = new OpenFileDialog();
+            Openpdf.Filter = "JPEG Files (*.jpeg)|*.jpeg|JPG Files (*.jpg)|*.jpg|PNG Files (*.png)|*.png|GIF Files (*.gif)|*.gif|All files|*.*;";
+
+            if (Openpdf.ShowDialog() == DialogResult.OK)
+            {
+                filename = Openpdf.FileName;
+
+                FileInfo finfo = new FileInfo(Openpdf.FileName);
+
+                FileStream fs = new FileStream(filename, FileMode.Open, FileAccess.Read, FileShare.Read);
+                BinaryReader br = new BinaryReader(fs);
+
+                data = br.ReadBytes(Convert.ToInt32(finfo.Length));
+                MemoryStream mem = new MemoryStream(data);
+                pBoxPhoto.Image = Image.FromStream(mem);
+              
+                br.Close();
+                fs.Close();
+                fs.Dispose();
+            }
         }
     }
 }

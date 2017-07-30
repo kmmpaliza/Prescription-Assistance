@@ -76,23 +76,26 @@ namespace Prescription_Assistance
             {
                 txtMedFin.Enabled = true;
                 txtSpec.Enabled = true;
+
             }
             else {
                 txtMedFin.Enabled = false;
                 txtSpec.Enabled = false;
             }
+
+            pBoxPhoto.Image = Properties.Resources.blank;
+            ImageConverter ic = new ImageConverter();
+            data = (byte[])ic.ConvertTo(pBoxPhoto.Image, typeof(byte[]));
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void btnBrowse_Click(object sender, EventArgs e)
         {
-            //photo
             OpenFileDialog Openpdf = new OpenFileDialog();
             Openpdf.Filter = "JPEG Files (*.jpeg)|*.jpeg|JPG Files (*.jpg)|*.jpg|PNG Files (*.png)|*.png|GIF Files (*.gif)|*.gif|All files|*.*;";
 
             if (Openpdf.ShowDialog() == DialogResult.OK)
             {
                 filename = Openpdf.FileName;
-                txtFile.Text = filename;
 
                 FileInfo finfo = new FileInfo(Openpdf.FileName);
 
@@ -100,6 +103,8 @@ namespace Prescription_Assistance
                 BinaryReader br = new BinaryReader(fs);
 
                 data = br.ReadBytes(Convert.ToInt32(finfo.Length));
+                MemoryStream mem = new MemoryStream(data);
+                pBoxPhoto.Image = Image.FromStream(mem);
                 br.Close();
                 fs.Close();
                 fs.Dispose();

@@ -623,6 +623,7 @@ namespace Prescription_Assistance
         {
             Alert_Details ad = new Alert_Details("hello", "bed", "Prescription");
             ad.ShowDialog();
-        }        
+        }
+   
     }
 }

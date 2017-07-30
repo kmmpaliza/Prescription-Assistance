@@ -6,4 +6,3 @@ C:\Users\Katrina\Documents\Freelance\Topic2\Prescription Assistance\ClassLibrary
 C:\Users\Katrina\Documents\Freelance\Topic2\Prescription Assistance\ClassLibrary\bin\Debug\ClassLibrary.pdb
 C:\Users\Katrina\Documents\Freelance\Topic2\Prescription Assistance\ClassLibrary\obj\Debug\ClassLibrary.dll
 C:\Users\Katrina\Documents\Freelance\Topic2\Prescription Assistance\ClassLibrary\obj\Debug\ClassLibrary.pdb
-C:\Users\Katrina\Documents\Freelance\Topic2\Prescription Assistance\ClassLibrary\obj\Debug\ClassLibrary.csprojResolveAssemblyReference.cache

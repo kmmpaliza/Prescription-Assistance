@@ -34,6 +34,7 @@ namespace Prescription_Assistance
             abc.runTimeforPrescription();
             abc.runPrescription();
             pnlFrame.Controls.Add(abc);
+            abc.Dock = DockStyle.Fill;
         }
 
         private void button1_Click(object sender, EventArgs e)

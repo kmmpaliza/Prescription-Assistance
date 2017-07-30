@@ -149,6 +149,7 @@
             this.pbox66 = new System.Windows.Forms.PictureBox();
             this.pbox65 = new System.Windows.Forms.PictureBox();
             this.pbox64 = new System.Windows.Forms.PictureBox();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.ePanel = new System.Windows.Forms.FlowLayoutPanel();
             this.tabControl1.SuspendLayout();
@@ -272,19 +273,22 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbox66)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbox65)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbox64)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
             // 
+            this.tabControl1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)));
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Controls.Add(this.tabPage4);
             this.tabControl1.Font = new System.Drawing.Font("Open Sans", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabControl1.Location = new System.Drawing.Point(19, 19);
+            this.tabControl1.Location = new System.Drawing.Point(16, 16);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(839, 597);
+            this.tabControl1.Size = new System.Drawing.Size(839, 603);
             this.tabControl1.TabIndex = 4;
             // 
             // tabPage1
@@ -302,7 +306,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 29);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(831, 564);
+            this.tabPage1.Size = new System.Drawing.Size(831, 570);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "2nd Floor";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -431,7 +435,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 29);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(831, 564);
+            this.tabPage2.Size = new System.Drawing.Size(831, 570);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "3rd Floor";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -859,7 +863,7 @@
             this.tabPage3.Location = new System.Drawing.Point(4, 29);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(831, 564);
+            this.tabPage3.Size = new System.Drawing.Size(831, 570);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "4th Floor";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -1183,7 +1187,7 @@
             this.tabPage4.Location = new System.Drawing.Point(4, 29);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(831, 564);
+            this.tabPage4.Size = new System.Drawing.Size(831, 570);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "5th Floor";
             this.tabPage4.UseVisualStyleBackColor = true;
@@ -1468,31 +1472,41 @@
             this.pbox64.TabIndex = 48;
             this.pbox64.TabStop = false;
             // 
+            // panel1
+            // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.ePanel);
+            this.panel1.Location = new System.Drawing.Point(861, 16);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(273, 603);
+            this.panel1.TabIndex = 8;
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Open Sans", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(860, 25);
+            this.label1.Location = new System.Drawing.Point(3, 10);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(54, 20);
-            this.label1.TabIndex = 1;
+            this.label1.TabIndex = 2;
             this.label1.Text = "Alerts";
             // 
             // ePanel
             // 
             this.ePanel.AutoScroll = true;
             this.ePanel.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.ePanel.Location = new System.Drawing.Point(864, 48);
+            this.ePanel.Location = new System.Drawing.Point(3, 33);
             this.ePanel.Name = "ePanel";
-            this.ePanel.Size = new System.Drawing.Size(267, 564);
-            this.ePanel.TabIndex = 1;
+            this.ePanel.Size = new System.Drawing.Size(267, 567);
+            this.ePanel.TabIndex = 3;
             // 
             // Room_Layout
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.ePanel);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.tabControl1);
             this.Name = "Room_Layout";
             this.Padding = new System.Windows.Forms.Padding(16);
@@ -1619,8 +1633,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbox66)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbox65)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbox64)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -1631,8 +1646,6 @@
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.TabPage tabPage4;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.FlowLayoutPanel ePanel;
         private System.Windows.Forms.PictureBox pbox105;
         private System.Windows.Forms.PictureBox pbox108;
         private System.Windows.Forms.PictureBox pbox107;
@@ -1749,6 +1762,9 @@
         private System.Windows.Forms.PictureBox pbox66;
         private System.Windows.Forms.PictureBox pbox65;
         private System.Windows.Forms.PictureBox pbox64;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.FlowLayoutPanel ePanel;
 
 
     }

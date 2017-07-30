@@ -53,9 +53,9 @@ namespace Prescription_Assistance
             txtMF.Text = ds.Tables[0].Rows[0][12].ToString();
             txtSI.Text = ds.Tables[0].Rows[0][13].ToString();
 
-            //byte[] data = (byte[])(ds.Tables[0].Rows[0][14]);
-            //MemoryStream mem = new MemoryStream(data);
-            //pBoxPhoto.Image = Image.FromStream(mem);
+            byte[] data = (byte[])(ds.Tables[0].Rows[0][14]);
+            MemoryStream mem = new MemoryStream(data);
+            pBoxPhoto.Image = Image.FromStream(mem);
 
             dgvMR.ReadOnly = true;
             dgvMR.DataSource = ds2.Tables[0];

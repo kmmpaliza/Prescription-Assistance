@@ -14,88 +14,102 @@ namespace Prescription_Assistance
     {
         Class_Rooms cr = new Class_Rooms();
         DataSet ds = new DataSet();
-        Nurse_Dashboard n;
+        int bed;
 
-        public _4thFloor(Nurse_Dashboard n)
+        public _4thFloor()
         {
             InitializeComponent();
-            this.n = n;
         }
 
         private void showDialog(string bed)
         {
-            AssignRoomPatient ar = new AssignRoomPatient(bed, n, "4th Floor");
+            AssignRoomPatient ar = new AssignRoomPatient(bed);
             ar.ShowDialog();
-        }
-
-        private void button4_Click_1(object sender, EventArgs e)
-        {
-            showDialog("400-A");
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-            showDialog("400-B");
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            showDialog("400-C");
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            showDialog("400-D");
-        }
-
-        private void button5_Click(object sender, EventArgs e)
-        {
-            showDialog("400-E");
-        }
-
-        private void button6_Click(object sender, EventArgs e)
-        {
-            showDialog("400-F");
-        }
-
-        private void button7_Click(object sender, EventArgs e)
-        {
-            showDialog("400-G");
-        }
-
-        private void button8_Click(object sender, EventArgs e)
-        {
-            showDialog("400-H");
-        }
-
-        private void button9_Click(object sender, EventArgs e)
-        {
-            showDialog("401");
-        }
-
-        private void button10_Click(object sender, EventArgs e)
-        {
-            showDialog("402");
-        }
-
-        private void button11_Click(object sender, EventArgs e)
-        {
-            showDialog("403");
-        }
-
-        private void button12_Click(object sender, EventArgs e)
-        {
-            showDialog("404");
         }
 
         public void refresh()
         {
-            
+            for (int x = 32; x <= 63; x++)
+            {
+                this.Controls.Find("pbox" + x, true)[0].MouseHover += pBox_Hover;
+                this.Controls.Find("pbox" + x, true)[0].MouseLeave += pBox_Leave;
+                bed = x;
+            }
         }
 
         private void _4thFloor_Load(object sender, EventArgs e)
         {
+            if (Form1.usertype.Equals("Doctor"))
+            {
+                for (int x = 32; x <= 63; x++)
+                {
+                    this.Controls.Find("pbox" + x, true)[0].Click -= pBox_Click;
+                    bed = x;
+                }
+            }
+            else
+            {
+                for (int x = 32; x <= 63; x++)
+                {
+                    this.Controls.Find("pbox" + x, true)[0].Click += pBox_Click;
+                    bed = x;
+                }
+            }
+
             refresh();
         }
+
+        private void pBox_Click(object sender, EventArgs e)
+        {
+            PictureBox clickedpBox = sender as PictureBox;
+
+            for (int x = 32; x <= 63; x++)
+            {
+                string pbox = "pbox" + x;
+                if (clickedpBox.Name == pbox)
+                {
+                    ds = cr.viewAllBeds();
+                    showDialog(ds.Tables[0].Rows[x][0].ToString());
+                }
+                else
+                {
+                }
+            }
+        }
+
+        private void pBox_Hover(object sender, EventArgs e)
+        {
+            PictureBox clickedpBox = sender as PictureBox;
+
+            for (int x = 32; x <= 63; x++)
+            {
+                string pbox = "pbox" + x;
+                if (clickedpBox.Name == pbox)
+                {
+                    panel1.Visible = true;
+
+                    DataSet ds2 = new DataSet();
+                    ds = cr.viewAllBeds();
+                    cr.Bed_id = ds.Tables[0].Rows[x][0].ToString();
+                    ds2 = cr.viewBedandPatient();
+                    label3.Text = cr.Bed_id.ToString();
+
+                    if (ds2.Tables[1].Rows[0][2].ToString() == "Occupied")
+                    {
+                        label2.Text = ds2.Tables[1].Rows[0][3].ToString();
+                    }
+                    else
+                    {
+                        label2.Text = "No Patient";
+                    }
+                }
+            }
+        }
+
+        private void pBox_Leave(object sender, EventArgs e)
+        {
+            panel1.Visible = false;
+        }
+
     }
 }

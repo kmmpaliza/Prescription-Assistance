@@ -64,6 +64,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Alert-Details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Alert-Details.Designer.cs">
+      <DependentUpon>Alert-Details.cs</DependentUpon>
+    </Compile>
     <Compile Include="Floors\2ndFloor.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -208,12 +214,6 @@
     <Compile Include="Main Forms\Room-Type.Designer.cs">
       <DependentUpon>Room-Type.cs</DependentUpon>
     </Compile>
-    <Compile Include="Show-PatientinBed.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Show-PatientinBed.Designer.cs">
-      <DependentUpon>Show-PatientinBed.cs</DependentUpon>
-    </Compile>
     <Compile Include="Update-InPatientDetailsDoctor.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -262,6 +262,9 @@
     <Compile Include="Main Forms\Ward-Layout.Designer.cs">
       <DependentUpon>Ward-Layout.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Alert-Details.resx">
+      <DependentUpon>Alert-Details.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Floors\2ndFloor.resx">
       <DependentUpon>2ndFloor.cs</DependentUpon>
     </EmbeddedResource>
@@ -337,9 +340,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Main Forms\Room-Type.resx">
       <DependentUpon>Room-Type.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Show-PatientinBed.resx">
-      <DependentUpon>Show-PatientinBed.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Update-InPatientDetailsDoctor.resx">
       <DependentUpon>Update-InPatientDetailsDoctor.cs</DependentUpon>

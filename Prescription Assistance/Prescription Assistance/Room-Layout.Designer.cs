@@ -324,6 +324,7 @@
             this.pbox111.Size = new System.Drawing.Size(28, 43);
             this.pbox111.TabIndex = 6;
             this.pbox111.TabStop = false;
+            this.pbox111.Click += new System.EventHandler(this.pbox111_Click);
             // 
             // pbox110
             // 

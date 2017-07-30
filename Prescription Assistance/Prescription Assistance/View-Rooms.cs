@@ -43,7 +43,7 @@ namespace Prescription_Assistance
         {
             if (e.ColumnIndex == 0)
             {
-                AssignRoomPatient ar = new AssignRoomPatient(dataGridView1.CurrentRow.Cells[1].Value.ToString(), new Nurse_Dashboard(), "ViewRooms");
+                AssignRoomPatient ar = new AssignRoomPatient(dataGridView1.CurrentRow.Cells[1].Value.ToString());
                 ar.ShowDialog();
             }
         }

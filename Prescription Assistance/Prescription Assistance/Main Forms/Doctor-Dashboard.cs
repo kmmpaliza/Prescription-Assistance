@@ -90,32 +90,32 @@ namespace Prescription_Assistance
         {
             pnlOverlay.Visible = true;
             pnlOverlay.Controls.Clear();
-            //var abc = new _2ndFloorPrivateRoomD();
-            //pnlOverlay.Controls.Add(abc);
+            var abc = new _2ndFloorPrivateRoomD();
+            pnlOverlay.Controls.Add(abc);
         }
 
         private void ThirdFloorToolStripMenuItem_Click(object sender, EventArgs e)
         {
             pnlOverlay.Visible = true;
             pnlOverlay.Controls.Clear();
-            //var abc = new _3rdFloor();
-            //pnlOverlay.Controls.Add(abc);
+            var abc = new _3rdFloor();
+            pnlOverlay.Controls.Add(abc);
         }
 
         private void FourthFloorToolStripMenuItem_Click(object sender, EventArgs e)
         {
             pnlOverlay.Visible = true;
             pnlOverlay.Controls.Clear();
-            //var abc = new _4thFloor();
-            //pnlOverlay.Controls.Add(abc);
+            var abc = new _4thFloor();
+            pnlOverlay.Controls.Add(abc);
         }
 
         private void FifthFloorToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             pnlOverlay.Visible = true;
             pnlOverlay.Controls.Clear();
-            //var abc = new _5thFloor();
-            //pnlOverlay.Controls.Add(abc);
+            var abc = new _5thFloor();
+            pnlOverlay.Controls.Add(abc);
         }
 
         private void button2_Click(object sender, EventArgs e)

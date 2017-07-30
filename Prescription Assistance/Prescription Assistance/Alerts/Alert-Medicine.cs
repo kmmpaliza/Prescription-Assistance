@@ -32,11 +32,11 @@ namespace Prescription_Assistance
             bed = ds.Tables[0].Rows[0][2].ToString();
             cp.Patient_id = ds.Tables[0].Rows[0][3].ToString();
             cp.Prescription_id = ds.Tables[0].Rows[0][4].ToString();
-            ds2 = cp.viewPescriptionDetails();
+            ds2 = cp.viewSpecificPrescription();
 
             label1.Text = bed + " | " + cp.Patient_id.ToString();
-            label2.Text = ds2.Tables[0].Rows[0][1].ToString() + " / " + ds2.Tables[0].Rows[0][2].ToString();
-            label3.Text = ds2.Tables[0].Rows[0][3].ToString() + "/" + ds2.Tables[0].Rows[0][4].ToString() + "/" + ds2.Tables[0].Rows[0][6].ToString();
+            //label2.Text = ds2.Tables[0].Rows[0][1].ToString() + " / " + ds2.Tables[0].Rows[0][2].ToString();
+            //label3.Text = ds2.Tables[0].Rows[0][3].ToString() + "/" + ds2.Tables[0].Rows[0][4].ToString() + "/" + ds2.Tables[0].Rows[0][6].ToString();
         }
 
         private void Alert_Medicine_Click(object sender, EventArgs e)
@@ -48,6 +48,9 @@ namespace Prescription_Assistance
             this.Visible = false;
             this.Parent.Refresh();
             this.Parent.Controls.Remove(this);
+
+            Alert_Details ad = new Alert_Details(id, bed, "Prescription");
+            ad.ShowDialog();
         }
     }
 }

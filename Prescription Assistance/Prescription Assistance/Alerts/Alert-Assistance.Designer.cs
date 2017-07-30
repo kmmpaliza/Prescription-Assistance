@@ -39,9 +39,9 @@
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(9, 42);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(207, 22);
+            this.label2.Size = new System.Drawing.Size(196, 22);
             this.label2.TabIndex = 14;
-            this.label2.Text = "Medicine Name / Dosage";
+            this.label2.Text = "Request for Wheelchair";
             // 
             // label1
             // 
@@ -58,7 +58,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Orange;
+            this.BackColor = System.Drawing.Color.DarkOrange;
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "Alert_Assistance";

@@ -40,7 +40,10 @@ namespace Prescription_Assistance
             this.Enabled = false;
             this.Visible = false;
             this.Parent.Refresh();
-            this.Parent.Controls.Remove(this); 
+            this.Parent.Controls.Remove(this);
+
+            Alert_Details ad = new Alert_Details(alertid, bed, assistance);
+            ad.ShowDialog();
         } 
     }
 }

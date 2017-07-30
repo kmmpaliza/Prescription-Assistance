@@ -152,7 +152,7 @@ namespace Prescription_Assistance
         {
             pnlOverlay.Visible = true;
             pnlOverlay.Controls.Clear();
-            var abc = new _2ndFloorPrivateRoomD(this);
+            var abc = new _2ndFloorPrivateRoomD();
             pnlOverlay.Controls.Add(abc);
         }
 
@@ -160,7 +160,7 @@ namespace Prescription_Assistance
         {
             pnlOverlay.Visible = true;
             pnlOverlay.Controls.Clear();
-            var abc = new _3rdFloor(this);
+            var abc = new _3rdFloor();
             pnlOverlay.Controls.Add(abc);
         }
 
@@ -168,7 +168,7 @@ namespace Prescription_Assistance
         {
             pnlOverlay.Visible = true;
             pnlOverlay.Controls.Clear();
-            var abc = new _4thFloor(this);
+            var abc = new _4thFloor();
             pnlOverlay.Controls.Add(abc);
         }
 
@@ -176,7 +176,7 @@ namespace Prescription_Assistance
         {
             pnlOverlay.Visible = true;
             pnlOverlay.Controls.Clear();
-            var abc = new _5thFloor(this);
+            var abc = new _5thFloor();
             pnlOverlay.Controls.Add(abc);
         }
 

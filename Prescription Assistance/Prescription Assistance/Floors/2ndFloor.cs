@@ -14,126 +14,100 @@ namespace Prescription_Assistance
     {
         Class_Rooms cr = new Class_Rooms();
         DataSet ds = new DataSet();
-        Nurse_Dashboard n;
+        
+        int bed;
 
-        public _2ndFloorPrivateRoomD(Nurse_Dashboard n)
+        public _2ndFloorPrivateRoomD()
         {
             InitializeComponent();
-            this.n = n;
             
         }
 
         public void refresh()
         {
-            cr.Bed_id = "200-A";
-            ds = cr.viewBedandPatient();
-            //labelA.Text = ds.Tables[0].Rows[0][3].ToString();
-
-            cr.Bed_id = "200-B";
-            ds = cr.viewBedandPatient();
-            //labelB.Text = ds.Tables[0].Rows[0][3].ToString();
-
-            cr.Bed_id = "200-C";
-            ds = cr.viewBedandPatient();
-            //labelC.Text = ds.Tables[0].Rows[0][3].ToString();
-
-            cr.Bed_id = "200-D";
-            ds = cr.viewBedandPatient();
-            //labelD.Text = ds.Tables[0].Rows[0][3].ToString();
-
-            cr.Bed_id = "200-E";
-            ds = cr.viewBedandPatient();
-            //labelE.Text = ds.Tables[0].Rows[0][3].ToString();
-
-            cr.Bed_id = "200-F";
-            ds = cr.viewBedandPatient();
-            //labelF.Text = ds.Tables[0].Rows[0][3].ToString();
-
-            cr.Bed_id = "200-G";
-            ds = cr.viewBedandPatient();
-            //labelG.Text = ds.Tables[0].Rows[0][3].ToString();
-
-            cr.Bed_id = "200-H";
-            ds = cr.viewBedandPatient();
-            //labelH.Text = ds.Tables[0].Rows[0][3].ToString();
-
-            cr.Bed_id = "201";
-            ds = cr.viewBedandPatient();
-            //label1.Text = ds.Tables[0].Rows[0][3].ToString();
-
-            cr.Bed_id = "202";
-            ds = cr.viewBedandPatient();
-            //label2.Text = ds.Tables[0].Rows[0][3].ToString();
-
-            cr.Bed_id = "203";
-            ds = cr.viewBedandPatient();
-            //label3.Text = ds.Tables[0].Rows[0][3].ToString();
+            for (int x = 105; x <= 112; x++)
+            {
+                this.Controls.Find("pbox" + x, true)[0].MouseHover += pBox_Hover;
+                this.Controls.Find("pbox" + x, true)[0].MouseLeave += pBox_Leave;
+                bed = x;
+            }
         }
 
         public void _2ndFloorPrivateRoom_Load(object sender, EventArgs e)
         {
-            refresh();
+            if (Form1.usertype.Equals("Doctor"))
+            {
+                for (int x = 105; x <= 112; x++)
+                {
+                    this.Controls.Find("pbox" + x, true)[0].Click -= pBox_Click;
+                    bed = x;
+                }
+            }
+            else
+            {
+                for (int x = 105; x <= 112; x++)
+                {
+                    this.Controls.Find("pbox" + x, true)[0].Click += pBox_Click;
+                    bed = x;
+                }
+            }
+
+            refresh();              
         }
 
         private void showDialog(string bed)
         {
-            AssignRoomPatient ar = new AssignRoomPatient(bed, n, "2nd Floor");
+            AssignRoomPatient ar = new AssignRoomPatient(bed);
             ar.ShowDialog();
         }
 
-        private void button1_Click_1(object sender, EventArgs e)
+        private void pBox_Click(object sender, EventArgs e)
         {
-            showDialog("200-A");
+            PictureBox clickedpBox = sender as PictureBox;
+
+            for (int x = 105; x <= 112; x++)
+            {
+                string pbox = "pbox" + x;
+                if (clickedpBox.Name == pbox)
+                {
+                    ds = cr.viewAllBeds();    
+                    showDialog(ds.Tables[0].Rows[x][0].ToString());
+                }
+            }            
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void pBox_Hover(object sender, EventArgs e)
         {
-            showDialog("200-B");
+            PictureBox clickedpBox = sender as PictureBox;
+
+            for (int x = 105; x <= 112; x++)
+            {
+                string pbox = "pbox" + x;
+                if (clickedpBox.Name == pbox)
+                {
+                    panel1.Visible = true;
+
+                    DataSet ds2 = new DataSet();
+                    ds = cr.viewAllBeds();
+                    cr.Bed_id = ds.Tables[0].Rows[x][0].ToString();
+                    ds2 = cr.viewBedandPatient();
+                    label3.Text = cr.Bed_id.ToString();
+
+                    if (ds2.Tables[1].Rows[0][2].ToString() == "Occupied")
+                    {
+                        label2.Text = ds2.Tables[1].Rows[0][3].ToString();
+                    }
+                    else
+                    {
+                        label2.Text = "No Patient";
+                    }
+                }
+            }           
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void pBox_Leave(object sender, EventArgs e)
         {
-            showDialog("200-C");
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-            showDialog("200-D");
-        }
-
-        private void button5_Click(object sender, EventArgs e)
-        {
-            showDialog("200-E");
-        }
-
-        private void button6_Click(object sender, EventArgs e)
-        {
-            showDialog("200-F");
-        }
-
-        private void button7_Click(object sender, EventArgs e)
-        {
-            showDialog("200-G");
-        }
-
-        private void button8_Click(object sender, EventArgs e)
-        {
-            showDialog("200-H");
-        }
-
-        private void button11_Click(object sender, EventArgs e)
-        {
-            showDialog("201");
-        }
-
-        private void button12_Click(object sender, EventArgs e)
-        {
-            showDialog("202");
-        }
-
-        private void button13_Click(object sender, EventArgs e)
-        {
-            showDialog("203");
+            panel1.Visible = false;
         }
     }
 }

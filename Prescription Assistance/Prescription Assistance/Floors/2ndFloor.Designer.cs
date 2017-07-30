@@ -36,6 +36,9 @@
             this.pbox107 = new System.Windows.Forms.PictureBox();
             this.pbox106 = new System.Windows.Forms.PictureBox();
             this.pbox105 = new System.Windows.Forms.PictureBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pbox112)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbox111)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbox110)).BeginInit();
@@ -44,6 +47,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbox107)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbox106)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbox105)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // pbox112
@@ -118,6 +122,39 @@
             this.pbox105.TabIndex = 16;
             this.pbox105.TabStop = false;
             // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.label3);
+            this.panel1.Location = new System.Drawing.Point(133, 124);
+            this.panel1.Name = "panel1";
+            this.panel1.Padding = new System.Windows.Forms.Padding(8);
+            this.panel1.Size = new System.Drawing.Size(267, 148);
+            this.panel1.TabIndex = 25;
+            this.panel1.Visible = false;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Open Sans", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Black;
+            this.label2.Location = new System.Drawing.Point(11, 97);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(245, 27);
+            this.label2.TabIndex = 26;
+            this.label2.Text = "Request for Wheelchair";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Open Sans", 35F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Green;
+            this.label3.Location = new System.Drawing.Point(5, 25);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(156, 64);
+            this.label3.TabIndex = 25;
+            this.label3.Text = "200-A";
+            // 
             // _2ndFloorPrivateRoomD
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -125,6 +162,7 @@
             this.BackColor = System.Drawing.Color.Transparent;
             this.BackgroundImage = global::Prescription_Assistance.Properties.Resources._2nd2;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.pbox112);
             this.Controls.Add(this.pbox111);
             this.Controls.Add(this.pbox110);
@@ -146,6 +184,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbox107)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbox106)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbox105)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -160,6 +200,9 @@
         private System.Windows.Forms.PictureBox pbox107;
         private System.Windows.Forms.PictureBox pbox106;
         private System.Windows.Forms.PictureBox pbox105;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
 
     }
 }

@@ -77,6 +77,17 @@ namespace ClassLibrary
             return ds;    
         }
 
+        public DataSet viewSpecificPrescription()
+        {
+            SqlCommand cmd = new SqlCommand("select_PrescriptionDetails", conn);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.Add("@Prescription_ID", SqlDbType.VarChar).Value = prescription_id;
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            ds.Clear();
+            da.Fill(ds, "select_PrescriptionDetails");
+            return ds;
+        }
+
         public void insertNewPrescription()
         {
             conn.Open();

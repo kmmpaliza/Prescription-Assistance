@@ -617,6 +617,12 @@ namespace Prescription_Assistance
         private void Room_Layout_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void pbox111_Click(object sender, EventArgs e)
+        {
+            Alert_Details ad = new Alert_Details("hello", "bed", "Prescription");
+            ad.ShowDialog();
         }        
     }
 }

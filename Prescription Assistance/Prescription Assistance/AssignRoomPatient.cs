@@ -73,6 +73,7 @@ namespace Prescription_Assistance
 
         private void button2_Click(object sender, EventArgs e)
         {
+            
             cr.updateRoom();
             label3.Text = cp.Patient_id + " | " + cp.Last_name;
             button3.Enabled = true;

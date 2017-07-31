@@ -44,7 +44,7 @@ namespace Prescription_Assistance
             txtFirst.Text = ds.Tables[0].Rows[0][3].ToString();
             cboGender.Text = ds.Tables[0].Rows[0][4].ToString();
             txtAge.Text = ds.Tables[0].Rows[0][5].ToString();
-            dateTimePicker1.Text = ds.Tables[0].Rows[0][6].ToString();
+            
             txtAddress.Text = ds.Tables[0].Rows[0][7].ToString();
             txtContact.Text = ds.Tables[0].Rows[0][8].ToString();
             txtWeight.Text = ds.Tables[0].Rows[0][9].ToString();
@@ -52,6 +52,15 @@ namespace Prescription_Assistance
             txtMH.Text = ds.Tables[0].Rows[0][11].ToString();
             txtMF.Text = ds.Tables[0].Rows[0][12].ToString();
             txtSI.Text = ds.Tables[0].Rows[0][13].ToString();
+
+            if (ds.Tables[0].Rows[0][6] != DBNull.Value)
+            {
+                dateTimePicker1.Text = ds.Tables[0].Rows[0][6].ToString();
+            }
+            else
+            {
+                dateTimePicker1.Text = DateTime.Now.ToShortDateString();
+            }
 
             if (ds.Tables[0].Rows[0][14] != DBNull.Value)
             {

@@ -50,6 +50,7 @@ namespace Prescription_Assistance
             pnlOverlay.Controls.Clear();
             var viewInPatient = new View_InPatient();
             pnlOverlay.Controls.Add(viewInPatient);
+            viewInPatient.Dock = DockStyle.Fill;
         }
 
         public void changetoViewPatient()
@@ -58,6 +59,7 @@ namespace Prescription_Assistance
             pnlOverlay.Controls.Clear();
             var viewInPatient = new View_InPatient();
             pnlOverlay.Controls.Add(viewInPatient);
+            viewInPatient.Dock = DockStyle.Fill;
         }
 
         public void changetoInsert()
@@ -66,6 +68,7 @@ namespace Prescription_Assistance
             pnlOverlay.Controls.Clear();
             var insertPatient = new Insert_InPatient();
             pnlOverlay.Controls.Add(insertPatient);
+            insertPatient.Dock = DockStyle.Fill;
         }
 
         public void changetoUpdatePatientAsDoctor(string id) //pansamantala
@@ -74,6 +77,7 @@ namespace Prescription_Assistance
             pnlOverlay.Controls.Clear();
             var abc = new Update_InPatientDetailsDoctor(id);
             pnlOverlay.Controls.Add(abc);
+            abc.Dock = DockStyle.Fill;
         }
 
         private void button4_MouseDown(object sender, MouseEventArgs e)
@@ -93,6 +97,7 @@ namespace Prescription_Assistance
             pnlOverlay.Controls.Clear();
             var abc = new _2ndFloorPrivateRoomD();
             pnlOverlay.Controls.Add(abc);
+            abc.Dock = DockStyle.Fill;
         }
 
         private void ThirdFloorToolStripMenuItem_Click(object sender, EventArgs e)
@@ -101,6 +106,7 @@ namespace Prescription_Assistance
             pnlOverlay.Controls.Clear();
             var abc = new _3rdFloor();
             pnlOverlay.Controls.Add(abc);
+            abc.Dock = DockStyle.Fill;
         }
 
         private void FourthFloorToolStripMenuItem_Click(object sender, EventArgs e)
@@ -109,6 +115,7 @@ namespace Prescription_Assistance
             pnlOverlay.Controls.Clear();
             var abc = new _4thFloor();
             pnlOverlay.Controls.Add(abc);
+            abc.Dock = DockStyle.Fill;
         }
 
         private void FifthFloorToolStripMenuItem1_Click(object sender, EventArgs e)
@@ -117,6 +124,7 @@ namespace Prescription_Assistance
             pnlOverlay.Controls.Clear();
             var abc = new _5thFloor();
             pnlOverlay.Controls.Add(abc);
+            abc.Dock = DockStyle.Fill;
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -130,6 +138,7 @@ namespace Prescription_Assistance
             pnlOverlay.Controls.Clear();
             var abc = new InsertPrescription();
             pnlOverlay.Controls.Add(abc);
+            abc.Dock = DockStyle.Fill;
         }
 
         private void button6_Click(object sender, EventArgs e)
@@ -139,6 +148,7 @@ namespace Prescription_Assistance
             pnlOverlay.Controls.Clear();
             var abc = new View_MedicalRecords();
             pnlOverlay.Controls.Add(abc);
+            abc.Dock = DockStyle.Fill;
         }
 
         private void button7_Click(object sender, EventArgs e)
@@ -148,6 +158,7 @@ namespace Prescription_Assistance
             pnlOverlay.Controls.Clear();
             var viewInPatient = new Insert_TestResult();
             pnlOverlay.Controls.Add(viewInPatient);
+            viewInPatient.Dock = DockStyle.Fill;
         }
 
         private void pnlOverlay_Paint(object sender, PaintEventArgs e)
@@ -161,6 +172,7 @@ namespace Prescription_Assistance
             pnlOverlay.Controls.Clear();
             var abc = new View_Staff();
             pnlOverlay.Controls.Add(abc);
+            abc.Dock = DockStyle.Fill;
         }
 
     }

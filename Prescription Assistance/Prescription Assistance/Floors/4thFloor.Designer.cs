@@ -100,6 +100,9 @@
             // 
             // pbox49
             // 
+            this.pbox49.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.pbox49.Location = new System.Drawing.Point(195, 500);
             this.pbox49.Name = "pbox49";
             this.pbox49.Size = new System.Drawing.Size(20, 20);
@@ -108,6 +111,9 @@
             // 
             // pbox50
             // 
+            this.pbox50.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.pbox50.Location = new System.Drawing.Point(170, 521);
             this.pbox50.Name = "pbox50";
             this.pbox50.Size = new System.Drawing.Size(20, 20);
@@ -116,6 +122,9 @@
             // 
             // pbox51
             // 
+            this.pbox51.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.pbox51.Location = new System.Drawing.Point(142, 545);
             this.pbox51.Name = "pbox51";
             this.pbox51.Size = new System.Drawing.Size(20, 20);
@@ -124,6 +133,9 @@
             // 
             // pbox48
             // 
+            this.pbox48.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.pbox48.Location = new System.Drawing.Point(646, 129);
             this.pbox48.Name = "pbox48";
             this.pbox48.Size = new System.Drawing.Size(20, 20);
@@ -132,6 +144,9 @@
             // 
             // pbox47
             // 
+            this.pbox47.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.pbox47.Location = new System.Drawing.Point(629, 145);
             this.pbox47.Name = "pbox47";
             this.pbox47.Size = new System.Drawing.Size(20, 20);
@@ -140,6 +155,9 @@
             // 
             // pbox46
             // 
+            this.pbox46.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.pbox46.Location = new System.Drawing.Point(595, 173);
             this.pbox46.Name = "pbox46";
             this.pbox46.Size = new System.Drawing.Size(20, 20);
@@ -148,6 +166,9 @@
             // 
             // pbox45
             // 
+            this.pbox45.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.pbox45.Location = new System.Drawing.Point(578, 189);
             this.pbox45.Name = "pbox45";
             this.pbox45.Size = new System.Drawing.Size(20, 20);
@@ -156,6 +177,9 @@
             // 
             // pbox44
             // 
+            this.pbox44.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.pbox44.Location = new System.Drawing.Point(560, 205);
             this.pbox44.Name = "pbox44";
             this.pbox44.Size = new System.Drawing.Size(20, 20);
@@ -164,6 +188,9 @@
             // 
             // pbox53
             // 
+            this.pbox53.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.pbox53.Image = global::Prescription_Assistance.Properties.Resources.blank;
             this.pbox53.Location = new System.Drawing.Point(206, 579);
             this.pbox53.Name = "pbox53";
@@ -173,6 +200,9 @@
             // 
             // pbox52
             // 
+            this.pbox52.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.pbox52.Image = global::Prescription_Assistance.Properties.Resources.blank;
             this.pbox52.Location = new System.Drawing.Point(206, 554);
             this.pbox52.Name = "pbox52";
@@ -182,6 +212,9 @@
             // 
             // pbox54
             // 
+            this.pbox54.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.pbox54.Image = global::Prescription_Assistance.Properties.Resources.blank;
             this.pbox54.Location = new System.Drawing.Point(273, 568);
             this.pbox54.Name = "pbox54";
@@ -191,6 +224,9 @@
             // 
             // pbox56
             // 
+            this.pbox56.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.pbox56.Image = global::Prescription_Assistance.Properties.Resources.blank;
             this.pbox56.Location = new System.Drawing.Point(340, 565);
             this.pbox56.Name = "pbox56";
@@ -200,6 +236,9 @@
             // 
             // pbox55
             // 
+            this.pbox55.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.pbox55.Image = global::Prescription_Assistance.Properties.Resources.blank;
             this.pbox55.Location = new System.Drawing.Point(307, 565);
             this.pbox55.Name = "pbox55";
@@ -209,6 +248,9 @@
             // 
             // pbox58
             // 
+            this.pbox58.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.pbox58.Image = global::Prescription_Assistance.Properties.Resources.blank;
             this.pbox58.Location = new System.Drawing.Point(409, 565);
             this.pbox58.Name = "pbox58";
@@ -218,6 +260,9 @@
             // 
             // pbox57
             // 
+            this.pbox57.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.pbox57.Image = global::Prescription_Assistance.Properties.Resources.blank;
             this.pbox57.Location = new System.Drawing.Point(377, 565);
             this.pbox57.Name = "pbox57";
@@ -227,6 +272,9 @@
             // 
             // pbox60
             // 
+            this.pbox60.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.pbox60.Image = global::Prescription_Assistance.Properties.Resources.blank;
             this.pbox60.Location = new System.Drawing.Point(371, 514);
             this.pbox60.Name = "pbox60";
@@ -236,6 +284,9 @@
             // 
             // pbox59
             // 
+            this.pbox59.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.pbox59.Image = global::Prescription_Assistance.Properties.Resources.blank;
             this.pbox59.Location = new System.Drawing.Point(344, 514);
             this.pbox59.Name = "pbox59";
@@ -245,6 +296,9 @@
             // 
             // pbox63
             // 
+            this.pbox63.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.pbox63.Image = global::Prescription_Assistance.Properties.Resources.blank;
             this.pbox63.Location = new System.Drawing.Point(399, 531);
             this.pbox63.Name = "pbox63";
@@ -254,6 +308,9 @@
             // 
             // pbox62
             // 
+            this.pbox62.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.pbox62.Image = global::Prescription_Assistance.Properties.Resources.blank;
             this.pbox62.Location = new System.Drawing.Point(399, 501);
             this.pbox62.Name = "pbox62";
@@ -263,6 +320,9 @@
             // 
             // pbox61
             // 
+            this.pbox61.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.pbox61.Image = global::Prescription_Assistance.Properties.Resources.blank;
             this.pbox61.Location = new System.Drawing.Point(399, 473);
             this.pbox61.Name = "pbox61";
@@ -272,6 +332,9 @@
             // 
             // pbox43
             // 
+            this.pbox43.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.pbox43.Image = global::Prescription_Assistance.Properties.Resources.blank;
             this.pbox43.Location = new System.Drawing.Point(687, 432);
             this.pbox43.Name = "pbox43";
@@ -281,6 +344,9 @@
             // 
             // pbox42
             // 
+            this.pbox42.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.pbox42.Image = global::Prescription_Assistance.Properties.Resources.blank;
             this.pbox42.Location = new System.Drawing.Point(687, 412);
             this.pbox42.Name = "pbox42";
@@ -290,6 +356,9 @@
             // 
             // pbox41
             // 
+            this.pbox41.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.pbox41.Image = global::Prescription_Assistance.Properties.Resources.blank;
             this.pbox41.Location = new System.Drawing.Point(687, 391);
             this.pbox41.Name = "pbox41";
@@ -299,6 +368,9 @@
             // 
             // pbox40
             // 
+            this.pbox40.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.pbox40.Image = global::Prescription_Assistance.Properties.Resources.blank;
             this.pbox40.Location = new System.Drawing.Point(597, 432);
             this.pbox40.Name = "pbox40";
@@ -308,6 +380,9 @@
             // 
             // pbox39
             // 
+            this.pbox39.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.pbox39.Image = global::Prescription_Assistance.Properties.Resources.blank;
             this.pbox39.Location = new System.Drawing.Point(597, 412);
             this.pbox39.Name = "pbox39";
@@ -317,6 +392,9 @@
             // 
             // pbox38
             // 
+            this.pbox38.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.pbox38.Image = global::Prescription_Assistance.Properties.Resources.blank;
             this.pbox38.Location = new System.Drawing.Point(597, 391);
             this.pbox38.Name = "pbox38";
@@ -326,6 +404,9 @@
             // 
             // pbox37
             // 
+            this.pbox37.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.pbox37.Image = global::Prescription_Assistance.Properties.Resources.blank;
             this.pbox37.Location = new System.Drawing.Point(494, 432);
             this.pbox37.Name = "pbox37";
@@ -335,6 +416,9 @@
             // 
             // pbox36
             // 
+            this.pbox36.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.pbox36.Image = global::Prescription_Assistance.Properties.Resources.blank;
             this.pbox36.Location = new System.Drawing.Point(494, 412);
             this.pbox36.Name = "pbox36";
@@ -344,6 +428,9 @@
             // 
             // pbox35
             // 
+            this.pbox35.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.pbox35.Image = global::Prescription_Assistance.Properties.Resources.blank;
             this.pbox35.Location = new System.Drawing.Point(494, 391);
             this.pbox35.Name = "pbox35";
@@ -353,6 +440,9 @@
             // 
             // pbox34
             // 
+            this.pbox34.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.pbox34.Image = global::Prescription_Assistance.Properties.Resources.blank;
             this.pbox34.Location = new System.Drawing.Point(458, 431);
             this.pbox34.Name = "pbox34";
@@ -362,6 +452,9 @@
             // 
             // pbox33
             // 
+            this.pbox33.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.pbox33.Image = global::Prescription_Assistance.Properties.Resources.blank;
             this.pbox33.Location = new System.Drawing.Point(458, 411);
             this.pbox33.Name = "pbox33";
@@ -371,6 +464,9 @@
             // 
             // pbox32
             // 
+            this.pbox32.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.pbox32.Image = global::Prescription_Assistance.Properties.Resources.blank;
             this.pbox32.Location = new System.Drawing.Point(458, 390);
             this.pbox32.Name = "pbox32";

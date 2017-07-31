@@ -64,6 +64,7 @@
             this.label1.Size = new System.Drawing.Size(93, 20);
             this.label1.TabIndex = 0;
             this.label1.Text = "Last Name:";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // txtLast
             // 
@@ -72,6 +73,7 @@
             this.txtLast.Name = "txtLast";
             this.txtLast.Size = new System.Drawing.Size(181, 27);
             this.txtLast.TabIndex = 0;
+            this.txtLast.TextChanged += new System.EventHandler(this.txtLast_TextChanged);
             // 
             // txtAge
             // 
@@ -80,6 +82,7 @@
             this.txtAge.Name = "txtAge";
             this.txtAge.Size = new System.Drawing.Size(65, 27);
             this.txtAge.TabIndex = 2;
+            this.txtAge.TextChanged += new System.EventHandler(this.txtAge_TextChanged);
             // 
             // label4
             // 
@@ -90,6 +93,7 @@
             this.label4.Size = new System.Drawing.Size(40, 20);
             this.label4.TabIndex = 6;
             this.label4.Text = "Age:";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label5
             // 
@@ -100,6 +104,7 @@
             this.label5.Size = new System.Drawing.Size(68, 20);
             this.label5.TabIndex = 8;
             this.label5.Text = "Gender:";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // txtMedFin
             // 
@@ -109,6 +114,7 @@
             this.txtMedFin.Name = "txtMedFin";
             this.txtMedFin.Size = new System.Drawing.Size(600, 80);
             this.txtMedFin.TabIndex = 6;
+            this.txtMedFin.TextChanged += new System.EventHandler(this.txtMedFin_TextChanged);
             // 
             // label7
             // 
@@ -128,6 +134,7 @@
             this.txtSpec.Name = "txtSpec";
             this.txtSpec.Size = new System.Drawing.Size(600, 80);
             this.txtSpec.TabIndex = 7;
+            this.txtSpec.TextChanged += new System.EventHandler(this.txtSpec_TextChanged);
             // 
             // label8
             // 
@@ -138,6 +145,7 @@
             this.label8.Size = new System.Drawing.Size(158, 20);
             this.label8.TabIndex = 14;
             this.label8.Text = "Special Instructions";
+            this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
             // button2
             // 
@@ -180,6 +188,7 @@
             this.txtFirst.Name = "txtFirst";
             this.txtFirst.Size = new System.Drawing.Size(178, 27);
             this.txtFirst.TabIndex = 1;
+            this.txtFirst.TextChanged += new System.EventHandler(this.txtFirst_TextChanged);
             // 
             // label6
             // 
@@ -190,6 +199,7 @@
             this.label6.Size = new System.Drawing.Size(96, 20);
             this.label6.TabIndex = 24;
             this.label6.Text = "First Name:";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // cboGender
             // 
@@ -202,6 +212,7 @@
             this.cboGender.Name = "cboGender";
             this.cboGender.Size = new System.Drawing.Size(70, 28);
             this.cboGender.TabIndex = 3;
+            this.cboGender.SelectedIndexChanged += new System.EventHandler(this.cboGender_SelectedIndexChanged);
             // 
             // txtHeight
             // 
@@ -210,6 +221,7 @@
             this.txtHeight.Name = "txtHeight";
             this.txtHeight.Size = new System.Drawing.Size(154, 27);
             this.txtHeight.TabIndex = 5;
+            this.txtHeight.TextChanged += new System.EventHandler(this.txtHeight_TextChanged);
             // 
             // txtWeight
             // 
@@ -218,6 +230,7 @@
             this.txtWeight.Name = "txtWeight";
             this.txtWeight.Size = new System.Drawing.Size(152, 27);
             this.txtWeight.TabIndex = 4;
+            this.txtWeight.TextChanged += new System.EventHandler(this.txtWeight_TextChanged);
             // 
             // label21
             // 
@@ -228,6 +241,7 @@
             this.label21.Size = new System.Drawing.Size(119, 20);
             this.label21.TabIndex = 113;
             this.label21.Text = "Height: (in cm)";
+            this.label21.Click += new System.EventHandler(this.label21_Click);
             // 
             // label19
             // 
@@ -238,6 +252,7 @@
             this.label19.Size = new System.Drawing.Size(121, 20);
             this.label19.TabIndex = 112;
             this.label19.Text = "Weight: (in lbs)";
+            this.label19.Click += new System.EventHandler(this.label19_Click);
             // 
             // label2
             // 
@@ -257,6 +272,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(170, 100);
             this.panel1.TabIndex = 149;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // btnBrowse
             // 
@@ -294,6 +310,7 @@
             this.pBoxPhoto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pBoxPhoto.TabIndex = 148;
             this.pBoxPhoto.TabStop = false;
+            this.pBoxPhoto.Click += new System.EventHandler(this.pBoxPhoto_Click);
             // 
             // Insert_InPatient
             // 

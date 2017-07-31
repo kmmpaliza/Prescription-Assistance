@@ -57,10 +57,27 @@ namespace Prescription_Assistance
 
         private void button2_Click(object sender, EventArgs e)
         {
-            cm.Heart_rate = txtHR.Text;
+            int hr;
+            bool isNumeric = int.TryParse(txtHR.Text, out hr);
+
+            double temp;
+            bool isNumericT = double.TryParse(txtTemp.Text, out temp);
+
+            int bp1, bp2;
+            bool isNumericBP1 = int.TryParse(txtBP1.Text, out bp1);
+            bool isNumericBP2 = int.TryParse(txtBP2.Text, out bp2);
+
+            int bs;
+            bool isNumericBS = int.TryParse(txtBS.Text, out bs);
+
+            //if (isNumeric)
+            //{
+            //    cm.Heart_rate = txtHR.Text + " bpm";
+            //}
+
             cm.Temperature = txtTemp.Text;
             cm.Blood_sugar = txtBS.Text;
-            cm.Blood_pressure = txtBP.Text;
+            cm.Blood_pressure = txtBP1.Text;
             cm.Nurse_id = Form1.userid;
             cm.Datetime = DateTime.Now.ToString("yyyy-MM-dd HH:mm");
             cm.insertNewMedRec();

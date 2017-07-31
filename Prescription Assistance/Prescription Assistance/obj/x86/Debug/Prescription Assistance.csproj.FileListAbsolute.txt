@@ -55,15 +55,11 @@ C:\Users\Katrina\Documents\Freelance\Topic2\Prescription Assistance\Prescription
 C:\Users\Katrina\Documents\Freelance\Topic2\Prescription Assistance\Prescription Assistance\obj\x86\Debug\Prescription_Assistance._3rdFloor.resources
 C:\Users\Katrina\Documents\Freelance\Topic2\Prescription Assistance\Prescription Assistance\obj\x86\Debug\Prescription_Assistance._4thFloor.resources
 C:\Users\Katrina\Documents\Freelance\Topic2\Prescription Assistance\Prescription Assistance\obj\x86\Debug\Prescription_Assistance._5thFloor.resources
-C:\Users\Katrina\Documents\Freelance\Topic2\Prescription Assistance\Prescription Assistance\obj\x86\Debug\Prescription_Assistance.Alert_Assistance.resources
-C:\Users\Katrina\Documents\Freelance\Topic2\Prescription Assistance\Prescription Assistance\obj\x86\Debug\Prescription_Assistance.Alert_Medicine.resources
-C:\Users\Katrina\Documents\Freelance\Topic2\Prescription Assistance\Prescription Assistance\obj\x86\Debug\Prescription_Assistance.Alert_Vitals.resources
 C:\Users\Katrina\Documents\Freelance\Topic2\Prescription Assistance\Prescription Assistance\obj\x86\Debug\Prescription_Assistance.AssignRoomPatient.resources
 C:\Users\Katrina\Documents\Freelance\Topic2\Prescription Assistance\Prescription Assistance\obj\x86\Debug\Prescription_Assistance.Doctor_Dashboard.resources
 C:\Users\Katrina\Documents\Freelance\Topic2\Prescription Assistance\Prescription Assistance\obj\x86\Debug\Prescription_Assistance.ExtendedPanel.resources
 C:\Users\Katrina\Documents\Freelance\Topic2\Prescription Assistance\Prescription Assistance\obj\x86\Debug\Prescription_Assistance.Form1.resources
 C:\Users\Katrina\Documents\Freelance\Topic2\Prescription Assistance\Prescription Assistance\obj\x86\Debug\Prescription_Assistance.Insert_InPatient.resources
-C:\Users\Katrina\Documents\Freelance\Topic2\Prescription Assistance\Prescription Assistance\obj\x86\Debug\Prescription_Assistance.Insert_MedicalRecords.resources
 C:\Users\Katrina\Documents\Freelance\Topic2\Prescription Assistance\Prescription Assistance\obj\x86\Debug\Prescription_Assistance.Insert_TestResult.resources
 C:\Users\Katrina\Documents\Freelance\Topic2\Prescription Assistance\Prescription Assistance\obj\x86\Debug\Prescription_Assistance.InsertPrescription_Nurse.resources
 C:\Users\Katrina\Documents\Freelance\Topic2\Prescription Assistance\Prescription Assistance\obj\x86\Debug\Prescription_Assistance.InsertPrescription.resources
@@ -86,3 +82,5 @@ C:\Users\Katrina\Documents\Freelance\Topic2\Prescription Assistance\Prescription
 C:\Users\Katrina\Documents\Freelance\Topic2\Prescription Assistance\Prescription Assistance\obj\x86\Debug\Prescription Assistance.exe
 C:\Users\Katrina\Documents\Freelance\Topic2\Prescription Assistance\Prescription Assistance\obj\x86\Debug\Prescription Assistance.pdb
 C:\Users\Katrina\Documents\Freelance\Topic2\Prescription Assistance\Prescription Assistance\obj\x86\Debug\Prescription_Assistance.Alert_Details.resources
+C:\Users\Katrina\Documents\Freelance\Topic2\Prescription Assistance\Prescription Assistance\obj\x86\Debug\Prescription_Assistance.Alert.resources
+C:\Users\Katrina\Documents\Freelance\Topic2\Prescription Assistance\Prescription Assistance\obj\x86\Debug\Prescription_Assistance.Insert_MedRecord.resources

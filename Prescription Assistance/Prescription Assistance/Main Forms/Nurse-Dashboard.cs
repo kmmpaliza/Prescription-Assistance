@@ -27,11 +27,12 @@ namespace Prescription_Assistance
             var abc = new Room_Layout();            
             pnlFrame.Controls.Add(abc);
 
-            abc.runAssistance();
-            abc.runVitals();
-            abc.runTimeforPrescription();
-            abc.runPrescription();
+            //abc.runAssistance();
+            //abc.runVitals();
+            //abc.runTimeforPrescription();
+            //abc.runPrescription();
             //abc.setBedtoBlink("ICU-A");
+            //abc.runTime();
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -119,14 +120,6 @@ namespace Prescription_Assistance
             pnlOverlay.Visible = true;
             pnlOverlay.Controls.Clear();
             var abc = new InsertPrescription_Nurse();
-            pnlOverlay.Controls.Add(abc);
-        }
-
-        public void changetoInsertMedicalRecords(string id, string vid)
-        {
-            pnlOverlay.Visible = true;
-            pnlOverlay.Controls.Clear();
-            var abc = new Insert_MedicalRecords(id, vid);
             pnlOverlay.Controls.Add(abc);
         }
 

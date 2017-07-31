@@ -33,7 +33,7 @@ namespace Prescription_Assistance
 
         private void button1_Click(object sender, EventArgs e)
         {
-            ca.Assistance = "Pharmacy";
+            ca.Info_id = "Pharmacy";
             ca.Status = "Undone";
             ca.insertAlert();
             MessageBox.Show("Request for Pharmacy is successful. Please wait while your request is processed.");
@@ -42,7 +42,7 @@ namespace Prescription_Assistance
 
         private void button2_Click(object sender, EventArgs e)
         {
-            ca.Assistance = "Order Meal";
+            ca.Info_id = "Order Meal";
             ca.Status = "Undone";
             ca.insertAlert();
             MessageBox.Show("Request to Order Meal is successful. Please wait while your request is processed.");
@@ -51,7 +51,7 @@ namespace Prescription_Assistance
 
         private void button3_Click(object sender, EventArgs e)
         {
-            ca.Assistance = "Room Transfer";
+            ca.Info_id = "Room Transfer";
             ca.Status = "Undone";
             ca.insertAlert();
             MessageBox.Show("Request for Room Transfer is successful. Please wait while your request is processed.");
@@ -60,7 +60,7 @@ namespace Prescription_Assistance
 
         private void button4_Click(object sender, EventArgs e)
         {
-            ca.Assistance = "Medical Consultation";
+            ca.Info_id = "Medical Consultation";
             ca.Status = "Undone";
             ca.insertAlert();
             MessageBox.Show("Request for Medical Consultation is successful. Please wait while your request is processed.");
@@ -69,7 +69,7 @@ namespace Prescription_Assistance
 
         private void button5_Click(object sender, EventArgs e)
         {
-            ca.Assistance = "Check Medical Status";
+            ca.Info_id = "Check Medical Status";
             ca.Status = "Undone";
             ca.insertAlert();
             MessageBox.Show("Request for Medical Status Check is successful. Please wait while your request is processed.");
@@ -78,7 +78,7 @@ namespace Prescription_Assistance
 
         private void button6_Click(object sender, EventArgs e)
         {
-            ca.Assistance = "Request for Wheelchair";
+            ca.Info_id = "Request for Wheelchair";
             ca.Status = "Undone";
             ca.insertAlert();
             MessageBox.Show("Request for Wheelchair is successful. Please wait while your request is processed.");
@@ -87,7 +87,7 @@ namespace Prescription_Assistance
 
         private void button7_Click(object sender, EventArgs e)
         {
-            ca.Assistance = "Request for Shuttle";
+            ca.Info_id = "Request for Shuttle";
             ca.Status = "Undone";
             ca.insertAlert();
             MessageBox.Show("Request for Shuttle is successful. Please wait while your request is processed.");
@@ -96,7 +96,7 @@ namespace Prescription_Assistance
 
         private void button8_Click(object sender, EventArgs e)
         {
-            ca.Assistance = "Room/Bed Maintenance";
+            ca.Info_id = "Room/Bed Maintenance";
             ca.Status = "Undone";
             ca.insertAlert();
             MessageBox.Show("Request for Room/Bed Maintenance is successful. Please wait while your request is processed.");

@@ -65,11 +65,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Alert-Details.cs">
+    <Compile Include="Alerts\Alert-Details.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Alert-Details.Designer.cs">
+    <Compile Include="Alerts\Alert-Details.Designer.cs">
       <DependentUpon>Alert-Details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Alerts\Alert.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Alerts\Alert.Designer.cs">
+      <DependentUpon>Alert.cs</DependentUpon>
     </Compile>
     <Compile Include="Floors\2ndFloor.cs">
       <SubType>UserControl</SubType>
@@ -95,24 +101,6 @@
     <Compile Include="Floors\5thFloor.Designer.cs">
       <DependentUpon>5thFloor.cs</DependentUpon>
     </Compile>
-    <Compile Include="Alerts\Alert-Assistance.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Alerts\Alert-Assistance.Designer.cs">
-      <DependentUpon>Alert-Assistance.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Alerts\Alert-Medicine.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Alerts\Alert-Medicine.Designer.cs">
-      <DependentUpon>Alert-Medicine.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Alerts\Alert-Vitals.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Alerts\Alert-Vitals.Designer.cs">
-      <DependentUpon>Alert-Vitals.cs</DependentUpon>
-    </Compile>
     <Compile Include="AssignRoomPatient.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -128,6 +116,12 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Database1DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Insert-MedRecord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Insert-MedRecord.Designer.cs">
+      <DependentUpon>Insert-MedRecord.cs</DependentUpon>
     </Compile>
     <Compile Include="Main Forms\Doctor-Dashboard.cs">
       <SubType>Form</SubType>
@@ -152,12 +146,6 @@
     </Compile>
     <Compile Include="Insert-InPatient.Designer.cs">
       <DependentUpon>Insert-InPatient.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Insert-MedicalRecords.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Insert-MedicalRecords.Designer.cs">
-      <DependentUpon>Insert-MedicalRecords.cs</DependentUpon>
     </Compile>
     <Compile Include="Insert-TestResult.cs">
       <SubType>UserControl</SubType>
@@ -263,8 +251,11 @@
     <Compile Include="Main Forms\Ward-Layout.Designer.cs">
       <DependentUpon>Ward-Layout.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Alert-Details.resx">
+    <EmbeddedResource Include="Alerts\Alert-Details.resx">
       <DependentUpon>Alert-Details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Alerts\Alert.resx">
+      <DependentUpon>Alert.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Floors\2ndFloor.resx">
       <DependentUpon>2ndFloor.cs</DependentUpon>
@@ -278,17 +269,11 @@
     <EmbeddedResource Include="Floors\5thFloor.resx">
       <DependentUpon>5thFloor.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Alerts\Alert-Assistance.resx">
-      <DependentUpon>Alert-Assistance.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Alerts\Alert-Medicine.resx">
-      <DependentUpon>Alert-Medicine.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Alerts\Alert-Vitals.resx">
-      <DependentUpon>Alert-Vitals.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="AssignRoomPatient.resx">
       <DependentUpon>AssignRoomPatient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Insert-MedRecord.resx">
+      <DependentUpon>Insert-MedRecord.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Main Forms\Doctor-Dashboard.resx">
       <DependentUpon>Doctor-Dashboard.cs</DependentUpon>
@@ -301,9 +286,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Insert-InPatient.resx">
       <DependentUpon>Insert-InPatient.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Insert-MedicalRecords.resx">
-      <DependentUpon>Insert-MedicalRecords.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Insert-TestResult.resx">
       <DependentUpon>Insert-TestResult.cs</DependentUpon>
@@ -407,7 +389,7 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>Database1.mdf</DependentUpon>
     </Content>
-    <Content Include="Images\logo.png" />
+    <Content Include="Main Forms\Images\logo.png" />
     <None Include="Resources\images3.png" />
     <None Include="Resources\images.png" />
     <None Include="Resources\blank23.png" />

@@ -59,8 +59,8 @@ namespace Prescription_Assistance
             }
             else
             {
-                lblText.Text = @"No results for '" + text + @"'";
-                lblCounter.Visible = false;
+                lblText.Text = @"No Test Results for '" + text + @"'";
+                lblCounter.Text = "0 result/s";
             }
             
             button2.Enabled = true;

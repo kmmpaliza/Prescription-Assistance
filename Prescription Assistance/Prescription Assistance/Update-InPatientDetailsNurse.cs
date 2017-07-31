@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using ClassLibrary;
+using System.Text.RegularExpressions;
 using System.IO;
 
 namespace Prescription_Assistance
@@ -23,7 +24,7 @@ namespace Prescription_Assistance
         DataSet ds3 = new DataSet();
         DataSet ds4 = new DataSet();
         string filename;
-        byte[] data = null;
+        byte[] data;
 
         public Update_InPatientDetailsNurse(string id)
         {
@@ -46,7 +47,7 @@ namespace Prescription_Assistance
             txtFirst.Text = ds.Tables[0].Rows[0][3].ToString();
             cboGender.Text = ds.Tables[0].Rows[0][4].ToString();
             txtAge.Text = ds.Tables[0].Rows[0][5].ToString();
-            //dateTimePicker1.Text = ds.Tables[0].Rows[0][6].ToString();
+
             txtAddress.Text = ds.Tables[0].Rows[0][7].ToString();
             txtContact.Text = ds.Tables[0].Rows[0][8].ToString();
             txtWeight.Text = ds.Tables[0].Rows[0][9].ToString();
@@ -65,7 +66,7 @@ namespace Prescription_Assistance
             }
 
             if (ds.Tables[0].Rows[0][14] != DBNull.Value) {
-                byte[] data = (byte[])(ds.Tables[0].Rows[0][14]);
+                data = (byte[])(ds.Tables[0].Rows[0][14]);
                 MemoryStream mem = new MemoryStream(data);
                 pBoxPhoto.Image = Image.FromStream(mem);
             }
@@ -109,27 +110,70 @@ namespace Prescription_Assistance
 
         private void button2_Click(object sender, EventArgs e)
         {
+            int age;
+            bool isNumericA = int.TryParse(txtAge.Text, out age);
+
+            double weight;
+            bool isNumericW = double.TryParse(txtWeight.Text, out weight);
+
+            double height;
+            bool isNumericH = double.TryParse(txtHeight.Text, out height);
+
+            string number = txtContact.Text;
+            bool isAContact = Regex.Match(number, @"^(\d{9})$").Success;
+
+            if (isNumericA)
+            {
+                cp.Age = txtAge.Text;
+                if (isNumericW)
+                {
+                    cp.Weight = txtWeight.Text;
+                    if (isNumericH)
+                    {
+                        cp.Height = txtHeight.Text;
+                        if (isAContact)
+                        {
+                            cp.Contact = txtContact.Text; 
+
+                            cp.Patient_id = id;
+                            cm.Patient_id = id;
+
+                            cp.Last_name = txtLast.Text;
+                            cp.First_name = txtFirst.Text;
+                            cp.Gender = cboGender.Text;
+                            cp.Birthday = dateTimePicker1.Value.Date.ToShortDateString();
+                            cp.Address = txtAddress.Text;
+                            cp.Medical_history = txtMH.Text;
+                            cp.Imgfile = data;
+
+                            cp.updatePatient();
+
+                            MessageBox.Show("Patient Details successfully updated.");
+
+                            load(); 
+                        }
+                        else 
+                        {
+                            MessageBox.Show("Invalid Contact Number.");
+                        }
+                    }
+                    else
+                    {
+                        MessageBox.Show("Invalid value for Height.");
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Invalid value for Weight.");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Invalid value for Age.");
+            }          
+
             //update patient
-            cp.Patient_id = id;
-            cm.Patient_id = id;
-
-            cp.Last_name = txtLast.Text;
-            cp.First_name = txtFirst.Text;
-            cp.Gender = cboGender.Text;
-            cp.Age = txtAge.Text;
-            cp.Birthday = dateTimePicker1.Value.Date.ToShortDateString();
-            cp.Address = txtAddress.Text;
-            cp.Contact = txtContact.Text;
-            cp.Weight = txtWeight.Text;
-            cp.Height = txtHeight.Text;
-            cp.Medical_history = txtMH.Text;
-            cp.Imgfile = data;
-
-            cp.updatePatient();
-
-            MessageBox.Show("Patient Details successfully updated.");
-
-            load();            
+                       
         }
 
         private void button1_Click(object sender, EventArgs e)

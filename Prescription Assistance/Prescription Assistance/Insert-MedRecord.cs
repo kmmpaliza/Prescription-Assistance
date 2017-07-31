@@ -70,27 +70,58 @@ namespace Prescription_Assistance
             int bs;
             bool isNumericBS = int.TryParse(txtBS.Text, out bs);
 
-            //if (isNumeric)
-            //{
-            //    cm.Heart_rate = txtHR.Text + " bpm";
-            //}
+            if (isNumeric)
+            {
+                cm.Heart_rate = txtHR.Text + " bpm";
+                if (isNumericT)
+                {
+                    cm.Temperature = txtTemp.Text + " °C";
+                    if (isNumericBP1)
+                    {
+                        if (isNumericBP2)
+                        {
+                            cm.Blood_pressure = txtBP1.Text + "/" + txtBP2.Text + " mmHg";
+                            if (isNumericBS)
+                            {
+                                cm.Blood_sugar = txtBS.Text + " mg/dl";
+                                cm.Nurse_id = Form1.userid;
+                                cm.Datetime = DateTime.Now.ToString("yyyy-MM-dd HH:mm");
+                                cm.insertNewMedRec();
+                                MessageBox.Show("Medical Record for " + cm.Patient_id + " is successfully inserted.");
 
-            cm.Temperature = txtTemp.Text;
-            cm.Blood_sugar = txtBS.Text;
-            cm.Blood_pressure = txtBP1.Text;
-            cm.Nurse_id = Form1.userid;
-            cm.Datetime = DateTime.Now.ToString("yyyy-MM-dd HH:mm");
-            cm.insertNewMedRec();
-            MessageBox.Show("Medical Record for " + cm.Patient_id + " is successfully inserted.");
+                                ca.Alert_id = id;
+                                ca.Status = "Done";
+                                ca.Timefordisplay = timefordisplay;
+                                ca.Timeforsms = timeforsms;
+                                ca.Ondisplay = ondisplay;
+                                ca.updateAlert();
 
-            ca.Alert_id = id;
-            ca.Status = "Done";
-            ca.Timefordisplay = timefordisplay;
-            ca.Timeforsms = timeforsms;
-            ca.Ondisplay = ondisplay;
-            ca.updateAlert();
-
-            load();            
+                                load();   
+                            }
+                            else
+                            {
+                                MessageBox.Show("Invalid value for Blood Sugar.");
+                            }
+                        }
+                        else
+                        {
+                            MessageBox.Show("Invalid value for Blood Pressure.");
+                        }
+                    }
+                    else
+                    {
+                        MessageBox.Show("Invalid value for Blood Pressure.");
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Invalid value for Temperature.");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Invalid value for Heart Rate.");
+            }                 
         }
     }
 }

@@ -26,22 +26,52 @@ namespace Prescription_Assistance
 
         private void button2_Click(object sender, EventArgs e)
         {
-            cp.Last_name = txtLast.Text;
-            cp.First_name = txtFirst.Text;
-            cp.Gender = cboGender.Text;
-            cp.Age = txtAge.Text;
-            cp.Weight = txtWeight.Text;
-            cp.Height = txtHeight.Text;
-            cp.Birthday = "";
-            cp.Address = "";
-            cp.Contact = "";
-            cp.Medical_history = "";
-            cp.Medical_findings = txtMedFin.Text;
-            cp.Special_instructions = txtSpec.Text;
-            cp.Imgfile = data;
+            int age;
+            bool isNumericA = int.TryParse(txtWeight.Text, out age);
 
-            cp.insertNewPatient();
-            MessageBox.Show("In-Patient successfully added.");
+            double weight;
+            bool isNumericW = double.TryParse(txtWeight.Text, out weight);
+
+            double height;
+            bool isNumericH = double.TryParse(txtHeight.Text, out height);
+
+            if (isNumericA)
+            {
+                cp.Age = txtAge.Text;
+                if (isNumericW)
+                {
+                    cp.Weight = txtWeight.Text;
+                    if (isNumericH)
+                    {
+                        cp.Height = txtHeight.Text;
+                        cp.Last_name = txtLast.Text;
+                        cp.First_name = txtFirst.Text;
+                        cp.Gender = cboGender.Text;
+                        cp.Birthday = "";
+                        cp.Address = "";
+                        cp.Contact = "";
+                        cp.Medical_history = "";
+                        cp.Medical_findings = txtMedFin.Text;
+                        cp.Special_instructions = txtSpec.Text;
+                        cp.Imgfile = data;
+
+                        cp.insertNewPatient();
+                        MessageBox.Show("In-Patient successfully added.");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Invalid value for Height.");
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Invalid value for Weight.");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Invalid value for Age.");
+            }            
 
             if (Form1.usertype.Equals("Doctor"))
             {
@@ -52,8 +82,7 @@ namespace Prescription_Assistance
             {
                 Nurse_Dashboard parent = (Nurse_Dashboard)this.ParentForm;
                 parent.changetoViewPatient();
-            }
-            
+            }            
         }
 
         private void button1_Click(object sender, EventArgs e)

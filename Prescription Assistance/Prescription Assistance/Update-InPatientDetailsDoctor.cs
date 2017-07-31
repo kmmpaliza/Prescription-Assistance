@@ -22,6 +22,7 @@ namespace Prescription_Assistance
         DataSet ds2 = new DataSet();
         DataSet ds3 = new DataSet();
         DataSet ds4 = new DataSet();
+        byte[] data;
 
         public Update_InPatientDetailsDoctor(string id)
         {
@@ -64,7 +65,7 @@ namespace Prescription_Assistance
 
             if (ds.Tables[0].Rows[0][14] != DBNull.Value)
             {
-                byte[] data = (byte[])(ds.Tables[0].Rows[0][14]);
+                data = (byte[])(ds.Tables[0].Rows[0][14]);
                 MemoryStream mem = new MemoryStream(data);
                 pBoxPhoto.Image = Image.FromStream(mem);
             }

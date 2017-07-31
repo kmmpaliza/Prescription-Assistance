@@ -165,9 +165,9 @@
             // 
             this.txtContact.Enabled = false;
             this.txtContact.Font = new System.Drawing.Font("Open Sans", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtContact.Location = new System.Drawing.Point(107, 409);
+            this.txtContact.Location = new System.Drawing.Point(133, 409);
             this.txtContact.Name = "txtContact";
-            this.txtContact.Size = new System.Drawing.Size(193, 27);
+            this.txtContact.Size = new System.Drawing.Size(167, 27);
             this.txtContact.TabIndex = 5;
             // 
             // label3
@@ -201,9 +201,9 @@
             this.label7.Font = new System.Drawing.Font("Open Sans", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(20, 412);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(73, 20);
+            this.label7.Size = new System.Drawing.Size(113, 20);
             this.label7.TabIndex = 34;
-            this.label7.Text = "Contact:";
+            this.label7.Text = "Contact: +639";
             // 
             // txtAddress
             // 

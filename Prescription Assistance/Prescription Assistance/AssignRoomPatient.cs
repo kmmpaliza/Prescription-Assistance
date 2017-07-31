@@ -29,12 +29,17 @@ namespace Prescription_Assistance
         private void button3_Click(object sender, EventArgs e)
         {
             cr.Patient_id = "";
+            cr.Status = "Vacant";
             cr.updateRoom();
-            label3.Text = "None";
-            button3.Enabled = false;
+            load();
         }
 
         private void AssignRoomPatient_Load(object sender, EventArgs e)
+        {
+            load();
+        }
+
+        private void load()
         {
             label2.Text = bed;
             label1.Text = "Assign New In-Patient to " + bed;
@@ -44,14 +49,15 @@ namespace Prescription_Assistance
             {
                 label3.Text = ds.Tables[0].Rows[0][4].ToString() + "  " + ds.Tables[0].Rows[0][3].ToString();
             }
-            else {
+            else
+            {
                 button3.Enabled = false;
                 label3.Text = "None";
             }
         }
 
         private void button1_Click(object sender, EventArgs e)
-        {
+        {            
             cp.Patient_id = txtSearch.Text;
             cp.Last_name = txtSearch.Text;
             cp.First_name = txtSearch.Text;
@@ -60,23 +66,28 @@ namespace Prescription_Assistance
             cp.Contact = txtSearch.Text;
 
             ds2 = cp.searchPatient();
+            int count = ds2.Tables[0].Rows.Count;
             dataGridView1.Refresh();
-            dataGridView1.DataSource = ds2.Tables["search_Patient"];  
-        }
-
-        private void dataGridView1_RowHeaderMouseClick(object sender, DataGridViewCellMouseEventArgs e)
-        {
-            cr.Patient_id = dataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString();
-            cp.Patient_id = dataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString();
-            cp.Last_name = dataGridView1.Rows[e.RowIndex].Cells[1].Value.ToString();
+            dataGridView1.DataSource = ds2.Tables["search_Patient"]; 
+            lblText.Text = @"Showing results for '" + txtSearch.Text + @"'. " + count + " result/s.";  
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            
+            cr.Status = "Occupied";
             cr.updateRoom();
-            label3.Text = cp.Patient_id + " | " + cp.Last_name;
-            button3.Enabled = true;
+            MessageBox.Show("Patient successfully assigned to " + bed);
+            load();
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.ColumnIndex == 0)
+            {
+                cr.Patient_id = dataGridView1.Rows[e.RowIndex].Cells[1].Value.ToString();
+                cp.Patient_id = dataGridView1.Rows[e.RowIndex].Cells[1].Value.ToString();
+                txtSearch.Text = dataGridView1.Rows[e.RowIndex].Cells[1].Value.ToString();              
+            }
         }
     }
 }

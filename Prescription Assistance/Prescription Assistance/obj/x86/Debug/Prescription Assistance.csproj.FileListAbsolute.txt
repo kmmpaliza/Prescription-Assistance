@@ -72,7 +72,6 @@ C:\Users\Katrina\Documents\Freelance\Topic2\Prescription Assistance\Prescription
 C:\Users\Katrina\Documents\Freelance\Topic2\Prescription Assistance\Prescription Assistance\obj\x86\Debug\Prescription_Assistance.Room_Type.resources
 C:\Users\Katrina\Documents\Freelance\Topic2\Prescription Assistance\Prescription Assistance\obj\x86\Debug\Prescription_Assistance.Update_InPatientDetailsDoctor.resources
 C:\Users\Katrina\Documents\Freelance\Topic2\Prescription Assistance\Prescription Assistance\obj\x86\Debug\Prescription_Assistance.Update_InPatientDetailsNurse.resources
-C:\Users\Katrina\Documents\Freelance\Topic2\Prescription Assistance\Prescription Assistance\obj\x86\Debug\Prescription_Assistance.View_InPatient_Nurse.resources
 C:\Users\Katrina\Documents\Freelance\Topic2\Prescription Assistance\Prescription Assistance\obj\x86\Debug\Prescription_Assistance.View_InPatient.resources
 C:\Users\Katrina\Documents\Freelance\Topic2\Prescription Assistance\Prescription Assistance\obj\x86\Debug\Prescription_Assistance.View_MedicalRecords.resources
 C:\Users\Katrina\Documents\Freelance\Topic2\Prescription Assistance\Prescription Assistance\obj\x86\Debug\Prescription_Assistance.View_Rooms.resources

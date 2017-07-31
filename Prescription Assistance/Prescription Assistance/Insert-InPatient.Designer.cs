@@ -81,7 +81,7 @@
             this.txtAge.Location = new System.Drawing.Point(294, 344);
             this.txtAge.Name = "txtAge";
             this.txtAge.Size = new System.Drawing.Size(65, 27);
-            this.txtAge.TabIndex = 2;
+            this.txtAge.TabIndex = 3;
             this.txtAge.TextChanged += new System.EventHandler(this.txtAge_TextChanged);
             // 
             // label4
@@ -211,7 +211,8 @@
             this.cboGender.Location = new System.Drawing.Point(153, 343);
             this.cboGender.Name = "cboGender";
             this.cboGender.Size = new System.Drawing.Size(70, 28);
-            this.cboGender.TabIndex = 3;
+            this.cboGender.TabIndex = 2;
+            this.cboGender.Text = "M";
             this.cboGender.SelectedIndexChanged += new System.EventHandler(this.cboGender_SelectedIndexChanged);
             // 
             // txtHeight
@@ -285,7 +286,7 @@
             this.btnBrowse.Margin = new System.Windows.Forms.Padding(16);
             this.btnBrowse.Name = "btnBrowse";
             this.btnBrowse.Size = new System.Drawing.Size(138, 43);
-            this.btnBrowse.TabIndex = 144;
+            this.btnBrowse.TabIndex = 0;
             this.btnBrowse.Text = "Browse...";
             this.btnBrowse.UseVisualStyleBackColor = false;
             this.btnBrowse.Click += new System.EventHandler(this.btnBrowse_Click);

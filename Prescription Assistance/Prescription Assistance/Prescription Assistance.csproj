@@ -215,12 +215,6 @@
     <Compile Include="Update-InPatientDetailsNurse.Designer.cs">
       <DependentUpon>Update-InPatientDetailsNurse.cs</DependentUpon>
     </Compile>
-    <Compile Include="View-InPatient-Nurse.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="View-InPatient-Nurse.Designer.cs">
-      <DependentUpon>View-InPatient-Nurse.cs</DependentUpon>
-    </Compile>
     <Compile Include="View-InPatient.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -329,9 +323,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Update-InPatientDetailsNurse.resx">
       <DependentUpon>Update-InPatientDetailsNurse.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="View-InPatient-Nurse.resx">
-      <DependentUpon>View-InPatient-Nurse.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View-InPatient.resx">
       <DependentUpon>View-InPatient.cs</DependentUpon>

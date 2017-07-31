@@ -106,6 +106,7 @@ namespace ClassLibrary
             cmd.CommandType = CommandType.StoredProcedure;
             cmd.Parameters.Add("@Bed_ID", SqlDbType.VarChar).Value = bed_id;
             cmd.Parameters.Add("@Patient_ID", SqlDbType.VarChar).Value = patient_id;
+            cmd.Parameters.Add("@Status", SqlDbType.VarChar).Value = status;
             cmd.ExecuteNonQuery();
 
             conn.Close();

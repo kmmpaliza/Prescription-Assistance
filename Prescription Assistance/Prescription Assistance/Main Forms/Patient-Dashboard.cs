@@ -21,7 +21,8 @@ namespace Prescription_Assistance
             InitializeComponent();
             this.bed = bed;
             ca.Bed_id = bed;
-            this.floor = floor;
+            this.floor = floor;         
+            
         }
 
         private void returntoWard()
@@ -35,8 +36,17 @@ namespace Prescription_Assistance
         {
             ca.Info_id = "Pharmacy";
             ca.Status = "Undone";
+            DateTime currentTime = DateTime.Now;
+            DateTime x10mins = currentTime.AddMinutes(10);
+            ca.Type = "A";
+            ca.Timefordisplay = currentTime.ToString("HH:mm");
+            ca.Timeforsms = x10mins.ToString("HH:mm");
+            ca.Ondisplay = "false";
             ca.insertAlert();
+            
             MessageBox.Show("Request for Pharmacy is successful. Please wait while your request is processed.");
+            
+
             returntoWard();
         }
 
@@ -44,7 +54,14 @@ namespace Prescription_Assistance
         {
             ca.Info_id = "Order Meal";
             ca.Status = "Undone";
+            DateTime currentTime = DateTime.Now;
+            DateTime x10mins = currentTime.AddMinutes(10);
+            ca.Type = "A";
+            ca.Timefordisplay = currentTime.ToString("HH:mm");
+            ca.Timeforsms = x10mins.ToString("HH:mm");
+            ca.Ondisplay = "false";
             ca.insertAlert();
+
             MessageBox.Show("Request to Order Meal is successful. Please wait while your request is processed.");
             returntoWard();
         }
@@ -53,7 +70,14 @@ namespace Prescription_Assistance
         {
             ca.Info_id = "Room Transfer";
             ca.Status = "Undone";
+            DateTime currentTime = DateTime.Now;
+            DateTime x10mins = currentTime.AddMinutes(10);
+            ca.Type = "A";
+            ca.Timefordisplay = currentTime.ToString("HH:mm");
+            ca.Timeforsms = x10mins.ToString("HH:mm");
+            ca.Ondisplay = "false";
             ca.insertAlert();
+
             MessageBox.Show("Request for Room Transfer is successful. Please wait while your request is processed.");
             returntoWard();
         }
@@ -62,7 +86,14 @@ namespace Prescription_Assistance
         {
             ca.Info_id = "Medical Consultation";
             ca.Status = "Undone";
+            DateTime currentTime = DateTime.Now;
+            DateTime x10mins = currentTime.AddMinutes(10);
+            ca.Type = "A";
+            ca.Timefordisplay = currentTime.ToString("HH:mm");
+            ca.Timeforsms = x10mins.ToString("HH:mm");
+            ca.Ondisplay = "false";
             ca.insertAlert();
+
             MessageBox.Show("Request for Medical Consultation is successful. Please wait while your request is processed.");
             returntoWard();
         }
@@ -71,7 +102,14 @@ namespace Prescription_Assistance
         {
             ca.Info_id = "Check Medical Status";
             ca.Status = "Undone";
+            DateTime currentTime = DateTime.Now;
+            DateTime x10mins = currentTime.AddMinutes(10);
+            ca.Type = "A";
+            ca.Timefordisplay = currentTime.ToString("HH:mm");
+            ca.Timeforsms = x10mins.ToString("HH:mm");
+            ca.Ondisplay = "false";
             ca.insertAlert();
+
             MessageBox.Show("Request for Medical Status Check is successful. Please wait while your request is processed.");
             returntoWard();
         }
@@ -80,7 +118,14 @@ namespace Prescription_Assistance
         {
             ca.Info_id = "Request for Wheelchair";
             ca.Status = "Undone";
+            DateTime currentTime = DateTime.Now;
+            DateTime x10mins = currentTime.AddMinutes(10);
+            ca.Type = "A";
+            ca.Timefordisplay = currentTime.ToString("HH:mm");
+            ca.Timeforsms = x10mins.ToString("HH:mm");
+            ca.Ondisplay = "false";
             ca.insertAlert();
+
             MessageBox.Show("Request for Wheelchair is successful. Please wait while your request is processed.");
             returntoWard();
         }
@@ -89,7 +134,14 @@ namespace Prescription_Assistance
         {
             ca.Info_id = "Request for Shuttle";
             ca.Status = "Undone";
+            DateTime currentTime = DateTime.Now;
+            DateTime x10mins = currentTime.AddMinutes(10);
+            ca.Type = "A";
+            ca.Timefordisplay = currentTime.ToString("HH:mm");
+            ca.Timeforsms = x10mins.ToString("HH:mm");
+            ca.Ondisplay = "false";
             ca.insertAlert();
+
             MessageBox.Show("Request for Shuttle is successful. Please wait while your request is processed.");
             returntoWard();
         }
@@ -98,7 +150,14 @@ namespace Prescription_Assistance
         {
             ca.Info_id = "Room/Bed Maintenance";
             ca.Status = "Undone";
+            DateTime currentTime = DateTime.Now;
+            DateTime x10mins = currentTime.AddMinutes(10);
+            ca.Type = "A";
+            ca.Timefordisplay = currentTime.ToString("HH:mm");
+            ca.Timeforsms = x10mins.ToString("HH:mm");
+            ca.Ondisplay = "false";
             ca.insertAlert();
+
             MessageBox.Show("Request for Room/Bed Maintenance is successful. Please wait while your request is processed.");
             returntoWard();
         }

@@ -244,10 +244,12 @@
             // 
             // pnlFrame
             // 
+            this.pnlFrame.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.pnlFrame.AutoScroll = true;
             this.pnlFrame.Location = new System.Drawing.Point(206, 66);
             this.pnlFrame.Name = "pnlFrame";
-            this.pnlFrame.Size = new System.Drawing.Size(1174, 691);
+            this.pnlFrame.Size = new System.Drawing.Size(1143, 665);
             this.pnlFrame.TabIndex = 2;
             // 
             // contextMenuStrip1
@@ -300,7 +302,7 @@
             this.pnlOverlay.AutoScroll = true;
             this.pnlOverlay.Location = new System.Drawing.Point(206, 66);
             this.pnlOverlay.Name = "pnlOverlay";
-            this.pnlOverlay.Size = new System.Drawing.Size(1171, 673);
+            this.pnlOverlay.Size = new System.Drawing.Size(1143, 665);
             this.pnlOverlay.TabIndex = 3;
             this.pnlOverlay.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlOverlay_Paint);
             // 

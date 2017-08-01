@@ -44,15 +44,15 @@ namespace Prescription_Assistance
 
                 cp.Patient_id = ds.Tables[0].Rows[0][7].ToString();
                 lblMed.Text = ds.Tables[0].Rows[0][1].ToString();
-                lblText.Text = ds.Tables[0].Rows[0][2].ToString() + "/n" + ds.Tables[0].Rows[0][3].ToString() + "/n" +
-                    ds.Tables[0].Rows[0][3].ToString() + "/n" + ds.Tables[0].Rows[0][4].ToString() + "/n" +
-                    ds.Tables[0].Rows[0][5].ToString() + "/n" + ds.Tables[0].Rows[0][6].ToString();
+                lblText.Text = ds.Tables[0].Rows[0][2].ToString() + "\n" + 
+                    ds.Tables[0].Rows[0][3].ToString() + "\n" + ds.Tables[0].Rows[0][4].ToString() + "\n" +
+                    ds.Tables[0].Rows[0][5].ToString() + "\n" + ds.Tables[0].Rows[0][6].ToString();
             }
             else
             {
                 this.BackColor = Color.DarkOrange;
 
-                lblMed.Text = type;
+                lblMed.Text = id;
                 lblText.Text = "";                
             }
         }

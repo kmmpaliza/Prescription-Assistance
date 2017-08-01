@@ -83,3 +83,8 @@ C:\Users\Katrina\Documents\Freelance\Topic2\Prescription Assistance\Prescription
 C:\Users\Katrina\Documents\Freelance\Topic2\Prescription Assistance\Prescription Assistance\obj\x86\Debug\Prescription_Assistance.Alert_Details.resources
 C:\Users\Katrina\Documents\Freelance\Topic2\Prescription Assistance\Prescription Assistance\obj\x86\Debug\Prescription_Assistance.Alert.resources
 C:\Users\Katrina\Documents\Freelance\Topic2\Prescription Assistance\Prescription Assistance\obj\x86\Debug\Prescription_Assistance.Insert_MedRecord.resources
+C:\Users\Katrina\Documents\Freelance\Topic2\Prescription Assistance\Prescription Assistance\bin\Debug\JWT.dll
+C:\Users\Katrina\Documents\Freelance\Topic2\Prescription Assistance\Prescription Assistance\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Katrina\Documents\Freelance\Topic2\Prescription Assistance\Prescription Assistance\bin\Debug\Twilio.dll
+C:\Users\Katrina\Documents\Freelance\Topic2\Prescription Assistance\Prescription Assistance\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Katrina\Documents\Freelance\Topic2\Prescription Assistance\Prescription Assistance\bin\Debug\Twilio.xml

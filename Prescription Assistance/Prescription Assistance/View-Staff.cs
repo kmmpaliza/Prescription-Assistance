@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using ClassLibrary;
+using System.Text.RegularExpressions;
 
 namespace Prescription_Assistance
 {
@@ -85,40 +86,51 @@ namespace Prescription_Assistance
 
         private void button2_Click(object sender, EventArgs e)
         {
-            if (txtPass.Text == txtConfirm.Text)
-            {
-                if (Form1.usertype.Equals("Doctor"))
-                {
-                    cd.Doctor_id = Form1.userid;
-                    cd.Last_name = txtLast.Text;
-                    cd.First_name = txtFirst.Text;
-                    cd.Contact = txtContact.Text;
-                    cd.Password = txtPass.Text;
-                    Form1.userpass = txtPass.Text;
+            string number = txtContact.Text;
+            bool isAContact = Regex.Match(number, @"^(\d{9})$").Success;
 
-                    cd.updateDoctor();
-                    label9.Visible = false;
-                    load();
-                    MessageBox.Show("Details successfully updated");
+            if (isAContact)
+            {
+                if (txtPass.Text == txtConfirm.Text)
+                {
+                    if (Form1.usertype.Equals("Doctor"))
+                    {
+                        cd.Doctor_id = Form1.userid;
+                        cd.Last_name = txtLast.Text;
+                        cd.First_name = txtFirst.Text;
+                        cd.Contact = txtContact.Text;
+                        cd.Password = txtPass.Text;
+                        Form1.userpass = txtPass.Text;
+
+                        cd.updateDoctor();
+                        label9.Visible = false;
+                        load();
+                        MessageBox.Show("Details successfully updated");
+                    }
+                    else
+                    {
+                        cn.Nurse_id = Form1.userid;
+                        cn.Last_name = txtLast.Text;
+                        cn.First_name = txtFirst.Text;
+                        cn.Contact = txtContact.Text;
+                        cn.Password = txtPass.Text;
+                        Form1.userpass = txtPass.Text;
+
+                        cn.updateNurse();
+                        label9.Visible = false;
+                        load();
+                        MessageBox.Show("Details successfully updated");
+                    }
                 }
                 else
                 {
-                    cn.Nurse_id = Form1.userid;
-                    cn.Last_name = txtLast.Text;
-                    cn.First_name = txtFirst.Text;
-                    cn.Contact = txtContact.Text;
-                    cn.Password = txtPass.Text;
-                    Form1.userpass = txtPass.Text;
-                     
-                    cn.updateNurse();
-                    label9.Visible = false;
-                    load();
-                    MessageBox.Show("Details successfully updated");
+                    label9.Visible = true;
                 }
             }
-            else 
+            else
             {
-                label9.Visible = true;
+                MessageBox.Show("Invalid Contact Number.");
+                txtContact.Focus();
             }
         }
 

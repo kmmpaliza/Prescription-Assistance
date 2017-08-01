@@ -79,6 +79,16 @@ namespace ClassLibrary
             return ds;
         }
 
+        public DataSet viewLateAlerts()
+        {
+            SqlCommand cmd = new SqlCommand("select_LateAlerts", conn);
+            cmd.CommandType = CommandType.StoredProcedure;
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            ds.Clear();
+            da.Fill(ds, "select_LateAlerts");
+            return ds;
+        }
+
         public string insertAlert()
         {
             conn.Open();

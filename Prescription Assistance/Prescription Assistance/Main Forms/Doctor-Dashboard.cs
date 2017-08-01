@@ -28,13 +28,16 @@ namespace Prescription_Assistance
             pnlOverlay.Controls.Clear();
             pnlOverlay.Visible = false;
             pnlFrame.Controls.Clear();
-            var abc = new Room_Layout();
-            abc.runAssistance();
+            var abc = new Room_Layout();            
+            abc.Dock = DockStyle.Fill;
+
+            abc.checkAssistance();
             abc.runVitals();
             abc.runTimeforPrescription();
             abc.runPrescription();
-            pnlFrame.Controls.Add(abc);
-            abc.Dock = DockStyle.Fill;
+            abc.run5MinutePrescription();
+            abc.run10MinutePrescription();
+            abc.checkLateAlerts();
         }
 
         private void button1_Click(object sender, EventArgs e)

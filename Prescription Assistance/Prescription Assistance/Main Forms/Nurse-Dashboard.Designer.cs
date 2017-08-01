@@ -59,10 +59,13 @@
             // 
             // pnlFrame
             // 
+            this.pnlFrame.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.pnlFrame.AutoScroll = true;
+            this.pnlFrame.BackColor = System.Drawing.Color.Transparent;
             this.pnlFrame.Location = new System.Drawing.Point(206, 66);
             this.pnlFrame.Name = "pnlFrame";
-            this.pnlFrame.Size = new System.Drawing.Size(1174, 691);
+            this.pnlFrame.Size = new System.Drawing.Size(1144, 665);
             this.pnlFrame.TabIndex = 5;
             // 
             // panel2
@@ -311,7 +314,7 @@
             this.pnlOverlay.AutoScroll = true;
             this.pnlOverlay.Location = new System.Drawing.Point(207, 66);
             this.pnlOverlay.Name = "pnlOverlay";
-            this.pnlOverlay.Size = new System.Drawing.Size(1171, 673);
+            this.pnlOverlay.Size = new System.Drawing.Size(1143, 665);
             this.pnlOverlay.TabIndex = 4;
             this.pnlOverlay.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlOverlay_Paint);
             // 

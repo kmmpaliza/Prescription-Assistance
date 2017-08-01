@@ -46,6 +46,9 @@ namespace Prescription_Assistance
 
         private void Alert_Load(object sender, EventArgs e)
         {
+            //MessageBox.Show("" + id + type + status + bed + info);
+            //lblBed.Text = bed;
+            //lblText.Text = info;
             if (type.Equals("A"))
             {
                 //assistance
@@ -98,20 +101,17 @@ namespace Prescription_Assistance
             {
                 //assistance
                 ca.Status = "Done";
-
-                this.Enabled = false;
-                this.Visible = false;
-                this.Parent.Refresh();
-                this.Parent.Controls.Remove(this);
-
-                ca.Status = "Done";
                 ca.Ondisplay = "false";
                 ca.updateAlert();
 
-                Alert_Details ad = new Alert_Details(info, bed, "A");
-                ad.ShowDialog();
+                this.Enabled = false;
+                this.Visible = false;
+                r.ePanel.Controls.Remove(this);
+                //r.stopBlink(bed); 
+                r.stoplightBed(bed);
 
-                r.stopBlink(bed);              
+                Alert_Details ad = new Alert_Details(info, bed, "A");
+                ad.ShowDialog();                             
             }
             else if (type.Equals("V"))
             {
@@ -122,32 +122,31 @@ namespace Prescription_Assistance
 
                 this.Enabled = false;
                 this.Visible = false;
-                this.Parent.Refresh();
-                this.Parent.Controls.Remove(this);
+                r.ePanel.Controls.Remove(this);
+                //r.stopBlink(bed); 
+                r.stoplightBed(bed);
 
-                r.stopBlink(bed); 
                 Insert_MedRecord im = new Insert_MedRecord(id, type, bed, info, status, timefordisplay, timeforsms, ondisplay);
                 im.ShowDialog();             
             }
             else
             {
                 //prescription                
-                cp.Prescription_id = info;
-
-                this.Enabled = false;
-                this.Visible = false;
-                this.Parent.Refresh();
-                this.Parent.Controls.Remove(this);
+                cp.Prescription_id = info;                
 
                 ca.Status = "Done";
                 ca.Ondisplay = "false";
                 ca.updateAlert();
 
-                Alert_Details ad = new Alert_Details(info, bed, "P");
-                ad.ShowDialog();
+                this.Enabled = false;
+                this.Visible = false;
+                r.ePanel.Controls.Remove(this);
+                //r.stopBlink(bed);
+                r.stoplightBed(bed);
 
-                r.stopBlink(bed);
-            }
+                Alert_Details ad = new Alert_Details(info, bed, "P");
+                ad.ShowDialog();                
+            }            
         }
     }
 }

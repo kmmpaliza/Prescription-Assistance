@@ -67,9 +67,18 @@ namespace Prescription_Assistance
 
             ds2 = cp.searchPatient();
             int count = ds2.Tables[0].Rows.Count;
-            dataGridView1.Refresh();
-            dataGridView1.DataSource = ds2.Tables["search_Patient"]; 
-            lblText.Text = @"Showing results for '" + txtSearch.Text + @"'. " + count + " result/s.";  
+
+            if (count > 0)
+            {
+                dataGridView1.Refresh();
+                dataGridView1.DataSource = ds2.Tables["search_Patient"];
+                lblText.Text = @"Showing results for '" + txtSearch.Text + @"'. " + count + " result/s."; 
+            }
+            else
+            {
+                dataGridView1.DataSource = null;
+                lblText.Text = @"No results for '" + txtSearch.Text + @"'";
+            }  
         }
 
         private void button2_Click(object sender, EventArgs e)

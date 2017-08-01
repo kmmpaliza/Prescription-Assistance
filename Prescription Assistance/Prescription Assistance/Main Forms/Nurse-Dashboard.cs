@@ -29,12 +29,13 @@ namespace Prescription_Assistance
             abc.Dock = DockStyle.Fill;
 
             abc.checkAssistance();
-            //abc.runAssistance();
-            //abc.runVitals();
-            //abc.runTimeforPrescription();
-            //abc.runPrescription();
-            //abc.setBedtoBlink("ICU-A");
-            //abc.runTime();
+            abc.runVitals();
+            abc.runTimeforPrescription();
+            abc.runPrescription();
+            abc.run5MinutePrescription();
+            abc.run10MinutePrescription();
+            abc.checkLateAlerts();
+            
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -207,6 +208,9 @@ namespace Prescription_Assistance
             var abc = new View_Staff();
             pnlOverlay.Controls.Add(abc);
             abc.Dock = DockStyle.Fill;
+
+            //Insert_MedRecord im = new Insert_MedRecord("AL00011", "V", "301-A", "PA00017", "Doing", "16:20", "16:30", "false");
+            //im.ShowDialog();
         }
 
         private void button4_Click(object sender, EventArgs e)

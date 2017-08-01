@@ -18,6 +18,7 @@ namespace Prescription_Assistance
         public static string userid = "";
         public static string usertype = "";
         public static string userpass = "";
+        public static string usercontact = "";
 
         public Form1()
         {

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using ClassLibrary;
+using System.Text.RegularExpressions;
 
 namespace Prescription_Assistance
 {
@@ -28,47 +29,58 @@ namespace Prescription_Assistance
 
         private void button2_Click(object sender, EventArgs e)
         {
-            type = cboType.Text;
+            string number = txtContact.Text;
+            bool isAContact = Regex.Match(number, @"^(\d{9})$").Success;
 
-            if (type.Equals("Nurse"))
+            if (isAContact)
             {
-                if (txtPass.Text == txtConfirm.Text)
-                {
-                    cn.Last_name = txtLast.Text;
-                    cn.First_name = txtFirst.Text;
-                    cn.Password = txtPass.Text;
-                    cn.Contact = txtContact.Text;
+                type = cboType.Text;
 
-                    id = cn.insertNewNurse();
-                    this.Close();
-                    MessageBox.Show("Account successfully registered.\nName: " + cn.First_name.ToString() + " " + cn.Last_name.ToString() + "\nUsername: " + id);
-                    
-                }
-                else {
-                    label8.Visible = true;
-                }
-            }
-            else if (type.Equals("Doctor"))
-            {
-                if (txtPass.Text == txtConfirm.Text)
+                if (type.Equals("Nurse"))
                 {
-                    cd.Last_name = txtLast.Text;
-                    cd.First_name = txtFirst.Text;
-                    cd.Password = txtPass.Text;
-                    cd.Contact = txtContact.Text;
+                    if (txtPass.Text == txtConfirm.Text)
+                    {
+                        cn.Last_name = txtLast.Text;
+                        cn.First_name = txtFirst.Text;
+                        cn.Password = txtPass.Text;
+                        cn.Contact = txtContact.Text;
 
-                    id = cd.insertNewDoctor();
-                    this.Close();
-                    MessageBox.Show("Account successfully registered.\nName: " + cd.First_name.ToString() + " " + cd.Last_name.ToString() + "\nUsername: " + id);
+                        id = cn.insertNewNurse();
+                        this.Close();
+                        MessageBox.Show("Account successfully registered.\nName: " + cn.First_name.ToString() + " " + cn.Last_name.ToString() + "\nUsername: " + id);
+                    }
+                    else
+                    {
+                        label8.Visible = true;
+                    }
+                }
+                else if (type.Equals("Doctor"))
+                {
+                    if (txtPass.Text == txtConfirm.Text)
+                    {
+                        cd.Last_name = txtLast.Text;
+                        cd.First_name = txtFirst.Text;
+                        cd.Password = txtPass.Text;
+                        cd.Contact = txtContact.Text;
+
+                        id = cd.insertNewDoctor();
+                        this.Close();
+                        MessageBox.Show("Account successfully registered.\nName: " + cd.First_name.ToString() + " " + cd.Last_name.ToString() + "\nUsername: " + id);
+                    }
+                    else
+                    {
+                        label8.Visible = true;
+                    }
                 }
                 else
                 {
-                    label8.Visible = true;
+                    MessageBox.Show("Please choose a type of Staff.");
                 }
             }
-            else {
-                MessageBox.Show("Please choose a type of Staff.");
-            }
+            else{
+                MessageBox.Show("Invalid Contact Number.");
+                txtContact.Focus();
+            }            
         }
 
         private void Registration_Load(object sender, EventArgs e)

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Room_Type));
             this.b3rd = new System.Windows.Forms.Button();
             this.b2nd = new System.Windows.Forms.Button();
             this.cbo2nd = new System.Windows.Forms.ComboBox();
@@ -48,6 +49,8 @@
             // b3rd
             // 
             this.b3rd.BackColor = System.Drawing.Color.Transparent;
+            this.b3rd.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("b3rd.BackgroundImage")));
+            this.b3rd.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.b3rd.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.b3rd.FlatAppearance.BorderSize = 0;
             this.b3rd.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
@@ -59,13 +62,14 @@
             this.b3rd.Padding = new System.Windows.Forms.Padding(8);
             this.b3rd.Size = new System.Drawing.Size(251, 249);
             this.b3rd.TabIndex = 8;
-            this.b3rd.Text = "3rd Floor";
             this.b3rd.UseVisualStyleBackColor = false;
             this.b3rd.Click += new System.EventHandler(this.button2_Click);
             // 
             // b2nd
             // 
             this.b2nd.BackColor = System.Drawing.Color.Transparent;
+            this.b2nd.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("b2nd.BackgroundImage")));
+            this.b2nd.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.b2nd.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.b2nd.FlatAppearance.BorderSize = 0;
             this.b2nd.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
@@ -77,7 +81,6 @@
             this.b2nd.Padding = new System.Windows.Forms.Padding(8);
             this.b2nd.Size = new System.Drawing.Size(251, 249);
             this.b2nd.TabIndex = 7;
-            this.b2nd.Text = "2nd Floor";
             this.b2nd.UseVisualStyleBackColor = false;
             this.b2nd.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -119,6 +122,7 @@
             // 
             // button3
             // 
+            this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.button3.BackColor = System.Drawing.Color.Green;
             this.button3.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -223,6 +227,8 @@
             // b4th
             // 
             this.b4th.BackColor = System.Drawing.Color.Transparent;
+            this.b4th.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("b4th.BackgroundImage")));
+            this.b4th.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.b4th.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.b4th.FlatAppearance.BorderSize = 0;
             this.b4th.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
@@ -234,7 +240,6 @@
             this.b4th.Padding = new System.Windows.Forms.Padding(8);
             this.b4th.Size = new System.Drawing.Size(251, 249);
             this.b4th.TabIndex = 65;
-            this.b4th.Text = "4th Floor";
             this.b4th.UseVisualStyleBackColor = false;
             this.b4th.Click += new System.EventHandler(this.button7_Click);
             // 
@@ -279,9 +284,11 @@
             // b5th
             // 
             this.b5th.BackColor = System.Drawing.Color.Transparent;
+            this.b5th.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("b5th.BackgroundImage")));
+            this.b5th.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.b5th.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.b5th.FlatAppearance.BorderSize = 0;
-            this.b5th.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.b5th.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.b5th.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.b5th.ForeColor = System.Drawing.Color.White;
             this.b5th.Location = new System.Drawing.Point(952, 185);
@@ -290,7 +297,6 @@
             this.b5th.Padding = new System.Windows.Forms.Padding(8);
             this.b5th.Size = new System.Drawing.Size(251, 249);
             this.b5th.TabIndex = 68;
-            this.b5th.Text = "5th Floor";
             this.b5th.UseVisualStyleBackColor = false;
             this.b5th.Click += new System.EventHandler(this.b5th_Click);
             // 

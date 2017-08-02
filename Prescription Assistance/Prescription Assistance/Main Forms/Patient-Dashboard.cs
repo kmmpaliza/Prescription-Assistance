@@ -174,7 +174,7 @@ namespace Prescription_Assistance
             label1.Text = bed;
             //this.TopMost = true;
 
-           // this.WindowState = FormWindowState.Maximized;
+            this.WindowState = FormWindowState.Maximized;
             //this.FormBorderStyle = FormBorderStyle.None;
         }
     }

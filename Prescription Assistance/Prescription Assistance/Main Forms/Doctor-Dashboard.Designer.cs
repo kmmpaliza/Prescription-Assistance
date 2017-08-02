@@ -96,7 +96,6 @@
             this.label1.Size = new System.Drawing.Size(99, 22);
             this.label1.TabIndex = 1;
             this.label1.Text = "John Smith";
-            this.label1.Visible = false;
             // 
             // pictureBox1
             // 
@@ -316,7 +315,6 @@
             this.Controls.Add(this.pnlFrame);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.MaximizeBox = false;
             this.Name = "Doctor_Dashboard";
             this.Text = "iCare | Doctor";
             this.Load += new System.EventHandler(this.Doctor_Dashboard_Load);

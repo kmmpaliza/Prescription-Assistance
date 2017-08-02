@@ -110,7 +110,7 @@ namespace Prescription_Assistance
         private void Room_Type_Load(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Maximized;
-            this.FormBorderStyle = FormBorderStyle.None;
+            //this.FormBorderStyle = FormBorderStyle.None;
         }
 
         private void bO4th_Click(object sender, EventArgs e)

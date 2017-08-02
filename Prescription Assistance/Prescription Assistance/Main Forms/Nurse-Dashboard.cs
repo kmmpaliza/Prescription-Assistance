@@ -6,11 +6,14 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using ClassLibrary;
 
 namespace Prescription_Assistance
 {
     public partial class Nurse_Dashboard : Form
     {
+        Class_Nurse cd = new Class_Nurse();
+
         public Nurse_Dashboard()
         {
             InitializeComponent();
@@ -20,6 +23,13 @@ namespace Prescription_Assistance
         {
             //this.FormBorderStyle = FormBorderStyle.None;
             this.WindowState = FormWindowState.Maximized;
+
+            cd.Nurse_id = Form1.userid;
+            cd.Password = Form1.userpass;
+            DataSet ds = new DataSet();
+            ds = cd.viewNurseDetails();
+
+            label1.Text = "" + ds.Tables[0].Rows[0][2].ToString() + ", " + ds.Tables[0].Rows[0][3].ToString();
 
             pnlOverlay.Controls.Clear();
             pnlOverlay.Visible = false;

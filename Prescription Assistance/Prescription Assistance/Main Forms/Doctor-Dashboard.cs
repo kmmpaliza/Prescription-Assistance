@@ -6,12 +6,14 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using ClassLibrary;
 
 namespace Prescription_Assistance
 {
     public partial class Doctor_Dashboard : Form
     {
         Room_Layout rl = new Room_Layout();
+        Class_Doctor cd = new Class_Doctor();
 
         public Doctor_Dashboard()
         {
@@ -23,12 +25,21 @@ namespace Prescription_Assistance
         {
             //this.TopMost = true;
             //this.FormBorderStyle = FormBorderStyle.None;
-          //  this.WindowState = FormWindowState.Maximized;
+            this.WindowState = FormWindowState.Maximized;
+            
+            cd.Doctor_id = Form1.userid;
+            cd.Password = Form1.userpass;
+            DataSet ds = new DataSet();
+            ds = cd.viewDoctorDetails();
+
+            label1.Text = "" + ds.Tables[0].Rows[0][2].ToString() + ", " + ds.Tables[0].Rows[0][3].ToString();
+            
 
             pnlOverlay.Controls.Clear();
             pnlOverlay.Visible = false;
             pnlFrame.Controls.Clear();
-            var abc = new Room_Layout();            
+            var abc = new Room_Layout();
+            pnlFrame.Controls.Add(abc);          
             abc.Dock = DockStyle.Fill;
 
             abc.checkAssistance();

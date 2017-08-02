@@ -243,7 +243,6 @@
             this.label1.Size = new System.Drawing.Size(99, 22);
             this.label1.TabIndex = 1;
             this.label1.Text = "John Smith";
-            this.label1.Visible = false;
             // 
             // pictureBox1
             // 

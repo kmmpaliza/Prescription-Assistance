@@ -61,7 +61,7 @@ namespace Prescription_Assistance
                 timeNow = DateTime.Now.ToString("HH:mm");
                 if (Form1.usertype.Equals("Nurse"))
                 {
-                    MessageBox.Show("enter");
+                    //MessageBox.Show("enter");
                     cn.Nurse_id = Form1.userid;
                     cn.Password = Form1.userpass;
                     ds8 = cn.viewNurseDetails();
@@ -72,9 +72,9 @@ namespace Prescription_Assistance
                     {                        
                         for (int i = 0; i < ds7.Tables[0].Rows.Count; i++)
                         {
-                            MessageBox.Show("" + i);
+                            //MessageBox.Show("" + i);
                             
-                            MessageBox.Show("" + timeNow + " " + ds7.Tables[0].Rows[i]["TimeforSMS"].ToString());
+                            //MessageBox.Show("" + timeNow + " " + ds7.Tables[0].Rows[i]["TimeforSMS"].ToString());
                             if (ds7.Tables[0].Rows[i]["TimeforSMS"].ToString() == timeNow)
                             {
                                 sendSMS(number, ds7.Tables[0].Rows[i][2].ToString(),
@@ -89,7 +89,7 @@ namespace Prescription_Assistance
         }
         public void sendSMS(string num, string type, string bed, string info)
         {
-            MessageBox.Show("enter SMS");
+            //MessageBox.Show("enter SMS");
             string number = String.Format("{0: +639#########}", long.Parse(num));
             
             switch (type)
@@ -117,7 +117,7 @@ namespace Prescription_Assistance
 
             string alertmessage = "Message sent";
             
-            MessageBox.Show("" + alertmessage);
+            //MessageBox.Show("" + alertmessage);
         }
         #endregion 
 
@@ -125,8 +125,8 @@ namespace Prescription_Assistance
         public void runVitals() //every 10 minutes
         {
             vTimer.Start();
-            //vTimer.Interval = 600000; //10 minutes
-            vTimer.Interval = 5000;
+            vTimer.Interval = 600000; //10 minutes
+            //vTimer.Interval = 5000;
             vTimer.Elapsed += new System.Timers.ElapsedEventHandler((o, e) =>
             {
                 checkVitals();
@@ -144,7 +144,7 @@ namespace Prescription_Assistance
         public void checkVitals()
         {
             //ds2 = cr.viewOccupiedRooms();
-            MessageBox.Show("" + ds.Tables[0].Rows.Count + " " + DateTime.Now.ToString("HH:mm"));
+            //MessageBox.Show("" + ds.Tables[0].Rows.Count + " " + DateTime.Now.ToString("HH:mm"));
             if (ds.Tables[0].Rows.Count > 0)
             {
                 for (int i = 0; i < ds.Tables[0].Rows.Count; i++)
@@ -365,7 +365,7 @@ namespace Prescription_Assistance
                 //donothing
             }
 
-            MessageBox.Show("OK");
+            //MessageBox.Show("OK");
             runTimeforPrescription();   
         }
         public void runPrescription() //every hour
@@ -421,7 +421,7 @@ namespace Prescription_Assistance
         public void run5MinutePrescription()
         {
             m5Timer.Start();
-            m5Timer.Interval = 60000; //5 minutes5
+            m5Timer.Interval = 300000; //5 minutes5
             m5Timer.Elapsed += new System.Timers.ElapsedEventHandler((o, e) =>
             {
                 checkMinutePrescription("Every 5 minutes");
@@ -440,12 +440,12 @@ namespace Prescription_Assistance
         {
             //check rooms with patients
             ds = cr.viewOccupiedRooms();
-            MessageBox.Show("showed dataset");
+            //MessageBox.Show("showed dataset");
             if (ds.Tables[0].Rows.Count > 0)
             {
                 for (int i = 0; i < ds.Tables[0].Rows.Count; i++)
                 {
-                    MessageBox.Show("showed row " + i);
+                    //MessageBox.Show("showed row " + i);
                     //get patient and bed
                     bed = ds.Tables[0].Rows[i]["Bed_ID"].ToString();
                     cpr.Patient_id = ds.Tables[0].Rows[i]["Patient_ID"].ToString();
@@ -455,7 +455,7 @@ namespace Prescription_Assistance
                     for (int j = 0; j < ds3.Tables[0].Rows.Count; j++)
                     {
                         string interval = ds3.Tables[0].Rows[j]["Interval"].ToString();
-                        MessageBox.Show(interval);
+                        //MessageBox.Show(interval);
                         if (intervaltocheck == interval)
                         {
                             saveMinuteMeds(bed, ds3.Tables[0].Rows[j][0].ToString());
@@ -486,7 +486,7 @@ namespace Prescription_Assistance
         }
         public void saveMinuteMeds(string bed_id, string prescription_id)
         {
-            MessageBox.Show("saving" + prescription_id);
+            //MessageBox.Show("saving" + prescription_id);
             ca.Bed_id = bed_id;
             ca.Info_id = prescription_id;
             ca.Status = "Undone";
@@ -500,7 +500,7 @@ namespace Prescription_Assistance
             ca.Ondisplay = "true";
 
             id = ca.insertAlert();
-            MessageBox.Show("" + id);
+            //MessageBox.Show("" + id);
             setBedtoBlink(ca.Bed_id.ToString());
             showAlert(id, ca.Type.ToString(), ca.Bed_id.ToString(), ca.Info_id.ToString(), ca.Status.ToString(),
                     ca.Timefordisplay.ToString(), ca.Timeforsms.ToString(), ca.Ondisplay.ToString());
@@ -631,7 +631,7 @@ namespace Prescription_Assistance
         }
         public void stopBlink(string bed_id)
         {
-            MessageBox.Show("" + bed_id);
+            //MessageBox.Show("" + bed_id);
             ds6 = cr.viewAllBeds();
             if (ds6.Tables[0].Rows.Count > 0)
             {
@@ -642,7 +642,7 @@ namespace Prescription_Assistance
                         btimer[i].Stop();                         
                         bed = "" + i;
                         this.Controls.Find("pbox" + bed, true)[0].BackColor = Color.Transparent;
-                        MessageBox.Show(btimer[i].Enabled + "Stop");
+                        //MessageBox.Show(btimer[i].Enabled + "Stop");
                     }
                 }
             }

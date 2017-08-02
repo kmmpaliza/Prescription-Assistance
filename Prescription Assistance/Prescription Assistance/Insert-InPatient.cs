@@ -27,7 +27,7 @@ namespace Prescription_Assistance
         private void button2_Click(object sender, EventArgs e)
         {
             int age;
-            bool isNumericA = int.TryParse(txtWeight.Text, out age);
+            bool isNumericA = int.TryParse(txtAge.Text, out age);
 
             double weight;
             bool isNumericW = double.TryParse(txtWeight.Text, out weight);
@@ -57,6 +57,17 @@ namespace Prescription_Assistance
 
                         cp.insertNewPatient();
                         MessageBox.Show("In-Patient successfully added.");
+
+                        if (Form1.usertype.Equals("Doctor"))
+                        {
+                            Doctor_Dashboard parent = (Doctor_Dashboard)this.ParentForm;
+                            parent.changetoViewPatient();
+                        }
+                        else
+                        {
+                            Nurse_Dashboard parent = (Nurse_Dashboard)this.ParentForm;
+                            parent.changetoViewPatient();
+                        }   
                     }
                     else
                     {
@@ -73,16 +84,7 @@ namespace Prescription_Assistance
                 MessageBox.Show("Invalid value for Age.");
             }            
 
-            if (Form1.usertype.Equals("Doctor"))
-            {
-                Doctor_Dashboard parent = (Doctor_Dashboard)this.ParentForm;
-                parent.changetoViewPatient();
-            }
-            else
-            {
-                Nurse_Dashboard parent = (Nurse_Dashboard)this.ParentForm;
-                parent.changetoViewPatient();
-            }            
+                     
         }
 
         private void button1_Click(object sender, EventArgs e)

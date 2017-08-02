@@ -62,7 +62,7 @@ namespace Prescription_Assistance
             }
             else
             {
-                dateTimePicker1.Text = DateTime.Now.ToShortDateString();
+                dateTimePicker1.Text = DateTime.Now.ToString("dd/MM/yyyy");
             }
 
             if (ds.Tables[0].Rows[0][14] != DBNull.Value) {
@@ -141,7 +141,7 @@ namespace Prescription_Assistance
                             cp.Last_name = txtLast.Text;
                             cp.First_name = txtFirst.Text;
                             cp.Gender = cboGender.Text;
-                            cp.Birthday = dateTimePicker1.Value.Date.ToShortDateString();
+                            cp.Birthday = dateTimePicker1.Value.Date.ToString("dd/MM/yyyy");
                             cp.Address = txtAddress.Text;
                             cp.Medical_history = txtMH.Text;
                             cp.Imgfile = data;

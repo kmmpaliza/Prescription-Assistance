@@ -60,7 +60,7 @@ namespace Prescription_Assistance
             }
             else
             {
-                dateTimePicker1.Text = DateTime.Now.ToShortDateString();
+                dateTimePicker1.Text = DateTime.Now.ToString("dd/MM/yyyy");
             }
 
             if (ds.Tables[0].Rows[0][14] != DBNull.Value)

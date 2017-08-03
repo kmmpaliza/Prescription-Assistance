@@ -100,7 +100,7 @@
             // 
             // pbox81
             // 
-            this.pbox81.Location = new System.Drawing.Point(199, 466);
+            this.pbox81.Location = new System.Drawing.Point(198, 495);
             this.pbox81.Name = "pbox81";
             this.pbox81.Size = new System.Drawing.Size(20, 20);
             this.pbox81.TabIndex = 111;
@@ -108,7 +108,7 @@
             // 
             // pbox82
             // 
-            this.pbox82.Location = new System.Drawing.Point(173, 488);
+            this.pbox82.Location = new System.Drawing.Point(172, 517);
             this.pbox82.Name = "pbox82";
             this.pbox82.Size = new System.Drawing.Size(20, 20);
             this.pbox82.TabIndex = 110;
@@ -116,7 +116,7 @@
             // 
             // pbox83
             // 
-            this.pbox83.Location = new System.Drawing.Point(145, 512);
+            this.pbox83.Location = new System.Drawing.Point(144, 541);
             this.pbox83.Name = "pbox83";
             this.pbox83.Size = new System.Drawing.Size(20, 20);
             this.pbox83.TabIndex = 109;
@@ -165,7 +165,7 @@
             // pbox85
             // 
             this.pbox85.Image = global::Prescription_Assistance.Properties.Resources.blank;
-            this.pbox85.Location = new System.Drawing.Point(204, 549);
+            this.pbox85.Location = new System.Drawing.Point(204, 578);
             this.pbox85.Name = "pbox85";
             this.pbox85.Size = new System.Drawing.Size(35, 20);
             this.pbox85.TabIndex = 103;
@@ -174,7 +174,7 @@
             // pbox84
             // 
             this.pbox84.Image = global::Prescription_Assistance.Properties.Resources.blank;
-            this.pbox84.Location = new System.Drawing.Point(204, 524);
+            this.pbox84.Location = new System.Drawing.Point(204, 551);
             this.pbox84.Name = "pbox84";
             this.pbox84.Size = new System.Drawing.Size(35, 20);
             this.pbox84.TabIndex = 102;
@@ -183,7 +183,7 @@
             // pbox86
             // 
             this.pbox86.Image = global::Prescription_Assistance.Properties.Resources.blank;
-            this.pbox86.Location = new System.Drawing.Point(265, 538);
+            this.pbox86.Location = new System.Drawing.Point(272, 568);
             this.pbox86.Name = "pbox86";
             this.pbox86.Size = new System.Drawing.Size(20, 35);
             this.pbox86.TabIndex = 101;
@@ -192,7 +192,7 @@
             // pbox88
             // 
             this.pbox88.Image = global::Prescription_Assistance.Properties.Resources.blank;
-            this.pbox88.Location = new System.Drawing.Point(331, 536);
+            this.pbox88.Location = new System.Drawing.Point(338, 566);
             this.pbox88.Name = "pbox88";
             this.pbox88.Size = new System.Drawing.Size(20, 35);
             this.pbox88.TabIndex = 100;
@@ -201,7 +201,7 @@
             // pbox87
             // 
             this.pbox87.Image = global::Prescription_Assistance.Properties.Resources.blank;
-            this.pbox87.Location = new System.Drawing.Point(298, 536);
+            this.pbox87.Location = new System.Drawing.Point(305, 566);
             this.pbox87.Name = "pbox87";
             this.pbox87.Size = new System.Drawing.Size(20, 35);
             this.pbox87.TabIndex = 99;
@@ -210,7 +210,7 @@
             // pbox90
             // 
             this.pbox90.Image = global::Prescription_Assistance.Properties.Resources.blank;
-            this.pbox90.Location = new System.Drawing.Point(401, 536);
+            this.pbox90.Location = new System.Drawing.Point(408, 566);
             this.pbox90.Name = "pbox90";
             this.pbox90.Size = new System.Drawing.Size(20, 35);
             this.pbox90.TabIndex = 98;
@@ -219,7 +219,7 @@
             // pbox89
             // 
             this.pbox89.Image = global::Prescription_Assistance.Properties.Resources.blank;
-            this.pbox89.Location = new System.Drawing.Point(367, 536);
+            this.pbox89.Location = new System.Drawing.Point(374, 566);
             this.pbox89.Name = "pbox89";
             this.pbox89.Size = new System.Drawing.Size(20, 35);
             this.pbox89.TabIndex = 97;
@@ -228,7 +228,7 @@
             // pbox92
             // 
             this.pbox92.Image = global::Prescription_Assistance.Properties.Resources.blank;
-            this.pbox92.Location = new System.Drawing.Point(362, 485);
+            this.pbox92.Location = new System.Drawing.Point(367, 517);
             this.pbox92.Name = "pbox92";
             this.pbox92.Size = new System.Drawing.Size(20, 35);
             this.pbox92.TabIndex = 96;
@@ -237,7 +237,7 @@
             // pbox91
             // 
             this.pbox91.Image = global::Prescription_Assistance.Properties.Resources.blank;
-            this.pbox91.Location = new System.Drawing.Point(335, 485);
+            this.pbox91.Location = new System.Drawing.Point(340, 517);
             this.pbox91.Name = "pbox91";
             this.pbox91.Size = new System.Drawing.Size(20, 35);
             this.pbox91.TabIndex = 95;
@@ -246,7 +246,7 @@
             // pbox95
             // 
             this.pbox95.Image = global::Prescription_Assistance.Properties.Resources.blank;
-            this.pbox95.Location = new System.Drawing.Point(389, 500);
+            this.pbox95.Location = new System.Drawing.Point(394, 532);
             this.pbox95.Name = "pbox95";
             this.pbox95.Size = new System.Drawing.Size(35, 20);
             this.pbox95.TabIndex = 94;
@@ -255,7 +255,7 @@
             // pbox94
             // 
             this.pbox94.Image = global::Prescription_Assistance.Properties.Resources.blank;
-            this.pbox94.Location = new System.Drawing.Point(389, 472);
+            this.pbox94.Location = new System.Drawing.Point(394, 504);
             this.pbox94.Name = "pbox94";
             this.pbox94.Size = new System.Drawing.Size(35, 20);
             this.pbox94.TabIndex = 93;
@@ -264,7 +264,7 @@
             // pbox93
             // 
             this.pbox93.Image = global::Prescription_Assistance.Properties.Resources.blank;
-            this.pbox93.Location = new System.Drawing.Point(389, 444);
+            this.pbox93.Location = new System.Drawing.Point(394, 476);
             this.pbox93.Name = "pbox93";
             this.pbox93.Size = new System.Drawing.Size(35, 20);
             this.pbox93.TabIndex = 92;
@@ -273,7 +273,7 @@
             // pbox75
             // 
             this.pbox75.Image = global::Prescription_Assistance.Properties.Resources.blank;
-            this.pbox75.Location = new System.Drawing.Point(662, 411);
+            this.pbox75.Location = new System.Drawing.Point(681, 432);
             this.pbox75.Name = "pbox75";
             this.pbox75.Size = new System.Drawing.Size(35, 20);
             this.pbox75.TabIndex = 91;
@@ -282,7 +282,7 @@
             // pbox74
             // 
             this.pbox74.Image = global::Prescription_Assistance.Properties.Resources.blank;
-            this.pbox74.Location = new System.Drawing.Point(662, 389);
+            this.pbox74.Location = new System.Drawing.Point(681, 410);
             this.pbox74.Name = "pbox74";
             this.pbox74.Size = new System.Drawing.Size(35, 20);
             this.pbox74.TabIndex = 90;
@@ -291,7 +291,7 @@
             // pbox73
             // 
             this.pbox73.Image = global::Prescription_Assistance.Properties.Resources.blank;
-            this.pbox73.Location = new System.Drawing.Point(662, 366);
+            this.pbox73.Location = new System.Drawing.Point(681, 387);
             this.pbox73.Name = "pbox73";
             this.pbox73.Size = new System.Drawing.Size(35, 20);
             this.pbox73.TabIndex = 89;
@@ -300,7 +300,7 @@
             // pbox72
             // 
             this.pbox72.Image = global::Prescription_Assistance.Properties.Resources.blank;
-            this.pbox72.Location = new System.Drawing.Point(573, 411);
+            this.pbox72.Location = new System.Drawing.Point(592, 432);
             this.pbox72.Name = "pbox72";
             this.pbox72.Size = new System.Drawing.Size(35, 20);
             this.pbox72.TabIndex = 88;
@@ -309,7 +309,7 @@
             // pbox71
             // 
             this.pbox71.Image = global::Prescription_Assistance.Properties.Resources.blank;
-            this.pbox71.Location = new System.Drawing.Point(573, 389);
+            this.pbox71.Location = new System.Drawing.Point(592, 410);
             this.pbox71.Name = "pbox71";
             this.pbox71.Size = new System.Drawing.Size(35, 20);
             this.pbox71.TabIndex = 87;
@@ -318,7 +318,7 @@
             // pbox70
             // 
             this.pbox70.Image = global::Prescription_Assistance.Properties.Resources.blank;
-            this.pbox70.Location = new System.Drawing.Point(573, 366);
+            this.pbox70.Location = new System.Drawing.Point(592, 387);
             this.pbox70.Name = "pbox70";
             this.pbox70.Size = new System.Drawing.Size(35, 20);
             this.pbox70.TabIndex = 86;
@@ -327,7 +327,7 @@
             // pbox69
             // 
             this.pbox69.Image = global::Prescription_Assistance.Properties.Resources.blank;
-            this.pbox69.Location = new System.Drawing.Point(479, 411);
+            this.pbox69.Location = new System.Drawing.Point(492, 432);
             this.pbox69.Name = "pbox69";
             this.pbox69.Size = new System.Drawing.Size(35, 20);
             this.pbox69.TabIndex = 85;
@@ -336,7 +336,7 @@
             // pbox68
             // 
             this.pbox68.Image = global::Prescription_Assistance.Properties.Resources.blank;
-            this.pbox68.Location = new System.Drawing.Point(479, 389);
+            this.pbox68.Location = new System.Drawing.Point(492, 410);
             this.pbox68.Name = "pbox68";
             this.pbox68.Size = new System.Drawing.Size(35, 20);
             this.pbox68.TabIndex = 84;
@@ -345,7 +345,7 @@
             // pbox67
             // 
             this.pbox67.Image = global::Prescription_Assistance.Properties.Resources.blank;
-            this.pbox67.Location = new System.Drawing.Point(479, 368);
+            this.pbox67.Location = new System.Drawing.Point(492, 389);
             this.pbox67.Name = "pbox67";
             this.pbox67.Size = new System.Drawing.Size(35, 20);
             this.pbox67.TabIndex = 83;
@@ -355,7 +355,7 @@
             // 
             this.pbox66.BackColor = System.Drawing.Color.Transparent;
             this.pbox66.Image = global::Prescription_Assistance.Properties.Resources.blank;
-            this.pbox66.Location = new System.Drawing.Point(443, 410);
+            this.pbox66.Location = new System.Drawing.Point(456, 431);
             this.pbox66.Name = "pbox66";
             this.pbox66.Size = new System.Drawing.Size(35, 20);
             this.pbox66.TabIndex = 82;
@@ -365,7 +365,7 @@
             // 
             this.pbox65.BackColor = System.Drawing.Color.Transparent;
             this.pbox65.Image = global::Prescription_Assistance.Properties.Resources.blank;
-            this.pbox65.Location = new System.Drawing.Point(443, 388);
+            this.pbox65.Location = new System.Drawing.Point(456, 409);
             this.pbox65.Name = "pbox65";
             this.pbox65.Size = new System.Drawing.Size(35, 20);
             this.pbox65.TabIndex = 81;
@@ -375,7 +375,7 @@
             // 
             this.pbox64.BackColor = System.Drawing.Color.Transparent;
             this.pbox64.Image = global::Prescription_Assistance.Properties.Resources.blank;
-            this.pbox64.Location = new System.Drawing.Point(443, 367);
+            this.pbox64.Location = new System.Drawing.Point(456, 388);
             this.pbox64.Name = "pbox64";
             this.pbox64.Size = new System.Drawing.Size(35, 20);
             this.pbox64.TabIndex = 80;
@@ -457,7 +457,7 @@
             this.DoubleBuffered = true;
             this.Name = "_5thFloor";
             this.Padding = new System.Windows.Forms.Padding(16);
-            this.Size = new System.Drawing.Size(1115, 603);
+            this.Size = new System.Drawing.Size(1150, 635);
             this.Load += new System.EventHandler(this._5thFloor_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pbox81)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbox82)).EndInit();

@@ -165,7 +165,7 @@ namespace Prescription_Assistance
             pnlOverlay.Controls.Clear();
             var abc = new _2ndFloorPrivateRoomD();
             pnlOverlay.Controls.Add(abc);
-            abc.Dock = DockStyle.Fill;
+          //  abc.Dock = DockStyle.Fill;
         }
 
         public void goto3rd()
@@ -174,7 +174,7 @@ namespace Prescription_Assistance
             pnlOverlay.Controls.Clear();
             var abc = new _3rdFloor();
             pnlOverlay.Controls.Add(abc);
-            abc.Dock = DockStyle.Fill;
+           // abc.Dock = DockStyle.Fill;
         }
 
         public void goto4th()
@@ -183,7 +183,7 @@ namespace Prescription_Assistance
             pnlOverlay.Controls.Clear();
             var abc = new _4thFloor();
             pnlOverlay.Controls.Add(abc);
-            abc.Dock = DockStyle.Fill;
+           // abc.Dock = DockStyle.Fill;
         }
 
         public void goto5th()
@@ -192,7 +192,7 @@ namespace Prescription_Assistance
             pnlOverlay.Controls.Clear();
             var abc = new _5thFloor();
             pnlOverlay.Controls.Add(abc);
-            abc.Dock = DockStyle.Fill;
+           // abc.Dock = DockStyle.Fill;
         }
 
         public void allRooms()

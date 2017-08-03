@@ -106,7 +106,7 @@ namespace Prescription_Assistance
             pnlOverlay.Controls.Clear();
             var abc = new _2ndFloorPrivateRoomD();
             pnlOverlay.Controls.Add(abc);
-            abc.Dock = DockStyle.Fill;
+          //  abc.Dock = DockStyle.Fill;
         }
 
         private void ThirdFloorToolStripMenuItem_Click(object sender, EventArgs e)
@@ -115,7 +115,7 @@ namespace Prescription_Assistance
             pnlOverlay.Controls.Clear();
             var abc = new _3rdFloor();
             pnlOverlay.Controls.Add(abc);
-            abc.Dock = DockStyle.Fill;
+           // abc.Dock = DockStyle.Fill;
         }
 
         private void FourthFloorToolStripMenuItem_Click(object sender, EventArgs e)
@@ -124,7 +124,7 @@ namespace Prescription_Assistance
             pnlOverlay.Controls.Clear();
             var abc = new _4thFloor();
             pnlOverlay.Controls.Add(abc);
-            abc.Dock = DockStyle.Fill;
+           // abc.Dock = DockStyle.Fill;
         }
 
         private void FifthFloorToolStripMenuItem1_Click(object sender, EventArgs e)
@@ -133,7 +133,7 @@ namespace Prescription_Assistance
             pnlOverlay.Controls.Clear();
             var abc = new _5thFloor();
             pnlOverlay.Controls.Add(abc);
-            abc.Dock = DockStyle.Fill;
+         //   abc.Dock = DockStyle.Fill;
         }
 
         private void button2_Click(object sender, EventArgs e)

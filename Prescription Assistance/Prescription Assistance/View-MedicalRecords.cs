@@ -17,7 +17,6 @@ namespace Prescription_Assistance
         DataSet ds = new DataSet();
         DataSet ds2 = new DataSet();
         DataSet ds3 = new DataSet();
-        string type;
 
         public View_MedicalRecords()
         {

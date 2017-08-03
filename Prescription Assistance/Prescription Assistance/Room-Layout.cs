@@ -33,23 +33,46 @@ namespace Prescription_Assistance
         Class_Prescription cpr = new Class_Prescription();
         Class_Nurse cn = new Class_Nurse();
 
-        DataSet ds = new DataSet();
-        DataSet ds2 = new DataSet();
-        DataSet ds3 = new DataSet();
-        DataSet ds4 = new DataSet();
-        DataSet ds5 = new DataSet();
-        DataSet ds6 = new DataSet();
-        DataSet ds7 = new DataSet();
-        DataSet ds8 = new DataSet();
-        DataSet ds9 = new DataSet();
-        DataSet ds10 = new DataSet();
+        DataSet ds = new DataSet(); //viewoccupiedbeds
+        DataSet ds6 = new DataSet(); //viewallbeds
+        DataSet ds7 = new DataSet(); //viewnurse
+        DataSet ds8 = new DataSet(); //viewlatealerts
 
-        string bed, id, textbody, timeNow;        
+
+        DataSet ds2 = new DataSet(); //viewunfinishedalerts A
+        DataSet ds3 = new DataSet(); //viewunfinishedalerts V
+        DataSet ds4 = new DataSet(); //viewunfinishedalerts P
+
+        DataSet ds0 = new DataSet(); //viewprescription
+        DataSet ds1 = new DataSet(); //viewprescription
+
+        string bed, id, textbody, timeNow, number;        
 
         public Room_Layout()
         {
             InitializeComponent();
-        } 
+
+            cn.Nurse_id = Form1.userid;
+            cn.Password = Form1.userpass;
+            ds7 = cn.viewNurseDetails();
+
+            ds = cr.viewOccupiedRooms();
+            
+            ds6 = cr.viewAllBeds();
+
+            ds8 = ca.viewLateAlerts();
+        }
+        private void Room_Layout_Load(object sender, EventArgs e)
+        {
+            cn.Nurse_id = Form1.userid;
+            cn.Password = Form1.userpass;
+            ds7 = cn.viewNurseDetails();
+            number = ds7.Tables[0].Rows[0][4].ToString();
+
+            ds = cr.viewOccupiedRooms();
+            ds6 = cr.viewAllBeds();
+            ds8 = ca.viewLateAlerts();
+        }
         
         #region SMS for Late Alerts
         public void checkLateAlerts() //every minute
@@ -60,25 +83,19 @@ namespace Prescription_Assistance
             {
                 timeNow = DateTime.Now.ToString("HH:mm");
                 if (Form1.usertype.Equals("Nurse"))
-                {
-                    //MessageBox.Show("enter");
-                    cn.Nurse_id = Form1.userid;
-                    cn.Password = Form1.userpass;
-                    ds8 = cn.viewNurseDetails();
-                    string number = ds8.Tables[0].Rows[0][4].ToString();
-
-                    ds7 = ca.viewLateAlerts();
-                    if (ds7.Tables[0].Rows.Count > 0)
+                {  
+                    //ds8 = ca.viewLateAlerts();
+                    if (ds8.Tables[0].Rows.Count > 0)
                     {                        
-                        for (int i = 0; i < ds7.Tables[0].Rows.Count; i++)
+                        for (int i = 0; i < ds8.Tables[0].Rows.Count; i++)
                         {
                             //MessageBox.Show("" + i);
                             
                             //MessageBox.Show("" + timeNow + " " + ds7.Tables[0].Rows[i]["TimeforSMS"].ToString());
-                            if (ds7.Tables[0].Rows[i]["TimeforSMS"].ToString() == timeNow)
+                            if (ds8.Tables[0].Rows[i]["TimeforSMS"].ToString() == timeNow)
                             {
-                                sendSMS(number, ds7.Tables[0].Rows[i][2].ToString(),
-                                    ds7.Tables[0].Rows[i][4].ToString(), ds7.Tables[0].Rows[i][5].ToString());
+                                sendSMS(number, ds8.Tables[0].Rows[i][2].ToString(),
+                                    ds8.Tables[0].Rows[i][4].ToString(), ds8.Tables[0].Rows[i][5].ToString());
                             }
                         }                
                     }
@@ -126,7 +143,7 @@ namespace Prescription_Assistance
         {
             vTimer.Start();
             vTimer.Interval = 600000; //10 minutes
-            //vTimer.Interval = 5000;
+            //vTimer.Interval = 30000;
             vTimer.Elapsed += new System.Timers.ElapsedEventHandler((o, e) =>
             {
                 checkVitals();
@@ -143,15 +160,14 @@ namespace Prescription_Assistance
         }
         public void checkVitals()
         {
-            //ds2 = cr.viewOccupiedRooms();
-            //MessageBox.Show("" + ds.Tables[0].Rows.Count + " " + DateTime.Now.ToString("HH:mm"));
+            ds = cr.viewOccupiedRooms();
             if (ds.Tables[0].Rows.Count > 0)
             {
                 for (int i = 0; i < ds.Tables[0].Rows.Count; i++)
                 {
                     ca.Info_id = ds.Tables[0].Rows[i][1].ToString();
                     ca.Status = "Undone";
-                    ca.Bed_id = ds.Tables[0].Rows[i][1].ToString();
+                    ca.Bed_id = ds.Tables[0].Rows[i][0].ToString();
                     ca.Type = "V";
                     ca.Ondisplay = "false";
 
@@ -170,39 +186,31 @@ namespace Prescription_Assistance
         public void displayVitals()
         {
             ca.Type = "V";          
-            ds2 = ca.viewUnfinishedAlerts();
-            if (ds2.Tables[0].Rows.Count > 0)
+            ds3 = ca.viewUnfinishedAlerts("V");
+            if (ds3.Tables[0].Rows.Count > 0)
             {
-                for (int i = 0; i < ds2.Tables[0].Rows.Count; i++)
+                for (int i = 0; i < ds3.Tables[0].Rows.Count; i++)
                 {
-                    if (ds2.Tables[0].Rows[i][8].ToString() == "true")
-                    {
-                        //donothing
-                    }
-                    else
-                    {
-                        string id = ds2.Tables[0].Rows[i][1].ToString();
-                        string type = ds2.Tables[0].Rows[i][2].ToString();
-                        string status = ds2.Tables[0].Rows[i][3].ToString();
-                        string bed = ds2.Tables[0].Rows[i][4].ToString();
-                        string info = ds2.Tables[0].Rows[i][5].ToString();
+                    string id = ds3.Tables[0].Rows[i][1].ToString();
+                    string type = ds3.Tables[0].Rows[i][2].ToString();
+                    string status = ds3.Tables[0].Rows[i][3].ToString();
+                    string bed = ds3.Tables[0].Rows[i][4].ToString();
+                    string info = ds3.Tables[0].Rows[i][5].ToString();
 
-                        DateTime currentTime = DateTime.Now;
-                        DateTime x10mins = currentTime.AddMinutes(10);
-                        string timefordisplay = currentTime.ToString("HH:mm");
-                        string timeforsms = currentTime.ToString("HH:mm");
-                        ca.Timefordisplay = timefordisplay;
-                        ca.Timeforsms = timeforsms;
+                    DateTime currentTime = DateTime.Now;
+                    DateTime x10mins = currentTime.AddMinutes(10);
+                    string timefordisplay = currentTime.ToString("HH:mm");
+                    string timeforsms = currentTime.ToString("HH:mm");
+                    ca.Timefordisplay = timefordisplay;
+                    ca.Timeforsms = timeforsms;
 
-                        string ondisplay = "true";
-                        ca.Ondisplay = ondisplay;
-                        ca.Alert_id = id;
-                        ca.Status = status;
-                        ca.updateAlert();
+                    string ondisplay = "true";
+                    ca.Ondisplay = ondisplay;
+                    ca.Alert_id = id;
+                    ca.Status = status;
+                    ca.updateAlert();
 
-                        showAlert(id, type, bed, info, status, timefordisplay, timeforsms, ondisplay);
-                    }
-                    
+                    showAlert(id, type, bed, info, status, timefordisplay, timeforsms, ondisplay);                    
                 }
             }
         }
@@ -222,16 +230,16 @@ namespace Prescription_Assistance
         public void checkAssistance()
         {  
             ca.Type = "A";          
-            ds = ca.viewUnfinishedAlerts();
-            if (ds.Tables[0].Rows.Count > 0)
+            ds2 = ca.viewUnfinishedAlerts("A");                       
+            if (ds2.Tables[1].Rows.Count > 0)
             {
-                for (int i = 0; i < ds.Tables[0].Rows.Count; i++)
+                for (int i = 0; i < ds2.Tables[1].Rows.Count; i++)
                 {
-                    string id = ds.Tables[0].Rows[i][1].ToString();
-                    string type = ds.Tables[0].Rows[i][2].ToString();
-                    string status = ds.Tables[0].Rows[i][3].ToString();
-                    string bed = ds.Tables[0].Rows[i][4].ToString();
-                    string info = ds.Tables[0].Rows[i][5].ToString();
+                    string id = ds2.Tables[1].Rows[i][1].ToString();
+                    string type = ds2.Tables[1].Rows[i][2].ToString();
+                    string status = ds2.Tables[1].Rows[i][3].ToString();
+                    string bed = ds2.Tables[1].Rows[i][4].ToString();
+                    string info = ds2.Tables[1].Rows[i][5].ToString();
 
                     DateTime currentTime = DateTime.Now;
                     DateTime x10mins = currentTime.AddMinutes(10);
@@ -281,11 +289,11 @@ namespace Prescription_Assistance
                     cpr.Patient_id = ds.Tables[0].Rows[i]["Patient_ID"].ToString();
 
                     //get prescription of patient
-                    ds3 = cpr.viewPescriptionDetails();
-                    for (int j = 0; j < ds3.Tables[0].Rows.Count; j++)
+                    ds0 = cpr.viewPescriptionDetails();
+                    for (int j = 0; j < ds0.Tables[0].Rows.Count; j++)
                     {
-                        string interval = ds3.Tables[0].Rows[j]["Interval"].ToString();
-                        checkIntervalinHours(bed, ds3.Tables[0].Rows[j][0].ToString(), interval);
+                        string interval = ds0.Tables[0].Rows[j]["Interval"].ToString();
+                        checkIntervalinHours(bed, ds0.Tables[0].Rows[j][0].ToString(), interval);
                     }
                 }
             }
@@ -393,19 +401,19 @@ namespace Prescription_Assistance
         public void checkPalerts()
         {
             ca.Type = "P";
-            ds4 = ca.viewUnfinishedAlerts();
+            ds4 = ca.viewUnfinishedAlerts("P");
             for (int i = 0; i < ds4.Tables[0].Rows.Count; i++)
             {
                 if (DateTime.Now.ToString("HH:mm") == ds4.Tables[0].Rows[i][6].ToString())
                 {
-                    string id = ds.Tables[0].Rows[0][1].ToString();
-                    string type = ds.Tables[0].Rows[0][2].ToString();
-                    string status = ds.Tables[0].Rows[0][3].ToString();
-                    string bed = ds.Tables[0].Rows[0][4].ToString();
-                    string info = ds.Tables[0].Rows[0][5].ToString();
-                    string timefordisplay = ds.Tables[0].Rows[0][6].ToString();
-                    string timeforsms = ds.Tables[0].Rows[0][7].ToString();
-                    string ondisplay = ds.Tables[0].Rows[0][8].ToString();
+                    string id = ds4.Tables[0].Rows[0][1].ToString();
+                    string type = ds4.Tables[0].Rows[0][2].ToString();
+                    string status = ds4.Tables[0].Rows[0][3].ToString();
+                    string bed = ds4.Tables[0].Rows[0][4].ToString();
+                    string info = ds4.Tables[0].Rows[0][5].ToString();
+                    string timefordisplay = ds4.Tables[0].Rows[0][6].ToString();
+                    string timeforsms = ds4.Tables[0].Rows[0][7].ToString();
+                    string ondisplay = ds4.Tables[0].Rows[0][8].ToString();
                     showAlert(id, type, bed, info, status, timefordisplay, timeforsms, ondisplay);
 
                     ca.Alert_id = id;
@@ -451,14 +459,14 @@ namespace Prescription_Assistance
                     cpr.Patient_id = ds.Tables[0].Rows[i]["Patient_ID"].ToString();
 
                     //get prescription of patient
-                    ds3 = cpr.viewPescriptionDetails();
-                    for (int j = 0; j < ds3.Tables[0].Rows.Count; j++)
+                    ds1 = cpr.viewPescriptionDetails();
+                    for (int j = 0; j < ds1.Tables[0].Rows.Count; j++)
                     {
-                        string interval = ds3.Tables[0].Rows[j]["Interval"].ToString();
+                        string interval = ds1.Tables[0].Rows[j]["Interval"].ToString();
                         //MessageBox.Show(interval);
                         if (intervaltocheck == interval)
                         {
-                            saveMinuteMeds(bed, ds3.Tables[0].Rows[j][0].ToString());
+                            saveMinuteMeds(bed, ds1.Tables[0].Rows[j][0].ToString());
                         }
                         else
                         {
@@ -519,23 +527,23 @@ namespace Prescription_Assistance
                 return;
             }
 
-            highlightBed(bed);
-            //setBedtoBlink(bed);
             Alert a = new Alert(id, type, bed, info, status, timefordisplay, timeforsms, ondisplay, this);
             ePanel.Controls.Add(a);
             a.BringToFront();
             a.Width = ePanel.Width - 10;
+
+            highlightBed(bed);
         }
 
         #region Blink
         public void highlightBed(string bed_id)
         {
-            ds5 = cr.viewAllBeds();
-            if (ds5.Tables[0].Rows.Count > 0)
+            //ds6 = cr.viewAllBeds();
+            if (ds6.Tables[1].Rows.Count > 0)
             {
-                for (int i = 0; i < ds5.Tables[0].Rows.Count; i++)
+                for (int i = 0; i < ds6.Tables[1].Rows.Count; i++)
                 {
-                    if (ds5.Tables[0].Rows[i][0].ToString() == bed_id)
+                    if (ds6.Tables[1].Rows[i][0].ToString() == bed_id)
                     {
                         bed = "" + i;
                         this.Controls.Find("pbox" + bed, true)[0].BringToFront();
@@ -551,12 +559,12 @@ namespace Prescription_Assistance
         }
         public void stoplightBed(string bed_id)
         {
-            ds5 = cr.viewAllBeds();
-            if (ds5.Tables[0].Rows.Count > 0)
+            //ds6 = cr.viewAllBeds();
+            if (ds6.Tables[1].Rows.Count > 0)
             {
-                for (int i = 0; i < ds5.Tables[0].Rows.Count; i++)
+                for (int i = 0; i < ds6.Tables[1].Rows.Count; i++)
                 {
-                    if (ds5.Tables[0].Rows[i][0].ToString() == bed_id)
+                    if (ds6.Tables[1].Rows[i][0].ToString() == bed_id)
                     {
                         bed = "" + i;
                         if (this.Controls.Find("pbox" + bed, true)[0].BackColor == Color.FromArgb(153, 255, 255, 0))
@@ -571,12 +579,12 @@ namespace Prescription_Assistance
         }
         public void setBedtoBlink(string bed_id)
         { 
-            ds5 = cr.viewAllBeds();
-            if (ds5.Tables[0].Rows.Count > 0)
+            //ds5 = cr.viewAllBeds();
+            if (ds6.Tables[0].Rows.Count > 0)
             {
-                for (int i = 0; i < ds5.Tables[0].Rows.Count; i++)
+                for (int i = 0; i < ds6.Tables[0].Rows.Count; i++)
                 {
-                    if (ds5.Tables[0].Rows[i][0].ToString() == bed_id)
+                    if (ds6.Tables[0].Rows[i][0].ToString() == bed_id)
                     {
                         bed = "" + i;  
                         //MessageBox.Show("" + btimer[i].ToString());
@@ -632,7 +640,7 @@ namespace Prescription_Assistance
         public void stopBlink(string bed_id)
         {
             //MessageBox.Show("" + bed_id);
-            ds6 = cr.viewAllBeds();
+            //ds6 = cr.viewAllBeds();
             if (ds6.Tables[0].Rows.Count > 0)
             {
                 for (int i = 0; i < ds6.Tables[0].Rows.Count; i++)
@@ -666,253 +674,5 @@ namespace Prescription_Assistance
 
             }, null, (int)(requiredTime - DateTime.Now).TotalMilliseconds, Timeout.Infinite);
         }
-
-        private void Room_Layout_Load(object sender, EventArgs e)
-        {
-            ds = cr.viewOccupiedRooms();
-        }    
-
-        /**private void timer1_Tick(object sender, EventArgs e)
-        {
-            switch (bed)
-            {
-                case "ICU-A":
-                    break;
-                case "ICU-B":
-                    break;
-                case "ICU-C":
-                    break;
-                case "ICU-D":
-                    break;
-                case "ICU-E":
-                    break;
-                case "ICU-F":
-                    break;
-                case "ORE-A":
-                    break;
-                case "ORE-B":
-                    break;
-                case "FW2-A":
-                    break;
-                case "FW2-B":
-                    break;
-                case "FW2-C":
-                    break;
-                case "FW2-D":
-                    break;
-                case "FW2-E":
-                    break;
-                case "FW1-A":
-                    break;
-                case "FW1-B":
-                    break;
-                case "FW1-C":
-                    break;
-                case "FW1-D":
-                    break;
-                case "PED-A":
-                    break;
-                case "PED-B":
-                    break;
-                case "PED-C":
-                    break;
-                //3rd floor
-                case "301-A":
-                    break;
-                case "301-B":
-                    break;
-                case "301-C":
-                    break;
-                case "302-A":
-                    break;
-                case "302-B":
-                    break;
-                case "302-C":
-                    break;
-                case "303-A":
-                    break;
-                case "303-B":
-                    break;
-                case "303-C":
-                    break;
-                case "304-A":
-                    break;
-                case "304-B":
-                    break;
-                case "304-C":
-                    break;
-                case "305-A":
-                    break;
-                case "305-B":
-                    break;
-                case "305-C":
-                    break;
-                case "306-A":
-                    break;
-                case "306-B":
-                    break;
-                case "307-A":
-                    break;
-                case "307-B":
-                    break;
-                case "307-C":
-                    break;
-                case "307-D":
-                    break;
-                case "307-E":
-                    break;
-                case "308-A":
-                    break;
-                case "308-B":
-                    break;
-                case "308-C":
-                    break;
-                case "308-D":
-                    break;
-                case "308-E":
-                    break;
-                case "309-A":
-                    break;
-                case "309-B":
-                    break;
-                case "309-C":
-                    break;
-                case "309-D":
-                    break;
-                case "309-E":
-                    break;
-                //4th Floor
-                case "401-A":
-                    break;
-                case "401-B":
-                    break;
-                case "401-C":
-                    break;
-                case "402-A":
-                    break;
-                case "402-B":
-                    break;
-                case "402-C":
-                    break;
-                case "403-A":
-                    break;
-                case "403-B":
-                    break;
-                case "403-C":
-                    break;
-                case "404-A":
-                    break;
-                case "404-B":
-                    break;
-                case "404-C":
-                    break;
-                case "405-A":
-                    break;
-                case "405-B":
-                    break;
-                case "405-C":
-                    break;
-                case "406-A":
-                    break;
-                case "406-B":
-                    break;
-                case "407-A":
-                    break;
-                case "407-B":
-                    break;
-                case "407-C":
-                    break;
-                case "407-D":
-                    break;
-                case "407-E":
-                    break;
-                case "408-A":
-                    break;
-                case "408-B":
-                    break;
-                case "408-C":
-                    break;
-                case "408-D":
-                    break;
-                case "408-E":
-                    break;
-                case "409-A":
-                    break;
-                case "409-B":
-                    break;
-                case "409-C":
-                    break;
-                case "409-D":
-                    break;
-                case "409-E":
-                    break;
-                //5th
-                case "501-A":
-                    break;
-                case "501-B":
-                    break;
-                case "501-C":
-                    break;
-                case "502-A":
-                    break;
-                case "502-B":
-                    break;
-                case "502-C":
-                    break;
-                case "503-A":
-                    break;
-                case "503-B":
-                    break;
-                case "503-C":
-                    break;
-                case "504-A":
-                    break;
-                case "504-B":
-                    break;
-                case "504-C":
-                    break;
-                case "505-A":
-                    break;
-                case "505-B":
-                    break;
-                case "505-C":
-                    break;
-                case "506-A":
-                    break;
-                case "506-B":
-                    break;
-                case "507-A":
-                    break;
-                case "507-B":
-                    break;
-                case "507-C":
-                    break;
-                case "507-D":
-                    break;
-                case "507-E":
-                    break;
-                case "508-A":
-                    break;
-                case "508-B":
-                    break;
-                case "508-C":
-                    break;
-                case "508-D":
-                    break;
-                case "508-E":
-                    break;
-                case "509-A":
-                    break;
-                case "509-B":
-                    break;
-                case "509-C":
-                    break;
-                case "509-D":
-                    break;
-                case "509-E":
-                    break;
-            }
-        }*/
-
     }
 }

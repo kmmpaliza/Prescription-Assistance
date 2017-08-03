@@ -25,7 +25,6 @@ namespace Prescription_Assistance
         private void Ward_Layout_Load(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Maximized;
-            //this.FormBorderStyle = FormBorderStyle.None;
 
             switch (floor)
             {
@@ -371,68 +370,97 @@ namespace Prescription_Assistance
             ds = cr.viewBedandPatient();
             if (ds.Tables[0].Rows.Count > 0)
             {
-                labelA.Text = ds.Tables[0].Rows[0][3].ToString();
+                if (ds.Tables[0].Rows[0][3] == DBNull.Value)
+                {
+                    labelA.Text = "";
+                    pbA.Enabled = false;
+                }
+                else
+                {
+                    labelA.Text = ds.Tables[0].Rows[0][3].ToString();
+                }
             }
-            else
-            {
-                labelA.Text = "";
-            }
+            else {}
 
             cr.Bed_id = lblB.Text;
             ds = cr.viewBedandPatient();
             if (ds.Tables[0].Rows.Count > 0)
             {
-                labelB.Text = ds.Tables[0].Rows[0][3].ToString();
+                if (ds.Tables[0].Rows[0][3] == DBNull.Value)
+                {
+                    labelB.Text = "";
+                    pbB.Enabled = false;
+                }
+                else
+                {
+                    labelB.Text = ds.Tables[0].Rows[0][3].ToString();
+                }
             }
-            else
-            {
-                labelC.Text = "";
-            }
+            else {}
 
             cr.Bed_id = lblC.Text;
             ds = cr.viewBedandPatient();
             if (ds.Tables[0].Rows.Count > 0)
             {
-                labelC.Text = ds.Tables[0].Rows[0][3].ToString();
+                if (ds.Tables[0].Rows[0][3] == DBNull.Value)
+                {
+                    labelC.Text = "";
+                    pbC.Enabled = false;
+                }
+                else
+                {
+                    labelC.Text = ds.Tables[0].Rows[0][3].ToString();
+                }
             }
-            else
-            {
-                labelC.Text = "";
-            }
+            else {}
 
             cr.Bed_id = lblD.Text;
             ds = cr.viewBedandPatient();
             if (ds.Tables[0].Rows.Count > 0)
             {
-                labelD.Text = ds.Tables[0].Rows[0][3].ToString();
+                if (ds.Tables[0].Rows[0][3] == DBNull.Value)
+                {
+                    labelD.Text = "";
+                    pbD.Enabled = false;
+                }
+                else
+                {
+                    labelD.Text = ds.Tables[0].Rows[0][3].ToString();
+                }
             }
-            else
-            {
-                labelD.Text = "";
-            }
+            else {}
 
             cr.Bed_id = lblE.Text;
             ds = cr.viewBedandPatient();
             if (ds.Tables[0].Rows.Count > 0)
             {
-                labelE.Text = ds.Tables[0].Rows[0][3].ToString();
+                if (ds.Tables[0].Rows[0][3] == DBNull.Value)
+                {
+                    labelE.Text = "";
+                    pbE.Enabled = false;
+                }
+                else
+                {
+                    labelE.Text = ds.Tables[0].Rows[0][3].ToString();
+                }                
             }
-            else
-            {
-                labelE.Text = "";
-            }
+            else {}
 
             cr.Bed_id = lblF.Text;
             ds = cr.viewBedandPatient();
             if (ds.Tables[0].Rows.Count > 0)
             {
-                labelF.Text = ds.Tables[0].Rows[0][3].ToString();
+                if (ds.Tables[0].Rows[0][3] == DBNull.Value)
+                {
+                    labelF.Text = "";
+                    pbF.Enabled = false;
+                }
+                else
+                {
+                    labelF.Text = ds.Tables[0].Rows[0][3].ToString();
+                }                
             }
-            else
-            {
-                labelF.Text = "";
-            }
-            
+            else {}            
         }
 
         private void directtoPatientDashboard(string bed)

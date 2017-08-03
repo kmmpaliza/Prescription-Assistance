@@ -50,6 +50,8 @@
             this.FourthFloorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.FifthFloorToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.allRoomsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.room_Layout1 = new Prescription_Assistance.Room_Layout();
+            this.pnlOverlay.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel1.SuspendLayout();
@@ -70,6 +72,7 @@
             // 
             this.pnlOverlay.AutoScroll = true;
             this.pnlOverlay.BackColor = System.Drawing.Color.White;
+            this.pnlOverlay.Controls.Add(this.room_Layout1);
             this.pnlOverlay.Location = new System.Drawing.Point(206, 66);
             this.pnlOverlay.Name = "pnlOverlay";
             this.pnlOverlay.Size = new System.Drawing.Size(1144, 665);
@@ -90,7 +93,7 @@
             this.panel2.Controls.Add(this.button2);
             this.panel2.Location = new System.Drawing.Point(0, 60);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(200, 743);
+            this.panel2.Size = new System.Drawing.Size(200, 680);
             this.panel2.TabIndex = 4;
             // 
             // button8
@@ -220,7 +223,7 @@
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Padding = new System.Windows.Forms.Padding(8);
-            this.panel1.Size = new System.Drawing.Size(2000, 60);
+            this.panel1.Size = new System.Drawing.Size(1357, 60);
             this.panel1.TabIndex = 3;
             // 
             // button1
@@ -231,7 +234,7 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(1255, 8);
+            this.button1.Location = new System.Drawing.Point(1251, 9);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(95, 42);
             this.button1.TabIndex = 2;
@@ -312,6 +315,15 @@
             this.allRoomsToolStripMenuItem.Text = "All Rooms";
             this.allRoomsToolStripMenuItem.Click += new System.EventHandler(this.allRoomsToolStripMenuItem_Click);
             // 
+            // room_Layout1
+            // 
+            this.room_Layout1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.room_Layout1.Location = new System.Drawing.Point(0, 0);
+            this.room_Layout1.Name = "room_Layout1";
+            this.room_Layout1.Padding = new System.Windows.Forms.Padding(16);
+            this.room_Layout1.Size = new System.Drawing.Size(1144, 665);
+            this.room_Layout1.TabIndex = 0;
+            // 
             // Nurse_Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -325,6 +337,7 @@
             this.Name = "Nurse_Dashboard";
             this.Text = "iCare | Nurse";
             this.Load += new System.EventHandler(this.Nurse_Dashboard_Load);
+            this.pnlOverlay.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel1.ResumeLayout(false);
@@ -358,5 +371,6 @@
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private Room_Layout room_Layout1;
     }
 }

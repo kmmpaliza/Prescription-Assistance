@@ -68,11 +68,11 @@ namespace ClassLibrary
         #endregion
         string id;
 
-        public DataSet viewUnfinishedAlerts()
+        public DataSet viewUnfinishedAlerts(string types)
         {
             SqlCommand cmd = new SqlCommand("select_Alert", conn);
             cmd.CommandType = CommandType.StoredProcedure;
-            cmd.Parameters.Add("@Type", SqlDbType.VarChar).Value = type;
+            cmd.Parameters.Add("@Type", SqlDbType.VarChar).Value = types;
             SqlDataAdapter da = new SqlDataAdapter(cmd);
             ds.Clear();
             da.Fill(ds, "select_Alert");

@@ -124,7 +124,7 @@
             // 
             // pbox80
             // 
-            this.pbox80.Location = new System.Drawing.Point(623, 120);
+            this.pbox80.Location = new System.Drawing.Point(642, 128);
             this.pbox80.Name = "pbox80";
             this.pbox80.Size = new System.Drawing.Size(20, 20);
             this.pbox80.TabIndex = 108;
@@ -132,7 +132,7 @@
             // 
             // pbox79
             // 
-            this.pbox79.Location = new System.Drawing.Point(609, 136);
+            this.pbox79.Location = new System.Drawing.Point(628, 144);
             this.pbox79.Name = "pbox79";
             this.pbox79.Size = new System.Drawing.Size(20, 20);
             this.pbox79.TabIndex = 107;
@@ -140,7 +140,7 @@
             // 
             // pbox78
             // 
-            this.pbox78.Location = new System.Drawing.Point(574, 163);
+            this.pbox78.Location = new System.Drawing.Point(593, 171);
             this.pbox78.Name = "pbox78";
             this.pbox78.Size = new System.Drawing.Size(20, 20);
             this.pbox78.TabIndex = 106;
@@ -148,7 +148,7 @@
             // 
             // pbox77
             // 
-            this.pbox77.Location = new System.Drawing.Point(557, 179);
+            this.pbox77.Location = new System.Drawing.Point(576, 187);
             this.pbox77.Name = "pbox77";
             this.pbox77.Size = new System.Drawing.Size(20, 20);
             this.pbox77.TabIndex = 105;
@@ -156,7 +156,7 @@
             // 
             // pbox76
             // 
-            this.pbox76.Location = new System.Drawing.Point(540, 194);
+            this.pbox76.Location = new System.Drawing.Point(559, 202);
             this.pbox76.Name = "pbox76";
             this.pbox76.Size = new System.Drawing.Size(20, 20);
             this.pbox76.TabIndex = 104;

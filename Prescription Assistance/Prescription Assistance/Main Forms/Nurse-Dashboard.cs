@@ -35,15 +35,19 @@ namespace Prescription_Assistance
             pnlFrame.Controls.Clear();
             var abc = new Room_Layout();            
             pnlFrame.Controls.Add(abc);
-            abc.Dock = DockStyle.Fill;
+            //abc.Dock = DockStyle.Fill;
 
-            abc.checkAssistance();
+            abc.checkAssistance(); //perfect HAHHA
             abc.runVitals();
             abc.runTimeforPrescription();
             abc.runPrescription();
             abc.run5MinutePrescription();
             abc.run10MinutePrescription();
-            abc.checkLateAlerts();            
+            abc.checkLateAlerts();    
+            
+            //abc.highlightBed("ICU-A");  
+            //abc.checkVitals(); 
+                 
         }
 
         private void button2_Click(object sender, EventArgs e)

@@ -94,11 +94,10 @@
             this.labelA.BackColor = System.Drawing.Color.Transparent;
             this.labelA.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelA.ForeColor = System.Drawing.Color.White;
-            this.labelA.Location = new System.Drawing.Point(133, 475);
+            this.labelA.Location = new System.Drawing.Point(136, 475);
             this.labelA.Name = "labelA";
-            this.labelA.Size = new System.Drawing.Size(137, 20);
+            this.labelA.Size = new System.Drawing.Size(0, 20);
             this.labelA.TabIndex = 1;
-            this.labelA.Text = "Solante, Charlie";
             // 
             // labelB
             // 
@@ -106,11 +105,10 @@
             this.labelB.BackColor = System.Drawing.Color.Transparent;
             this.labelB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelB.ForeColor = System.Drawing.Color.White;
-            this.labelB.Location = new System.Drawing.Point(323, 475);
+            this.labelB.Location = new System.Drawing.Point(326, 475);
             this.labelB.Name = "labelB";
-            this.labelB.Size = new System.Drawing.Size(137, 20);
+            this.labelB.Size = new System.Drawing.Size(0, 20);
             this.labelB.TabIndex = 3;
-            this.labelB.Text = "Solante, Charlie";
             // 
             // labelC
             // 
@@ -118,11 +116,10 @@
             this.labelC.BackColor = System.Drawing.Color.Transparent;
             this.labelC.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelC.ForeColor = System.Drawing.Color.White;
-            this.labelC.Location = new System.Drawing.Point(513, 475);
+            this.labelC.Location = new System.Drawing.Point(516, 475);
             this.labelC.Name = "labelC";
-            this.labelC.Size = new System.Drawing.Size(137, 20);
+            this.labelC.Size = new System.Drawing.Size(0, 20);
             this.labelC.TabIndex = 5;
-            this.labelC.Text = "Solante, Charlie";
             this.labelC.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // labelD
@@ -131,11 +128,10 @@
             this.labelD.BackColor = System.Drawing.Color.Transparent;
             this.labelD.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelD.ForeColor = System.Drawing.Color.White;
-            this.labelD.Location = new System.Drawing.Point(703, 475);
+            this.labelD.Location = new System.Drawing.Point(706, 475);
             this.labelD.Name = "labelD";
-            this.labelD.Size = new System.Drawing.Size(137, 20);
+            this.labelD.Size = new System.Drawing.Size(0, 20);
             this.labelD.TabIndex = 7;
-            this.labelD.Text = "Solante, Charlie";
             this.labelD.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // labelE
@@ -144,11 +140,10 @@
             this.labelE.BackColor = System.Drawing.Color.Transparent;
             this.labelE.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelE.ForeColor = System.Drawing.Color.White;
-            this.labelE.Location = new System.Drawing.Point(895, 475);
+            this.labelE.Location = new System.Drawing.Point(898, 475);
             this.labelE.Name = "labelE";
-            this.labelE.Size = new System.Drawing.Size(137, 20);
+            this.labelE.Size = new System.Drawing.Size(0, 20);
             this.labelE.TabIndex = 9;
-            this.labelE.Text = "Solante, Charlie";
             this.labelE.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // labelF
@@ -157,11 +152,10 @@
             this.labelF.BackColor = System.Drawing.Color.Transparent;
             this.labelF.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelF.ForeColor = System.Drawing.Color.White;
-            this.labelF.Location = new System.Drawing.Point(1085, 475);
+            this.labelF.Location = new System.Drawing.Point(1088, 475);
             this.labelF.Name = "labelF";
-            this.labelF.Size = new System.Drawing.Size(137, 20);
+            this.labelF.Size = new System.Drawing.Size(0, 20);
             this.labelF.TabIndex = 11;
-            this.labelF.Text = "Solante, Charlie";
             // 
             // pbA
             // 

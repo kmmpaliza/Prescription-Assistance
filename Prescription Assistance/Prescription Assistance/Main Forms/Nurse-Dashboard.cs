@@ -21,7 +21,6 @@ namespace Prescription_Assistance
 
         private void Nurse_Dashboard_Load(object sender, EventArgs e)
         {
-            //this.FormBorderStyle = FormBorderStyle.None;
             this.WindowState = FormWindowState.Maximized;
 
             cd.Nurse_id = Form1.userid;
@@ -44,8 +43,7 @@ namespace Prescription_Assistance
             abc.runPrescription();
             abc.run5MinutePrescription();
             abc.run10MinutePrescription();
-            abc.checkLateAlerts();
-            
+            abc.checkLateAlerts();            
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -206,11 +204,6 @@ namespace Prescription_Assistance
             abc.Dock = DockStyle.Fill;
         }
 
-        private void pnlOverlay_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
         private void button8_Click(object sender, EventArgs e)
         {
             pnlOverlay.Visible = true;
@@ -219,14 +212,8 @@ namespace Prescription_Assistance
             pnlOverlay.Controls.Add(abc);
             abc.Dock = DockStyle.Fill;
 
-            //Insert_MedRecord im = new Insert_MedRecord("AL00011", "V", "301-A", "PA00017", "Doing", "16:20", "16:30", "false");
-            //im.ShowDialog();
+            //AssignRoomPatient ap = new AssignRoomPatient("301-A");
+            //ap.ShowDialog();
         }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-
-        }
-
     }
 }

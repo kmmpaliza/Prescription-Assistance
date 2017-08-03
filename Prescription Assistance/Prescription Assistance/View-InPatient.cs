@@ -25,9 +25,12 @@ namespace Prescription_Assistance
         private void View_InPatient_Load(object sender, EventArgs e)
         {
             ds = cp.viewAllPatients();
-            dataGridView1.ReadOnly = true;
-            dataGridView1.DataSource = ds.Tables[0];
-            dataGridView1.FirstDisplayedScrollingRowIndex = dataGridView1.RowCount-1;
+            if (ds.Tables[0].Rows.Count > 0)
+            {
+                dataGridView1.ReadOnly = true;
+                dataGridView1.DataSource = ds.Tables[0];
+                dataGridView1.FirstDisplayedScrollingRowIndex = dataGridView1.RowCount - 1;
+            }          
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -64,29 +67,37 @@ namespace Prescription_Assistance
 
         private void button1_Click(object sender, EventArgs e)
         {
-            cp.Patient_id = txtSearch.Text;
-            cp.Last_name = txtSearch.Text;
-            cp.First_name = txtSearch.Text;
-            cp.Gender = txtSearch.Text;
-            cp.Age = txtSearch.Text;
-            cp.Contact = txtSearch.Text;
-
-            ds2 = cp.searchPatient();
-            int count = ds2.Tables["search_Patient"].Rows.Count;
-
-            if (count > 0)
+            if (txtSearch.Text.Equals(""))
             {
-                dataGridView1.Refresh();
-                dataGridView1.DataSource = ds2.Tables["search_Patient"];  
-                lblText.Text = @"Showing results for '" + txtSearch.Text + @"'";
-                lblCounter.Text = "" + count + " result/s"; 
-            }     
+                lblText.Text = "Search field is required.";
+            }
             else
             {
-                dataGridView1.DataSource = null;
-                lblText.Text = @"No results for '" + txtSearch.Text + @"'";
-                lblCounter.Visible = false;
-            }  
+                cp.Patient_id = txtSearch.Text;
+                cp.Last_name = txtSearch.Text;
+                cp.First_name = txtSearch.Text;
+                cp.Gender = txtSearch.Text;
+                cp.Age = txtSearch.Text;
+                cp.Contact = txtSearch.Text;
+
+                ds2 = cp.searchPatient();
+                int count = ds2.Tables["search_Patient"].Rows.Count;
+
+                if (count > 0)
+                {
+                    dataGridView1.Refresh();
+                    dataGridView1.DataSource = ds2.Tables["search_Patient"];
+                    lblText.Text = @"Showing results for '" + txtSearch.Text + @"'";
+                    lblCounter.Text = "" + count + " result/s";
+                }
+                else
+                {
+                    dataGridView1.DataSource = null;
+                    lblText.Text = @"No results for '" + txtSearch.Text + @"'";
+                    lblCounter.Visible = false;
+                }  
+            }
+            
         }
 
         private void label1_Click(object sender, EventArgs e)

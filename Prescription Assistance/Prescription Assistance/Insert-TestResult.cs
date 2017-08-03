@@ -75,47 +75,38 @@ namespace Prescription_Assistance
             }
             else
             {
-                type = cboType.Text;
-                if (type.Equals("Patient ID"))
-                {
-                    displayRecords(txtSearch.Text);
-                }
-                else if (type.Equals("Last Name") || type.Equals("First Name"))
-                {
-                    cp.Patient_id = txtSearch.Text;
-                    cp.Last_name = txtSearch.Text;
-                    cp.First_name = txtSearch.Text;
-                    cp.Age = txtSearch.Text;
-                    cp.Contact = txtSearch.Text;
-                    cp.Gender = txtSearch.Text;
+                cp.Patient_id = txtSearch.Text;
+                cp.Last_name = txtSearch.Text;
+                cp.First_name = txtSearch.Text;
+                cp.Age = txtSearch.Text;
+                cp.Contact = txtSearch.Text;
+                cp.Gender = txtSearch.Text;
 
-                    ds2 = cp.searchPatient();
-                    int count = ds2.Tables[0].Rows.Count;
+                ds2 = cp.searchPatient();
+                int count = ds2.Tables[0].Rows.Count;
 
-                    if (count == 1)
-                    {
-                        displayRecords(ds2.Tables[0].Rows[0][0].ToString());
-                    }
-                    else if (count > 1)
-                    {
-                        dataGridView1.ReadOnly = true;
-                        dataGridView1.DataSource = ds2.Tables[0];
-                        dataGridView1.Columns[0].Visible = true;
-                        dataGridView1.Columns[1].Visible = false;
-                        int counter = ds2.Tables[0].Rows.Count;
-                        lblCounter.Visible = true;
-                        lblCounter.Text = "" + counter + " result/s";
-                        lblText.Text = @"Search results for '" + txtSearch.Text + @"'";
-                    }
-                    else
-                    {
-                        dataGridView1.DataSource = null;
-                        lblText.Text = @"No results for '" + txtSearch.Text + @"'";
-                        lblCounter.Visible = false;
-                    }
+                if (count == 1)
+                {
+                    displayRecords(ds2.Tables[0].Rows[0][0].ToString());
                 }
-            }  
-                   
+                else if (count > 1)
+                {
+                    dataGridView1.ReadOnly = true;
+                    dataGridView1.DataSource = ds2.Tables[0];
+                    dataGridView1.Columns[0].Visible = true;
+                    dataGridView1.Columns[1].Visible = false;
+                    int counter = ds2.Tables[0].Rows.Count;
+                    lblCounter.Visible = true;
+                    lblCounter.Text = "" + counter + " result/s";
+                    lblText.Text = @"Search results for '" + txtSearch.Text + @"'";
+                }
+                else
+                {
+                    dataGridView1.DataSource = null;
+                    lblText.Text = @"No results for '" + txtSearch.Text + @"'";
+                    lblCounter.Visible = false;
+                }
+            }                     
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)

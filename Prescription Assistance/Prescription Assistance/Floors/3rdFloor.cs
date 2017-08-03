@@ -24,35 +24,11 @@ namespace Prescription_Assistance
 
         private void showDialog(string bed)
         {
-            AssignRoomPatient ar = new AssignRoomPatient(bed);
+            AssignRoomPatient ar = new AssignRoomPatient(bed, new _2ndFloorPrivateRoomD(), this, new _4thFloor(), new _5thFloor(), new View_Rooms());
             ar.ShowDialog();
         }
 
         public void refresh()
-        {
-            for (int x = 0; x <= 31; x++)
-            {
-                this.Controls.Find("pbox" + x, true)[0].MouseHover += pBox_Hover;
-                this.Controls.Find("pbox" + x, true)[0].MouseLeave += pBox_Leave;
-                bed = x;
-            }
-
-            for (int x = 96; x <= 104; x++)
-            {
-                this.Controls.Find("pbox" + x, true)[0].MouseHover += pBox_Hover;
-                this.Controls.Find("pbox" + x, true)[0].MouseLeave += pBox_Leave;
-                bed = x;
-            }
-
-            for (int x = 113; x <= 115; x++)
-            {
-                this.Controls.Find("pbox" + x, true)[0].MouseHover += pBox_Hover;
-                this.Controls.Find("pbox" + x, true)[0].MouseLeave += pBox_Leave;
-                bed = x;
-            }
-        }
-
-        private void _3rdFloor_Load(object sender, EventArgs e)
         {
             if (Form1.usertype.Equals("Doctor"))
             {
@@ -94,6 +70,31 @@ namespace Prescription_Assistance
                     bed = x;
                 }
             }
+
+            for (int x = 0; x <= 31; x++)
+            {
+                this.Controls.Find("pbox" + x, true)[0].MouseHover += pBox_Hover;
+                this.Controls.Find("pbox" + x, true)[0].MouseLeave += pBox_Leave;
+                bed = x;
+            }
+
+            for (int x = 96; x <= 104; x++)
+            {
+                this.Controls.Find("pbox" + x, true)[0].MouseHover += pBox_Hover;
+                this.Controls.Find("pbox" + x, true)[0].MouseLeave += pBox_Leave;
+                bed = x;
+            }
+
+            for (int x = 113; x <= 115; x++)
+            {
+                this.Controls.Find("pbox" + x, true)[0].MouseHover += pBox_Hover;
+                this.Controls.Find("pbox" + x, true)[0].MouseLeave += pBox_Leave;
+                bed = x;
+            }
+        }
+
+        private void _3rdFloor_Load(object sender, EventArgs e)
+        {           
 
             refresh();           
         }

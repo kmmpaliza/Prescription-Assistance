@@ -43,12 +43,12 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.pnlFrame = new System.Windows.Forms.Panel();
+            this.pnlOverlay = new System.Windows.Forms.Panel();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.SecondFloorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ThirdFloorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.FourthFloorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.FifthFloorToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.pnlOverlay = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -158,7 +158,7 @@
             this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button7.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button7.ForeColor = System.Drawing.Color.White;
-            this.button7.Location = new System.Drawing.Point(0, 401);
+            this.button7.Location = new System.Drawing.Point(-1, 401);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(201, 55);
             this.button7.TabIndex = 5;
@@ -173,7 +173,7 @@
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button6.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button6.ForeColor = System.Drawing.Color.White;
-            this.button6.Location = new System.Drawing.Point(0, 346);
+            this.button6.Location = new System.Drawing.Point(-1, 346);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(201, 55);
             this.button6.TabIndex = 4;
@@ -188,7 +188,7 @@
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button5.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.ForeColor = System.Drawing.Color.White;
-            this.button5.Location = new System.Drawing.Point(0, 291);
+            this.button5.Location = new System.Drawing.Point(-1, 291);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(201, 55);
             this.button5.TabIndex = 3;
@@ -203,7 +203,7 @@
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button4.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(0, 181);
+            this.button4.Location = new System.Drawing.Point(-1, 181);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(201, 55);
             this.button4.TabIndex = 2;
@@ -218,7 +218,7 @@
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button3.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(0, 236);
+            this.button3.Location = new System.Drawing.Point(-1, 236);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(201, 55);
             this.button3.TabIndex = 1;
@@ -233,7 +233,7 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button2.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(0, 126);
+            this.button2.Location = new System.Drawing.Point(-1, 126);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(201, 55);
             this.button2.TabIndex = 0;
@@ -243,13 +243,21 @@
             // 
             // pnlFrame
             // 
-            this.pnlFrame.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Right)));
             this.pnlFrame.AutoScroll = true;
+            this.pnlFrame.BackColor = System.Drawing.Color.Transparent;
             this.pnlFrame.Location = new System.Drawing.Point(206, 66);
             this.pnlFrame.Name = "pnlFrame";
             this.pnlFrame.Size = new System.Drawing.Size(1143, 665);
             this.pnlFrame.TabIndex = 2;
+            // 
+            // pnlOverlay
+            // 
+            this.pnlOverlay.AutoScroll = true;
+            this.pnlOverlay.BackColor = System.Drawing.Color.White;
+            this.pnlOverlay.Location = new System.Drawing.Point(206, 66);
+            this.pnlOverlay.Name = "pnlOverlay";
+            this.pnlOverlay.Size = new System.Drawing.Size(1143, 665);
+            this.pnlOverlay.TabIndex = 3;
             // 
             // contextMenuStrip1
             // 
@@ -294,17 +302,6 @@
             this.FifthFloorToolStripMenuItem1.Text = "5th Floor";
             this.FifthFloorToolStripMenuItem1.Click += new System.EventHandler(this.FifthFloorToolStripMenuItem1_Click);
             // 
-            // pnlOverlay
-            // 
-            this.pnlOverlay.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Right)));
-            this.pnlOverlay.AutoScroll = true;
-            this.pnlOverlay.Location = new System.Drawing.Point(206, 66);
-            this.pnlOverlay.Name = "pnlOverlay";
-            this.pnlOverlay.Size = new System.Drawing.Size(1143, 665);
-            this.pnlOverlay.TabIndex = 3;
-            this.pnlOverlay.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlOverlay_Paint);
-            // 
             // Doctor_Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -312,9 +309,9 @@
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1354, 733);
             this.Controls.Add(this.pnlOverlay);
-            this.Controls.Add(this.pnlFrame);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.pnlFrame);
             this.Name = "Doctor_Dashboard";
             this.Text = "iCare | Doctor";
             this.Load += new System.EventHandler(this.Doctor_Dashboard_Load);

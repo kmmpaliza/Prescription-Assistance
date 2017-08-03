@@ -29,10 +29,8 @@ namespace Prescription_Assistance
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            //this.TopMost = true;
-
             this.WindowState = FormWindowState.Maximized;
-            //this.FormBorderStyle = FormBorderStyle.None;
+            textBox1.Focus();
         }
 
 

@@ -33,7 +33,6 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.Assign = new System.Windows.Forms.DataGridViewLinkColumn();
-            this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.txtSearch = new System.Windows.Forms.TextBox();
             this.button3 = new System.Windows.Forms.Button();
@@ -75,10 +74,10 @@
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridView1.GridColor = System.Drawing.Color.White;
-            this.dataGridView1.Location = new System.Drawing.Point(19, 227);
+            this.dataGridView1.Location = new System.Drawing.Point(19, 202);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersVisible = false;
-            this.dataGridView1.Size = new System.Drawing.Size(494, 114);
+            this.dataGridView1.Size = new System.Drawing.Size(494, 139);
             this.dataGridView1.TabIndex = 36;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -97,32 +96,19 @@
             this.Assign.UseColumnTextForLinkValue = true;
             this.Assign.VisitedLinkColor = System.Drawing.Color.DarkGreen;
             // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.Green;
-            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Open Sans", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(346, 159);
-            this.button2.Name = "button2";
-            this.button2.Padding = new System.Windows.Forms.Padding(3);
-            this.button2.Size = new System.Drawing.Size(167, 37);
-            this.button2.TabIndex = 35;
-            this.button2.Text = "Assign In-Patient";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
             // button1
             // 
-            this.button1.Font = new System.Drawing.Font("Open Sans", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(256, 159);
+            this.button1.BackColor = System.Drawing.Color.LightGray;
+            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.LightGray;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Open Sans", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.Green;
+            this.button1.Location = new System.Drawing.Point(239, 163);
             this.button1.Name = "button1";
-            this.button1.Padding = new System.Windows.Forms.Padding(3);
-            this.button1.Size = new System.Drawing.Size(75, 37);
+            this.button1.Size = new System.Drawing.Size(75, 30);
             this.button1.TabIndex = 34;
             this.button1.Text = "Search";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // txtSearch
@@ -130,7 +116,7 @@
             this.txtSearch.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSearch.Location = new System.Drawing.Point(131, 163);
             this.txtSearch.Name = "txtSearch";
-            this.txtSearch.Size = new System.Drawing.Size(119, 29);
+            this.txtSearch.Size = new System.Drawing.Size(100, 29);
             this.txtSearch.TabIndex = 33;
             // 
             // button3
@@ -163,10 +149,11 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Open Sans Semibold", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Open Sans", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.DarkGreen;
             this.label2.Location = new System.Drawing.Point(19, 16);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(110, 46);
+            this.label2.Size = new System.Drawing.Size(111, 46);
             this.label2.TabIndex = 39;
             this.label2.Text = "200-A";
             // 
@@ -212,7 +199,7 @@
             this.lblText.AutoSize = true;
             this.lblText.BackColor = System.Drawing.Color.Transparent;
             this.lblText.Font = new System.Drawing.Font("Open Sans", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblText.Location = new System.Drawing.Point(22, 200);
+            this.lblText.Location = new System.Drawing.Point(322, 169);
             this.lblText.Name = "lblText";
             this.lblText.Size = new System.Drawing.Size(0, 19);
             this.lblText.TabIndex = 92;
@@ -230,7 +217,6 @@
             this.Controls.Add(this.labelA);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.txtSearch);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
@@ -238,6 +224,7 @@
             this.Padding = new System.Windows.Forms.Padding(16);
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Assign Patient to Bed";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.AssignRoomPatient_FormClosing);
             this.Load += new System.EventHandler(this.AssignRoomPatient_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
@@ -248,7 +235,6 @@
         #endregion
 
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox txtSearch;
         private System.Windows.Forms.Button button3;

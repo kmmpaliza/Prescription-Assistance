@@ -115,7 +115,7 @@ namespace Prescription_Assistance
                 from: new PhoneNumber("+1 650-603-5869"),
                 body: textbody);
 
-            string alertmessage = "Message sent";
+            //string alertmessage = "Message sent";
             
             //MessageBox.Show("" + alertmessage);
         }

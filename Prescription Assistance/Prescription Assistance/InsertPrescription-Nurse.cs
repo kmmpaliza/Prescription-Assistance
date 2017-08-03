@@ -49,7 +49,7 @@ namespace Prescription_Assistance
             }
             else
             {
-                lblText.Text = @"No results for '" + text + @"'";
+                lblText.Text = @"No Prescription Records for '" + text + @"'";
                 lblCounter.Visible = false;
             }
         }
@@ -62,43 +62,35 @@ namespace Prescription_Assistance
             }
             else
             {
-                type = cboType.Text;
-                if (type.Equals("Patient ID"))
+                cp.Patient_id = txtSearch.Text;
+                cp.Last_name = txtSearch.Text;
+                cp.First_name = txtSearch.Text;
+                cp.Age = txtSearch.Text;
+                cp.Contact = txtSearch.Text;
+                cp.Gender = txtSearch.Text;
+
+                ds2 = cp.searchPatient();
+                int count = ds2.Tables[0].Rows.Count;
+
+                if (count == 1)
                 {
-                    displayRecords(txtSearch.Text);
+                    displayRecords(ds2.Tables[0].Rows[0][0].ToString());
                 }
-                else if (type.Equals("Last Name") || type.Equals("First Name"))
+                else if (count > 1)
                 {
-                    cp.Patient_id = txtSearch.Text;
-                    cp.Last_name = txtSearch.Text;
-                    cp.First_name = txtSearch.Text;
-                    cp.Age = txtSearch.Text;
-                    cp.Contact = txtSearch.Text;
-                    cp.Gender = txtSearch.Text;
-
-                    ds2 = cp.searchPatient();
-                    int count = ds2.Tables[0].Rows.Count;
-
-                    if (count == 1)
-                    {
-                        displayRecords(ds2.Tables[0].Rows[0][0].ToString());
-                    }
-                    else if (count > 1)
-                    {
-                        dgvPrescription.ReadOnly = true;
-                        dgvPrescription.DataSource = ds2.Tables[0];
-                        dgvPrescription.Columns[0].Visible = true;
-                        int counter = ds2.Tables[0].Rows.Count;
-                        lblCounter.Visible = true;
-                        lblCounter.Text = "" + counter + " result/s";
-                        lblText.Text = @"Search results for '" + txtSearch.Text + @"'";
-                    }
-                    else
-                    {
-                        dgvPrescription.DataSource = null;
-                        lblText.Text = @"No results for '" + txtSearch.Text + @"'";
-                        lblCounter.Visible = false;
-                    }
+                    dgvPrescription.ReadOnly = true;
+                    dgvPrescription.DataSource = ds2.Tables[0];
+                    dgvPrescription.Columns[0].Visible = true;
+                    int counter = ds2.Tables[0].Rows.Count;
+                    lblCounter.Visible = true;
+                    lblCounter.Text = "" + counter + " result/s";
+                    lblText.Text = @"Search results for '" + txtSearch.Text + @"'";
+                }
+                else
+                {
+                    dgvPrescription.DataSource = null;
+                    lblText.Text = @"No results for '" + txtSearch.Text + @"'";
+                    lblCounter.Visible = false;
                 }
             }   
         }

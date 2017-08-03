@@ -12,19 +12,15 @@ namespace Prescription_Assistance
 {
     public partial class Doctor_Dashboard : Form
     {
-        Room_Layout rl = new Room_Layout();
         Class_Doctor cd = new Class_Doctor();
 
         public Doctor_Dashboard()
         {
-            InitializeComponent();
-            
+            InitializeComponent();            
         }
 
         private void Doctor_Dashboard_Load(object sender, EventArgs e)
         {
-            //this.TopMost = true;
-            //this.FormBorderStyle = FormBorderStyle.None;
             this.WindowState = FormWindowState.Maximized;
             
             cd.Doctor_id = Form1.userid;
@@ -32,8 +28,7 @@ namespace Prescription_Assistance
             DataSet ds = new DataSet();
             ds = cd.viewDoctorDetails();
 
-            label1.Text = "" + ds.Tables[0].Rows[0][2].ToString() + ", " + ds.Tables[0].Rows[0][3].ToString();
-            
+            label1.Text = "" + ds.Tables[0].Rows[0][2].ToString() + ", " + ds.Tables[0].Rows[0][3].ToString();            
 
             pnlOverlay.Controls.Clear();
             pnlOverlay.Visible = false;
@@ -85,7 +80,7 @@ namespace Prescription_Assistance
             insertPatient.Dock = DockStyle.Fill;
         }
 
-        public void changetoUpdatePatientAsDoctor(string id) //pansamantala
+        public void changetoUpdatePatientAsDoctor(string id)
         {
             pnlOverlay.Visible = true;
             pnlOverlay.Controls.Clear();
@@ -175,11 +170,6 @@ namespace Prescription_Assistance
             viewInPatient.Dock = DockStyle.Fill;
         }
 
-        private void pnlOverlay_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
         private void button8_Click(object sender, EventArgs e)
         {
             pnlOverlay.Visible = true;
@@ -188,6 +178,5 @@ namespace Prescription_Assistance
             pnlOverlay.Controls.Add(abc);
             abc.Dock = DockStyle.Fill;
         }
-
     }
 }

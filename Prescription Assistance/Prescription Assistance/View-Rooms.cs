@@ -20,11 +20,16 @@ namespace Prescription_Assistance
             InitializeComponent();
         }
 
-        private void View_Rooms_Load(object sender, EventArgs e)
+        public void refresh()
         {
             ds = cr.viewAllBeds();
             dataGridView1.ReadOnly = true;
             dataGridView1.DataSource = ds.Tables[0];
+        }
+
+        private void View_Rooms_Load(object sender, EventArgs e)
+        {
+            refresh();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -43,7 +48,7 @@ namespace Prescription_Assistance
         {
             if (e.ColumnIndex == 0)
             {
-                AssignRoomPatient ar = new AssignRoomPatient(dataGridView1.CurrentRow.Cells[1].Value.ToString());
+                AssignRoomPatient ar = new AssignRoomPatient(dataGridView1.CurrentRow.Cells[1].Value.ToString(), new _2ndFloorPrivateRoomD(), new _3rdFloor(), new _4thFloor(), new _5thFloor(), this);
                 ar.ShowDialog();
             }
         }

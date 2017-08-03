@@ -57,7 +57,7 @@
             // txtSearch
             // 
             this.txtSearch.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSearch.Location = new System.Drawing.Point(131, 91);
+            this.txtSearch.Location = new System.Drawing.Point(138, 94);
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.Size = new System.Drawing.Size(230, 29);
             this.txtSearch.TabIndex = 2;
@@ -65,7 +65,7 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Open Sans", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(367, 87);
+            this.button1.Location = new System.Drawing.Point(374, 90);
             this.button1.Name = "button1";
             this.button1.Padding = new System.Windows.Forms.Padding(3);
             this.button1.Size = new System.Drawing.Size(75, 37);
@@ -103,7 +103,7 @@
             dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle6;
             this.dataGridView1.GridColor = System.Drawing.Color.White;
-            this.dataGridView1.Location = new System.Drawing.Point(19, 146);
+            this.dataGridView1.Location = new System.Drawing.Point(26, 147);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(1050, 400);
             this.dataGridView1.TabIndex = 26;
@@ -133,7 +133,7 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Open Sans", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(448, 87);
+            this.button2.Location = new System.Drawing.Point(455, 90);
             this.button2.Name = "button2";
             this.button2.Padding = new System.Windows.Forms.Padding(3);
             this.button2.Size = new System.Drawing.Size(190, 37);
@@ -147,7 +147,7 @@
             this.lblCounter.AutoSize = true;
             this.lblCounter.Font = new System.Drawing.Font("Open Sans", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCounter.ForeColor = System.Drawing.Color.Green;
-            this.lblCounter.Location = new System.Drawing.Point(23, 549);
+            this.lblCounter.Location = new System.Drawing.Point(26, 547);
             this.lblCounter.Name = "lblCounter";
             this.lblCounter.Size = new System.Drawing.Size(56, 17);
             this.lblCounter.TabIndex = 94;
@@ -157,7 +157,7 @@
             // 
             this.lblText.AutoSize = true;
             this.lblText.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblText.Location = new System.Drawing.Point(652, 94);
+            this.lblText.Location = new System.Drawing.Point(652, 97);
             this.lblText.Name = "lblText";
             this.lblText.Size = new System.Drawing.Size(0, 22);
             this.lblText.TabIndex = 93;
@@ -170,7 +170,7 @@
             "Patient ID",
             "Last Name",
             "First Name"});
-            this.cboType.Location = new System.Drawing.Point(19, 91);
+            this.cboType.Location = new System.Drawing.Point(26, 93);
             this.cboType.Name = "cboType";
             this.cboType.Size = new System.Drawing.Size(106, 30);
             this.cboType.TabIndex = 95;

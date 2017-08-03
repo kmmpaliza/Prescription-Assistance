@@ -19,21 +19,10 @@ namespace Prescription_Assistance
 
         public _2ndFloorPrivateRoomD()
         {
-            InitializeComponent();
-            
+            InitializeComponent();            
         }
 
         public void refresh()
-        {
-            for (int x = 105; x <= 112; x++)
-            {
-                this.Controls.Find("pbox" + x, true)[0].MouseHover += pBox_Hover;
-                this.Controls.Find("pbox" + x, true)[0].MouseLeave += pBox_Leave;
-                bed = x;
-            }
-        }
-
-        public void _2ndFloorPrivateRoom_Load(object sender, EventArgs e)
         {
             if (Form1.usertype.Equals("Doctor"))
             {
@@ -52,12 +41,22 @@ namespace Prescription_Assistance
                 }
             }
 
+            for (int x = 105; x <= 112; x++)
+            {
+                this.Controls.Find("pbox" + x, true)[0].MouseHover += pBox_Hover;
+                this.Controls.Find("pbox" + x, true)[0].MouseLeave += pBox_Leave;
+                bed = x;
+            }
+        }
+
+        public void _2ndFloorPrivateRoom_Load(object sender, EventArgs e)
+        {          
             refresh();              
         }
 
         private void showDialog(string bed)
         {
-            AssignRoomPatient ar = new AssignRoomPatient(bed);
+            AssignRoomPatient ar = new AssignRoomPatient(bed, this, new _3rdFloor(), new _4thFloor(), new _5thFloor(), new View_Rooms());
             ar.ShowDialog();
         }
 

@@ -42,7 +42,8 @@ namespace Prescription_Assistance
 
                 dgvPrescription.ReadOnly = true;
                 dgvPrescription.DataSource = ds.Tables[0];
-                dgvPrescription.Columns[0].Visible = false;
+                dgvPrescription.Columns["View"].Visible = false;
+                dgvPrescription.Columns["Edit"].Visible = true;
 
                 RefreshData();
 
@@ -59,7 +60,7 @@ namespace Prescription_Assistance
             }
             else
             {
-                lblText.Text = @"No results for '" + text + @"'";
+                lblText.Text = @"No Prescription Records for '" + text + @"'";
                 lblCounter.Visible = false;
             }
         }
@@ -77,57 +78,42 @@ namespace Prescription_Assistance
             }
             else
             {
-                type = cboType.Text;
-                if (type.Equals("Patient ID"))
+                cp.Patient_id = txtSearch.Text;
+                cp.Last_name = txtSearch.Text;
+                cp.First_name = txtSearch.Text;
+                cp.Age = txtSearch.Text;
+                cp.Contact = txtSearch.Text;
+                cp.Gender = txtSearch.Text;
+
+                ds2 = cp.searchPatient();
+                int count = ds2.Tables[0].Rows.Count;
+
+                if (count == 1)
                 {
-                    displayRecords(txtSearch.Text);
+                    displayRecords(ds2.Tables[0].Rows[0][0].ToString());
                     btnAdd.Enabled = true;
                     btnEdit.Enabled = false;
                     btnDelete.Enabled = false;
                     btnClear.Enabled = false;
                 }
-                else if (type.Equals("Last Name") || type.Equals("First Name"))
+                else if (count > 1)
                 {
-                    cp.Patient_id = txtSearch.Text;
-                    cp.Last_name = txtSearch.Text;
-                    cp.First_name = txtSearch.Text;
-                    cp.Age = txtSearch.Text;
-                    cp.Contact = txtSearch.Text;
-                    cp.Gender = txtSearch.Text;
-
-                    ds2 = cp.searchPatient();
-                    int count = ds2.Tables[0].Rows.Count;
-
-                    if (count == 1)
-                    {
-                        displayRecords(ds2.Tables[0].Rows[0][0].ToString());
-                        btnAdd.Enabled = true;
-                        btnEdit.Enabled = false;
-                        btnDelete.Enabled = false;
-                        btnClear.Enabled = false;
-                    }
-                    else if (count > 1)
-                    {
-                        dgvPrescription.ReadOnly = true;
-                        dgvPrescription.DataSource = ds2.Tables[0];
-                        dgvPrescription.Columns[0].Visible = true;
-                        int counter = ds2.Tables[0].Rows.Count;
-                        lblCounter.Visible = true;
-                        lblCounter.Text = "" + counter + " result/s";
-                        lblText.Text = @"Search results for '" + txtSearch.Text + @"'";
-                    }
-                    else
-                    {
-                        dgvPrescription.DataSource = null;
-                        lblText.Text = @"No results for '" + txtSearch.Text + @"'";
-                        lblCounter.Visible = false;
-                    }
+                    dgvPrescription.ReadOnly = true;
+                    dgvPrescription.DataSource = ds2.Tables[0];
+                    dgvPrescription.Columns["View"].Visible = true;
+                    dgvPrescription.Columns["Edit"].Visible = false;
+                    int counter = ds2.Tables[0].Rows.Count;
+                    lblCounter.Visible = true;
+                    lblCounter.Text = "" + counter + " result/s";
+                    lblText.Text = @"Search results for '" + txtSearch.Text + @"'";
                 }
-            } 
-
-            //cpr.Patient_id = txtSearch.Text;
-            
-            //RefreshData();           
+                else
+                {
+                    dgvPrescription.DataSource = null;
+                    lblText.Text = @"No results for '" + txtSearch.Text + @"'";
+                    lblCounter.Visible = false;
+                }
+            }         
         }
 
         private void RefreshData()
@@ -135,8 +121,8 @@ namespace Prescription_Assistance
             ds = cpr.viewPescriptionDetails();
             dgvPrescription.ReadOnly = true;
             dgvPrescription.DataSource = ds.Tables[0];
-            dgvPrescription.Columns[0].Visible = false;
-            dgvPrescription.Columns[1].Visible = false;
+            dgvPrescription.Columns["View"].Visible = false;
+            dgvPrescription.Columns["Edit"].Visible = true;
 
             lblCounter.Visible = true;
             int count = ds.Tables[0].Rows.Count;
@@ -155,24 +141,9 @@ namespace Prescription_Assistance
             btnClear.Enabled = false;
             dgvPrescription.ClearSelection();
             dgvPrescription.CurrentCell = null;
-        }
-
-        private void dgvPrescription_RowHeaderMouseClick(object sender, DataGridViewCellMouseEventArgs e)
-        {
-            prescription_id = dgvPrescription.Rows[e.RowIndex].Cells[1].Value.ToString();
-            cpr.Prescription_id = prescription_id;
-
-            txtMedName.Text = dgvPrescription.Rows[e.RowIndex].Cells[2].Value.ToString();
-            txtDosage.Text = dgvPrescription.Rows[e.RowIndex].Cells[3].Value.ToString();
-            txtNote.Text = dgvPrescription.Rows[e.RowIndex].Cells[7].Value.ToString();
-            cboForm.Text = dgvPrescription.Rows[e.RowIndex].Cells[5].Value.ToString();
-            cboRoute.Text = dgvPrescription.Rows[e.RowIndex].Cells[4].Value.ToString();
-            cboInterval.Text = dgvPrescription.Rows[e.RowIndex].Cells[6].Value.ToString();
-
-            btnAdd.Enabled = false;
-            btnEdit.Enabled = true;
-            btnDelete.Enabled = true;
-            btnClear.Enabled = true;  
+            btnEdit.Enabled = false;
+            btnAdd.Enabled = true;
+            btnDelete.Enabled = false;
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
@@ -225,7 +196,8 @@ namespace Prescription_Assistance
 
         private void InsertPrescription_Load(object sender, EventArgs e)
         {
-            dgvPrescription.Columns[0].Visible = false;
+            dgvPrescription.Columns["View"].Visible = false;
+            dgvPrescription.Columns["Edit"].Visible = false;
             lblCounter.Visible = false;
 
             btnAdd.Enabled = false;
@@ -238,11 +210,29 @@ namespace Prescription_Assistance
         {
             if (e.ColumnIndex == 0)
             {
-                displayRecords(dgvPrescription.CurrentRow.Cells[1].Value.ToString());
+                displayRecords(dgvPrescription.CurrentRow.Cells[2].Value.ToString());
                 btnAdd.Enabled = true;
                 btnEdit.Enabled = false;
                 btnDelete.Enabled = false;
                 btnClear.Enabled = false;              
+            }
+
+            if (e.ColumnIndex == 1)
+            {
+                prescription_id = dgvPrescription.Rows[e.RowIndex].Cells[2].Value.ToString();
+                cpr.Prescription_id = prescription_id;
+
+                txtMedName.Text = dgvPrescription.Rows[e.RowIndex].Cells[3].Value.ToString();
+                txtDosage.Text = dgvPrescription.Rows[e.RowIndex].Cells[4].Value.ToString();
+                txtNote.Text = dgvPrescription.Rows[e.RowIndex].Cells[8].Value.ToString();
+                cboForm.Text = dgvPrescription.Rows[e.RowIndex].Cells[6].Value.ToString();
+                cboRoute.Text = dgvPrescription.Rows[e.RowIndex].Cells[5].Value.ToString();
+                cboInterval.Text = dgvPrescription.Rows[e.RowIndex].Cells[7].Value.ToString();
+
+                btnAdd.Enabled = false;
+                btnEdit.Enabled = true;
+                btnDelete.Enabled = true;
+                btnClear.Enabled = true;
             }
         }
     }

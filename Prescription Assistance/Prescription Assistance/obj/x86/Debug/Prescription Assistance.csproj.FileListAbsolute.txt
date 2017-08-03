@@ -43,19 +43,27 @@ C:\Users\chaelamorin\Topic2\Prescription Assistance\Prescription Assistance\obj\
 C:\Users\chaelamorin\Topic2\Prescription Assistance\Prescription Assistance\obj\x86\Debug\Prescription_Assistance.View_MedicalRecords.resources
 C:\Users\chaelamorin\Topic2\Prescription Assistance\Prescription Assistance\obj\x86\Debug\Prescription_Assistance.View_Rooms.resources
 C:\Users\chaelamorin\Topic2\Prescription Assistance\Prescription Assistance\obj\x86\Debug\Prescription_Assistance.Ward_Layout.resources
-C:\Users\Katrina\Documents\Freelance\Topic2\Prescription Assistance\Prescription Assistance\bin\Debug\Prescription Assistance.exe.config
 C:\Users\Katrina\Documents\Freelance\Topic2\Prescription Assistance\Prescription Assistance\bin\Debug\Database1.mdf
 C:\Users\Katrina\Documents\Freelance\Topic2\Prescription Assistance\Prescription Assistance\bin\Debug\Database1_log.ldf
+C:\Users\Katrina\Documents\Freelance\Topic2\Prescription Assistance\Prescription Assistance\bin\Debug\Prescription Assistance.exe.config
 C:\Users\Katrina\Documents\Freelance\Topic2\Prescription Assistance\Prescription Assistance\bin\Debug\Prescription Assistance.exe
 C:\Users\Katrina\Documents\Freelance\Topic2\Prescription Assistance\Prescription Assistance\bin\Debug\Prescription Assistance.pdb
 C:\Users\Katrina\Documents\Freelance\Topic2\Prescription Assistance\Prescription Assistance\bin\Debug\ClassLibrary.dll
+C:\Users\Katrina\Documents\Freelance\Topic2\Prescription Assistance\Prescription Assistance\bin\Debug\JWT.dll
+C:\Users\Katrina\Documents\Freelance\Topic2\Prescription Assistance\Prescription Assistance\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Katrina\Documents\Freelance\Topic2\Prescription Assistance\Prescription Assistance\bin\Debug\Twilio.dll
 C:\Users\Katrina\Documents\Freelance\Topic2\Prescription Assistance\Prescription Assistance\bin\Debug\ClassLibrary.pdb
+C:\Users\Katrina\Documents\Freelance\Topic2\Prescription Assistance\Prescription Assistance\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Katrina\Documents\Freelance\Topic2\Prescription Assistance\Prescription Assistance\bin\Debug\Twilio.xml
 C:\Users\Katrina\Documents\Freelance\Topic2\Prescription Assistance\Prescription Assistance\obj\x86\Debug\Prescription Assistance.csprojResolveAssemblyReference.cache
+C:\Users\Katrina\Documents\Freelance\Topic2\Prescription Assistance\Prescription Assistance\obj\x86\Debug\Prescription_Assistance.Alert_Details.resources
+C:\Users\Katrina\Documents\Freelance\Topic2\Prescription Assistance\Prescription Assistance\obj\x86\Debug\Prescription_Assistance.Alert.resources
 C:\Users\Katrina\Documents\Freelance\Topic2\Prescription Assistance\Prescription Assistance\obj\x86\Debug\Prescription_Assistance._2ndFloorPrivateRoomD.resources
 C:\Users\Katrina\Documents\Freelance\Topic2\Prescription Assistance\Prescription Assistance\obj\x86\Debug\Prescription_Assistance._3rdFloor.resources
 C:\Users\Katrina\Documents\Freelance\Topic2\Prescription Assistance\Prescription Assistance\obj\x86\Debug\Prescription_Assistance._4thFloor.resources
 C:\Users\Katrina\Documents\Freelance\Topic2\Prescription Assistance\Prescription Assistance\obj\x86\Debug\Prescription_Assistance._5thFloor.resources
 C:\Users\Katrina\Documents\Freelance\Topic2\Prescription Assistance\Prescription Assistance\obj\x86\Debug\Prescription_Assistance.AssignRoomPatient.resources
+C:\Users\Katrina\Documents\Freelance\Topic2\Prescription Assistance\Prescription Assistance\obj\x86\Debug\Prescription_Assistance.Insert_MedRecord.resources
 C:\Users\Katrina\Documents\Freelance\Topic2\Prescription Assistance\Prescription Assistance\obj\x86\Debug\Prescription_Assistance.Doctor_Dashboard.resources
 C:\Users\Katrina\Documents\Freelance\Topic2\Prescription Assistance\Prescription Assistance\obj\x86\Debug\Prescription_Assistance.ExtendedPanel.resources
 C:\Users\Katrina\Documents\Freelance\Topic2\Prescription Assistance\Prescription Assistance\obj\x86\Debug\Prescription_Assistance.Form1.resources
@@ -80,11 +88,3 @@ C:\Users\Katrina\Documents\Freelance\Topic2\Prescription Assistance\Prescription
 C:\Users\Katrina\Documents\Freelance\Topic2\Prescription Assistance\Prescription Assistance\obj\x86\Debug\Prescription Assistance.csproj.GenerateResource.Cache
 C:\Users\Katrina\Documents\Freelance\Topic2\Prescription Assistance\Prescription Assistance\obj\x86\Debug\Prescription Assistance.exe
 C:\Users\Katrina\Documents\Freelance\Topic2\Prescription Assistance\Prescription Assistance\obj\x86\Debug\Prescription Assistance.pdb
-C:\Users\Katrina\Documents\Freelance\Topic2\Prescription Assistance\Prescription Assistance\obj\x86\Debug\Prescription_Assistance.Alert_Details.resources
-C:\Users\Katrina\Documents\Freelance\Topic2\Prescription Assistance\Prescription Assistance\obj\x86\Debug\Prescription_Assistance.Alert.resources
-C:\Users\Katrina\Documents\Freelance\Topic2\Prescription Assistance\Prescription Assistance\obj\x86\Debug\Prescription_Assistance.Insert_MedRecord.resources
-C:\Users\Katrina\Documents\Freelance\Topic2\Prescription Assistance\Prescription Assistance\bin\Debug\JWT.dll
-C:\Users\Katrina\Documents\Freelance\Topic2\Prescription Assistance\Prescription Assistance\bin\Debug\Newtonsoft.Json.dll
-C:\Users\Katrina\Documents\Freelance\Topic2\Prescription Assistance\Prescription Assistance\bin\Debug\Twilio.dll
-C:\Users\Katrina\Documents\Freelance\Topic2\Prescription Assistance\Prescription Assistance\bin\Debug\Newtonsoft.Json.xml
-C:\Users\Katrina\Documents\Freelance\Topic2\Prescription Assistance\Prescription Assistance\bin\Debug\Twilio.xml

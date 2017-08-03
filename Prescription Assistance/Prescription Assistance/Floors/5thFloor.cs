@@ -23,21 +23,11 @@ namespace Prescription_Assistance
 
         private void showDialog(string bed)
         {
-            AssignRoomPatient ar = new AssignRoomPatient(bed);
+            AssignRoomPatient ar = new AssignRoomPatient(bed, new _2ndFloorPrivateRoomD(), new _3rdFloor(), new _4thFloor(), this, new View_Rooms());
             ar.ShowDialog();
         }
 
         public void refresh()
-        {
-            for (int x = 64; x <= 95; x++)
-            {
-                this.Controls.Find("pbox" + x, true)[0].MouseHover += pBox_Hover;
-                this.Controls.Find("pbox" + x, true)[0].MouseLeave += pBox_Leave;
-                bed = x;
-            }
-        }
-
-        private void _5thFloor_Load(object sender, EventArgs e)
         {
             if (Form1.usertype.Equals("Doctor"))
             {
@@ -56,6 +46,16 @@ namespace Prescription_Assistance
                 }
             }
 
+            for (int x = 64; x <= 95; x++)
+            {
+                this.Controls.Find("pbox" + x, true)[0].MouseHover += pBox_Hover;
+                this.Controls.Find("pbox" + x, true)[0].MouseLeave += pBox_Leave;
+                bed = x;
+            }
+        }
+
+        private void _5thFloor_Load(object sender, EventArgs e)
+        {         
             refresh();
         }
 

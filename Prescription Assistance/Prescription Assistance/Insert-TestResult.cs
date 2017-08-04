@@ -55,15 +55,20 @@ namespace Prescription_Assistance
                 lblText.Text = "Displaying Test Results of " + cp2.Patient_id.ToString() + ", " + name;
 
                 RefreshData();
+
+                button2.Enabled = true;
+                button3.Enabled = true;
             }
             else
             {
                 lblText.Text = @"No Test Results for '" + text + @"'";
                 lblCounter.Text = "0 result/s";
+
+                button2.Enabled = false;
+                button3.Enabled = false;
             }
             
-            button2.Enabled = true;
-            button3.Enabled = true; 
+             
         }
 
         private void button1_Click(object sender, EventArgs e)

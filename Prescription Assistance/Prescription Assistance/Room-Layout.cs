@@ -64,10 +64,14 @@ namespace Prescription_Assistance
         }
         private void Room_Layout_Load(object sender, EventArgs e)
         {
-            cn.Nurse_id = Form1.userid;
-            cn.Password = Form1.userpass;
-            ds7 = cn.viewNurseDetails();
-            number = ds7.Tables[0].Rows[0][4].ToString();
+            if (Form1.usertype == "Nurse")
+            {
+                cn.Nurse_id = Form1.userid;
+                cn.Password = Form1.userpass;
+                ds7 = cn.viewNurseDetails();
+                number = ds7.Tables[0].Rows[0][4].ToString();
+            }
+            else {}
 
             ds = cr.viewOccupiedRooms();
             ds6 = cr.viewAllBeds();

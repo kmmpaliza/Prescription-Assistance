@@ -29,58 +29,48 @@ namespace Prescription_Assistance
 
         private void button2_Click(object sender, EventArgs e)
         {
-            string number = txtContact.Text;
-            bool isAContact = Regex.Match(number, @"^(\d{9})$").Success;
+            type = cboType.Text;
 
-            if (isAContact)
+            if (type.Equals("Nurse"))
             {
-                type = cboType.Text;
-
-                if (type.Equals("Nurse"))
+                if (txtPass.Text == txtConfirm.Text)
                 {
-                    if (txtPass.Text == txtConfirm.Text)
-                    {
-                        cn.Last_name = txtLast.Text;
-                        cn.First_name = txtFirst.Text;
-                        cn.Password = txtPass.Text;
-                        cn.Contact = txtContact.Text;
+                    cn.Last_name = txtLast.Text;
+                    cn.First_name = txtFirst.Text;
+                    cn.Password = txtPass.Text;
+                    cn.Contact = txtContact.Text;
 
-                        id = cn.insertNewNurse();
-                        this.Close();
-                        MessageBox.Show("Account successfully registered.\nName: " + cn.First_name.ToString() + " " + cn.Last_name.ToString() + "\nUsername: " + id);
-                    }
-                    else
-                    {
-                        label8.Visible = true;
-                    }
-                }
-                else if (type.Equals("Doctor"))
-                {
-                    if (txtPass.Text == txtConfirm.Text)
-                    {
-                        cd.Last_name = txtLast.Text;
-                        cd.First_name = txtFirst.Text;
-                        cd.Password = txtPass.Text;
-                        cd.Contact = txtContact.Text;
-
-                        id = cd.insertNewDoctor();
-                        this.Close();
-                        MessageBox.Show("Account successfully registered.\nName: " + cd.First_name.ToString() + " " + cd.Last_name.ToString() + "\nUsername: " + id);
-                    }
-                    else
-                    {
-                        label8.Visible = true;
-                    }
+                    id = cn.insertNewNurse();
+                    this.Close();
+                    MessageBox.Show("Account successfully registered.\nName: " + cn.First_name.ToString() + " " + cn.Last_name.ToString() + "\nUsername: " + id);
                 }
                 else
                 {
-                    MessageBox.Show("Please choose a type of Staff.");
+                    label8.Visible = true;
                 }
             }
-            else{
-                MessageBox.Show("Invalid Contact Number.");
-                txtContact.Focus();
-            }            
+            else if (type.Equals("Doctor"))
+            {
+                if (txtPass.Text == txtConfirm.Text)
+                {
+                    cd.Last_name = txtLast.Text;
+                    cd.First_name = txtFirst.Text;
+                    cd.Password = txtPass.Text;
+                    cd.Contact = txtContact.Text;
+
+                    id = cd.insertNewDoctor();
+                    this.Close();
+                    MessageBox.Show("Account successfully registered.\nName: " + cd.First_name.ToString() + " " + cd.Last_name.ToString() + "\nUsername: " + id);
+                }
+                else
+                {
+                    label8.Visible = true;
+                }
+            }
+            else
+            {
+                MessageBox.Show("Please choose a type of Staff.");
+            }          
         }
 
         private void Registration_Load(object sender, EventArgs e)
@@ -91,6 +81,20 @@ namespace Prescription_Assistance
         private void cboType_SelectedIndexChanged(object sender, EventArgs e)
         {
             label8.Visible = false;
+        }
+
+        private void txtContact_Validating(object sender, CancelEventArgs e)
+        {
+            string number = txtContact.Text;
+            bool isAContact = Regex.Match(number, @"^(\d{9})$").Success;
+
+            if (!isAContact)
+            {
+                MessageBox.Show("Invalid Contact Number.");
+                txtContact.Focus();
+            }
+            else
+            { }
         }
     }
 }

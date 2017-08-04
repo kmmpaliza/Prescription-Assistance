@@ -26,65 +26,33 @@ namespace Prescription_Assistance
 
         private void button2_Click(object sender, EventArgs e)
         {
-            int age;
-            bool isNumericA = int.TryParse(txtAge.Text, out age);
+            cp.Height = txtHeight.Text;
+            cp.Last_name = txtLast.Text;
+            cp.First_name = txtFirst.Text;
+            cp.Gender = cboGender.Text;
+            cp.Age = txtAge.Text;
+            cp.Weight = txtWeight.Text;
+            cp.Birthday = "";
+            cp.Address = "";
+            cp.Contact = "";
+            cp.Medical_history = "";
+            cp.Medical_findings = txtMedFin.Text;
+            cp.Special_instructions = txtSpec.Text;
+            cp.Imgfile = data;
 
-            double weight;
-            bool isNumericW = double.TryParse(txtWeight.Text, out weight);
+            cp.insertNewPatient();
+            MessageBox.Show("In-Patient successfully added.");
 
-            double height;
-            bool isNumericH = double.TryParse(txtHeight.Text, out height);
-
-            if (isNumericA)
+            if (Form1.usertype.Equals("Doctor"))
             {
-                cp.Age = txtAge.Text;
-                if (isNumericW)
-                {
-                    cp.Weight = txtWeight.Text;
-                    if (isNumericH)
-                    {
-                        cp.Height = txtHeight.Text;
-                        cp.Last_name = txtLast.Text;
-                        cp.First_name = txtFirst.Text;
-                        cp.Gender = cboGender.Text;
-                        cp.Birthday = "";
-                        cp.Address = "";
-                        cp.Contact = "";
-                        cp.Medical_history = "";
-                        cp.Medical_findings = txtMedFin.Text;
-                        cp.Special_instructions = txtSpec.Text;
-                        cp.Imgfile = data;
-
-                        cp.insertNewPatient();
-                        MessageBox.Show("In-Patient successfully added.");
-
-                        if (Form1.usertype.Equals("Doctor"))
-                        {
-                            Doctor_Dashboard parent = (Doctor_Dashboard)this.ParentForm;
-                            parent.changetoViewPatient();
-                        }
-                        else
-                        {
-                            Nurse_Dashboard parent = (Nurse_Dashboard)this.ParentForm;
-                            parent.changetoViewPatient();
-                        }   
-                    }
-                    else
-                    {
-                        MessageBox.Show("Invalid value for Height.");
-                    }
-                }
-                else
-                {
-                    MessageBox.Show("Invalid value for Weight.");
-                }
+                Doctor_Dashboard parent = (Doctor_Dashboard)this.ParentForm;
+                parent.changetoViewPatient();
             }
             else
             {
-                MessageBox.Show("Invalid value for Age.");
-            }            
-
-                     
+                Nurse_Dashboard parent = (Nurse_Dashboard)this.ParentForm;
+                parent.changetoViewPatient();
+            }      
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -122,7 +90,7 @@ namespace Prescription_Assistance
         private void btnBrowse_Click(object sender, EventArgs e)
         {
             OpenFileDialog Openpdf = new OpenFileDialog();
-            Openpdf.Filter = "JPEG Files (*.jpeg)|*.jpeg|JPG Files (*.jpg)|*.jpg|PNG Files (*.png)|*.png|GIF Files (*.gif)|*.gif|All files|*.*;";
+            Openpdf.Filter = "JPG Files (*.jpg)|*.jpg|JPEG Files (*.jpeg)|*.jpeg|PNG Files (*.png)|*.png|All files|*.*;";
 
             if (Openpdf.ShowDialog() == DialogResult.OK)
             {
@@ -142,89 +110,43 @@ namespace Prescription_Assistance
             }
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
+        private void txtWeight_Validating(object sender, CancelEventArgs e)
         {
+            double weight;
+            bool isNumericW = double.TryParse(txtWeight.Text, out weight);
 
+            if (!isNumericW)
+            {
+                MessageBox.Show("Invalid value for Weight.");
+                txtWeight.Focus();
+            }
+            else {}
         }
 
-        private void pBoxPhoto_Click(object sender, EventArgs e)
+        private void txtHeight_Validating(object sender, CancelEventArgs e)
         {
+            double height;
+            bool isNumericH = double.TryParse(txtHeight.Text, out height);
 
+            if (!isNumericH)
+            {
+                MessageBox.Show("Invalid value for Height.");
+                txtHeight.Focus();
+            }
+            else {}
         }
 
-        private void txtHeight_TextChanged(object sender, EventArgs e)
+        private void txtAge_Validating(object sender, CancelEventArgs e)
         {
+            int age;
+            bool isNumericA = int.TryParse(txtAge.Text, out age);
 
-        }
-
-        private void txtWeight_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label21_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label19_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void cboGender_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtFirst_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label6_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtSpec_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label8_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtMedFin_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtAge_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtLast_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
+            if (!isNumericA)
+            {                
+                MessageBox.Show("Invalid value for Age.");
+                txtAge.Focus();
+            }
+            else {}            
         }
     }
 }

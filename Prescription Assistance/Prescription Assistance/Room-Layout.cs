@@ -52,15 +52,17 @@ namespace Prescription_Assistance
         {
             InitializeComponent();
 
-            cn.Nurse_id = Form1.userid;
-            cn.Password = Form1.userpass;
-            ds7 = cn.viewNurseDetails();
+            if (Form1.usertype == "Nurse")
+            {
+                cn.Nurse_id = Form1.userid;
+                cn.Password = Form1.userpass;
+                ds7 = cn.viewNurseDetails();
+                number = ds7.Tables[0].Rows[0][4].ToString();
+            }
+            else { }
 
-            ds = cr.viewOccupiedRooms();
-            
+            ds = cr.viewOccupiedRooms();            
             ds6 = cr.viewAllBeds();
-
-            ds8 = ca.viewLateAlerts();
         }
         private void Room_Layout_Load(object sender, EventArgs e)
         {
@@ -75,7 +77,6 @@ namespace Prescription_Assistance
 
             ds = cr.viewOccupiedRooms();
             ds6 = cr.viewAllBeds();
-            ds8 = ca.viewLateAlerts();
         }
         
         #region SMS for Late Alerts
@@ -86,21 +87,23 @@ namespace Prescription_Assistance
             smsTimer.Elapsed +=new System.Timers.ElapsedEventHandler((o, e) =>
             {
                 timeNow = DateTime.Now.ToString("HH:mm");
+                //MessageBox.Show("sms " + timeNow);
                 if (Form1.usertype.Equals("Nurse"))
                 {  
-                    //ds8 = ca.viewLateAlerts();
-                    if (ds8.Tables[0].Rows.Count > 0)
-                    {                        
-                        for (int i = 0; i < ds8.Tables[0].Rows.Count; i++)
+                    ca.Timeforsms = timeNow;
+                    ds8 = ca.viewLateAlerts();                    
+                    if (ds8.Tables[1].Rows.Count > 0)
+                    { 
+                        //MessageBox.Show(ds8.Tables[1].Rows.Count + "");                       
+                        for (int i = 0; i < ds8.Tables[1].Rows.Count; i++)
                         {
-                            //MessageBox.Show("" + i);
-                            
-                            //MessageBox.Show("" + timeNow + " " + ds7.Tables[0].Rows[i]["TimeforSMS"].ToString());
-                            if (ds8.Tables[0].Rows[i]["TimeforSMS"].ToString() == timeNow)
+                            //MessageBox.Show("" + timeNow + " " + ds8.Tables[1].Rows[i]["TimeforSMS"].ToString());
+                            if (ds8.Tables[1].Rows[i]["TimeforSMS"].ToString() == timeNow)
                             {
-                                sendSMS(number, ds8.Tables[0].Rows[i][2].ToString(),
-                                    ds8.Tables[0].Rows[i][4].ToString(), ds8.Tables[0].Rows[i][5].ToString());
+                                sendSMS(number, ds8.Tables[1].Rows[i][2].ToString(),
+                                    ds8.Tables[1].Rows[i][4].ToString(), ds8.Tables[1].Rows[i][5].ToString());
                             }
+                            else {}
                         }                
                     }
                     else {}
@@ -136,7 +139,7 @@ namespace Prescription_Assistance
                 from: new PhoneNumber("+1 650-603-5869"),
                 body: textbody);
 
-            //string alertmessage = "Message sent";
+            string alertmessage = "Message sent";
             
             //MessageBox.Show("" + alertmessage);
         }
@@ -146,21 +149,12 @@ namespace Prescription_Assistance
         public void runVitals() //every 10 minutes
         {
             vTimer.Start();
-            vTimer.Interval = 600000; //10 minutes
+            vTimer.Interval = 606000; //10 minutes, 10 seconds
             //vTimer.Interval = 30000;
             vTimer.Elapsed += new System.Timers.ElapsedEventHandler((o, e) =>
             {
                 checkVitals();
             });
-
-            /**var startTimeSpan = TimeSpan.Zero;
-            var periodTimeSpan = TimeSpan.FromMinutes(1);
-
-            timer = new System.Threading.Timer((e) =>
-            {
-                //MessageBox.Show("Hello");
-                //checkVitals();
-            }, null, startTimeSpan, periodTimeSpan);*/
         }
         public void checkVitals()
         {
@@ -204,7 +198,7 @@ namespace Prescription_Assistance
                     DateTime currentTime = DateTime.Now;
                     DateTime x10mins = currentTime.AddMinutes(10);
                     string timefordisplay = currentTime.ToString("HH:mm");
-                    string timeforsms = currentTime.ToString("HH:mm");
+                    string timeforsms = x10mins.ToString("HH:mm");
                     ca.Timefordisplay = timefordisplay;
                     ca.Timeforsms = timeforsms;
 
@@ -235,20 +229,20 @@ namespace Prescription_Assistance
         {  
             ca.Type = "A";          
             ds2 = ca.viewUnfinishedAlerts("A");                       
-            if (ds2.Tables[1].Rows.Count > 0)
+            if (ds2.Tables[0].Rows.Count > 0)
             {
-                for (int i = 0; i < ds2.Tables[1].Rows.Count; i++)
+                for (int i = 0; i < ds2.Tables[0].Rows.Count; i++)
                 {
-                    string id = ds2.Tables[1].Rows[i][1].ToString();
-                    string type = ds2.Tables[1].Rows[i][2].ToString();
-                    string status = ds2.Tables[1].Rows[i][3].ToString();
-                    string bed = ds2.Tables[1].Rows[i][4].ToString();
-                    string info = ds2.Tables[1].Rows[i][5].ToString();
+                    string id = ds2.Tables[0].Rows[i][1].ToString();
+                    string type = ds2.Tables[0].Rows[i][2].ToString();
+                    string status = ds2.Tables[0].Rows[i][3].ToString();
+                    string bed = ds2.Tables[0].Rows[i][4].ToString();
+                    string info = ds2.Tables[0].Rows[i][5].ToString();
 
                     DateTime currentTime = DateTime.Now;
                     DateTime x10mins = currentTime.AddMinutes(10);
                     string timefordisplay = currentTime.ToString("HH:mm");
-                    string timeforsms = currentTime.ToString("HH:mm");
+                    string timeforsms = x10mins.ToString("HH:mm");
                     ca.Timefordisplay = timefordisplay;
                     ca.Timeforsms = timeforsms;
 
@@ -376,8 +370,6 @@ namespace Prescription_Assistance
             {
                 //donothing
             }
-
-            //MessageBox.Show("OK");
             runTimeforPrescription();   
         }
         public void runPrescription() //every hour
@@ -433,7 +425,8 @@ namespace Prescription_Assistance
         public void run5MinutePrescription()
         {
             m5Timer.Start();
-            m5Timer.Interval = 300000; //5 minutes5
+            m5Timer.Interval = 318000; //5 minutes5
+            //m5Timer.Interval = 30000;
             m5Timer.Elapsed += new System.Timers.ElapsedEventHandler((o, e) =>
             {
                 checkMinutePrescription("Every 5 minutes");
@@ -442,7 +435,8 @@ namespace Prescription_Assistance
         public void run10MinutePrescription()
         {
             m10Timer.Start();
-            m10Timer.Interval = 600000; //10 minutes5
+            m10Timer.Interval = 612000; //10 minutes5
+            //m10Timer.Interval = 30000;
             m10Timer.Elapsed += new System.Timers.ElapsedEventHandler((o, e) =>
             {
                 checkMinutePrescription("Every 10 minutes");
@@ -452,7 +446,7 @@ namespace Prescription_Assistance
         {
             //check rooms with patients
             ds = cr.viewOccupiedRooms();
-            //MessageBox.Show("showed dataset");
+            //MessageBox.Show(intervaltocheck);
             if (ds.Tables[0].Rows.Count > 0)
             {
                 for (int i = 0; i < ds.Tables[0].Rows.Count; i++)
@@ -513,7 +507,7 @@ namespace Prescription_Assistance
 
             id = ca.insertAlert();
             //MessageBox.Show("" + id);
-            setBedtoBlink(ca.Bed_id.ToString());
+            //setBedtoBlink(ca.Bed_id.ToString());
             showAlert(id, ca.Type.ToString(), ca.Bed_id.ToString(), ca.Info_id.ToString(), ca.Status.ToString(),
                     ca.Timefordisplay.ToString(), ca.Timeforsms.ToString(), ca.Ondisplay.ToString());
         }
@@ -542,7 +536,7 @@ namespace Prescription_Assistance
         #region Blink
         public void highlightBed(string bed_id)
         {
-            //ds6 = cr.viewAllBeds();
+            ds6 = cr.viewAllBeds();
             if (ds6.Tables[1].Rows.Count > 0)
             {
                 for (int i = 0; i < ds6.Tables[1].Rows.Count; i++)
@@ -563,7 +557,7 @@ namespace Prescription_Assistance
         }
         public void stoplightBed(string bed_id)
         {
-            //ds6 = cr.viewAllBeds();
+            ds6 = cr.viewAllBeds();
             if (ds6.Tables[1].Rows.Count > 0)
             {
                 for (int i = 0; i < ds6.Tables[1].Rows.Count; i++)

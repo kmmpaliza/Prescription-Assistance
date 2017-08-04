@@ -110,77 +110,31 @@ namespace Prescription_Assistance
 
         private void button2_Click(object sender, EventArgs e)
         {
-            int age;
-            bool isNumericA = int.TryParse(txtAge.Text, out age);
+            cp.Age = txtAge.Text;
+            cp.Weight = txtWeight.Text;
+            cp.Height = txtHeight.Text;
+            cp.Contact = txtContact.Text;
 
-            double weight;
-            bool isNumericW = double.TryParse(txtWeight.Text, out weight);
+            cp.Patient_id = id;
+            cm.Patient_id = id;
 
-            double height;
-            bool isNumericH = double.TryParse(txtHeight.Text, out height);
+            cp.Last_name = txtLast.Text;
+            cp.First_name = txtFirst.Text;
+            cp.Gender = cboGender.Text;
+            cp.Birthday = dateTimePicker1.Value.Date.ToString("dd/MM/yyyy");
+            cp.Address = txtAddress.Text;
+            cp.Medical_history = txtMH.Text;
+            cp.Imgfile = data;
 
-            string number = txtContact.Text;
-            bool isAContact = Regex.Match(number, @"^(\d{9})$").Success;
+            cp.updatePatient();
 
-            if (isNumericA)
-            {
-                cp.Age = txtAge.Text;
-                if (isNumericW)
-                {
-                    cp.Weight = txtWeight.Text;
-                    if (isNumericH)
-                    {
-                        cp.Height = txtHeight.Text;
-                        if (isAContact)
-                        {
-                            cp.Contact = txtContact.Text; 
+            MessageBox.Show("Patient Details successfully updated.");
 
-                            cp.Patient_id = id;
-                            cm.Patient_id = id;
-
-                            cp.Last_name = txtLast.Text;
-                            cp.First_name = txtFirst.Text;
-                            cp.Gender = cboGender.Text;
-                            cp.Birthday = dateTimePicker1.Value.Date.ToString("dd/MM/yyyy");
-                            cp.Address = txtAddress.Text;
-                            cp.Medical_history = txtMH.Text;
-                            cp.Imgfile = data;
-
-                            cp.updatePatient();
-
-                            MessageBox.Show("Patient Details successfully updated.");
-
-                            load(); 
-                        }
-                        else 
-                        {
-                            MessageBox.Show("Invalid Contact Number.");
-                        }
-                    }
-                    else
-                    {
-                        MessageBox.Show("Invalid value for Height.");
-                    }
-                }
-                else
-                {
-                    MessageBox.Show("Invalid value for Weight.");
-                }
-            }
-            else
-            {
-                MessageBox.Show("Invalid value for Age.");
-            }          
-
-            //update patient
-                       
+            load();                        
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            //cancel
-            //Nurse_Dashboard parent = (Nurse_Dashboard)this.ParentForm;
-            //parent.changetoViewPatient();
             load();
         }
 
@@ -203,15 +157,10 @@ namespace Prescription_Assistance
             button1.Visible = true;
         }
 
-        private void pBoxPhoto_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnBrowse_Click(object sender, EventArgs e)
         {
             OpenFileDialog Openpdf = new OpenFileDialog();
-            Openpdf.Filter = "JPEG Files (*.jpeg)|*.jpeg|JPG Files (*.jpg)|*.jpg|PNG Files (*.png)|*.png|GIF Files (*.gif)|*.gif|All files|*.*;";
+            Openpdf.Filter = "JPG Files (*.jpg)|*.jpg|JPEG Files (*.jpeg)|*.jpeg|PNG Files (*.png)|*.png|All files|*.*;";
 
             if (Openpdf.ShowDialog() == DialogResult.OK)
             {
@@ -230,6 +179,59 @@ namespace Prescription_Assistance
                 fs.Close();
                 fs.Dispose();
             }
+        }
+
+        private void txtAge_Validating(object sender, CancelEventArgs e)
+        {
+            int age;
+            bool isNumericA = int.TryParse(txtAge.Text, out age);
+
+            if (!isNumericA)
+            {
+                MessageBox.Show("Invalid value for Age.");
+                txtAge.Focus();
+            }
+            else {} 
+        }
+
+        private void txtWeight_Validating(object sender, CancelEventArgs e)
+        {
+            double weight;
+            bool isNumericW = double.TryParse(txtWeight.Text, out weight);
+
+            if (!isNumericW)
+            {
+                MessageBox.Show("Invalid value for Weight.");
+                txtWeight.Focus();
+            }
+            else { }
+        }
+
+        private void txtHeight_Validating(object sender, CancelEventArgs e)
+        {
+            double height;
+            bool isNumericH = double.TryParse(txtHeight.Text, out height);
+
+            if (!isNumericH)
+            {
+                MessageBox.Show("Invalid value for Height.");
+                txtHeight.Focus();
+            }
+            else { }
+        }
+
+        private void txtContact_Validating(object sender, CancelEventArgs e)
+        {
+            string number = txtContact.Text;
+            bool isAContact = Regex.Match(number, @"^(\d{9})$").Success;
+
+            if (!isAContact)
+            {
+                MessageBox.Show("Invalid Contact Number.");
+                txtContact.Focus();
+            }
+            else
+            { }
         }
     }
 }

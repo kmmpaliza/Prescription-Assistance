@@ -97,6 +97,7 @@
             this.txtContact.Name = "txtContact";
             this.txtContact.Size = new System.Drawing.Size(200, 27);
             this.txtContact.TabIndex = 99;
+            this.txtContact.Validating += new System.ComponentModel.CancelEventHandler(this.txtContact_Validating);
             // 
             // label3
             // 

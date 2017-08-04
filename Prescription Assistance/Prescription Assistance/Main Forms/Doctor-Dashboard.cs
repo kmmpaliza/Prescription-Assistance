@@ -35,8 +35,8 @@ namespace Prescription_Assistance
             pnlFrame.Controls.Clear();
             var abc = new Room_Layout();
             pnlFrame.Controls.Add(abc);          
-            abc.Dock = DockStyle.Fill;
-
+            //abc.Dock = DockStyle.Fill;
+            
             abc.checkAssistance();
             abc.runVitals();
             abc.runTimeforPrescription();

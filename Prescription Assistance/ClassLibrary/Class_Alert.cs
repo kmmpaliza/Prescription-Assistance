@@ -83,6 +83,7 @@ namespace ClassLibrary
         {
             SqlCommand cmd = new SqlCommand("select_LateAlerts", conn);
             cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.Add("@TimeforSMS", SqlDbType.VarChar).Value = timeforsms;
             SqlDataAdapter da = new SqlDataAdapter(cmd);
             ds.Clear();
             da.Fill(ds, "select_LateAlerts");

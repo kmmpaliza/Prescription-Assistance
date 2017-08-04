@@ -37,16 +37,13 @@ namespace Prescription_Assistance
             pnlFrame.Controls.Add(abc);
             //abc.Dock = DockStyle.Fill;
 
-            abc.checkAssistance(); //perfect HAHHA
-            abc.runVitals();
-            abc.runTimeforPrescription();
-            abc.runPrescription();
-            abc.run5MinutePrescription();
-            abc.run10MinutePrescription();
-            abc.checkLateAlerts();    
-            
-            //abc.highlightBed("ICU-A");  
-            //abc.checkVitals(); 
+            abc.checkAssistance(); //perfect HAHHA //ok
+            abc.runVitals(); //ok every 10m 12s
+            abc.runTimeforPrescription(); //ok every 12am
+            abc.runPrescription(); //ok //every hour
+            abc.run5MinutePrescription(); //conflict sa 10 pag sabay na sila hahahhaha //every 5min
+            abc.run10MinutePrescription(); //every 10min
+            abc.checkLateAlerts(); //ok every minute
                  
         }
 

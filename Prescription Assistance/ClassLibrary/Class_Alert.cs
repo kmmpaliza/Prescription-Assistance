@@ -79,6 +79,27 @@ namespace ClassLibrary
             return ds;
         }
 
+        public DataSet viewAllAlerts()
+        {
+            SqlCommand cmd = new SqlCommand("select_AllAlerts", conn);
+            cmd.CommandType = CommandType.StoredProcedure;
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            ds.Clear();
+            da.Fill(ds, "select_AllAlerts");
+            return ds;
+        }
+
+        public DataSet viewAlertsofBed()
+        {
+            SqlCommand cmd = new SqlCommand("select_AlertsofBed", conn);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.Add("@Bed_ID", SqlDbType.VarChar).Value = bed_id;
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            ds.Clear();
+            da.Fill(ds, "select_AlertsofBed");
+            return ds;
+        }
+
         public DataSet viewLateAlerts()
         {
             SqlCommand cmd = new SqlCommand("select_LateAlerts", conn);

@@ -46,6 +46,9 @@ namespace Prescription_Assistance
         DataSet ds0 = new DataSet(); //viewprescription
         DataSet ds1 = new DataSet(); //viewprescription
 
+        DataSet ds9 = new DataSet(); //resetalerts
+        DataSet dsa = new DataSet(); //view alerts of bed
+
         string bed, id, textbody, timeNow, number;        
 
         public Room_Layout()
@@ -536,8 +539,10 @@ namespace Prescription_Assistance
         #region Blink
         public void highlightBed(string bed_id)
         {
+            
+
             ds6 = cr.viewAllBeds();
-            if (ds6.Tables[1].Rows.Count > 0)
+            if (ds6.Tables[1].Rows.Count     > 0)
             {
                 for (int i = 0; i < ds6.Tables[1].Rows.Count; i++)
                 {
@@ -565,17 +570,25 @@ namespace Prescription_Assistance
                     if (ds6.Tables[1].Rows[i][0].ToString() == bed_id)
                     {
                         bed = "" + i;
-                        if (this.Controls.Find("pbox" + bed, true)[0].BackColor == Color.FromArgb(153, 255, 255, 0))
-                            this.Controls.Find("pbox" + bed, true)[0].BackColor = Color.Transparent;
-                        else
-                        {
-                            this.Controls.Find("pbox" + bed, true)[0].BackColor = Color.Transparent;
-                        }
                     }
                 }
             }
+
+            ca.Bed_id = bed_id;
+            dsa = ca.viewAlertsofBed();
+
+            MessageBox.Show("" + dsa.Tables[1].Rows.Count);
+            if (dsa.Tables[1].Rows.Count > 0)
+            {
+                this.Controls.Find("pbox" + bed, true)[0].BackColor = Color.FromArgb(153, 255, 255, 0);
+            }
+            else
+            {
+                this.Controls.Find("pbox" + bed, true)[0].BackColor = Color.Transparent;  
+            }           
         }
-        public void setBedtoBlink(string bed_id)
+
+        /**public void setBedtoBlink(string bed_id)
         { 
             //ds5 = cr.viewAllBeds();
             if (ds6.Tables[0].Rows.Count > 0)
@@ -652,7 +665,7 @@ namespace Prescription_Assistance
                     }
                 }
             }
-        }
+        }*/
 
         #endregion
 
@@ -671,6 +684,41 @@ namespace Prescription_Assistance
                 checkVitals();
 
             }, null, (int)(requiredTime - DateTime.Now).TotalMilliseconds, Timeout.Infinite);
+        }
+
+        public void resetAlerts()
+        {
+            ds9 = ca.viewAllAlerts();
+
+            if (ds9.Tables[1].Rows.Count > 0)
+            {
+                for (int i = 0; i < ds9.Tables[1].Rows.Count; i++)
+                {
+                    string status = ds9.Tables[1].Rows[i][3].ToString();
+                    string ondisplay = ds9.Tables[1].Rows[i][8].ToString();
+                    if (ondisplay == "true" && status == "Undone")
+                    {
+                        string id = ds9.Tables[1].Rows[i][1].ToString();
+                        string type = ds9.Tables[1].Rows[i][2].ToString();
+                        string stat = ds9.Tables[1].Rows[i][3].ToString();
+                        string bed = ds9.Tables[1].Rows[i][4].ToString();
+                        string info = ds9.Tables[1].Rows[i][5].ToString();
+
+                        DateTime currentTime = DateTime.Now;
+                        DateTime x10mins = currentTime.AddMinutes(10);
+                        string timefordisplay = currentTime.ToString("HH:mm");
+                        string timeforsms = x10mins.ToString("HH:mm");
+                        ca.Timefordisplay = timefordisplay;
+                        ca.Timeforsms = timeforsms;
+
+                        string ond = "false";
+                        ca.Ondisplay = ond;
+                        ca.Alert_id = id;
+                        ca.Status = stat;
+                        ca.updateAlert();  
+                    }                    
+                }
+            }
         }
     }
 }

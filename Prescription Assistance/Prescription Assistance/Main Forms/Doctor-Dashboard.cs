@@ -13,6 +13,7 @@ namespace Prescription_Assistance
     public partial class Doctor_Dashboard : Form
     {
         Class_Doctor cd = new Class_Doctor();
+        Room_Layout rr = new Room_Layout();
 
         public Doctor_Dashboard()
         {
@@ -33,21 +34,21 @@ namespace Prescription_Assistance
             pnlOverlay.Controls.Clear();
             pnlOverlay.Visible = false;
             pnlFrame.Controls.Clear();
-            var abc = new Room_Layout();
-            pnlFrame.Controls.Add(abc);          
+            pnlFrame.Controls.Add(rr);          
             //abc.Dock = DockStyle.Fill;
             
-            abc.checkAssistance();
-            abc.runVitals();
-            abc.runTimeforPrescription();
-            abc.runPrescription();
-            abc.run5MinutePrescription();
-            abc.run10MinutePrescription();
-            abc.checkLateAlerts();
+            rr.checkAssistance();
+            rr.runVitals();
+            rr.runTimeforPrescription();
+            rr.runPrescription();
+            rr.run5MinutePrescription();
+            rr.run10MinutePrescription();
+            rr.checkLateAlerts();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
+            rr.resetAlerts();
             Form1 f = new Form1();
             f.Show();
             this.Close();

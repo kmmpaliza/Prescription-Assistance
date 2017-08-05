@@ -13,6 +13,7 @@ namespace Prescription_Assistance
     public partial class Nurse_Dashboard : Form
     {
         Class_Nurse cd = new Class_Nurse();
+        Room_Layout rr = new Room_Layout();
 
         public Nurse_Dashboard()
         {
@@ -33,22 +34,22 @@ namespace Prescription_Assistance
             pnlOverlay.Controls.Clear();
             pnlOverlay.Visible = false;
             pnlFrame.Controls.Clear();
-            var abc = new Room_Layout();            
-            pnlFrame.Controls.Add(abc);
+            //var abc = new Room_Layout(); 
+            pnlFrame.Controls.Add(rr);
             //abc.Dock = DockStyle.Fill;
 
-            abc.checkAssistance(); //perfect HAHHA //ok
-            abc.runVitals(); //ok every 10m 12s
-            abc.runTimeforPrescription(); //ok every 12am
-            abc.runPrescription(); //ok //every hour
-            abc.run5MinutePrescription(); //conflict sa 10 pag sabay na sila hahahhaha //every 5min
-            abc.run10MinutePrescription(); //every 10min
-            abc.checkLateAlerts(); //ok every minute
+            rr.checkAssistance(); //perfect HAHHA //ok
+            rr.runVitals(); //ok every 10m 12s
+            rr.runTimeforPrescription(); //ok every 12am
+            rr.runPrescription(); //ok //every hour
+            rr.run5MinutePrescription(); //conflict sa 10 pag sabay na sila hahahhaha //every 5min
+            rr.run10MinutePrescription(); //every 10min
+            rr.checkLateAlerts(); //ok every minute
                  
         }
 
         private void button2_Click(object sender, EventArgs e)
-        {
+        { 
             pnlOverlay.Visible = false;
         }
 
@@ -126,6 +127,7 @@ namespace Prescription_Assistance
 
         private void button1_Click(object sender, EventArgs e)
         {
+            rr.resetAlerts();
             Form1 f = new Form1();
             f.Show();
             this.Close();

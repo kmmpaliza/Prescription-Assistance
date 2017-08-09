@@ -293,7 +293,6 @@
             // tabPage1
             // 
             this.tabPage1.BackgroundImage = global::Prescription_Assistance.Properties.Resources._2nd2;
-            this.tabPage1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tabPage1.Controls.Add(this.pbox112);
             this.tabPage1.Controls.Add(this.pbox111);
             this.tabPage1.Controls.Add(this.pbox110);
@@ -401,7 +400,6 @@
             // tabPage2
             // 
             this.tabPage2.BackgroundImage = global::Prescription_Assistance.Properties.Resources._3rd2;
-            this.tabPage2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tabPage2.Controls.Add(this.pbox96);
             this.tabPage2.Controls.Add(this.pbox97);
             this.tabPage2.Controls.Add(this.pbox98);
@@ -929,7 +927,6 @@
             // tabPage3
             // 
             this.tabPage3.BackgroundImage = global::Prescription_Assistance.Properties.Resources._4th2;
-            this.tabPage3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tabPage3.Controls.Add(this.pbox49);
             this.tabPage3.Controls.Add(this.pbox50);
             this.tabPage3.Controls.Add(this.pbox51);
@@ -1317,7 +1314,6 @@
             // tabPage4
             // 
             this.tabPage4.BackgroundImage = global::Prescription_Assistance.Properties.Resources._5th2;
-            this.tabPage4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tabPage4.Controls.Add(this.pbox81);
             this.tabPage4.Controls.Add(this.pbox82);
             this.tabPage4.Controls.Add(this.pbox83);
@@ -2006,7 +2002,5 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
         public System.Windows.Forms.FlowLayoutPanel ePanel;
-
-
     }
 }

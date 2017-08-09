@@ -31,21 +31,30 @@ namespace Prescription_Assistance
 
             label1.Text = "" + ds.Tables[0].Rows[0][2].ToString() + ", " + ds.Tables[0].Rows[0][3].ToString();
 
-            pnlOverlay.Controls.Clear();
-            pnlOverlay.Visible = false;
-            pnlFrame.Controls.Clear();
-            //var abc = new Room_Layout(); 
-            pnlFrame.Controls.Add(rr);
-            //abc.Dock = DockStyle.Fill;
+            try
+            {
+                pnlOverlay.Controls.Clear();
+                pnlOverlay.Visible = false;
+                pnlFrame.Controls.Clear();
+                //var abc = new Room_Layout(); 
+                pnlFrame.Controls.Add(rr);
+                //abc.Dock = DockStyle.Fill;
+            }
+            catch (OutOfMemoryException c)
+            {
+                return;
+            }            
 
+            rr.checkunfinishedvitals();
+            rr.checkunfinishedprescription();
             rr.checkAssistance(); //perfect HAHHA //ok
+
             rr.runVitals(); //ok every 10m 12s
             rr.runTimeforPrescription(); //ok every 12am
             rr.runPrescription(); //ok //every hour
             rr.run5MinutePrescription(); //conflict sa 10 pag sabay na sila hahahhaha //every 5min
             rr.run10MinutePrescription(); //every 10min
-            rr.checkLateAlerts(); //ok every minute
-                 
+            rr.checkLateAlerts(); //ok every minute                 
         }
 
         private void button2_Click(object sender, EventArgs e)

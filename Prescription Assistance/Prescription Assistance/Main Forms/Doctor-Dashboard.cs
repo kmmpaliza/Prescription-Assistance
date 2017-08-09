@@ -29,15 +29,26 @@ namespace Prescription_Assistance
             DataSet ds = new DataSet();
             ds = cd.viewDoctorDetails();
 
-            label1.Text = "" + ds.Tables[0].Rows[0][2].ToString() + ", " + ds.Tables[0].Rows[0][3].ToString();            
+            label1.Text = "" + ds.Tables[0].Rows[0][2].ToString() + ", " + ds.Tables[0].Rows[0][3].ToString();
 
-            pnlOverlay.Controls.Clear();
-            pnlOverlay.Visible = false;
-            pnlFrame.Controls.Clear();
-            pnlFrame.Controls.Add(rr);          
-            //abc.Dock = DockStyle.Fill;
-            
-            rr.checkAssistance();
+            try
+            {
+                pnlOverlay.Controls.Clear();
+                pnlOverlay.Visible = false;
+                pnlFrame.Controls.Clear();
+                //var abc = new Room_Layout(); 
+                pnlFrame.Controls.Add(rr);
+                //abc.Dock = DockStyle.Fill;
+            }
+            catch (OutOfMemoryException c)
+            {
+                return;
+            }
+
+            rr.checkunfinishedvitals();
+            rr.checkunfinishedprescription();
+            rr.checkAssistance(); //perfect HAHHA //ok
+
             rr.runVitals();
             rr.runTimeforPrescription();
             rr.runPrescription();

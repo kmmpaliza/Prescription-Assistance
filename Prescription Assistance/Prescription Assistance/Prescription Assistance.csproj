@@ -397,21 +397,12 @@
     <Content Include="Main Forms\Images\logo.png" />
     <None Include="Resources\images3.png" />
     <None Include="Resources\images.png" />
-    <None Include="Resources\blank23.png" />
-    <None Include="Resources\blank22.png" />
-    <None Include="Resources\blank21.png" />
-    <None Include="Resources\blank2.png" />
     <None Include="Resources\blank.png" />
     <None Include="Resources\5th2.png" />
-    <None Include="Resources\5th.png" />
     <None Include="Resources\4th2.png" />
     <None Include="Resources\3rd2.png" />
     <None Include="Resources\2nd2.png" />
     <None Include="Resources\images7.png" />
-    <None Include="Resources\4th.png" />
-    <None Include="Resources\3rd.png" />
-    <None Include="Resources\2nd.png" />
-    <None Include="Resources\non2th.png" />
     <None Include="Resources\images21.png" />
     <None Include="Resources\images2.png" />
     <None Include="Resources\meal.jpg" />
@@ -430,33 +421,7 @@
     <None Include="Resources\patient1.jpg" />
     <None Include="Resources\stafffffffff.jpg" />
     <None Include="Resources\greenbg1.jpg" />
-    <None Include="Resources\cancel1.png" />
-    <None Include="Resources\cancel.png" />
-    <None Include="Resources\maint.png" />
-    <None Include="Resources\shuttle.png" />
-    <None Include="Resources\wheelchair.png" />
-    <None Include="Resources\status.png" />
-    <None Include="Resources\medicalconsultatio1.png" />
-    <None Include="Resources\transferroom.png" />
-    <None Include="Resources\private8.png" />
-    <None Include="Resources\ward2.png" />
     <None Include="Resources\logo2.png" />
-    <None Include="Resources\ttrrr.png" />
-    <None Include="Resources\private1.png" />
-    <None Include="Resources\privateotherside.png" />
-    <None Include="Resources\beddown.png" />
-    <None Include="Resources\privatedown.png" />
-    <None Include="Resources\privateup.png" />
-    <None Include="Resources\bedup1.png" />
-    <None Include="Resources\bedup.png" />
-    <None Include="Resources\privateroom1.png" />
-    <None Include="Resources\privateroom.png" />
-    <None Include="Resources\private.png" />
-    <None Include="Resources\otherside.png" />
-    <None Include="Resources\bedd.png" />
-    <None Include="Resources\bed2.png" />
-    <None Include="Resources\bed1.png" />
-    <None Include="Resources\bed.png" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">

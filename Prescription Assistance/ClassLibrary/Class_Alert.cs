@@ -100,11 +100,11 @@ namespace ClassLibrary
             return ds;
         }
 
-        public DataSet viewLateAlerts()
+        public DataSet viewLateAlerts(string timesms)
         {
             SqlCommand cmd = new SqlCommand("select_LateAlerts", conn);
             cmd.CommandType = CommandType.StoredProcedure;
-            cmd.Parameters.Add("@TimeforSMS", SqlDbType.VarChar).Value = timeforsms;
+            cmd.Parameters.Add("@TimeforSMS", SqlDbType.VarChar).Value = timesms;
             SqlDataAdapter da = new SqlDataAdapter(cmd);
             ds.Clear();
             da.Fill(ds, "select_LateAlerts");

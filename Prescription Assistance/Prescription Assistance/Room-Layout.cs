@@ -96,28 +96,33 @@ namespace Prescription_Assistance
         }
         
         #region SMS for Late Alerts
+
         public void checkLateAlerts() //every minute
         {
-            smsTimer.Start();
+            smsTimer.AutoReset = true;
+                        
             smsTimer.Interval = 60000; //1 minutes
             smsTimer.Elapsed +=new System.Timers.ElapsedEventHandler((o, e) =>
             {
+                ds9 = ca.viewAllAlerts();
                 timeNow = DateTime.Now.ToString("HH:mm");
-                //MessageBox.Show("sms " + timeNow);
+             //   MessageBox.Show("sms " + timeNow);
+                    
                 if (Form1.usertype.Equals("Nurse"))
                 {  
                     ca.Timeforsms = timeNow;
-                    ds8 = ca.viewLateAlerts();                    
-                    if (ds8.Tables[1].Rows.Count > 0)
-                    { 
-                        //MessageBox.Show(ds8.Tables[1].Rows.Count + "");                       
-                        for (int i = 0; i < ds8.Tables[1].Rows.Count; i++)
+                    ds8 = ca.viewLateAlerts(timeNow);
+                 //   MessageBox.Show(ds8.Tables["select_LateAlerts"].Rows.Count + "");
+                    if (ds8.Tables["select_LateAlerts"].Rows.Count > 0)
+                    {
+                        for (int i = 0; i < ds8.Tables["select_LateAlerts"].Rows.Count; i++)
                         {
-                            //MessageBox.Show("" + timeNow + " " + ds8.Tables[1].Rows[i]["TimeforSMS"].ToString());
-                            if (ds8.Tables[1].Rows[i]["TimeforSMS"].ToString() == timeNow)
+                        //    MessageBox.Show("" + timeNow + " " + ds8.Tables["select_LateAlerts"].Rows[i]["TimeforSMS"].ToString());
+                            if (ds8.Tables["select_LateAlerts"].Rows[i]["TimeforSMS"].ToString() == timeNow)
                             {
-                                sendSMS(number, ds8.Tables[1].Rows[i][2].ToString(),
-                                    ds8.Tables[1].Rows[i][4].ToString(), ds8.Tables[1].Rows[i][5].ToString());
+                                sendSMS(number, ds8.Tables["select_LateAlerts"].Rows[i][2].ToString(),
+                                    ds8.Tables["select_LateAlerts"].Rows[i][4].ToString(),
+                                    ds8.Tables["select_LateAlerts"].Rows[i][5].ToString());
                             }
                             else {}
                         }                
@@ -126,10 +131,12 @@ namespace Prescription_Assistance
                 }
                 else {}
             });
+
+            smsTimer.Start();
         }
         public void sendSMS(string num, string type, string bed, string info)
         {
-            //MessageBox.Show("enter SMS");
+           // MessageBox.Show("enter SMS");
             string number = String.Format("{0: +639#########}", long.Parse(num));
             
             switch (type)
@@ -141,7 +148,7 @@ namespace Prescription_Assistance
                     textbody = "Vital Check for " + info + " at bed " + bed;
                     break;
                 case "P":
-                    textbody = "Medicine for " + info + " at bed " + bed;
+                    textbody = "Medicine alert: " + info + " at bed " + bed;
                     break;
             }
 
@@ -195,7 +202,7 @@ namespace Prescription_Assistance
                 }                
             }
 
-            ds9 = ca.viewAllAlerts();
+            //ds9 = ca.viewAllAlerts();
             displayVitals();
         }      
         public void displayVitals()
@@ -229,7 +236,7 @@ namespace Prescription_Assistance
                     showAlert(id, type, bed, info, status, timefordisplay, timeforsms, ondisplay);                    
                 }
 
-                ds9 = ca.viewAllAlerts();
+                //ds9 = ca.viewAllAlerts();
             }
         }
         public void checkunfinishedvitals()
@@ -262,7 +269,7 @@ namespace Prescription_Assistance
                     
                     showAlert(id, type, bed, info, status, timefordisplay, timeforsms, ondisplay);
                 }
-                ds9 = ca.viewAllAlerts();
+                //ds9 = ca.viewAllAlerts();
             }
         }
         #endregion
@@ -308,7 +315,7 @@ namespace Prescription_Assistance
                     
                     showAlert(id, type, bed, info, status, timefordisplay, timeforsms, ondisplay);
                 }
-                ds9 = ca.viewAllAlerts();
+                //ds9 = ca.viewAllAlerts();
             }
         }
         #endregion
@@ -426,7 +433,7 @@ namespace Prescription_Assistance
                 //donothing
             }
 
-            ds9 = ca.viewAllAlerts();
+           // ds9 = ca.viewAllAlerts();
             runTimeforPrescription();  
              
         }
@@ -480,7 +487,7 @@ namespace Prescription_Assistance
                     
                 }
 
-                ds9 = ca.viewAllAlerts();
+               // ds9 = ca.viewAllAlerts();
             }
         }
         public void checkunfinishedprescription()
@@ -514,7 +521,7 @@ namespace Prescription_Assistance
                     showAlert(id, type, bed, info, status, timefordisplay, timeforsms, ondisplay);
                 }
 
-                ds9 = ca.viewAllAlerts();
+               // ds9 = ca.viewAllAlerts();
             }
         }
 
@@ -604,7 +611,7 @@ namespace Prescription_Assistance
             showAlert(id, ca.Type.ToString(), ca.Bed_id.ToString(), ca.Info_id.ToString(), ca.Status.ToString(),
                     ca.Timefordisplay.ToString(), ca.Timeforsms.ToString(), ca.Ondisplay.ToString());
 
-            ds9 = ca.viewAllAlerts();
+           // ds9 = ca.viewAllAlerts();
         }
         #endregion
 
